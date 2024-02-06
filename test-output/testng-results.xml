@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-01-31T17:49:02 IST" name="Default suite" finished-at="2024-01-31T17:49:15 IST" duration-ms="12970">
+    <groups>
+    </groups>
+    <test started-at="2024-01-31T17:49:02 IST" name="Default test" finished-at="2024-01-31T17:49:15 IST" duration-ms="12970">
+      <class name="testPackage.LoginTest">
+        <test-method is-config="true" signature="prerequisite()[pri:0, instance:testPackage.LoginTest@72e5a8e]" started-at="2024-01-31T17:48:53 IST" name="prerequisite" finished-at="2024-01-31T17:49:02 IST" duration-ms="9054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prerequisite -->
+        <test-method is-config="true" signature="initializeExtentReport()[pri:0, instance:testPackage.LoginTest@72e5a8e]" started-at="2024-01-31T17:49:02 IST" name="initializeExtentReport" finished-at="2024-01-31T17:49:03 IST" duration-ms="1024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeExtentReport -->
+        <test-method is-config="true" signature="assignObjectForClass()[pri:0, instance:testPackage.LoginTest@72e5a8e]" started-at="2024-01-31T17:49:03 IST" name="assignObjectForClass" finished-at="2024-01-31T17:49:03 IST" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assignObjectForClass -->
+        <test-method signature="validLoginTest(java.lang.String,java.lang.String)[pri:0, instance:testPackage.LoginTest@72e5a8e]" started-at="2024-01-31T17:49:03 IST" name="validLoginTest" data-provider="LoginTestData" finished-at="2024-01-31T17:49:14 IST" duration-ms="11226" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[jay.soni+manager@openxcell.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[QA@12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:testPackage.LoginTest@72e5a8e]" started-at="2024-01-31T17:49:14 IST" name="flush" finished-at="2024-01-31T17:49:15 IST" duration-ms="567" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+      </class> <!-- testPackage.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
