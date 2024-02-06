@@ -1,8 +1,13 @@
 package testBase;
 
+import java.io.File;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.Random;
 
+import org.apache.commons.io.FileUtils;
+import org.apache.poi.hpsf.Date;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
@@ -10,10 +15,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-import com.aventstack.extentreports.reporter.configuration.Theme;
+import com.Listeners.ExtentReportListener;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pageClass.CompanyAssetsOperations;
@@ -26,11 +28,6 @@ public class TestBase {
 	public LoginPage login;
 	public DashBoardPage dashboard;
 	public CompanyAssetsOperations cmpAstsOp;
-	public static ExtentSparkReporter extentSparkReporter;
-	public static ExtentReports extentReport;
-	public static ExtentTest test;
-	/*public String methodName = new Exception().getStackTrace()[0].getMethodName();
-	public String classname = new Exception().getStackTrace()[0].getClassName();*/
 	
 	@BeforeSuite
 	public void prerequisite() {
@@ -41,6 +38,7 @@ public class TestBase {
 		System.out.println("** Hit Oilman URL. ");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		ExtentReportListener.initializeExtentReport();
 		System.out.println("");
 	
 	}
@@ -52,29 +50,28 @@ public class TestBase {
 		cmpAstsOp =  new CompanyAssetsOperations(driver);
 		
 	}
-	@BeforeTest
+	//@BeforeTest
 	public void initializeExtentReport() {
-		extentSparkReporter = new ExtentSparkReporter(System.getProperty("user.dir")+"/Report/OilmanExtentReport.html");
-		extentSparkReporter.config().setTheme(Theme.STANDARD);
-		extentSparkReporter.config().setDocumentTitle("Oilman Test Report");
-		extentSparkReporter.config().setReportName("Oilman Test Execution Report");
-		extentSparkReporter.config().setTimeStampFormat("EEEE, MMMM dd,yyyy, hh:mm a");
-		extentReport = new ExtentReports();
-		extentReport.attachReporter(extentSparkReporter);
+		ExtentReportListener.initializeExtentReport();
 	}
 	@AfterTest
 	public void flush() {
-		extentReport.flush();
+		ExtentReportListener.flush();
 	}
-	public String getSaltString() {
-        String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
-        StringBuilder salt = new StringBuilder();
-        Random rnd = new Random();
-        while (salt.length() < 4) { // length of the random string.
-            int index = (int) (rnd.nextFloat() * SALTCHARS.length());
-            salt.append(SALTCHARS.charAt(index));
-        }
-        String saltStr = salt.toString();
-        return saltStr;
-    }
+	
+	public static String screenShot(WebDriver driver,String filename) {
+		  String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+		  TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
+		  File source = takesScreenshot.getScreenshotAs(OutputType.FILE);
+		  String destination = System.getProperty("user.dir")+"\\ScreenShot\\"+filename+"_"+dateName+".png";
+		  File finalDestination= new File(destination);
+		  try {
+		   FileUtils.copyFile(source, finalDestination);
+		  } catch (Exception e) {
+		   // TODO Auto-generated catch block
+		   e.getMessage();
+		  }
+		  return destination;
+		}
+	
 }

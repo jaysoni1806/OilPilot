@@ -10,9 +10,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import com.aventstack.extentreports.Status;
+import com.commonUtil.ExtentReportManager;
 import com.commonUtil.Utility;
-
-import testBase.TestBase;
 
 public class LoginPage {
 	WebDriver driver;
@@ -46,39 +45,39 @@ public class LoginPage {
 		
 		try {
 			email.click();
-			TestBase.test.log(Status.PASS, "Clicked on Email field.");
+			ExtentReportManager.test.log(Status.PASS, "Clicked on Email field.");
 			
 			
 			utility.ClearTextBox(email);
-			TestBase.test.log(Status.PASS, "Clear Email textbox.");
+			ExtentReportManager.test.log(Status.PASS, "Clear Email textbox.");
 			
 			
 			utility.SendValues(email, username);
-			TestBase.test.log(Status.PASS, "Enter Email id.");
+			ExtentReportManager.test.log(Status.PASS, "Enter Email id.");
 
 			
 			pass.click();
-			TestBase.test.log(Status.PASS, "Clicked on Password field.");
+			ExtentReportManager.test.log(Status.PASS, "Clicked on Password field.");
 			
 			
 			utility.ClearTextBox(pass);
-			TestBase.test.log(Status.PASS, "Clear Password textbox.");
+			ExtentReportManager.test.log(Status.PASS, "Clear Password textbox.");
 		
 			
 			utility.SendValues(pass, password);
-			TestBase.test.log(Status.PASS, "Enter Password.");
+			ExtentReportManager.test.log(Status.PASS, "Enter Password.");
 			
 			
 			utility.Submit(sbtBtn);
-			TestBase.test.log(Status.PASS, "Cliked on Submit button.");
+			ExtentReportManager.test.log(Status.PASS, "Cliked on Submit button.");
 		
 			utility.waitForSometime(dashBoard.dashboard);
-			TestBase.test.log(Status.PASS, "Wait until Dashboard visible.");
+			ExtentReportManager.test.log(Status.PASS, "Wait until Dashboard visible.");
 			
 			Assert.assertEquals(driver.getCurrentUrl(), "https://oilman-website.apps.openxcell.dev/dashboard/");
-			TestBase.test.log(Status.PASS, "User Logged successfully.");
+			ExtentReportManager.test.log(Status.PASS, "User Logged successfully.");
 		} catch (Exception e) {
-			TestBase.test.log(Status.FAIL, "Login Failed due to ->"+e);
+			ExtentReportManager.test.log(Status.FAIL, "Login Failed due to ->"+e);
 		}
 		
 	

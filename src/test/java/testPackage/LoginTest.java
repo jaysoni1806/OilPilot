@@ -1,6 +1,9 @@
 package testPackage;
 
 import org.testng.annotations.Test;
+
+import com.commonUtil.ExtentReportManager;
+
 import org.testng.annotations.DataProvider;
 
 import testBase.TestBase;
@@ -18,8 +21,8 @@ public class LoginTest extends TestBase {
 	@Test(dataProvider = "LoginTestData")
 	public void validLoginTest(String email,String password) {
 		String methodName = new Exception().getStackTrace()[0].getMethodName();
-		getSaltString();
-		test = extentReport.createTest(methodName, "Verify login with the valid user.");
+		//getSaltString();
+		ExtentReportManager.test = ExtentReportManager.extentReport.createTest(methodName, "Verify login with the valid user.");
 		login.validLoginTest(email, password);
 	}
 	
