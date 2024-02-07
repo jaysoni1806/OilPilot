@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                    <span class="method-stats">5 methods, 3 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,7 +104,17 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testPackage.CompanyAssetsTest" class="method navigator-link" hash-for-method="createCompany">createCompany</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testPackage.CompanyAssetsTest" class="method navigator-link" hash-for-method="deleteCompany">deleteCompany</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testPackage.CompanyAssetsTest" class="method navigator-link" hash-for-method="editCompany">editCompany</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -116,16 +126,6 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testPackage.CompanyAssetsTest" class="method navigator-link" hash-for-method="createCompany">createCompany</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testPackage.CompanyAssetsTest" class="method navigator-link" hash-for-method="editCompany">editCompany</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testPackage.CompanyAssetsTest" class="method navigator-link" hash-for-method="searchCompany">searchCompany</a> <!-- method navigator-link -->
@@ -156,15 +156,74 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="createCompany">
+                  </a> <!-- createCompany -->
+                  <span class="method-name">createCompany</span>
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=121.0.6167.139)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7976942a211a81a3f04d248cc0c2a0a0, isElementDisplayed {id=4D4FFA3301813EE0FF58602CBB411900_element_77}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.139, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /var/folders/p2/q2yjzrxs10s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54409}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54409/devtoo..., se:cdpVersion: 121.0.6167.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (7976942a211a81a3f04d248cc0c2a0a0)] -&gt; xpath: //div[contains(@class,&apos;css-1b8fkut&apos;)]//button]
+Session ID: 7976942a211a81a3f04d248cc0c2a0a0
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+	at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:280)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:37)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+	at com.commonUtil.Utility.WaitUntilElementIsNotClickable(Utility.java:64)
+	at pageClass.CompanyAssetsOperations.createCompany(CompanyAssetsOperations.java:55)
+	at testPackage.CompanyAssetsTest.createCompany(CompanyAssetsTest.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="deleteCompany">
                   </a> <!-- deleteCompany -->
                   <span class="method-name">deleteCompany</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy20.sendKeys(Unknown Source)
+	at com.commonUtil.Utility.SendValues(Utility.java:32)
+	at pageClass.CompanyAssetsOperations.search(CompanyAssetsOperations.java:173)
+	at pageClass.CompanyAssetsOperations.deleteCompany(CompanyAssetsOperations.java:138)
+	at testPackage.CompanyAssetsTest.deleteCompany(CompanyAssetsTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editCompany">
+                  </a> <!-- editCompany -->
+                  <span class="method-name">editCompany</span>
                   <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //div[contains(@class,&apos;MuiDataGrid-row&apos;)]//div[@data-field=&apos;actions&apos;]/button&apos; (tried for 5 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
 	at com.commonUtil.Utility.WaitUntilElementIsNotClickable(Utility.java:64)
-	at pageClass.CompanyAssetsOperations.deleteCompany(CompanyAssetsOperations.java:141)
-	at testPackage.CompanyAssetsTest.deleteCompany(CompanyAssetsTest.java:34)
+	at pageClass.CompanyAssetsOperations.editCompany(CompanyAssetsOperations.java:105)
+	at testPackage.CompanyAssetsTest.editCompany(CompanyAssetsTest.java:29)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@class,&apos;MuiDataGrid-row&apos;)]//div[@data-field=&apos;actions&apos;]/button&quot;}
   (Session info: chrome=121.0.6167.139)
@@ -172,9 +231,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6aeb655b34ed99ec1ea61bfba038e7e6, findElement {using=xpath, value=//div[contains(@class,&apos;MuiDataGrid-row&apos;)]//div[@data-field=&apos;actions&apos;]/button}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.139, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /var/folders/p2/q2yjzrxs10s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54176}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54176/devtoo..., se:cdpVersion: 121.0.6167.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6aeb655b34ed99ec1ea61bfba038e7e6
+Command: [7976942a211a81a3f04d248cc0c2a0a0, findElement {using=xpath, value=//div[contains(@class,&apos;MuiDataGrid-row&apos;)]//div[@data-field=&apos;actions&apos;]/button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.139, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: /var/folders/p2/q2yjzrxs10s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54409}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:54409/devtoo..., se:cdpVersion: 121.0.6167.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7976942a211a81a3f04d248cc0c2a0a0
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
@@ -206,6 +265,21 @@ Session ID: 6aeb655b34ed99ec1ea61bfba038e7e6
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">testPackage.CompanyAssetsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchCompany">
+                  </a> <!-- searchCompany -->
+                  <span class="method-name">searchCompany</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">testPackage.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -215,35 +289,6 @@ Session ID: 6aeb655b34ed99ec1ea61bfba038e7e6
                   </a> <!-- validLoginTest(jay.soni+manager@openxcell.com, QA@12345) -->
                   <span class="method-name">validLoginTest</span>
                   <span class="parameters">(jay.soni+manager@openxcell.com, QA@12345)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testPackage.CompanyAssetsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="createCompany">
-                  </a> <!-- createCompany -->
-                  <span class="method-name">createCompany</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="editCompany">
-                  </a> <!-- editCompany -->
-                  <span class="method-name">editCompany</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchCompany">
-                  </a> <!-- searchCompany -->
-                  <span class="method-name">searchCompany</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -306,25 +351,25 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'deleteCompany')
+data.setCell(0, 1, 'editCompany')
 data.setCell(0, 2, 'testPackage.CompanyAssetsTest')
-data.setCell(0, 3, 33941);
+data.setCell(0, 3, 32315);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'validLoginTest')
 data.setCell(1, 2, 'testPackage.LoginTest')
-data.setCell(1, 3, 33498);
+data.setCell(1, 3, 19622);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'editCompany')
+data.setCell(2, 1, 'searchCompany')
 data.setCell(2, 2, 'testPackage.CompanyAssetsTest')
-data.setCell(2, 3, 7738);
+data.setCell(2, 3, 12574);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'createCompany')
 data.setCell(3, 2, 'testPackage.CompanyAssetsTest')
-data.setCell(3, 3, 6180);
+data.setCell(3, 3, 1283);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'searchCompany')
+data.setCell(4, 1, 'deleteCompany')
 data.setCell(4, 2, 'testPackage.CompanyAssetsTest')
-data.setCell(4, 3, 3618);
+data.setCell(4, 3, 496);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -373,47 +418,51 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">initializeExtentReport</span>
-                <span class="method-start">21380 ms</span>
+                <span class="method-start">12208 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">assignObjectForClass</span>
-                <span class="method-start">28985 ms</span>
+                <span class="method-start">12617 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">validLoginTest(jay.soni+manager@openxcell.com, QA@12345)</span>
-                <span class="method-start">29131 ms</span>
+                <span class="method-start">12684 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testPackage.CompanyAssetsTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">assignObjectForClass</span>
-                <span class="method-start">63815 ms</span>
+                <span class="method-start">32319 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">createCompany</span>
-                <span class="method-start">63819 ms</span>
+                <span class="method-start">32324 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">searchCompany</span>
-                <span class="method-start">71175 ms</span>
+                <span class="method-start">34093 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">editCompany</span>
-                <span class="method-start">76535 ms</span>
+                <span class="method-start">46672 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">deleteCompany</span>
-                <span class="method-start">85151 ms</span>
+                <span class="method-start">79151 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testPackage.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">flush</span>
-                <span class="method-start">121602 ms</span>
+                <span class="method-start">79821 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

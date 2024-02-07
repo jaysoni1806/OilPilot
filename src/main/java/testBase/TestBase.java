@@ -10,6 +10,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
@@ -17,6 +18,7 @@ import org.testng.annotations.BeforeTest;
 
 import com.Listeners.ExtentReportListener;
 import com.commonUtil.ExtentReportManager;
+import com.commonUtil.commonUtil;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pageClass.CompanyAssetsOperations;
@@ -59,12 +61,16 @@ public class TestBase {
 	public void flush() {
 		ExtentReportListener.flush();
 	}
+	@AfterSuite
+	public void closeBrowser() {
+		driver.close();
+	}
+	
 	
 	public static String screenShot(WebDriver driver,String filename) {
-		  String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
 		  TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
 		  File source = takesScreenshot.getScreenshotAs(OutputType.FILE);
-		  String destination = System.getProperty("user.dir")+"\\ScreenShot\\"+filename+"_"+dateName+".png";
+		  String destination = System.getProperty("user.dir")+"/ScreenShot/"+filename+"_"+commonUtil.getCurrentTime()+".png";
 		  File finalDestination= new File(destination);
 		  try {
 		   FileUtils.copyFile(source, finalDestination);
