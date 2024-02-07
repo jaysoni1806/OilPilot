@@ -18,11 +18,9 @@ public class LoginTest extends TestBase {
 		return new Object[][] {{"jay.soni+manager@openxcell.com", "QA@12345"}};
 	}
 	
-	@Test(dataProvider = "LoginTestData")
+	@Test(dataProvider = "LoginTestData" ,description = "Test Valid Login")
 	public void validLoginTest(String email,String password) {
-		String methodName = new Exception().getStackTrace()[0].getMethodName();
-		//getSaltString();
-		//ExtentReportManager.test = ExtentReportManager.extentReport.createTest(methodName, "Verify login with the valid user.");
+		log.info("Start Login test.");
 		login.validLoginTest(email, password);
 	}
 	

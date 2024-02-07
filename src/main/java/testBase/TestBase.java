@@ -1,20 +1,18 @@
 package testBase;
 
 import java.io.File;
-import java.text.SimpleDateFormat;
 import java.time.Duration;
-import java.util.Date;
+
 
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.*;
 
 import com.Listeners.ExtentReportListener;
 import com.commonUtil.ExtentReportManager;
@@ -31,19 +29,21 @@ public class TestBase {
 	public LoginPage login;
 	public DashBoardPage dashboard;
 	public CompanyAssetsOperations cmpAstsOp;
+	public static Logger log; 
 	
 	@BeforeSuite
 	public void prerequisite() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
-		System.out.println("** Chrome browser launched.");
+		
+		PropertyConfigurator.configure(System.getProperty("user.dir")+"/log4j.properties");
+		log = Logger.getLogger(getClass().getName());
+		
+		log.info("Chrome browser launched.");
 		driver.get("https://oilman-website.apps.openxcell.dev/login/");
-		System.out.println("** Hit Oilman URL. ");
+		log.info("Hit Oilman URL. ");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		
-		System.out.println("");
-	
 	}
 	@BeforeClass
 	public void assignObjectForClass()

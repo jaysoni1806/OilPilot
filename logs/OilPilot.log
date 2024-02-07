@@ -1,0 +1,23 @@
+2024-02-07 17:47:09,436 +0530 [main] INFO  (TestBase.java:42) - Chrome browser launched.
+2024-02-07 17:47:13,566 +0530 [main] INFO  (TestBase.java:44) - Hit Oilman URL. 
+2024-02-07 17:47:15,275 +0530 [main] INFO  (LoginTest.java:23) - Start Login test.
+2024-02-07 17:47:15,396 +0530 [main] INFO  (LoginPage.java:51) - Clicked on Email field.
+2024-02-07 17:47:15,435 +0530 [main] INFO  (LoginPage.java:55) - Clear Email textbox.
+2024-02-07 17:47:15,830 +0530 [main] INFO  (LoginPage.java:59) - Enter Email id.
+2024-02-07 17:47:15,929 +0530 [main] INFO  (LoginPage.java:63) - Enter Email id.
+2024-02-07 17:47:15,958 +0530 [main] INFO  (LoginPage.java:67) - Clicked on Password field.
+2024-02-07 17:47:16,121 +0530 [main] INFO  (LoginPage.java:71) - Enter Password.
+2024-02-07 17:47:16,257 +0530 [main] INFO  (LoginPage.java:75) - Cliked on Submit button.
+2024-02-07 17:47:37,595 +0530 [main] INFO  (LoginPage.java:79) - Wait until Dashboard visible.
+2024-02-07 17:50:48,491 +0530 [main] INFO  (TestBase.java:42) - Chrome browser launched.
+2024-02-07 17:50:54,343 +0530 [main] INFO  (TestBase.java:44) - Hit Oilman URL. 
+2024-02-07 17:50:55,882 +0530 [main] INFO  (LoginTest.java:23) - Start Login test.
+2024-02-07 17:50:55,980 +0530 [main] INFO  (LoginPage.java:51) - Clicked on Email field.
+2024-02-07 17:50:56,052 +0530 [main] INFO  (LoginPage.java:55) - Clear Email textbox.
+2024-02-07 17:50:56,507 +0530 [main] INFO  (LoginPage.java:59) - Enter Email id.
+2024-02-07 17:50:56,617 +0530 [main] INFO  (LoginPage.java:63) - Enter Email id.
+2024-02-07 17:50:56,653 +0530 [main] INFO  (LoginPage.java:67) - Clicked on Password field.
+2024-02-07 17:50:56,862 +0530 [main] INFO  (LoginPage.java:71) - Enter Password.
+2024-02-07 17:50:57,046 +0530 [main] INFO  (LoginPage.java:75) - Cliked on Submit button.
+2024-02-07 17:51:16,756 +0530 [main] INFO  (LoginPage.java:79) - Wait until Dashboard visible.
+2024-02-07 17:51:16,836 +0530 [main] INFO  (LoginPage.java:83) - User Logged successfully.

@@ -13,6 +13,8 @@ import com.aventstack.extentreports.Status;
 import com.commonUtil.ExtentReportManager;
 import com.commonUtil.Utility;
 
+import testBase.TestBase;
+
 public class LoginPage {
 	WebDriver driver;
 	Utility utility;
@@ -43,44 +45,47 @@ public class LoginPage {
 	
 	public void validLoginTest(String username, String password) {
 		
-		try {
+
 			email.click();
 			ExtentReportManager.test.log(Status.PASS, "Clicked on Email field.");
-			
+			TestBase.log.info("Clicked on Email field.");
 			
 			utility.ClearTextBox(email);
 			ExtentReportManager.test.log(Status.PASS, "Clear Email textbox.");
-			
+			TestBase.log.info("Clear Email textbox.");
 			
 			utility.SendValues(email, username);
 			ExtentReportManager.test.log(Status.PASS, "Enter Email id.");
+			TestBase.log.info("Enter Email id.");
 
-			
 			pass.click();
 			ExtentReportManager.test.log(Status.PASS, "Clicked on Password field.");
-			
+			TestBase.log.info("Enter Email id.");
 			
 			utility.ClearTextBox(pass);
 			ExtentReportManager.test.log(Status.PASS, "Clear Password textbox.");
-		
+			TestBase.log.info("Clicked on Password field.");
 			
 			utility.SendValues(pass, password);
 			ExtentReportManager.test.log(Status.PASS, "Enter Password.");
-			
-			
+			TestBase.log.info("Enter Password.");
+
 			utility.Submit(sbtBtn);
 			ExtentReportManager.test.log(Status.PASS, "Cliked on Submit button.");
+			TestBase.log.info("Cliked on Submit button.");
 		
 			utility.waitForSometime(dashBoard.dashboard);
 			ExtentReportManager.test.log(Status.PASS, "Wait until Dashboard visible.");
+			TestBase.log.info("Wait until Dashboard visible.");
 			
-			Assert.assertEquals(driver.getCurrentUrl(), "https://oilman-website.apps.openxcell.dev/dashboard/");
-			//ExtentReportManager.test.log(Status.PASS, "User Logged successfully.");
-		} catch (Exception e) {
-			//ExtentReportManager.test.log(Status.FAIL, "Login Failed due to ->"+e);
-		}
-		
-	
+			try {
+				Assert.assertEquals(driver.getCurrentUrl(), "https://oilman-website.apps.openxcell.dev/dashboard/");
+				TestBase.log.info("User Logged successfully.");
+			} catch (Exception e) {
+				ExtentReportManager.test.log(Status.FAIL, "Dashboard not present due to this "+e);
+				TestBase.log.info("Dashboard not present. "+e);
+			}
+
 	}
 	/*public void loginTest(String username, String password) throws InterruptedException {
 		
