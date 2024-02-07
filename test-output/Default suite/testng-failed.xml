@@ -6,7 +6,6 @@
       <class name="testPackage.LoginTest">
         <methods>
           <include name="validLoginTest" invocation-numbers="0"/>
-          <include name="initializeExtentReport"/>
           <include name="assignObjectForClass"/>
           <include name="prerequisite"/>
           <include name="flush"/>

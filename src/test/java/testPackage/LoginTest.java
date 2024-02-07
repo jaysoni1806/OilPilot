@@ -22,7 +22,7 @@ public class LoginTest extends TestBase {
 	public void validLoginTest(String email,String password) {
 		String methodName = new Exception().getStackTrace()[0].getMethodName();
 		//getSaltString();
-		ExtentReportManager.test = ExtentReportManager.extentReport.createTest(methodName, "Verify login with the valid user.");
+		//ExtentReportManager.test = ExtentReportManager.extentReport.createTest(methodName, "Verify login with the valid user.");
 		login.validLoginTest(email, password);
 	}
 	

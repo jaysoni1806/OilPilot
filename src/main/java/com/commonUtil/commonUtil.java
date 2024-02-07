@@ -1,9 +1,8 @@
 package com.commonUtil;
 
 import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Random;
-
-import org.apache.poi.hpsf.Date;
 
 public class commonUtil {
 	

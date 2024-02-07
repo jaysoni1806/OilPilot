@@ -23,7 +23,7 @@ public class LoginPage {
 	
 	@FindBy(xpath = "//label[text()='Email']/following-sibling::div/input") public WebElement email;
 	@FindBy(xpath = "//input[@type='password']") public WebElement pass;
-	@FindBy(xpath = "//button[@type='submitButton']") public WebElement sbtBtn;
+	@FindBy(xpath = "//button[@type='submit']") public WebElement sbtBtn;
 	@FindBy(xpath = "//div[contains(@class,'css-acwcvw')]//p[contains(@id,'helper-text')]") public List<WebElement> emailError;
 	@FindBy(xpath = "//p[@id='auth-login-v2-password-helper-text']") public List<WebElement> passError;
 	@FindBy(xpath = "//div[contains(@class,'react-hot-toast')]//div[contains(@role,'status')]") public List<WebElement> credErr;
@@ -75,9 +75,9 @@ public class LoginPage {
 			ExtentReportManager.test.log(Status.PASS, "Wait until Dashboard visible.");
 			
 			Assert.assertEquals(driver.getCurrentUrl(), "https://oilman-website.apps.openxcell.dev/dashboard/");
-			ExtentReportManager.test.log(Status.PASS, "User Logged successfully.");
+			//ExtentReportManager.test.log(Status.PASS, "User Logged successfully.");
 		} catch (Exception e) {
-			ExtentReportManager.test.log(Status.FAIL, "Login Failed due to ->"+e);
+			//ExtentReportManager.test.log(Status.FAIL, "Login Failed due to ->"+e);
 		}
 		
 	

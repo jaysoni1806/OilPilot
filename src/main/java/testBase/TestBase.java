@@ -3,9 +3,9 @@ package testBase;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
-import org.apache.poi.hpsf.Date;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -16,6 +16,7 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 import com.Listeners.ExtentReportListener;
+import com.commonUtil.ExtentReportManager;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pageClass.CompanyAssetsOperations;
@@ -38,7 +39,7 @@ public class TestBase {
 		System.out.println("** Hit Oilman URL. ");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		ExtentReportListener.initializeExtentReport();
+		
 		System.out.println("");
 	
 	}
@@ -50,9 +51,9 @@ public class TestBase {
 		cmpAstsOp =  new CompanyAssetsOperations(driver);
 		
 	}
-	//@BeforeTest
+	@BeforeTest
 	public void initializeExtentReport() {
-		ExtentReportListener.initializeExtentReport();
+		ExtentReportManager.initializeExtentReport();
 	}
 	@AfterTest
 	public void flush() {
