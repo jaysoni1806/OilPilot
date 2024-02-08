@@ -14,19 +14,23 @@ public class CompanyAssetsTest extends TestBase{
 	
 	@Test(priority = 0)
 	public void createCompany() {
-		System.out.println("** Test Company assets. ");
+		
+		log.info("Test Company assets.");
 		cmpAstsOp.createCompany(Company_name);
 		ExtentReportManager.test.log(Status.INFO, "Createing new company as assets and verifying");
 	}
 	@Test(priority = 1)
 	public void searchCompany() {
+		log.info("Test search company assets.");
 		cmpAstsOp.searchCompany(Company_name);
 		ExtentReportManager.test.log(Status.INFO, "Searching a company and verifying");
 	}
 	@Test(priority = 2)
 	public void editCompany()
 	{
+		log.info("Test Edit Company assets.");
 		cmpAstsOp.editCompany(Company_name);
+		ExtentReportManager.test.log(Status.INFO, "Searching a company and verifying");
 	}
 	@Test(priority = 3)
 	public void deleteCompany()
