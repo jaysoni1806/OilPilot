@@ -36,10 +36,11 @@ public class TestBase {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 		
-		PropertyConfigurator.configure(System.getProperty("user.dir")+"/log4j.properties");
+		PropertyConfigurator.configure(System.getProperty("user.dir")+"/Resource/log4j.properties");
 		log = Logger.getLogger(getClass().getName());
-		
+		log.info("************************************************************************");
 		log.info("Chrome browser launched.");
+		
 		driver.get("https://oilman-website.apps.openxcell.dev/login/");
 		log.info("Hit Oilman URL. ");
 		driver.manage().window().maximize();
@@ -55,7 +56,13 @@ public class TestBase {
 	}
 	@BeforeTest
 	public void initializeExtentReport() {
+		
 		ExtentReportManager.initializeExtentReport();
+	}
+	@BeforeMethod
+	public void seperateCase()
+	{
+		log.info("------------------------------------------------------------------------");
 	}
 	@AfterTest
 	public void flush() {

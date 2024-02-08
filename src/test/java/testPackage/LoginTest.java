@@ -2,6 +2,7 @@ package testPackage;
 
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
 import com.commonUtil.ExtentReportManager;
 
 import org.testng.annotations.DataProvider;
@@ -21,7 +22,9 @@ public class LoginTest extends TestBase {
 	@Test(dataProvider = "LoginTestData" ,description = "Test Valid Login")
 	public void validLoginTest(String email,String password) {
 		log.info("Start Login test.");
+		ExtentReportManager.test.log(Status.INFO, "Start Login test.");
 		login.validLoginTest(email, password);
+		
 	}
 	
 

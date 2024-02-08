@@ -9,7 +9,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
+import com.aventstack.extentreports.Status;
+import com.commonUtil.ExtentReportManager;
 import com.commonUtil.Utility;
+
+import testBase.TestBase;
 
 public class CompanyAssetsOperations {
 
@@ -44,41 +48,65 @@ public class CompanyAssetsOperations {
 	
 	
 	public void createCompany(String CmpName) {	
-		System.out.println("-> Test create company.");
+		
 		utility.WaitUntilElementIsNotClickable(dashboard.asset, 10);
+		ExtentReportManager.test.log(Status.INFO, "Waiting until Assets manu is clickable.");
+		utility.WaitFor2Second();
+		
 		utility.Submit(dashboard.asset);
-		System.out.println("- Click on Assets menu.");
+		ExtentReportManager.test.log(Status.PASS, "Click on Assets menu.");
+		TestBase.log.info("Click on Assets menu.");
+		utility.WaitFor2Second();
+
 		utility.WaitUntilElementIsNotClickable(dashboard.list_Company, 10);
+		ExtentReportManager.test.log(Status.INFO, "Waiting until Company manu is clickable.");
 		utility.Submit(dashboard.list_Company);
-		System.out.println("- Click on Company list item.");
+		ExtentReportManager.test.log(Status.PASS, "Click on Company list item.");
+		TestBase.log.info("Click on Company list item.");
 		
 		utility.WaitUntilElementIsNotClickable(addBtton, 10);
+		ExtentReportManager.test.log(Status.INFO, "Waiting until Add button is clickable.");
 		utility.Submit(addBtton);
-		System.out.println("- Click on Company Add button.");
+		ExtentReportManager.test.log(Status.PASS, "Click on Company Add button.");
+		TestBase.log.info("Click on Company Add button.");
 		
 		utility.WaitForASecond(popupAddCompany, 10);
-		System.out.println("- Add Company half screen present.");
+		ExtentReportManager.test.log(Status.INFO, "Waiting until Add company half card is present.");
+		TestBase.log.info("Add company half card is present.");
+		
 		utility.ClearTextBox(inputCompanyName);
-		System.out.println("- Clear text box.");
+		ExtentReportManager.test.log(Status.PASS, "Clear the Company text box.");
+		TestBase.log.info("Clear the Company text box.");
+
 		utility.SendValues(inputCompanyName,CmpName);
-		System.out.println("- Input Company name.");
+		ExtentReportManager.test.log(Status.PASS, "Enter Company name.");
+		TestBase.log.info("Enter Company name.");
+		
 		utility.WaitUntilElementIsNotClickable(addCompny_SubmitButton, 10);
+		ExtentReportManager.test.log(Status.INFO, "Waiting until Add submit button is clickable.");
 		utility.Submit(addCompny_SubmitButton);
-		System.out.println("- Click on Submit button.");
+		ExtentReportManager.test.log(Status.PASS, "Click on Submit button.");
+		TestBase.log.info("Click on Submit button.");
 		
 		utility.waitUntilToastPresent(dashboard.toastMessage);
+		ExtentReportManager.test.log(Status.INFO, "Waiting until success toast present.");
 		Assert.assertEquals(dashboard.toastMessage.getText(), "We have successfully created the Company.");
-		System.out.println("- "+"'"+CmpName+"'"+" Company successfully created.");
+		ExtentReportManager.test.log(Status.PASS, "'"+CmpName+"'"+" Company successfully created.");
+		TestBase.log.info("'"+CmpName+"'"+" Company successfully created.");
 		utility.WaitFor2Second();
 		
 	}
 
 	public void searchCompany(String CmpName) {
-		System.out.println("\n-> Test Search with recently added company. ");
+
 		utility.ClearTextBox(inputSearch);
-		System.out.println("- Clear searchbox.");
+		ExtentReportManager.test.log(Status.PASS, "Clear searchbox.");
+		TestBase.log.info("Clear searchbox.");
+
 		utility.SendValues(inputSearch,CmpName);
-		System.out.println("- Entered company name in searchbox.");
+		ExtentReportManager.test.log(Status.PASS, "Entered company name in searchbox.");
+		TestBase.log.info("Entered company name in searchbox.");
+
 		utility.WaitFor2Second();
 		
 		List<WebElement> searchRecords =  driver.findElements(By.xpath("//div[contains(@class,'MuiDataGrid-row')]"));
@@ -87,73 +115,102 @@ public class CompanyAssetsOperations {
 			for(WebElement searchedRecord : searchRecords ) {
 				WebElement companyRow = searchedRecord.findElement(By.xpath("//h6[contains(@class,'subtitle2')]"));
 				if(CmpName.equals(companyRow.getText())) {
-					System.out.println("- Record searched successfully.");
+					ExtentReportManager.test.log(Status.PASS, "Record searched successfully.");
+					TestBase.log.info("Record searched successfully.");
 				}
 			}
 		}
 		else {
-			System.out.println("- No Record presented yet.");
+			ExtentReportManager.test.log(Status.PASS, "No Record presented yet.");
+			TestBase.log.info("No Record presented yet.");
 		}
 		clearSearchBox();
+		utility.WaitFor2Second();
 	}
 
 	public void editCompany(String CmpName) {
-		System.out.println("\n-> Test Edit for recently added company.");
+
 		search(CmpName);
-		System.out.println("- Received recently added company for Edit.");
-		
+		ExtentReportManager.test.log(Status.PASS, "Received recently added company for Edit.");
+		TestBase.log.info("Received recently added company for Edit.");
+			
 		utility.WaitUntilElementIsNotClickable(actionBtton, 5);
+		ExtentReportManager.test.log(Status.INFO, "Waiting until action button is clickable.");
+		TestBase.log.info("Waiting until action button is clickable.");
+		
 		utility.Submit(actionBtton);
-		System.out.println("- Cliked action button.");
+		ExtentReportManager.test.log(Status.PASS, "Click action button.");
+		TestBase.log.info("Click action button.");
 		
 		utility.WaitUntilElementIsNotClickable(editAction, 2);
+		ExtentReportManager.test.log(Status.INFO, "Waiting until edit button is clickable.");
+		TestBase.log.info("Waiting until edit button is clickable.");
+		
 		utility.Submit(editAction);
-		System.out.println("- Action menu presented, Cliked Edit action.");
+		ExtentReportManager.test.log(Status.PASS, "Action menu presented, Cliked Edit action.");
+		TestBase.log.info("Action menu presented, Cliked Edit action.");
+
 		
 		utility.WaitForASecond(popupEditCompany, 10);
-		System.out.println("- Edit Company half screen present.");
+		ExtentReportManager.test.log(Status.PASS, "Edit Company half screen present.");
+		TestBase.log.info("Edit Company half screen present.");
 		
 		updatedComp = CmpName.concat("Edited");
 		
 		utility.Submit(inputEditCompanyName);
-		System.out.println("- Click on Company name.");
+		ExtentReportManager.test.log(Status.PASS, "Click on Company name.");
+		TestBase.log.info("Click on Company name.");
+
 		utility.ClearTextBox(inputEditCompanyName);
-		System.out.println("- Clear text box.");
+		ExtentReportManager.test.log(Status.PASS, "Clear text box.");
+		TestBase.log.info("Clear text box.");
+	
 		utility.SendValues(inputEditCompanyName,updatedComp);
-		System.out.println("- Input upgreaded Company name.");
+		ExtentReportManager.test.log(Status.PASS, "Input upgreaded Company name.");
+		TestBase.log.info("Input upgreaded Company name.");
+
 		utility.WaitUntilElementIsNotClickable(editCompny_SubmitButton, 10);
 		utility.Submit(editCompny_SubmitButton);
-		System.out.println("- Click on Submit button.");
-		
+		ExtentReportManager.test.log(Status.PASS, "Click on Submit button.");
+		TestBase.log.info("Click on Submit button.");
+			
 		utility.waitUntilToastPresent(dashboard.toastMessage);
 		Assert.assertEquals(dashboard.toastMessage.getText(), "We have successfully updated the Company.");
-		System.out.println("- "+"'"+updatedComp+"'"+" Company update successfully created.");
+		ExtentReportManager.test.log(Status.PASS,"'"+updatedComp+"'"+" Company update successfully created.");
+		TestBase.log.info("'"+updatedComp+"'"+" Company update successfully created.");
 		
 		clearSearchBox();
 		utility.WaitFor2Second();	
 	}
 	
 	public void deleteCompany() {
-		System.out.println("\n-> Test Delete for recently updated company.");
 		search(updatedComp);
-		System.out.println("- Received recently updated company for Delete.");
+		ExtentReportManager.test.log(Status.PASS, "Received recently updated company for Delete.");
+		TestBase.log.info("Received recently updated company for Delete.");
 		
 		utility.WaitUntilElementIsNotClickable(actionBtton, 5);
 		utility.Submit(actionBtton);
-		System.out.println("- Cliked action button.");
+		ExtentReportManager.test.log(Status.PASS, "Cliked action button.");
+		TestBase.log.info("Cliked action button.");
+
 		
 		utility.WaitUntilElementIsNotClickable(deleteAction, 2);
 		utility.Submit(deleteAction);
-		System.out.println("- Action menu presented, Cliked Delete action.");
+		ExtentReportManager.test.log(Status.PASS, "Action menu presented, Cliked Delete action.");
+		TestBase.log.info("Action menu presented, Cliked Delete action.");
 		
 		utility.WaitUntilElementIsNotClickable(deleteConfirmYesButton, 2);
-		System.out.println("- Waiting for delete confirmation popup..");
-		utility.Submit(deleteConfirmYesButton);
-		System.out.println("- Cliked on Yes button to confirm delete record.");
+		ExtentReportManager.test.log(Status.INFO, "Waiting for delete confirmation popup.");
+		TestBase.log.info("Waiting for delete confirmation popup.");
 		
+		utility.Submit(deleteConfirmYesButton);
+		ExtentReportManager.test.log(Status.INFO, "Cliked on Yes button to confirm delete record.");
+		TestBase.log.info("Cliked on Yes button to confirm delete record.");
+				
 		utility.waitUntilToastPresent(dashboard.toastMessage);
 		Assert.assertEquals(dashboard.toastMessage.getText(), "We have successfully deleted the Company.");
-		System.out.println("- "+"'"+updatedComp+"'"+" Company has been deleted successfully.");
+		ExtentReportManager.test.log(Status.INFO, "Cliked on Yes button to confirm delete record.");
+		TestBase.log.info("'"+updatedComp+"'"+" Company has been deleted successfully.");
 		
 		clearSearchBox();
 		utility.WaitFor2Second();
@@ -164,7 +221,9 @@ public class CompanyAssetsOperations {
 	{
 		utility.Submit(inputSearch);
 		utility.ClearTextBox(inputSearch);
-		System.out.println("- Clear searchbox to retrive all records.");
+		ExtentReportManager.test.log(Status.PASS, "Clear searchbox to retrive all records.");
+		TestBase.log.info("Clear searchbox to retrive all records.");
+		
 	}
 	
 	public void search(String CmpName) {
@@ -180,15 +239,16 @@ public class CompanyAssetsOperations {
 			for(WebElement searchedRecord : searchRecords ) {
 				WebElement companyRow = searchedRecord.findElement(By.xpath("//h6[contains(@class,'subtitle2')]"));
 				if(CmpName.equals(companyRow.getText())) {
-					System.out.println("- Searching recently added company..");
+					ExtentReportManager.test.log(Status.INFO, "Searching recently added company.");
+					TestBase.log.info("'"+updatedComp+"'"+" Searching recently added company.");
 				}
 			}
 		}
 		else {
-			System.out.println("- No Record presented yet.");
+			System.out.println("- ");
+			ExtentReportManager.test.log(Status.INFO, "No Record presented yet.");
+			TestBase.log.info("No Record presented yet.");
 		}
 	}
-
-	
 
 }

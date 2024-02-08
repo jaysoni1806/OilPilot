@@ -1,0 +1,54 @@
+2024-02-08 18:51:35 INFO  LoginTest:41 - ************************************************************************ 
+2024-02-08 18:51:35 INFO  LoginTest:42 - Chrome browser launched. 
+2024-02-08 18:51:38 INFO  LoginTest:45 - Hit Oilman URL.  
+2024-02-08 18:51:40 INFO  LoginTest:65 - ------------------------------------------------------------------------ 
+2024-02-08 18:51:40 INFO  LoginTest:24 - Start Login test. 
+2024-02-08 18:51:41 INFO  LoginTest:51 - Clicked on Email field. 
+2024-02-08 18:51:41 INFO  LoginTest:55 - Clear Email textbox. 
+2024-02-08 18:51:41 INFO  LoginTest:59 - Enter Email id. 
+2024-02-08 18:51:41 INFO  LoginTest:63 - Enter Email id. 
+2024-02-08 18:51:41 INFO  LoginTest:67 - Clicked on Password field. 
+2024-02-08 18:51:42 INFO  LoginTest:71 - Enter Password. 
+2024-02-08 18:51:42 INFO  LoginTest:75 - Cliked on Submit button. 
+2024-02-08 18:52:06 INFO  LoginTest:79 - Wait until Dashboard visible. 
+2024-02-08 18:52:06 INFO  LoginTest:82 - Logged successfully navigated on Dashboard 
+2024-02-08 18:52:06 INFO  LoginTest:65 - ------------------------------------------------------------------------ 
+2024-02-08 18:52:06 INFO  LoginTest:18 - Test Company assets. 
+2024-02-08 18:52:09 INFO  LoginTest:58 - Click on Assets menu. 
+2024-02-08 18:52:46 INFO  LoginTest:65 - Click on Company list item. 
+2024-02-08 18:52:49 INFO  LoginTest:71 - Click on Company Add button. 
+2024-02-08 18:52:49 INFO  LoginTest:75 - Add company half card is present. 
+2024-02-08 18:52:49 INFO  LoginTest:79 - Clear the Company text box. 
+2024-02-08 18:52:50 INFO  LoginTest:83 - Enter Company name. 
+2024-02-08 18:52:50 INFO  LoginTest:89 - Click on Submit button. 
+2024-02-08 18:53:31 INFO  LoginTest:65 - ------------------------------------------------------------------------ 
+2024-02-08 18:53:31 INFO  LoginTest:24 - Test search company assets. 
+2024-02-08 18:53:31 INFO  LoginTest:104 - Clear searchbox. 
+2024-02-08 18:53:32 INFO  LoginTest:108 - Entered company name in searchbox. 
+2024-02-08 18:53:34 INFO  LoginTest:119 - Record searched successfully. 
+2024-02-08 18:53:34 INFO  LoginTest:225 - Clear searchbox to retrive all records. 
+2024-02-08 18:53:36 INFO  LoginTest:65 - ------------------------------------------------------------------------ 
+2024-02-08 18:53:36 INFO  LoginTest:31 - Test Edit Company assets. 
+2024-02-08 18:53:39 INFO  LoginTest:243 - 'null' Searching recently added company. 
+2024-02-08 18:53:39 INFO  LoginTest:135 - Received recently added company for Edit. 
+2024-02-08 18:53:39 INFO  LoginTest:139 - Waiting until action button is clickable. 
+2024-02-08 18:53:39 INFO  LoginTest:143 - Click action button. 
+2024-02-08 18:53:39 INFO  LoginTest:147 - Waiting until edit button is clickable. 
+2024-02-08 18:53:39 INFO  LoginTest:151 - Action menu presented, Cliked Edit action. 
+2024-02-08 18:53:40 INFO  LoginTest:156 - Edit Company half screen present. 
+2024-02-08 18:53:40 INFO  LoginTest:162 - Click on Company name. 
+2024-02-08 18:53:40 INFO  LoginTest:166 - Clear text box. 
+2024-02-08 18:53:40 INFO  LoginTest:170 - Input upgreaded Company name. 
+2024-02-08 18:53:40 INFO  LoginTest:175 - Click on Submit button. 
+2024-02-08 18:53:42 INFO  LoginTest:180 - 'Z4IXEdited' Company update successfully created. 
+2024-02-08 18:53:42 INFO  LoginTest:225 - Clear searchbox to retrive all records. 
+2024-02-08 18:53:44 INFO  LoginTest:65 - ------------------------------------------------------------------------ 
+2024-02-08 18:53:44 INFO  LoginTest:38 - Test Delete Company assets. 
+2024-02-08 18:53:47 INFO  LoginTest:243 - 'Z4IXEdited' Searching recently added company. 
+2024-02-08 18:53:47 INFO  LoginTest:189 - Received recently updated company for Delete. 
+2024-02-08 18:53:47 INFO  LoginTest:194 - Cliked action button. 
+2024-02-08 18:53:47 INFO  LoginTest:200 - Action menu presented, Cliked Delete action. 
+2024-02-08 18:53:47 INFO  LoginTest:204 - Waiting for delete confirmation popup. 
+2024-02-08 18:53:48 INFO  LoginTest:208 - Cliked on Yes button to confirm delete record. 
+2024-02-08 18:53:48 INFO  LoginTest:213 - 'Z4IXEdited' Company has been deleted successfully. 
+2024-02-08 18:53:48 INFO  LoginTest:225 - Clear searchbox to retrive all records. 

@@ -75,16 +75,11 @@ public class LoginPage {
 			TestBase.log.info("Cliked on Submit button.");
 		
 			utility.waitForSometime(dashBoard.dashboard);
-			ExtentReportManager.test.log(Status.PASS, "Wait until Dashboard visible.");
+			ExtentReportManager.test.log(Status.INFO, "Wait until Dashboard visible.");
 			TestBase.log.info("Wait until Dashboard visible.");
 			
-			try {
-				Assert.assertEquals(driver.getCurrentUrl(), "https://oilman-website.apps.openxcell.dev/dashboard/");
-				TestBase.log.info("User Logged successfully.");
-			} catch (Exception e) {
-				ExtentReportManager.test.log(Status.FAIL, "Dashboard not present due to this "+e);
-				TestBase.log.info("Dashboard not present. "+e);
-			}
+			Assert.assertEquals(driver.getCurrentUrl(), "https://oilman-website.apps.openxcell.dev/dashboard/");
+			TestBase.log.info("Logged successfully navigated on Dashboard");
 
 	}
 	/*public void loginTest(String username, String password) throws InterruptedException {

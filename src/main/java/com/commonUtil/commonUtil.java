@@ -11,7 +11,7 @@ public class commonUtil {
 	     return currentDate;  
 	 }  
 	 
-	 public static String getSaltString() {
+	 public static String getRandomString() {
 	        String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
 	        StringBuilder salt = new StringBuilder();
 	        Random rnd = new Random();

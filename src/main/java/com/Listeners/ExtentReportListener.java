@@ -14,7 +14,7 @@ import testBase.TestBase;
 public class ExtentReportListener extends ExtentReportManager implements ITestListener {
 	
 	public void onTestStart(ITestResult result) {
-		  test = extentReport.createTest(result.getName());
+		  test = extentReport.createTest(result.getMethod().getMethodName(),result.getMethod().getDescription());
 		 }
 		 public void onTestSuccess(ITestResult result) {
 		  if (result.getStatus() == ITestResult.SUCCESS) {
@@ -26,7 +26,7 @@ public class ExtentReportListener extends ExtentReportManager implements ITestLi
 		   test.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + " - Test Case Failed", ExtentColor.RED));
 		   test.log(Status.FAIL,
 		     MarkupHelper.createLabel(result.getThrowable() + " - Test Case Failed", ExtentColor.RED));
-
+		   
 		   String pathString = TestBase.screenShot(TestBase.driver, result.getName());
 		   test.addScreenCaptureFromPath(pathString);
 		  }

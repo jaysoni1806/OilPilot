@@ -3,11 +3,12 @@
 <suite name="Suite">
     <listeners>
         <listener class-name="com.Listeners.ExtentReportListener"/>
+        <listener class-name="com.Listeners.IRetryAnalyzerListener"/>
     </listeners>
   <test thread-count="5" name="Oilman">
     <classes>
       <class name="testPackage.LoginTest"/>
-     <!-- <class name="testPackage.CompanyAssetsTest"/> --> 
+      <class name="testPackage.CompanyAssetsTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
