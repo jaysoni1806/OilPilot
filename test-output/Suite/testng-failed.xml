@@ -12,8 +12,8 @@
           <include name="seperateCase"/>
           <include name="initializeExtentReport"/>
           <include name="assignObjectForClass"/>
+          <include name="deleteCompany"/>
           <include name="closeBrowser"/>
-          <include name="createCompany"/>
           <include name="prerequisite"/>
           <include name="flush"/>
         </methods>

@@ -57,7 +57,7 @@ public class Utility {
 		fluentWait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 	public void waitUntilToastPresent(WebElement element) {
-		fluentWait.until(ExpectedConditions.elementToBeClickable(element));
+		fluentWait.until(ExpectedConditions.visibilityOf(element));
 	}
 	public void WaitUntilElementIsNotClickable(WebElement element,int second) {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(second));

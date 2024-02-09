@@ -30,6 +30,7 @@ public class CompanyAssetsOperations {
 	}
 	
 	@FindBy (xpath = "//h5[text()='Company']") private WebElement headerCompany;
+	@FindBy (xpath = "//span[@role='progressbar']") private WebElement progrssbasCompany;
 	@FindBy (xpath = "//div[contains(@class,'css-1b8fkut')]//button")private WebElement addBtton;
 	@FindBy (xpath = "//h5[text()='Add Company']") private WebElement popupAddCompany;
 	@FindBy (xpath = "//input[@placeholder='Company name']")private WebElement inputCompanyName;
@@ -43,9 +44,6 @@ public class CompanyAssetsOperations {
 	@FindBy (xpath = "//input[@placeholder='company name']")private WebElement inputEditCompanyName;
 	@FindBy (xpath = "//h5[text()='Edit Company']/parent::div/following-sibling::div//button[@type='submit']")private WebElement editCompny_SubmitButton;
 	@FindBy (xpath = "//div[@aria-describedby='alert-dialog-description-Delete confirmation for Company']//button[text()='Yes']")private WebElement deleteConfirmYesButton;
-	
-	
-	
 	
 	public void createCompany(String CmpName) {	
 		
@@ -64,7 +62,7 @@ public class CompanyAssetsOperations {
 		ExtentReportManager.test.log(Status.PASS, "Click on Company list item.");
 		TestBase.log.info("Click on Company list item.");
 		
-		utility.WaitUntilElementIsNotClickable(addBtton, 10);
+		utility.WaitUntilElementIsNotVisible(progrssbasCompany, 10);
 		ExtentReportManager.test.log(Status.INFO, "Waiting until Add button is clickable.");
 		utility.Submit(addBtton);
 		ExtentReportManager.test.log(Status.PASS, "Click on Company Add button.");
@@ -160,10 +158,12 @@ public class CompanyAssetsOperations {
 		utility.Submit(inputEditCompanyName);
 		ExtentReportManager.test.log(Status.PASS, "Click on Company name.");
 		TestBase.log.info("Click on Company name.");
+		utility.WaitFor2Second();
 
 		utility.ClearTextBox(inputEditCompanyName);
 		ExtentReportManager.test.log(Status.PASS, "Clear text box.");
 		TestBase.log.info("Clear text box.");
+		utility.WaitFor2Second();
 	
 		utility.SendValues(inputEditCompanyName,updatedComp);
 		ExtentReportManager.test.log(Status.PASS, "Input upgreaded Company name.");

@@ -10,8 +10,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import com.aventstack.extentreports.Status;
+import com.commonUtil.ApplicationException;
 import com.commonUtil.ExtentReportManager;
 import com.commonUtil.Utility;
+
 
 import testBase.TestBase;
 
@@ -42,10 +44,16 @@ public class LoginPage {
 		dashBoard =  new DashBoardPage(driver);	
 	}
 
-	
-	public void validLoginTest(String username, String password) {
+	public void validLoginTest(String username, String password) throws ApplicationException {
 		
-
+			enterEmail(username);
+			enterPAssword(password);
+			clickSubmitButton();
+			validateLoginSuccesfull();	
+	}
+	public void enterEmail(String username) throws ApplicationException {
+		if(email.isDisplayed())
+		{
 			email.click();
 			ExtentReportManager.test.log(Status.PASS, "Clicked on Email field.");
 			TestBase.log.info("Clicked on Email field.");
@@ -57,30 +65,52 @@ public class LoginPage {
 			utility.SendValues(email, username);
 			ExtentReportManager.test.log(Status.PASS, "Enter Email id.");
 			TestBase.log.info("Enter Email id.");
+		}else {
+			throw new ApplicationException("Exception Occured", "Email filed is not display.");
+		}
 
+	}
+	public void enterPAssword(String password) throws ApplicationException {
+		if(pass.isDisplayed()) {
+			
 			pass.click();
 			ExtentReportManager.test.log(Status.PASS, "Clicked on Password field.");
-			TestBase.log.info("Enter Email id.");
+			TestBase.log.info("Clisk on Password");
 			
 			utility.ClearTextBox(pass);
 			ExtentReportManager.test.log(Status.PASS, "Clear Password textbox.");
-			TestBase.log.info("Clicked on Password field.");
+			TestBase.log.info("Clear Password field.");
 			
 			utility.SendValues(pass, password);
 			ExtentReportManager.test.log(Status.PASS, "Enter Password.");
 			TestBase.log.info("Enter Password.");
-
+		}else {
+			throw new ApplicationException("Exception Occured", "Password filed is not display.");
+		}
+	}
+	public void clickSubmitButton() throws ApplicationException {
+		if(sbtBtn.isEnabled()) {
 			utility.Submit(sbtBtn);
 			ExtentReportManager.test.log(Status.PASS, "Cliked on Submit button.");
 			TestBase.log.info("Cliked on Submit button.");
+		}
+		else {
+			throw new ApplicationException("Exception Occured", "Login submit button is disable.");
+		}
+	}
+	public void validateLoginSuccesfull() throws ApplicationException {
 		
-			utility.waitForSometime(dashBoard.dashboard);
-			ExtentReportManager.test.log(Status.INFO, "Wait until Dashboard visible.");
-			TestBase.log.info("Wait until Dashboard visible.");
-			
+		utility.waitForSometime(dashBoard.dashboard);
+		ExtentReportManager.test.log(Status.INFO, "Wait until Dashboard visible.");
+		TestBase.log.info("Wait until Dashboard visible.");
+		if(driver.getCurrentUrl().equals("https://oilman-website.apps.openxcell.dev/dashboard/")) {
 			Assert.assertEquals(driver.getCurrentUrl(), "https://oilman-website.apps.openxcell.dev/dashboard/");
 			TestBase.log.info("Logged successfully navigated on Dashboard");
-
+		}
+		else {
+			throw new ApplicationException("Exception Occured", "Dashboard URL is not present.");
+		}
+		
 	}
 	/*public void loginTest(String username, String password) throws InterruptedException {
 		
