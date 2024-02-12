@@ -5,8 +5,11 @@
     <classes>
       <class name="testPackage.LoginTest">
         <methods>
+          <include name="seperateCase"/>
           <include name="validLoginTest" invocation-numbers="0"/>
+          <include name="initializeExtentReport"/>
           <include name="assignObjectForClass"/>
+          <include name="closeBrowser"/>
           <include name="prerequisite"/>
           <include name="flush"/>
         </methods>

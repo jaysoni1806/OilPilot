@@ -24,9 +24,25 @@ public class LoginTest extends TestBase {
 	public void validLoginTest(String email,String password) throws ApplicationException {
 		log.info("Start Login test.");
 		ExtentReportManager.test.log(Status.INFO, "Start Login test.");
-		login.validLoginTest(email, password);
+		//login.validLoginTest(email, password);
 		
+
+		ExtentReportManager.test.log(Status.PASS, "Enter Email id.");
+		TestBase.log.info("Enter Email id.");
+		login.enterEmail(email);
+		
+		ExtentReportManager.test.log(Status.PASS, "Enter Password.");
+		TestBase.log.info("Enter Password.");	
+		login.enterPAssword(password);
+		
+		ExtentReportManager.test.log(Status.PASS, "Cliked on Submit button.");
+		TestBase.log.info("Cliked on Submit button.");
+		login.clickSubmitButton();
+		
+		login.validateLoginSuccesfull();	
 	}
+		
+}
 	
 
 	/*
@@ -62,4 +78,3 @@ public class LoginTest extends TestBase {
 //		driver.close();
 //	}
 
-}

@@ -8,6 +8,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.commonUtil.ExtentReportManager;
+import com.commonUtil.commonUtil;
 
 import testBase.TestBase;
 
@@ -27,7 +28,7 @@ public class ExtentReportListener extends ExtentReportManager implements ITestLi
 		   test.log(Status.FAIL,
 		     MarkupHelper.createLabel(result.getThrowable() + " - Test Case Failed", ExtentColor.RED));
 		   
-		   String pathString = TestBase.screenShot(TestBase.driver, result.getName());
+		   String pathString = commonUtil.screenShot(TestBase.driver, result.getName());
 		   test.addScreenCaptureFromPath(pathString);
 		  }
 		 }
