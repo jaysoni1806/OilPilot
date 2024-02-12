@@ -12,33 +12,32 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-
 public class Utility {
-	
+
 	WebDriver driver;
 	public WebDriverWait wait;
 	public Wait<WebDriver> fluentWait;
-	
-	public Utility(WebDriver driver){
+
+	public Utility(WebDriver driver) {
 		this.driver = driver;
-		fluentWait = new FluentWait<WebDriver>(driver)
-		        .withTimeout(Duration.ofSeconds(30))
-		        .pollingEvery(Duration.ofSeconds(5))
-		        .ignoring(NoSuchElementException.class);
+		fluentWait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(30))
+				.pollingEvery(Duration.ofSeconds(5)).ignoring(NoSuchElementException.class);
 	}
 
-	public void SendValues(WebElement element,String value) {
+	public void SendValues(WebElement element, String value) {
 		element.clear();
 		element.sendKeys(value);
 	}
+
 	public void Submit(WebElement element) {
 		element.click();
 	}
-	public void WaitForASecond(WebElement element,int second) {
+
+	public void WaitForASecond(WebElement element, int second) {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(second));
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
-	
+
 	public void WaitFor2Second() {
 		try {
 			Thread.sleep(2000);
@@ -47,27 +46,32 @@ public class Utility {
 			e.printStackTrace();
 		}
 	}
-	public void ClearTextBox(WebElement element)
-	{
-		JavascriptExecutor js = (JavascriptExecutor)driver; 
+
+	public void ClearTextBox(WebElement element) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].value ='';", element);
-		
+
 	}
+
 	public void waitForSometime(WebElement element) {
 		fluentWait.until(ExpectedConditions.elementToBeClickable(element));
 	}
+
 	public void waitUntilToastPresent(WebElement element) {
 		fluentWait.until(ExpectedConditions.visibilityOf(element));
 	}
-	public void WaitUntilElementIsNotClickable(WebElement element,int second) {
+
+	public void WaitUntilElementIsNotClickable(WebElement element, int second) {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(second));
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
-	public boolean WaitUntilListOfElementIsNotVisible(List<WebElement> element,int second) {
+
+	public boolean WaitUntilListOfElementIsNotVisible(List<WebElement> element, int second) {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(second));
 		return wait.until(ExpectedConditions.invisibilityOfAllElements(element));
 	}
-	public boolean WaitUntilElementIsNotVisible(WebElement element,int second) {
+
+	public boolean WaitUntilElementVisibiltyGone(WebElement element, int second) {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(second));
 		return wait.until(ExpectedConditions.invisibilityOf(element));
 	}

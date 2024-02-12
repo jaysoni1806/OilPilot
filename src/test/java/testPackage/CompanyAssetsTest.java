@@ -3,6 +3,7 @@ package testPackage;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
+import com.commonUtil.ApplicationException;
 import com.commonUtil.ExtentReportManager;
 import com.commonUtil.commonUtil;
 
@@ -11,11 +12,22 @@ import testBase.TestBase;
 public class CompanyAssetsTest extends TestBase {
 	public String Company_name = commonUtil.getRandomString();
 
-	@Test(priority = 0, description = "Test Company assets.")
-	public void createCompany() {
-		ExtentReportManager.test.log(Status.INFO, "Test Company assets.");
-		log.info("Test Company assets.");
-		cmpAstsOp.createCompany(Company_name);
+	@Test(priority = 0, description = "Test create Company assets.")
+	public void createCompany() throws ApplicationException {
+
+		cmpAstsOp.clickOnAssets();
+		ExtentReportManager.test.log(Status.PASS, "Click on Assets");
+		cmpAstsOp.clickOnComapnyMenuItem();
+		ExtentReportManager.test.log(Status.PASS, "Click on Company menu.");
+		cmpAstsOp.clickAddButtonAndVerifyCreateCompnayHalfCardIsPresentOrNot();
+		ExtentReportManager.test.log(Status.PASS, "Click on Add button and Verify Create Company half card.");
+		cmpAstsOp.enterCompanyName(Company_name);
+		ExtentReportManager.test.log(Status.PASS, "Enter Company name.");
+		cmpAstsOp.clickAddButtonForCreateNewCompany();
+		ExtentReportManager.test.log(Status.PASS, "Click on Submit button.");
+		cmpAstsOp.verifyTheCompanyIsCreatedOrnot(Company_name);
+		ExtentReportManager.test.log(Status.PASS, "'" + Company_name + "'" + " Company successfully created.");
+
 	}
 
 	@Test(priority = 1, description = "Test Search company.")

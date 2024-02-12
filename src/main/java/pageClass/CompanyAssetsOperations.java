@@ -10,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import com.aventstack.extentreports.Status;
+import com.commonUtil.ApplicationException;
 import com.commonUtil.ExtentReportManager;
 import com.commonUtil.Utility;
 
@@ -61,53 +62,85 @@ public class CompanyAssetsOperations {
 	@FindBy(xpath = "//div[@aria-describedby='alert-dialog-description-Delete confirmation for Company']//button[text()='Yes']")
 	private WebElement deleteConfirmYesButton;
 
-	public void createCompany(String CmpName) {
+	public void clickOnAssets() throws ApplicationException {
+		if (dashboard.asset.isDisplayed()) {
+			utility.WaitUntilElementIsNotClickable(dashboard.asset, 10);
+			TestBase.log.info("Waiting until Assets manu is clickable.");
+			utility.WaitFor2Second();
+			utility.Submit(dashboard.asset);
+			TestBase.log.info("Click on Assets menu.");
+		} else {
+			throw new ApplicationException("Exception Occured", "Assets is not display.");
+		}
+	}
 
-		utility.WaitUntilElementIsNotClickable(dashboard.asset, 10);
-		ExtentReportManager.test.log(Status.INFO, "Waiting until Assets manu is clickable.");
-		utility.WaitFor2Second();
+	public void clickOnComapnyMenuItem() throws ApplicationException {
+		if (dashboard.list_Company.isDisplayed()) {
+			TestBase.log.info("Wait until Company manu is clickable.");
+			utility.WaitFor2Second();
+			utility.WaitUntilElementIsNotClickable(dashboard.list_Company, 10);
+			utility.Submit(dashboard.list_Company);
+			TestBase.log.info("Click on Company list item.");
 
-		utility.Submit(dashboard.asset);
-		ExtentReportManager.test.log(Status.PASS, "Click on Assets menu.");
-		TestBase.log.info("Click on Assets menu.");
-		utility.WaitFor2Second();
+		} else {
+			throw new ApplicationException("Exception Occured", "Company Assets is not display.");
+		}
+	}
 
-		utility.WaitUntilElementIsNotClickable(dashboard.list_Company, 10);
-		ExtentReportManager.test.log(Status.INFO, "Waiting until Company manu is clickable.");
-		utility.Submit(dashboard.list_Company);
-		ExtentReportManager.test.log(Status.PASS, "Click on Company list item.");
-		TestBase.log.info("Click on Company list item.");
+	public void clickAddButtonAndVerifyCreateCompnayHalfCardIsPresentOrNot() throws ApplicationException {
+		utility.WaitUntilElementVisibiltyGone(progrssbasCompany, 10);
+		TestBase.log.info("Wait until loading company list.");
 
-		utility.WaitUntilElementIsNotVisible(progrssbasCompany, 10);
-		ExtentReportManager.test.log(Status.INFO, "Waiting until Add button is clickable.");
-		utility.Submit(addBtton);
-		ExtentReportManager.test.log(Status.PASS, "Click on Company Add button.");
-		TestBase.log.info("Click on Company Add button.");
+		if (addBtton.isDisplayed()) {
+			utility.Submit(addBtton);
+			TestBase.log.info("Click on Company Add button.");
 
-		utility.WaitForASecond(popupAddCompany, 10);
-		ExtentReportManager.test.log(Status.INFO, "Waiting until Add company half card is present.");
-		TestBase.log.info("Add company half card is present.");
+			utility.WaitForASecond(popupAddCompany, 10);
+			TestBase.log.info("Add company half card is present.");
+		} else {
+			throw new ApplicationException("Exception Occured", "Add button is not Present or Not Clickable.");
+		}
+	}
 
-		utility.ClearTextBox(inputCompanyName);
-		ExtentReportManager.test.log(Status.PASS, "Clear the Company text box.");
-		TestBase.log.info("Clear the Company text box.");
+	public void enterCompanyName(String CmpName) throws ApplicationException {
 
-		utility.SendValues(inputCompanyName, CmpName);
-		ExtentReportManager.test.log(Status.PASS, "Enter Company name.");
-		TestBase.log.info("Enter Company name.");
+		if (inputCompanyName.isDisplayed()) {
+			utility.ClearTextBox(inputCompanyName);
+			TestBase.log.info("Clear the Company text box.");
 
-		utility.WaitUntilElementIsNotClickable(addCompny_SubmitButton, 10);
-		ExtentReportManager.test.log(Status.INFO, "Waiting until Add submit button is clickable.");
-		utility.Submit(addCompny_SubmitButton);
-		ExtentReportManager.test.log(Status.PASS, "Click on Submit button.");
-		TestBase.log.info("Click on Submit button.");
+			utility.SendValues(inputCompanyName, CmpName);
+			TestBase.log.info("Enter Company name.");
+		} else {
+			throw new ApplicationException("Exception Occured", "Add company input field is not present.");
+		}
+
+	}
+
+	public void clickAddButtonForCreateNewCompany() throws ApplicationException {
+
+		if (addCompny_SubmitButton.isDisplayed()) {
+			utility.Submit(addCompny_SubmitButton);
+			TestBase.log.info("Click on Submit button.");
+		} else {
+			throw new ApplicationException("Exception Occured", "Submit button field is not present.");
+		}
+
+	}
+
+	public void verifyTheCompanyIsCreatedOrnot(String CmpName) throws ApplicationException {
 
 		utility.waitUntilToastPresent(dashboard.toastMessage);
-		ExtentReportManager.test.log(Status.INFO, "Waiting until success toast present.");
-		Assert.assertEquals(dashboard.toastMessage.getText(), "We have successfully created the Company.");
-		ExtentReportManager.test.log(Status.PASS, "'" + CmpName + "'" + " Company successfully created.");
-		TestBase.log.info("'" + CmpName + "'" + " Company successfully created.");
-		utility.WaitFor2Second();
+		TestBase.log.info("Waiting until success toast present.");
+
+		if (dashboard.toastMessage.isDisplayed()) {
+			Assert.assertEquals(dashboard.toastMessage.getText(), "We have successfully created the Company.");
+			// ExtentReportManager.test.log(Status.PASS, "'" + CmpName + "'" + " Company
+			// successfully created.");
+			TestBase.log.info("'" + CmpName + "'" + " Company successfully created.");
+			utility.WaitFor2Second();
+		} else {
+			throw new ApplicationException("Exception Occured", "Toast message is not present.");
+		}
 
 	}
 
