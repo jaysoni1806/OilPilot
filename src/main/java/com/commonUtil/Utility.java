@@ -66,6 +66,11 @@ public class Utility {
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 
+	public boolean WaitUntilListOfElementIsVisible(List<WebElement> element, int second) {
+		wait = new WebDriverWait(driver, Duration.ofSeconds(second));
+		return wait.until(ExpectedConditions.visibilityOfAllElements(element)) != null;
+	}
+
 	public boolean WaitUntilListOfElementIsNotVisible(List<WebElement> element, int second) {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(second));
 		return wait.until(ExpectedConditions.invisibilityOfAllElements(element));

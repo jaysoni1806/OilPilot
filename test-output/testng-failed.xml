@@ -3,17 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testPackage.LoginTest">
+      <class name="testPackage.CompanyAssetsTest">
         <methods>
           <include name="seperateCase"/>
-          <include name="validLoginTest" invocation-numbers="0"/>
           <include name="initializeExtentReport"/>
           <include name="assignObjectForClass"/>
           <include name="closeBrowser"/>
+          <include name="createCompany"/>
           <include name="prerequisite"/>
           <include name="flush"/>
         </methods>
-      </class> <!-- testPackage.LoginTest -->
+      </class> <!-- testPackage.CompanyAssetsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
