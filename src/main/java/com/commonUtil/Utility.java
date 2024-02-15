@@ -4,6 +4,7 @@ import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,7 +26,7 @@ public class Utility {
 	}
 
 	public void SendValues(WebElement element, String value) {
-		element.clear();
+		// element.clear();
 		element.sendKeys(value);
 	}
 
@@ -47,10 +48,20 @@ public class Utility {
 		}
 	}
 
+	public void clearSearchBox(WebElement element) {
+		for (int i = element.getAttribute("value").length(); i >= 0; i--) {
+			element.sendKeys(Keys.BACK_SPACE);
+		}
+	}
+
 	public void ClearTextBox(WebElement element) {
+
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].value ='';", element);
+	}
 
+	public void pageRefresh() {
+		driver.navigate().refresh();
 	}
 
 	public void waitForSometime(WebElement element) {

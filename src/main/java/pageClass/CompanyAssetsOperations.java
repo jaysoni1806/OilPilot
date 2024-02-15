@@ -9,9 +9,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
-import com.aventstack.extentreports.Status;
 import com.commonUtil.ApplicationException;
-import com.commonUtil.ExtentReportManager;
 import com.commonUtil.Utility;
 
 import testBase.TestBase;
@@ -21,8 +19,8 @@ public class CompanyAssetsOperations {
 	WebDriver driver;
 	Utility utility;
 	DashBoardPage dashboard;
-	String updatedComp;
-	public String Company_name;
+	public static String updatedComp;
+	public static String Company_name;
 	public String expactedToastMessage;
 
 	public CompanyAssetsOperations(WebDriver driver) {
@@ -119,7 +117,7 @@ public class CompanyAssetsOperations {
 			utility.ClearTextBox(inputCompanyName);
 			TestBase.log.info("Clear the Company text box.");
 
-			utility.SendValues(inputCompanyName, CmpName);
+			utility.SendValues(inputCompanyName, Company_name);
 			TestBase.log.info("Enter Company name.");
 		} else {
 			throw new ApplicationException("Exception Occured", "Add company input field is not present.");
@@ -143,14 +141,12 @@ public class CompanyAssetsOperations {
 		utility.WaitUntilElementVisibiltyGone(dashboard.toastMessage, 5);
 		enterCompanyNameinSearchBox(Company_name);
 		verifySearchedCompanyIsExistsOrNot(Company_name);
-		clearSearchBox();
-		utility.WaitFor2Second();
-		utility.WaitFor2Second();
+		// utility.clearSearchBox();
 	}
 
 	public void enterCompanyNameinSearchBox(String CmpName) throws ApplicationException {
 		if (inputSearch.isDisplayed()) {
-			utility.ClearTextBox(inputSearch);
+			utility.clearSearchBox(inputSearch);
 			TestBase.log.info("Clear searchbox.");
 
 			utility.SendValues(inputSearch, CmpName);
@@ -178,8 +174,11 @@ public class CompanyAssetsOperations {
 
 	public void verifyTheCompanyListAfterClearSearchBox() throws ApplicationException {
 		if (inputSearch.isDisplayed()) {
-			clearSearchBox();
+			utility.clearSearchBox(inputSearch);
+			// utility.pageRefresh();
 			searchRecords = driver.findElements(By.xpath("//div[contains(@class,'MuiDataGrid-row')]"));
+			utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
+
 			if (searchRecords.size() >= 1) {
 				TestBase.log.info("Retrive all records");
 			} else {
@@ -190,9 +189,9 @@ public class CompanyAssetsOperations {
 		}
 	}
 
-	public void searchRecentAddedCompanyForEdit(String CmpName) throws ApplicationException {
-		enterCompanyNameinSearchBox(CmpName);
-		verifySearchedCompanyIsExistsOrNot(CmpName);
+	public void searchRecentAddedCompanyForEdit() throws ApplicationException {
+		enterCompanyNameinSearchBox(Company_name);
+		verifySearchedCompanyIsExistsOrNot(Company_name);
 	}
 
 	public void clickEdit_actionUnderThePerent_actionandVerifyEditHalfCardIsPresentOrNot() throws ApplicationException {
@@ -214,8 +213,8 @@ public class CompanyAssetsOperations {
 		}
 	}
 
-	public void enterNewCompanyName(String CmpName) throws ApplicationException {
-		updatedComp = CmpName.concat("Edited");
+	public void enterNewCompanyName() throws ApplicationException {
+		updatedComp = Company_name.concat("Edited");
 
 		if (inputEditCompanyName.isDisplayed()) {
 			utility.Submit(inputEditCompanyName);
@@ -239,6 +238,7 @@ public class CompanyAssetsOperations {
 			utility.Submit(editCompny_SubmitButton);
 			TestBase.log.info("Click on Submit button.");
 			utility.waitUntilToastPresent(dashboard.toastMessage);
+
 			if (dashboard.toastMessage.isDisplayed()) {
 				Assert.assertEquals(dashboard.toastMessage.getText(), "We have successfully updated the Company.");
 				TestBase.log.info("'" + updatedComp + "'" + " Company update successfully.");
@@ -300,13 +300,6 @@ public class CompanyAssetsOperations {
 
 	}
 
-	public void clearSearchBox() {
-		utility.WaitFor2Second();
-		utility.Submit(inputSearch);
-		utility.ClearTextBox(inputSearch);
-		utility.WaitFor2Second();
-	}
-
 	public void clickOnActionButton() {
 		utility.WaitUntilElementIsNotClickable(actionBtton, 5);
 		TestBase.log.info("Waiting until action button is clickable.");
@@ -329,29 +322,6 @@ public class CompanyAssetsOperations {
 
 		utility.Submit(deleteAction);
 		TestBase.log.info("Action menu presented, Cliked delete action.");
-	}
-
-	public void search(String CmpName) {
-		utility.ClearTextBox(inputSearch);
-
-		utility.SendValues(inputSearch, CmpName);
-
-		utility.WaitFor2Second();
-
-		List<WebElement> searchRecords = driver.findElements(By.xpath("//div[contains(@class,'MuiDataGrid-row')]"));
-		if (searchRecords.size() > 0) {
-			for (WebElement searchedRecord : searchRecords) {
-				WebElement companyRow = searchedRecord.findElement(By.xpath("//h6[contains(@class,'subtitle2')]"));
-				if (CmpName.equals(companyRow.getText())) {
-					ExtentReportManager.test.log(Status.INFO, "Searching recently added company.");
-					TestBase.log.info("'" + updatedComp + "'" + " Searching recently added company.");
-				}
-			}
-		} else {
-			System.out.println("- ");
-			ExtentReportManager.test.log(Status.INFO, "No Record presented yet.");
-			TestBase.log.info("No Record presented yet.");
-		}
 	}
 
 }

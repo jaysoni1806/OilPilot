@@ -74,14 +74,4 @@ public class TestBase {
 		driver.close();
 	}
 
-	/*
-	 * public static String screenShot(WebDriver driver,String filename) {
-	 * TakesScreenshot takesScreenshot = (TakesScreenshot) driver; File source =
-	 * takesScreenshot.getScreenshotAs(OutputType.FILE); String destination =
-	 * System.getProperty("user.dir")+"/ScreenShot/"+filename+"_"+commonUtil.
-	 * getCurrentTime()+".png"; File finalDestination= new File(destination); try {
-	 * FileUtils.copyFile(source, finalDestination); } catch (Exception e) { // TODO
-	 * Auto-generated catch block e.getMessage(); } return destination; }
-	 */
-
 }

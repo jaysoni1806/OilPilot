@@ -12,10 +12,12 @@
           <include name="seperateCase"/>
           <include name="initializeExtentReport"/>
           <include name="assignObjectForClass"/>
-          <include name="closeBrowser"/>
+          <include name="editCompany"/>
+          <include name="deleteCompany"/>
           <include name="createCompany"/>
           <include name="prerequisite"/>
           <include name="flush"/>
+          <include name="searchCompany"/>
         </methods>
       </class> <!-- testPackage.CompanyAssetsTest -->
     </classes>

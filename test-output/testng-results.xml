@@ -1,43 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="6" passed="2" failed="0" skipped="0">
+<testng-results ignored="3" total="8" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-13T18:34:18 IST" name="Suite" finished-at="2024-02-13T18:34:55 IST" duration-ms="37218">
+  <suite started-at="2024-02-15T11:56:39 IST" name="Suite" finished-at="2024-02-15T11:57:40 IST" duration-ms="61325">
     <groups>
     </groups>
-    <test started-at="2024-02-13T18:34:18 IST" name="Oilman" finished-at="2024-02-13T18:34:55 IST" duration-ms="37218">
+    <test started-at="2024-02-15T11:56:39 IST" name="Oilman" finished-at="2024-02-15T11:57:40 IST" duration-ms="61325">
       <class name="testPackage.CompanyAssetsTest">
-        <test-method is-config="true" signature="assignObjectForClass()[pri:0, instance:testPackage.CompanyAssetsTest@60bd273d]" started-at="2024-02-13T18:34:37 IST" name="assignObjectForClass" finished-at="2024-02-13T18:34:37 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="assignObjectForClass()[pri:0, instance:testPackage.CompanyAssetsTest@4f80542f]" started-at="2024-02-15T11:56:58 IST" name="assignObjectForClass" finished-at="2024-02-15T11:56:58 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assignObjectForClass -->
-        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.CompanyAssetsTest@60bd273d]" started-at="2024-02-13T18:34:37 IST" name="seperateCase" finished-at="2024-02-13T18:34:37 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.CompanyAssetsTest@4f80542f]" started-at="2024-02-15T11:56:58 IST" name="seperateCase" finished-at="2024-02-15T11:56:58 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seperateCase -->
-        <test-method signature="createCompany()[pri:0, instance:testPackage.CompanyAssetsTest@60bd273d]" started-at="2024-02-13T18:34:37 IST" name="createCompany" description="Test create Company assets." finished-at="2024-02-13T18:34:55 IST" duration-ms="17253" status="PASS">
+        <test-method signature="createCompany()[pri:0, instance:testPackage.CompanyAssetsTest@4f80542f]" started-at="2024-02-15T11:56:58 IST" name="createCompany" description="Test create Company assets." finished-at="2024-02-15T11:57:07 IST" duration-ms="8920" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createCompany -->
-      </class> <!-- testPackage.CompanyAssetsTest -->
-      <class name="testPackage.LoginTest">
-        <test-method is-config="true" signature="prerequisite()[pri:0, instance:testPackage.LoginTest@771a660]" started-at="2024-02-13T18:34:09 IST" name="prerequisite" finished-at="2024-02-13T18:34:18 IST" duration-ms="8764" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- prerequisite -->
-        <test-method is-config="true" signature="initializeExtentReport()[pri:0, instance:testPackage.LoginTest@771a660]" started-at="2024-02-13T18:34:18 IST" name="initializeExtentReport" finished-at="2024-02-13T18:34:18 IST" duration-ms="310" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeExtentReport -->
-        <test-method is-config="true" signature="assignObjectForClass()[pri:0, instance:testPackage.LoginTest@771a660]" started-at="2024-02-13T18:34:18 IST" name="assignObjectForClass" finished-at="2024-02-13T18:34:18 IST" duration-ms="64" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- assignObjectForClass -->
-        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.LoginTest@771a660]" started-at="2024-02-13T18:34:18 IST" name="seperateCase" finished-at="2024-02-13T18:34:18 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.CompanyAssetsTest@4f80542f]" started-at="2024-02-15T11:57:07 IST" name="seperateCase" finished-at="2024-02-15T11:57:07 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seperateCase -->
-        <test-method signature="validLoginTest(java.lang.String,java.lang.String)[pri:0, instance:testPackage.LoginTest@771a660]" started-at="2024-02-13T18:34:18 IST" name="validLoginTest" description="Test Valid Login" data-provider="LoginTestData" finished-at="2024-02-13T18:34:37 IST" duration-ms="19099" status="PASS">
+        <test-method signature="searchCompany()[pri:1, instance:testPackage.CompanyAssetsTest@4f80542f]" started-at="2024-02-15T11:57:07 IST" name="searchCompany" description="Test Search company." finished-at="2024-02-15T11:57:10 IST" duration-ms="3149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchCompany -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.CompanyAssetsTest@4f80542f]" started-at="2024-02-15T11:57:10 IST" name="seperateCase" finished-at="2024-02-15T11:57:10 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="editCompany()[pri:2, instance:testPackage.CompanyAssetsTest@4f80542f]" started-at="2024-02-15T11:57:10 IST" name="editCompany" description="Test Edit Company assets." finished-at="2024-02-15T11:57:18 IST" duration-ms="8423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editCompany -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.CompanyAssetsTest@4f80542f]" started-at="2024-02-15T11:57:18 IST" name="seperateCase" finished-at="2024-02-15T11:57:18 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="deleteCompany()[pri:3, instance:testPackage.CompanyAssetsTest@4f80542f]" started-at="2024-02-15T11:57:18 IST" name="deleteCompany" description="Test Delete Company assets." finished-at="2024-02-15T11:57:40 IST" duration-ms="21443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCompany -->
+      </class> <!-- testPackage.CompanyAssetsTest -->
+      <class name="testPackage.LoginTest">
+        <test-method is-config="true" signature="prerequisite()[pri:0, instance:testPackage.LoginTest@73e9cf30]" started-at="2024-02-15T11:56:30 IST" name="prerequisite" finished-at="2024-02-15T11:56:39 IST" duration-ms="9115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prerequisite -->
+        <test-method is-config="true" signature="initializeExtentReport()[pri:0, instance:testPackage.LoginTest@73e9cf30]" started-at="2024-02-15T11:56:39 IST" name="initializeExtentReport" finished-at="2024-02-15T11:56:39 IST" duration-ms="322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeExtentReport -->
+        <test-method is-config="true" signature="assignObjectForClass()[pri:0, instance:testPackage.LoginTest@73e9cf30]" started-at="2024-02-15T11:56:39 IST" name="assignObjectForClass" finished-at="2024-02-15T11:56:39 IST" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assignObjectForClass -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.LoginTest@73e9cf30]" started-at="2024-02-15T11:56:39 IST" name="seperateCase" finished-at="2024-02-15T11:56:39 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="validLoginTest(java.lang.String,java.lang.String)[pri:0, instance:testPackage.LoginTest@73e9cf30]" started-at="2024-02-15T11:56:39 IST" name="validLoginTest" description="Test Valid Login" data-provider="LoginTestData" finished-at="2024-02-15T11:56:58 IST" duration-ms="18504" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,14 +77,10 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="flush()[pri:0, instance:testPackage.LoginTest@771a660]" started-at="2024-02-13T18:34:55 IST" name="flush" finished-at="2024-02-13T18:34:55 IST" duration-ms="411" status="PASS">
+        <test-method is-config="true" signature="flush()[pri:0, instance:testPackage.LoginTest@73e9cf30]" started-at="2024-02-15T11:57:40 IST" name="flush" finished-at="2024-02-15T11:57:40 IST" duration-ms="414" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testPackage.LoginTest@771a660]" started-at="2024-02-13T18:34:55 IST" name="closeBrowser" finished-at="2024-02-13T18:34:55 IST" duration-ms="149" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
       </class> <!-- testPackage.LoginTest -->
     </test> <!-- Oilman -->
   </suite> <!-- Suite -->
