@@ -21,18 +21,16 @@ public class LoginTest extends TestBase {
 	@Test(dataProvider = "LoginTestData", description = "Test Valid Login")
 	public void validLoginTest(String email, String password) throws ApplicationException {
 		ExtentReportManager.test.log(Status.PASS, "Enter Email id.");
-		TestBase.log.info("Enter Email id.");
 		login.enterEmail(email);
 
 		ExtentReportManager.test.log(Status.PASS, "Enter Password.");
-		TestBase.log.info("Enter Password.");
 		login.enterPAssword(password);
 
 		ExtentReportManager.test.log(Status.PASS, "Cliked on Submit button.");
-		TestBase.log.info("Cliked on Submit button.");
 		login.clickSubmitButton();
 
 		login.validateLoginSuccesfull();
+		ExtentReportManager.test.log(Status.PASS, "Logged successfully and navigated on Dashboard");
 	}
 
 }

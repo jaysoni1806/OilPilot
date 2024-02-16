@@ -7,19 +7,16 @@
   </listeners>
   <test thread-count="5" name="Oilman(failed)">
     <classes>
-      <class name="testPackage.CompanyAssetsTest">
+      <class name="testPackage.FieldAssetsTest">
         <methods>
           <include name="seperateCase"/>
           <include name="initializeExtentReport"/>
           <include name="assignObjectForClass"/>
-          <include name="editCompany"/>
-          <include name="deleteCompany"/>
-          <include name="createCompany"/>
+          <include name="createField"/>
           <include name="prerequisite"/>
           <include name="flush"/>
-          <include name="searchCompany"/>
         </methods>
-      </class> <!-- testPackage.CompanyAssetsTest -->
+      </class> <!-- testPackage.FieldAssetsTest -->
     </classes>
   </test> <!-- Oilman(failed) -->
 </suite> <!-- Failed suite [Suite] -->

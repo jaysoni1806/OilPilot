@@ -6,7 +6,6 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -19,7 +18,9 @@ import com.commonUtil.ExtentReportManager;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import pageClass.CompanyAssetsOperations;
 import pageClass.DashBoardPage;
+import pageClass.FiledAssetsOperations;
 import pageClass.LoginPage;
+import pageClass.commonLocatorsRepo;
 
 public class TestBase {
 
@@ -27,7 +28,9 @@ public class TestBase {
 	public LoginPage login;
 	public DashBoardPage dashboard;
 	public CompanyAssetsOperations cmpAstsOp;
-	public static Logger log;
+	public FiledAssetsOperations fieldAstsop;
+	commonLocatorsRepo commLocators;
+	public static Logger log = Logger.getLogger(TestBase.class);
 
 	@BeforeSuite
 	public void prerequisite() {
@@ -35,7 +38,6 @@ public class TestBase {
 		driver = new ChromeDriver();
 
 		PropertyConfigurator.configure(System.getProperty("user.dir") + "/Resource/log4j.properties");
-		log = Logger.getLogger(getClass().getName());
 		log.info("************************************************************************");
 		log.info("Chrome browser launched.");
 
@@ -50,6 +52,8 @@ public class TestBase {
 		login = new LoginPage(driver);
 		dashboard = new DashBoardPage(driver);
 		cmpAstsOp = new CompanyAssetsOperations(driver);
+		fieldAstsop = new FiledAssetsOperations(driver);
+		commLocators = new commonLocatorsRepo(driver);
 
 	}
 
@@ -69,7 +73,7 @@ public class TestBase {
 		ExtentReportListener.flush();
 	}
 
-	@AfterSuite
+	// @AfterSuite
 	public void closeBrowser() {
 		driver.close();
 	}

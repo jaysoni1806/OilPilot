@@ -8,6 +8,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
@@ -90,5 +91,28 @@ public class Utility {
 	public boolean WaitUntilElementVisibiltyGone(WebElement element, int second) {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(second));
 		return wait.until(ExpectedConditions.invisibilityOf(element));
+	}
+
+	/*
+	 * public void waitToPageLoad() throws InterruptedException {
+	 * Thread.sleep(2000); getFluentWait().until(driver -> { return
+	 * ((JavascriptExecutor)
+	 * driver).executeScript("return document.readyState").equals("complete"); });
+	 * 
+	 * }
+	 */
+
+	public void waitForPageToLoad() {
+		ExpectedCondition<Boolean> javascriptDone = new ExpectedCondition<Boolean>() {
+			public Boolean apply(WebDriver d) {
+				try {
+					return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
+				} catch (Exception e) {
+					return Boolean.FALSE;
+				}
+			}
+		};
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(javascriptDone);
 	}
 }

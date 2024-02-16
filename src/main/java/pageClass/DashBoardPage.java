@@ -1,10 +1,12 @@
 package pageClass;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.commonUtil.ApplicationException;
 import com.commonUtil.Utility;
 
 //import utils.UtilityMethods;
@@ -13,6 +15,9 @@ public class DashBoardPage {
 
 	WebDriver driver;
 	Utility utility;
+	commonLocatorsRepo commLocators;
+	public static Logger log = Logger.getLogger(DashBoardPage.class);
+
 	@FindBy(xpath = "//div[contains(@class,'MuiAvatar-circular')]")
 	public WebElement dashboard;
 	@FindBy(xpath = "//p[text()='Assets']")
@@ -22,13 +27,61 @@ public class DashBoardPage {
 	@FindBy(xpath = "//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-hidden')]")
 	public WebElement assets_CollapseHidden;
 	@FindBy(xpath = "//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-entered')]//li//a[@href='/assets/company/']")
-	public WebElement list_Company;
+	public WebElement companyMenu;
+	@FindBy(xpath = "//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-entered')]//li//a[@href='/assets/field/']")
+	public WebElement fieldMenu;
 	@FindBy(xpath = "//div[contains(@class,'react-hot-toast')]//div[@role='status']")
 	public WebElement toastMessage;
 
 	public DashBoardPage(WebDriver driver) {
 		this.driver = driver;
-		PageFactory.initElements(this.driver, this);
+		PageFactory.initElements(driver, this);
 		utility = new Utility(driver);
+		commLocators = new commonLocatorsRepo(driver);
 	}
+
+	public void clickOnAssets() throws ApplicationException {
+		if (asset.isDisplayed()) {
+			utility.WaitUntilElementIsNotClickable(asset, 10);
+			log.info("Waiting until Assets manu is clickable.");
+			utility.Submit(asset);
+			log.info("Click on Assets menu.");
+		} else {
+			throw new ApplicationException("Exception Occured", "Assets is not display.");
+		}
+	}
+
+	public void clickOnMenuItem(String menuNAme) throws ApplicationException, InterruptedException {
+
+		if (menuNAme.equals("Company")) {
+			selectMenu(companyMenu, menuNAme);
+		} else if (menuNAme.equals("Field")) {
+			// clickOnAssets(); // Temp
+			selectMenu(fieldMenu, menuNAme);
+		}
+	}
+
+	public void selectMenu(WebElement ele, String menuNAme) throws ApplicationException, InterruptedException {
+		if (ele.isDisplayed()) {
+			utility.WaitUntilElementIsNotClickable(ele, 5);
+			log.info("Wait until " + menuNAme + " manu is clickable.");
+			utility.Submit(ele);
+			log.info("Click on " + menuNAme + " manu item.");
+
+		} else if (assets_CollapseHidden.isDisplayed()) {
+			log.info("Assets menu has been collepse");
+			clickOnAssets();
+			log.info("Call Click Assets function again");
+		}
+
+		else {
+			throw new ApplicationException("Exception Occured",
+					commLocators.screenHeader.getText() + "Assets is not display.");
+		}
+	}
+
+	public void clickOnSubmitButtonAndVerifyThatTheFiledIsCreateOrNot() {
+
+	}
+
 }

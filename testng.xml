@@ -9,6 +9,7 @@
     <classes>
       <class name="testPackage.LoginTest"/>
       <class name="testPackage.CompanyAssetsTest"/>
+      <class name="testPackage.FieldAssetsTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

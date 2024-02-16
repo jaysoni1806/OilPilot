@@ -10,14 +10,14 @@ import com.commonUtil.commonUtil;
 import testBase.TestBase;
 
 public class CompanyAssetsTest extends TestBase {
-	public String Company_name = commonUtil.getRandomString();
+	public String Company_name = commonUtil.getRandomString(4);
 
 	@Test(priority = 0, description = "Test create Company assets.")
-	public void createCompany() throws ApplicationException {
+	public void createCompany() throws ApplicationException, InterruptedException {
 
-		cmpAstsOp.clickOnAssets();
+		dashboard.clickOnAssets();
 		ExtentReportManager.test.log(Status.PASS, "Click on Assets");
-		cmpAstsOp.clickOnComapnyMenuItem();
+		dashboard.clickOnMenuItem("Company");
 		ExtentReportManager.test.log(Status.PASS, "Click on Company menu.");
 		cmpAstsOp.clickAddButtonAndVerifyCreateCompnayHalfCardIsPresentOrNot();
 		ExtentReportManager.test.log(Status.PASS, "Click on Add button and Verify Create Company half card.");
@@ -66,4 +66,5 @@ public class CompanyAssetsTest extends TestBase {
 		cmpAstsOp.verifyTheCompanyListAfterClearSearchBox();
 		ExtentReportManager.test.log(Status.PASS, "Clear searchbox to get all companies.");
 	}
+
 }
