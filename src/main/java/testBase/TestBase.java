@@ -15,7 +15,6 @@ import org.testng.annotations.BeforeTest;
 import com.Listeners.ExtentReportListener;
 import com.commonUtil.ExtentReportManager;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import pageClass.CompanyAssetsOperations;
 import pageClass.DashBoardPage;
 import pageClass.FiledAssetsOperations;
@@ -34,7 +33,6 @@ public class TestBase {
 
 	@BeforeSuite
 	public void prerequisite() {
-		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
 
 		PropertyConfigurator.configure(System.getProperty("user.dir") + "/Resource/log4j.properties");

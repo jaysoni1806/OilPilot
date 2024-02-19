@@ -39,7 +39,9 @@ public class commonLocatorsRepo {
 	@FindBy(xpath = "//div[contains(@class,'css-1b8fkut')]//button")
 	public WebElement addBtton;
 	@FindBy(xpath = "//h5[contains(text(),'Add')]")
-	private WebElement popupAddCompany;
+	public WebElement popupAddCompany;
+	@FindBy(xpath = "//span[@role='progressbar']")
+	public static WebElement loaderSpinnitng;
 
 	public void input(String inputFiledplaceHolder, String inputFiledValue) {
 		WebElement inputCompanyName = driver
@@ -71,7 +73,7 @@ public class commonLocatorsRepo {
 		log.info("Action menu presented, Cliked delete action.");
 	}
 
-	public void Search(String searchContent) throws ApplicationException {
+	public void Search(String searchContent) throws ApplicationException, InterruptedException {
 		if (inputSearch.isDisplayed()) {
 			utility.clearSearchBox(inputSearch);
 			log.info("Clear searchbox.");
@@ -94,6 +96,41 @@ public class commonLocatorsRepo {
 		} else {
 			throw new ApplicationException("Exception Occured", "Add button is not Present or Not Clickable.");
 		}
+	}
+
+	public static void waitTillLoaderDisappear() throws InterruptedException, ApplicationException {
+		int count = 0;
+		int maxWaitTime = 30;
+		if (loaderSpinnitng.isDisplayed()) {
+			do {
+				Thread.sleep(1000 * 2);
+				++count;
+				System.out.println("Loader icon in position !!!");
+			} while (loaderSpinnitng != null && count < maxWaitTime);
+			if (count >= maxWaitTime && loaderSpinnitng != null) {
+				throw new ApplicationException("waitTillLoaderDisappear",
+						"Page is stuck on Loading for more than " + (count * 2) + "s !!!");
+			}
+		}
+
+		System.out.println("Loader icon finished");
+	}
+
+	public static void waitTillLoaderDisappear1() throws InterruptedException, ApplicationException {
+		int count = 0;
+		int maxWaitTime = 30;
+		if (loaderSpinnitng.isDisplayed()) {
+			do {
+				Thread.sleep(1000 * 2);
+				++count;
+				System.out.println("Loader icon in position !!!");
+			} while (loaderSpinnitng != null && count < maxWaitTime);
+			if (count >= maxWaitTime && loaderSpinnitng != null) {
+				throw new ApplicationException("waitTillLoaderDisappear",
+						"Page is stuck on Loading for more than " + (count * 2) + "s !!!");
+			}
+		}
+		System.out.println("Loader icon finished");
 	}
 
 }

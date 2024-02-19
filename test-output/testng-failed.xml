@@ -9,10 +9,10 @@
     <classes>
       <class name="testPackage.FieldAssetsTest">
         <methods>
+          <include name="editCompany"/>
           <include name="seperateCase"/>
           <include name="initializeExtentReport"/>
           <include name="assignObjectForClass"/>
-          <include name="createField"/>
           <include name="prerequisite"/>
           <include name="flush"/>
         </methods>

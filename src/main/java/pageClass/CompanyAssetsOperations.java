@@ -83,7 +83,7 @@ public class CompanyAssetsOperations {
 
 	}
 
-	public void verifyTheCompanyIsCreatedOrnot() throws ApplicationException {
+	public void verifyTheCompanyIsCreatedOrnot() throws ApplicationException, InterruptedException {
 
 		utility.WaitUntilElementVisibiltyGone(dashboard.toastMessage, 5);
 		enterCompanyNameinSearchBox(Company_name);
@@ -91,7 +91,7 @@ public class CompanyAssetsOperations {
 		// utility.clearSearchBox();
 	}
 
-	public void enterCompanyNameinSearchBox(String CmpName) throws ApplicationException {
+	public void enterCompanyNameinSearchBox(String CmpName) throws ApplicationException, InterruptedException {
 		commLocators.Search(CmpName);
 	}
 
@@ -110,10 +110,10 @@ public class CompanyAssetsOperations {
 		}
 	}
 
-	public void verifyTheCompanyListAfterClearSearchBox() throws ApplicationException {
+	public void verifyTheCompanyListAfterClearSearchBox() throws ApplicationException, InterruptedException {
 		if (commLocators.inputSearch.isDisplayed()) {
 			utility.clearSearchBox(commLocators.inputSearch);
-			// utility.pageRefresh();
+
 			searchRecords = driver.findElements(By.xpath("//div[contains(@class,'MuiDataGrid-row')]"));
 			utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
 
@@ -127,7 +127,7 @@ public class CompanyAssetsOperations {
 		}
 	}
 
-	public void searchRecentAddedCompanyForEdit() throws ApplicationException {
+	public void searchRecentAddedCompanyForEdit() throws ApplicationException, InterruptedException {
 		enterCompanyNameinSearchBox(Company_name);
 		verifySearchedCompanyIsExistsOrNot(Company_name);
 	}
@@ -188,7 +188,7 @@ public class CompanyAssetsOperations {
 		}
 	}
 
-	public void searchRecentUpdatedCompanyForDelete() throws ApplicationException {
+	public void searchRecentUpdatedCompanyForDelete() throws ApplicationException, InterruptedException {
 		enterCompanyNameinSearchBox(updatedComp);
 		verifySearchedCompanyIsExistsOrNot(updatedComp);
 	}
@@ -213,7 +213,7 @@ public class CompanyAssetsOperations {
 		}
 	}
 
-	public void verifyTheCompanyIsDeletedorNotAfterConfirm() throws ApplicationException {
+	public void verifyTheCompanyIsDeletedorNotAfterConfirm() throws ApplicationException, InterruptedException {
 
 		utility.Submit(deleteConfirmYesButton);
 		log.info("Cliked on Yes button to confirm delete record.");

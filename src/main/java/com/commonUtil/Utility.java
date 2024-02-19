@@ -49,10 +49,23 @@ public class Utility {
 		}
 	}
 
-	public void clearSearchBox(WebElement element) {
+	public void clearSearchBox(WebElement element) throws InterruptedException, ApplicationException {
 		for (int i = element.getAttribute("value").length(); i >= 0; i--) {
 			element.sendKeys(Keys.BACK_SPACE);
+			// commonLocatorsRepo.waitTillLoaderDisappear();
 		}
+	}
+
+	public void cleanText(WebElement elem) throws InterruptedException {
+
+		String text = elem.getAttribute("value");
+
+		while (text.length() > 0) {
+			elem.click();
+			elem.sendKeys(new CharSequence[] { "\b" });
+			text = elem.getAttribute("value");
+		}
+		Thread.sleep(3000);
 	}
 
 	public void ClearTextBox(WebElement element) {

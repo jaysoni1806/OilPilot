@@ -31,7 +31,7 @@ public class CompanyAssetsTest extends TestBase {
 	}
 
 	@Test(priority = 1, description = "Test Search company.")
-	public void searchCompany() throws ApplicationException {
+	public void searchCompany() throws ApplicationException, InterruptedException {
 		cmpAstsOp.enterCompanyNameinSearchBox(Company_name);
 		ExtentReportManager.test.log(Status.PASS, "Enter Company name in searchbox");
 		cmpAstsOp.verifySearchedCompanyIsExistsOrNot(Company_name);
@@ -41,7 +41,7 @@ public class CompanyAssetsTest extends TestBase {
 	}
 
 	@Test(priority = 2, description = "Test Edit Company assets.")
-	public void editCompany() throws ApplicationException {
+	public void editCompany() throws ApplicationException, InterruptedException {
 		cmpAstsOp.searchRecentAddedCompanyForEdit();
 		ExtentReportManager.test.log(Status.PASS, "Search recently created company for Edit");
 		cmpAstsOp.clickEdit_actionUnderThePerent_actionandVerifyEditHalfCardIsPresentOrNot();
@@ -55,7 +55,7 @@ public class CompanyAssetsTest extends TestBase {
 	}
 
 	@Test(priority = 3, description = "Test Delete Company assets.")
-	public void deleteCompany() throws ApplicationException {
+	public void deleteCompany() throws ApplicationException, InterruptedException {
 		cmpAstsOp.searchRecentUpdatedCompanyForDelete();
 		ExtentReportManager.test.log(Status.PASS, "Received recently updated company for Delete.");
 		cmpAstsOp.clickDelete_actionUnderThePerent_actionandVerifyDeleteConfirmationpopupIsPresentOrNot();

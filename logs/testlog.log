@@ -1,0 +1,357 @@
+2024-02-19 10:51:54 INFO  TestBase:39 - ************************************************************************ 
+2024-02-19 10:51:54 INFO  TestBase:40 - Chrome browser launched. 
+2024-02-19 10:51:58 INFO  TestBase:43 - Hit Oilman URL.  
+2024-02-19 10:51:59 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 10:52:00 INFO  LoginPage:53 - Enter Email id. 
+2024-02-19 10:52:00 INFO  LoginPage:67 - Enter Password. 
+2024-02-19 10:52:00 INFO  LoginPage:76 - Cliked on Submit button. 
+2024-02-19 10:52:19 INFO  LoginPage:87 - Logged successfully navigated on Dashboard 
+2024-02-19 10:52:19 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 10:52:19 INFO  DashBoardPage:46 - Waiting until Assets manu is clickable. 
+2024-02-19 10:52:20 INFO  DashBoardPage:48 - Click on Assets menu. 
+2024-02-19 10:52:20 INFO  DashBoardPage:67 - Wait until Company manu is clickable. 
+2024-02-19 10:52:20 INFO  DashBoardPage:69 - Click on Company manu item. 
+2024-02-19 10:52:21 INFO  CompanyAssetsOperations:56 - Wait until loading company list. 
+2024-02-19 10:52:22 INFO  commonLocatorsRepo:90 - Click on Company Add button. 
+2024-02-19 10:52:22 INFO  commonLocatorsRepo:93 - Add company half card is present. 
+2024-02-19 10:52:22 INFO  CompanyAssetsOperations:65 - Clear the Company text box. 
+2024-02-19 10:52:22 INFO  CompanyAssetsOperations:68 - Enter Company name. 
+2024-02-19 10:52:22 INFO  CompanyAssetsOperations:79 - Click on Submit button. 
+2024-02-19 10:52:26 INFO  commonLocatorsRepo:77 - Clear searchbox. 
+2024-02-19 10:52:26 INFO  commonLocatorsRepo:80 - Entered value in searchbox. 
+2024-02-19 10:52:28 INFO  CompanyAssetsOperations:105 - Record searched successfully. 
+2024-02-19 10:52:28 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 10:52:29 INFO  commonLocatorsRepo:77 - Clear searchbox. 
+2024-02-19 10:52:29 INFO  commonLocatorsRepo:80 - Entered value in searchbox. 
+2024-02-19 10:52:31 INFO  CompanyAssetsOperations:105 - Record searched successfully. 
+2024-02-19 10:52:31 INFO  CompanyAssetsOperations:121 - Retrive all records 
+2024-02-19 10:52:31 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 10:52:32 INFO  commonLocatorsRepo:77 - Clear searchbox. 
+2024-02-19 10:52:32 INFO  commonLocatorsRepo:80 - Entered value in searchbox. 
+2024-02-19 10:52:34 INFO  CompanyAssetsOperations:105 - Record searched successfully. 
+2024-02-19 10:52:34 INFO  commonLocatorsRepo:52 - Waiting until action button is clickable. 
+2024-02-19 10:52:34 INFO  commonLocatorsRepo:55 - Click action button. 
+2024-02-19 10:52:34 INFO  commonLocatorsRepo:60 - Waiting until edit button is clickable. 
+2024-02-19 10:52:34 INFO  commonLocatorsRepo:63 - Action menu presented, Cliked Edit action. 
+2024-02-19 10:52:34 INFO  CompanyAssetsOperations:141 - Edit Company half screen present. 
+2024-02-19 10:52:34 INFO  CompanyAssetsOperations:159 - Click on Company name. 
+2024-02-19 10:52:36 INFO  CompanyAssetsOperations:163 - Clear text box. 
+2024-02-19 10:52:39 INFO  CompanyAssetsOperations:167 - Input upgreaded Company name. 
+2024-02-19 10:52:39 INFO  CompanyAssetsOperations:177 - Click on Submit button. 
+2024-02-19 10:52:39 INFO  CompanyAssetsOperations:182 - '1P2KEdited' Company update successfully. 
+2024-02-19 10:52:40 INFO  CompanyAssetsOperations:121 - Retrive all records 
+2024-02-19 10:52:40 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 10:52:40 INFO  commonLocatorsRepo:77 - Clear searchbox. 
+2024-02-19 10:52:40 INFO  commonLocatorsRepo:80 - Entered value in searchbox. 
+2024-02-19 10:52:42 INFO  CompanyAssetsOperations:105 - Record searched successfully. 
+2024-02-19 10:52:42 INFO  commonLocatorsRepo:52 - Waiting until action button is clickable. 
+2024-02-19 10:52:42 INFO  commonLocatorsRepo:55 - Click action button. 
+2024-02-19 10:52:43 INFO  commonLocatorsRepo:68 - Waiting until delete button is clickable. 
+2024-02-19 10:52:43 INFO  commonLocatorsRepo:71 - Action menu presented, Cliked delete action. 
+2024-02-19 10:52:43 INFO  CompanyAssetsOperations:203 - Delete confirmation popup is present. 
+2024-02-19 10:52:43 INFO  CompanyAssetsOperations:219 - Cliked on Yes button to confirm delete record. 
+2024-02-19 10:52:47 INFO  commonLocatorsRepo:77 - Clear searchbox. 
+2024-02-19 10:52:47 INFO  commonLocatorsRepo:80 - Entered value in searchbox. 
+2024-02-19 10:52:59 INFO  CompanyAssetsOperations:230 - '1P2KEdited' Company has been deleted successfully. 
+2024-02-19 10:53:04 INFO  CompanyAssetsOperations:121 - Retrive all records 
+2024-02-19 10:53:04 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 10:53:04 INFO  DashBoardPage:67 - Wait until Field manu is clickable. 
+2024-02-19 10:53:05 INFO  DashBoardPage:69 - Click on Field manu item. 
+2024-02-19 10:53:07 INFO  FiledAssetsOperations:53 - Wait until loading field list. 
+2024-02-19 10:53:07 INFO  commonLocatorsRepo:90 - Click on Company Add button. 
+2024-02-19 10:53:07 INFO  commonLocatorsRepo:93 - Add company half card is present. 
+2024-02-19 10:53:07 INFO  FiledAssetsOperations:61 - Enter Filed name. 
+2024-02-19 10:53:07 INFO  FiledAssetsOperations:64 - Enter SONRIS Field ID 
+2024-02-19 10:53:08 INFO  FiledAssetsOperations:71 - Click on Submit button. 
+2024-02-19 10:53:10 INFO  commonLocatorsRepo:77 - Clear searchbox. 
+2024-02-19 10:53:11 INFO  commonLocatorsRepo:80 - Entered value in searchbox. 
+2024-02-19 10:53:13 INFO  FiledAssetsOperations:97 - Record searched successfully. 
+2024-02-19 11:14:36 INFO  TestBase:39 - ************************************************************************ 
+2024-02-19 11:14:36 INFO  TestBase:40 - Chrome browser launched. 
+2024-02-19 11:14:40 INFO  TestBase:43 - Hit Oilman URL.  
+2024-02-19 11:14:42 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 11:14:43 INFO  LoginPage:53 - Enter Email id. 
+2024-02-19 11:14:44 INFO  LoginPage:67 - Enter Password. 
+2024-02-19 11:14:44 INFO  LoginPage:76 - Cliked on Submit button. 
+2024-02-19 11:15:03 INFO  LoginPage:87 - Logged successfully navigated on Dashboard 
+2024-02-19 11:15:03 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 11:15:03 INFO  DashBoardPage:46 - Waiting until Assets manu is clickable. 
+2024-02-19 11:15:04 INFO  DashBoardPage:48 - Click on Assets menu. 
+2024-02-19 11:15:04 INFO  DashBoardPage:67 - Wait until Company manu is clickable. 
+2024-02-19 11:15:04 INFO  DashBoardPage:69 - Click on Company manu item. 
+2024-02-19 11:15:40 INFO  TestBase:39 - ************************************************************************ 
+2024-02-19 11:15:40 INFO  TestBase:40 - Chrome browser launched. 
+2024-02-19 11:15:44 INFO  TestBase:43 - Hit Oilman URL.  
+2024-02-19 11:15:46 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 11:15:47 INFO  LoginPage:53 - Enter Email id. 
+2024-02-19 11:15:48 INFO  LoginPage:67 - Enter Password. 
+2024-02-19 11:15:48 INFO  LoginPage:76 - Cliked on Submit button. 
+2024-02-19 11:16:06 INFO  LoginPage:87 - Logged successfully navigated on Dashboard 
+2024-02-19 11:16:06 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 11:16:07 INFO  DashBoardPage:46 - Waiting until Assets manu is clickable. 
+2024-02-19 11:16:07 INFO  DashBoardPage:48 - Click on Assets menu. 
+2024-02-19 11:16:08 INFO  DashBoardPage:67 - Wait until Company manu is clickable. 
+2024-02-19 11:16:08 INFO  DashBoardPage:69 - Click on Company manu item. 
+2024-02-19 11:16:09 INFO  CompanyAssetsOperations:56 - Wait until loading company list. 
+2024-02-19 11:16:09 INFO  commonLocatorsRepo:92 - Click on Company Add button. 
+2024-02-19 11:16:09 INFO  commonLocatorsRepo:95 - Add company half card is present. 
+2024-02-19 11:16:09 INFO  CompanyAssetsOperations:65 - Clear the Company text box. 
+2024-02-19 11:16:10 INFO  CompanyAssetsOperations:68 - Enter Company name. 
+2024-02-19 11:16:10 INFO  CompanyAssetsOperations:79 - Click on Submit button. 
+2024-02-19 11:16:11 INFO  commonLocatorsRepo:79 - Clear searchbox. 
+2024-02-19 11:16:12 INFO  commonLocatorsRepo:82 - Entered value in searchbox. 
+2024-02-19 11:16:14 INFO  CompanyAssetsOperations:105 - Record searched successfully. 
+2024-02-19 11:16:14 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 11:16:16 INFO  commonLocatorsRepo:79 - Clear searchbox. 
+2024-02-19 11:16:16 INFO  commonLocatorsRepo:82 - Entered value in searchbox. 
+2024-02-19 11:16:18 INFO  CompanyAssetsOperations:105 - Record searched successfully. 
+2024-02-19 11:23:02 INFO  TestBase:39 - ************************************************************************ 
+2024-02-19 11:23:02 INFO  TestBase:40 - Chrome browser launched. 
+2024-02-19 11:23:06 INFO  TestBase:43 - Hit Oilman URL.  
+2024-02-19 11:23:08 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 11:23:09 INFO  LoginPage:53 - Enter Email id. 
+2024-02-19 11:23:09 INFO  LoginPage:67 - Enter Password. 
+2024-02-19 11:23:09 INFO  LoginPage:76 - Cliked on Submit button. 
+2024-02-19 11:23:28 INFO  LoginPage:87 - Logged successfully navigated on Dashboard 
+2024-02-19 11:23:28 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 11:23:28 INFO  DashBoardPage:46 - Waiting until Assets manu is clickable. 
+2024-02-19 11:23:28 INFO  DashBoardPage:48 - Click on Assets menu. 
+2024-02-19 11:23:29 INFO  DashBoardPage:67 - Wait until Company manu is clickable. 
+2024-02-19 11:23:29 INFO  DashBoardPage:69 - Click on Company manu item. 
+2024-02-19 11:23:31 INFO  CompanyAssetsOperations:56 - Wait until loading company list. 
+2024-02-19 11:23:31 INFO  commonLocatorsRepo:92 - Click on Company Add button. 
+2024-02-19 11:23:31 INFO  commonLocatorsRepo:95 - Add company half card is present. 
+2024-02-19 11:23:31 INFO  CompanyAssetsOperations:65 - Clear the Company text box. 
+2024-02-19 11:23:32 INFO  CompanyAssetsOperations:68 - Enter Company name. 
+2024-02-19 11:23:32 INFO  CompanyAssetsOperations:79 - Click on Submit button. 
+2024-02-19 11:26:08 INFO  TestBase:39 - ************************************************************************ 
+2024-02-19 11:26:08 INFO  TestBase:40 - Chrome browser launched. 
+2024-02-19 11:26:12 INFO  TestBase:43 - Hit Oilman URL.  
+2024-02-19 11:26:14 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 11:26:14 INFO  LoginPage:53 - Enter Email id. 
+2024-02-19 11:26:15 INFO  LoginPage:67 - Enter Password. 
+2024-02-19 11:26:15 INFO  LoginPage:76 - Cliked on Submit button. 
+2024-02-19 11:26:33 INFO  LoginPage:87 - Logged successfully navigated on Dashboard 
+2024-02-19 11:26:34 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 11:26:34 INFO  DashBoardPage:46 - Waiting until Assets manu is clickable. 
+2024-02-19 11:26:34 INFO  DashBoardPage:48 - Click on Assets menu. 
+2024-02-19 11:26:34 INFO  DashBoardPage:67 - Wait until Company manu is clickable. 
+2024-02-19 11:26:35 INFO  DashBoardPage:69 - Click on Company manu item. 
+2024-02-19 11:26:37 INFO  CompanyAssetsOperations:56 - Wait until loading company list. 
+2024-02-19 11:26:37 INFO  commonLocatorsRepo:92 - Click on Company Add button. 
+2024-02-19 11:26:37 INFO  commonLocatorsRepo:95 - Add company half card is present. 
+2024-02-19 11:26:37 INFO  CompanyAssetsOperations:65 - Clear the Company text box. 
+2024-02-19 11:26:38 INFO  CompanyAssetsOperations:68 - Enter Company name. 
+2024-02-19 11:26:38 INFO  CompanyAssetsOperations:79 - Click on Submit button. 
+2024-02-19 11:26:52 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 11:27:02 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 11:27:13 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 11:27:23 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 11:27:23 INFO  DashBoardPage:67 - Wait until Field manu is clickable. 
+2024-02-19 11:27:24 INFO  DashBoardPage:69 - Click on Field manu item. 
+2024-02-19 11:27:25 INFO  FiledAssetsOperations:53 - Wait until loading field list. 
+2024-02-19 11:27:26 INFO  commonLocatorsRepo:92 - Click on Company Add button. 
+2024-02-19 11:27:26 INFO  commonLocatorsRepo:95 - Add company half card is present. 
+2024-02-19 11:27:26 INFO  FiledAssetsOperations:61 - Enter Filed name. 
+2024-02-19 11:27:26 INFO  FiledAssetsOperations:64 - Enter SONRIS Field ID 
+2024-02-19 11:27:26 INFO  FiledAssetsOperations:71 - Click on Submit button. 
+2024-02-19 11:41:29 INFO  TestBase:39 - ************************************************************************ 
+2024-02-19 11:41:29 INFO  TestBase:40 - Chrome browser launched. 
+2024-02-19 11:41:33 INFO  TestBase:43 - Hit Oilman URL.  
+2024-02-19 11:41:37 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 11:41:38 INFO  LoginPage:53 - Enter Email id. 
+2024-02-19 11:41:38 INFO  LoginPage:67 - Enter Password. 
+2024-02-19 11:41:39 INFO  LoginPage:76 - Cliked on Submit button. 
+2024-02-19 11:41:57 INFO  LoginPage:87 - Logged successfully navigated on Dashboard 
+2024-02-19 11:41:57 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 11:41:58 INFO  DashBoardPage:46 - Waiting until Assets manu is clickable. 
+2024-02-19 11:41:58 INFO  DashBoardPage:48 - Click on Assets menu. 
+2024-02-19 11:41:58 INFO  DashBoardPage:67 - Wait until Company manu is clickable. 
+2024-02-19 11:41:59 INFO  DashBoardPage:69 - Click on Company manu item. 
+2024-02-19 11:42:00 INFO  CompanyAssetsOperations:56 - Wait until loading company list. 
+2024-02-19 11:42:00 INFO  commonLocatorsRepo:92 - Click on Company Add button. 
+2024-02-19 11:42:00 INFO  commonLocatorsRepo:95 - Add company half card is present. 
+2024-02-19 11:42:00 INFO  CompanyAssetsOperations:65 - Clear the Company text box. 
+2024-02-19 11:42:00 INFO  CompanyAssetsOperations:68 - Enter Company name. 
+2024-02-19 11:42:01 INFO  CompanyAssetsOperations:79 - Click on Submit button. 
+2024-02-19 11:42:19 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 11:42:34 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 11:45:53 INFO  TestBase:39 - ************************************************************************ 
+2024-02-19 11:45:53 INFO  TestBase:40 - Chrome browser launched. 
+2024-02-19 11:45:57 INFO  TestBase:43 - Hit Oilman URL.  
+2024-02-19 11:45:59 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 11:45:59 INFO  LoginPage:53 - Enter Email id. 
+2024-02-19 11:46:00 INFO  LoginPage:67 - Enter Password. 
+2024-02-19 11:46:00 INFO  LoginPage:76 - Cliked on Submit button. 
+2024-02-19 11:46:18 INFO  LoginPage:87 - Logged successfully navigated on Dashboard 
+2024-02-19 11:46:18 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 11:46:18 INFO  DashBoardPage:46 - Waiting until Assets manu is clickable. 
+2024-02-19 11:46:18 INFO  DashBoardPage:48 - Click on Assets menu. 
+2024-02-19 11:46:19 INFO  DashBoardPage:67 - Wait until Company manu is clickable. 
+2024-02-19 11:46:19 INFO  DashBoardPage:69 - Click on Company manu item. 
+2024-02-19 11:46:21 INFO  CompanyAssetsOperations:56 - Wait until loading company list. 
+2024-02-19 11:46:21 INFO  commonLocatorsRepo:92 - Click on Company Add button. 
+2024-02-19 11:46:21 INFO  commonLocatorsRepo:95 - Add company half card is present. 
+2024-02-19 11:46:21 INFO  CompanyAssetsOperations:65 - Clear the Company text box. 
+2024-02-19 11:46:21 INFO  CompanyAssetsOperations:68 - Enter Company name. 
+2024-02-19 11:46:22 INFO  CompanyAssetsOperations:79 - Click on Submit button. 
+2024-02-19 11:47:39 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 12:06:50 INFO  TestBase:39 - ************************************************************************ 
+2024-02-19 12:06:50 INFO  TestBase:40 - Chrome browser launched. 
+2024-02-19 12:06:54 INFO  TestBase:43 - Hit Oilman URL.  
+2024-02-19 12:06:55 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 12:06:56 INFO  LoginPage:53 - Enter Email id. 
+2024-02-19 12:06:56 INFO  LoginPage:67 - Enter Password. 
+2024-02-19 12:06:56 INFO  LoginPage:76 - Cliked on Submit button. 
+2024-02-19 12:07:15 INFO  LoginPage:87 - Logged successfully navigated on Dashboard 
+2024-02-19 12:07:15 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 12:07:15 INFO  DashBoardPage:46 - Waiting until Assets manu is clickable. 
+2024-02-19 12:07:15 INFO  DashBoardPage:48 - Click on Assets menu. 
+2024-02-19 12:07:16 INFO  DashBoardPage:67 - Wait until Company manu is clickable. 
+2024-02-19 12:07:16 INFO  DashBoardPage:69 - Click on Company manu item. 
+2024-02-19 12:07:17 INFO  CompanyAssetsOperations:56 - Wait until loading company list. 
+2024-02-19 12:07:17 INFO  commonLocatorsRepo:92 - Click on Company Add button. 
+2024-02-19 12:07:18 INFO  commonLocatorsRepo:95 - Add company half card is present. 
+2024-02-19 12:07:18 INFO  CompanyAssetsOperations:65 - Clear the Company text box. 
+2024-02-19 12:07:18 INFO  CompanyAssetsOperations:68 - Enter Company name. 
+2024-02-19 12:07:18 INFO  CompanyAssetsOperations:79 - Click on Submit button. 
+2024-02-19 12:07:21 INFO  commonLocatorsRepo:79 - Clear searchbox. 
+2024-02-19 12:07:21 INFO  commonLocatorsRepo:82 - Entered value in searchbox. 
+2024-02-19 12:07:23 INFO  CompanyAssetsOperations:105 - Record searched successfully. 
+2024-02-19 12:07:23 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 12:07:24 INFO  commonLocatorsRepo:79 - Clear searchbox. 
+2024-02-19 12:07:24 INFO  commonLocatorsRepo:82 - Entered value in searchbox. 
+2024-02-19 12:07:26 INFO  CompanyAssetsOperations:105 - Record searched successfully. 
+2024-02-19 12:07:27 INFO  CompanyAssetsOperations:122 - Retrive all records 
+2024-02-19 12:07:27 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 12:07:27 INFO  commonLocatorsRepo:79 - Clear searchbox. 
+2024-02-19 12:07:27 INFO  commonLocatorsRepo:82 - Entered value in searchbox. 
+2024-02-19 12:07:29 INFO  CompanyAssetsOperations:105 - Record searched successfully. 
+2024-02-19 12:07:29 INFO  commonLocatorsRepo:54 - Waiting until action button is clickable. 
+2024-02-19 12:07:29 INFO  commonLocatorsRepo:57 - Click action button. 
+2024-02-19 12:07:30 INFO  commonLocatorsRepo:62 - Waiting until edit button is clickable. 
+2024-02-19 12:07:30 INFO  commonLocatorsRepo:65 - Action menu presented, Cliked Edit action. 
+2024-02-19 12:07:30 INFO  CompanyAssetsOperations:142 - Edit Company half screen present. 
+2024-02-19 12:07:30 INFO  CompanyAssetsOperations:160 - Click on Company name. 
+2024-02-19 12:07:32 INFO  CompanyAssetsOperations:164 - Clear text box. 
+2024-02-19 12:07:34 INFO  CompanyAssetsOperations:168 - Input upgreaded Company name. 
+2024-02-19 12:07:34 INFO  CompanyAssetsOperations:178 - Click on Submit button. 
+2024-02-19 12:07:35 INFO  CompanyAssetsOperations:183 - 'V29UEdited' Company update successfully. 
+2024-02-19 12:07:36 INFO  CompanyAssetsOperations:122 - Retrive all records 
+2024-02-19 12:07:36 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 12:07:36 INFO  commonLocatorsRepo:79 - Clear searchbox. 
+2024-02-19 12:07:37 INFO  commonLocatorsRepo:82 - Entered value in searchbox. 
+2024-02-19 12:07:39 INFO  CompanyAssetsOperations:105 - Record searched successfully. 
+2024-02-19 12:07:39 INFO  commonLocatorsRepo:54 - Waiting until action button is clickable. 
+2024-02-19 12:07:39 INFO  commonLocatorsRepo:57 - Click action button. 
+2024-02-19 12:07:39 INFO  commonLocatorsRepo:70 - Waiting until delete button is clickable. 
+2024-02-19 12:07:39 INFO  commonLocatorsRepo:73 - Action menu presented, Cliked delete action. 
+2024-02-19 12:07:40 INFO  CompanyAssetsOperations:204 - Delete confirmation popup is present. 
+2024-02-19 12:07:40 INFO  CompanyAssetsOperations:220 - Cliked on Yes button to confirm delete record. 
+2024-02-19 12:07:43 INFO  commonLocatorsRepo:79 - Clear searchbox. 
+2024-02-19 12:07:44 INFO  commonLocatorsRepo:82 - Entered value in searchbox. 
+2024-02-19 12:07:56 INFO  CompanyAssetsOperations:231 - 'V29UEdited' Company has been deleted successfully. 
+2024-02-19 12:07:59 INFO  CompanyAssetsOperations:122 - Retrive all records 
+2024-02-19 12:07:59 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 12:08:00 INFO  DashBoardPage:67 - Wait until Field manu is clickable. 
+2024-02-19 12:08:00 INFO  DashBoardPage:69 - Click on Field manu item. 
+2024-02-19 17:47:15 INFO  TestBase:39 - ************************************************************************ 
+2024-02-19 17:47:15 INFO  TestBase:40 - Chrome browser launched. 
+2024-02-19 17:47:22 INFO  TestBase:43 - Hit Oilman URL.  
+2024-02-19 17:47:25 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 17:47:26 INFO  LoginPage:53 - Enter Email id. 
+2024-02-19 17:47:27 INFO  LoginPage:67 - Enter Password. 
+2024-02-19 17:47:27 INFO  LoginPage:76 - Cliked on Submit button. 
+2024-02-19 17:47:57 INFO  LoginPage:87 - Logged successfully navigated on Dashboard 
+2024-02-19 17:47:57 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 17:47:57 INFO  DashBoardPage:46 - Waiting until Assets manu is clickable. 
+2024-02-19 17:47:57 INFO  DashBoardPage:48 - Click on Assets menu. 
+2024-02-19 17:47:58 INFO  DashBoardPage:67 - Wait until Company manu is clickable. 
+2024-02-19 17:47:59 INFO  DashBoardPage:69 - Click on Company manu item. 
+2024-02-19 17:48:01 INFO  CompanyAssetsOperations:56 - Wait until loading company list. 
+2024-02-19 17:48:01 INFO  commonLocatorsRepo:92 - Click on Company Add button. 
+2024-02-19 17:48:01 INFO  commonLocatorsRepo:95 - Add company half card is present. 
+2024-02-19 17:48:02 INFO  CompanyAssetsOperations:65 - Clear the Company text box. 
+2024-02-19 17:48:02 INFO  CompanyAssetsOperations:68 - Enter Company name. 
+2024-02-19 17:48:02 INFO  CompanyAssetsOperations:79 - Click on Submit button. 
+2024-02-19 17:48:03 INFO  commonLocatorsRepo:79 - Clear searchbox. 
+2024-02-19 17:48:03 INFO  commonLocatorsRepo:82 - Entered value in searchbox. 
+2024-02-19 17:48:05 INFO  CompanyAssetsOperations:105 - Record searched successfully. 
+2024-02-19 17:48:05 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 17:48:06 INFO  commonLocatorsRepo:79 - Clear searchbox. 
+2024-02-19 17:48:06 INFO  commonLocatorsRepo:82 - Entered value in searchbox. 
+2024-02-19 17:48:08 INFO  CompanyAssetsOperations:105 - Record searched successfully. 
+2024-02-19 17:48:08 INFO  CompanyAssetsOperations:121 - Retrive all records 
+2024-02-19 17:48:08 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 17:48:08 INFO  commonLocatorsRepo:79 - Clear searchbox. 
+2024-02-19 17:48:09 INFO  commonLocatorsRepo:82 - Entered value in searchbox. 
+2024-02-19 17:48:11 INFO  CompanyAssetsOperations:105 - Record searched successfully. 
+2024-02-19 17:48:11 INFO  commonLocatorsRepo:54 - Waiting until action button is clickable. 
+2024-02-19 17:48:11 INFO  commonLocatorsRepo:57 - Click action button. 
+2024-02-19 17:48:11 INFO  commonLocatorsRepo:62 - Waiting until edit button is clickable. 
+2024-02-19 17:48:11 INFO  commonLocatorsRepo:65 - Action menu presented, Cliked Edit action. 
+2024-02-19 17:48:11 INFO  CompanyAssetsOperations:141 - Edit Company half screen present. 
+2024-02-19 17:48:12 INFO  CompanyAssetsOperations:159 - Click on Company name. 
+2024-02-19 17:48:14 INFO  CompanyAssetsOperations:163 - Clear text box. 
+2024-02-19 17:48:16 INFO  CompanyAssetsOperations:167 - Input upgreaded Company name. 
+2024-02-19 17:48:16 INFO  CompanyAssetsOperations:177 - Click on Submit button. 
+2024-02-19 17:48:17 INFO  CompanyAssetsOperations:182 - 'OTIREdited' Company update successfully. 
+2024-02-19 17:48:18 INFO  CompanyAssetsOperations:121 - Retrive all records 
+2024-02-19 17:48:18 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 17:48:18 INFO  commonLocatorsRepo:79 - Clear searchbox. 
+2024-02-19 17:48:18 INFO  commonLocatorsRepo:82 - Entered value in searchbox. 
+2024-02-19 17:48:20 INFO  CompanyAssetsOperations:105 - Record searched successfully. 
+2024-02-19 17:48:20 INFO  commonLocatorsRepo:54 - Waiting until action button is clickable. 
+2024-02-19 17:48:21 INFO  commonLocatorsRepo:57 - Click action button. 
+2024-02-19 17:48:21 INFO  commonLocatorsRepo:70 - Waiting until delete button is clickable. 
+2024-02-19 17:48:21 INFO  commonLocatorsRepo:73 - Action menu presented, Cliked delete action. 
+2024-02-19 17:48:21 INFO  CompanyAssetsOperations:203 - Delete confirmation popup is present. 
+2024-02-19 17:48:21 INFO  CompanyAssetsOperations:219 - Cliked on Yes button to confirm delete record. 
+2024-02-19 17:48:25 INFO  commonLocatorsRepo:79 - Clear searchbox. 
+2024-02-19 17:48:26 INFO  commonLocatorsRepo:82 - Entered value in searchbox. 
+2024-02-19 17:48:38 INFO  CompanyAssetsOperations:230 - 'OTIREdited' Company has been deleted successfully. 
+2024-02-19 17:48:43 INFO  CompanyAssetsOperations:121 - Retrive all records 
+2024-02-19 17:48:43 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 17:48:44 INFO  DashBoardPage:67 - Wait until Field manu is clickable. 
+2024-02-19 17:48:44 INFO  DashBoardPage:69 - Click on Field manu item. 
+2024-02-19 17:48:45 INFO  FiledAssetsOperations:65 - Wait until loading field list. 
+2024-02-19 17:48:46 INFO  commonLocatorsRepo:92 - Click on Company Add button. 
+2024-02-19 17:48:46 INFO  commonLocatorsRepo:95 - Add company half card is present. 
+2024-02-19 17:48:46 INFO  FiledAssetsOperations:73 - Enter Filed name. 
+2024-02-19 17:48:46 INFO  FiledAssetsOperations:76 - Enter SONRIS Field ID 
+2024-02-19 17:48:47 INFO  FiledAssetsOperations:83 - Click on Submit button. 
+2024-02-19 17:49:01 INFO  commonLocatorsRepo:79 - Clear searchbox. 
+2024-02-19 17:49:02 INFO  commonLocatorsRepo:82 - Entered value in searchbox. 
+2024-02-19 17:49:04 INFO  FiledAssetsOperations:109 - Record searched successfully. 
+2024-02-19 17:49:04 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 17:49:06 INFO  commonLocatorsRepo:79 - Clear searchbox. 
+2024-02-19 17:49:07 INFO  commonLocatorsRepo:82 - Entered value in searchbox. 
+2024-02-19 17:49:09 INFO  FiledAssetsOperations:109 - Record searched successfully. 
+2024-02-19 17:49:10 INFO  FiledAssetsOperations:125 - Retrive all records 
+2024-02-19 17:49:10 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 17:49:10 INFO  commonLocatorsRepo:79 - Clear searchbox. 
+2024-02-19 17:49:10 INFO  commonLocatorsRepo:82 - Entered value in searchbox. 
+2024-02-19 17:49:12 INFO  FiledAssetsOperations:109 - Record searched successfully. 
+2024-02-19 17:49:12 INFO  commonLocatorsRepo:54 - Waiting until action button is clickable. 
+2024-02-19 17:49:13 INFO  commonLocatorsRepo:57 - Click action button. 
+2024-02-19 17:49:13 INFO  commonLocatorsRepo:62 - Waiting until edit button is clickable. 
+2024-02-19 17:49:13 INFO  commonLocatorsRepo:65 - Action menu presented, Cliked Edit action. 
+2024-02-19 17:49:13 INFO  FiledAssetsOperations:151 - Edit Field half screen present. 
+2024-02-19 17:49:13 INFO  FiledAssetsOperations:170 - Click on Field name. 
+2024-02-19 17:49:15 INFO  FiledAssetsOperations:174 - Clear text box. 
+2024-02-19 17:49:17 INFO  FiledAssetsOperations:178 - Input upgreaded Field name. 
+2024-02-19 17:49:17 INFO  FiledAssetsOperations:188 - Click on Submit button. 
+2024-02-19 17:49:20 INFO  TestBase:66 - ------------------------------------------------------------------------ 
+2024-02-19 17:49:21 INFO  commonLocatorsRepo:79 - Clear searchbox. 
+2024-02-19 17:49:21 INFO  commonLocatorsRepo:82 - Entered value in searchbox. 
+2024-02-19 17:49:23 INFO  FiledAssetsOperations:109 - Record searched successfully. 
+2024-02-19 17:49:23 INFO  commonLocatorsRepo:54 - Waiting until action button is clickable. 
+2024-02-19 17:49:23 INFO  commonLocatorsRepo:57 - Click action button. 
+2024-02-19 17:49:23 INFO  commonLocatorsRepo:70 - Waiting until delete button is clickable. 
+2024-02-19 17:49:24 INFO  commonLocatorsRepo:73 - Action menu presented, Cliked delete action. 
+2024-02-19 17:49:24 INFO  FiledAssetsOperations:209 - Delete confirmation popup is present. 
+2024-02-19 17:49:24 INFO  FiledAssetsOperations:225 - Cliked on Yes button to confirm delete record. 
+2024-02-19 17:49:28 INFO  commonLocatorsRepo:79 - Clear searchbox. 
+2024-02-19 17:49:28 INFO  commonLocatorsRepo:82 - Entered value in searchbox. 
+2024-02-19 17:49:40 INFO  FiledAssetsOperations:236 - 'SKDWTVCXEdited' Field has been deleted successfully. 
+2024-02-19 17:49:43 INFO  FiledAssetsOperations:125 - Retrive all records 
