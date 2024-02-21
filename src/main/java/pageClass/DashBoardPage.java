@@ -1,6 +1,9 @@
 package pageClass;
 
+import java.util.List;
+
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -41,24 +44,42 @@ public class DashBoardPage {
 	}
 
 	public void clickOnAssets() throws ApplicationException {
-		if (asset.isDisplayed()) {
-			utility.WaitUntilElementIsNotClickable(asset, 10);
-			log.info("Waiting until Assets manu is clickable.");
-			utility.Submit(asset);
-			log.info("Click on Assets menu.");
+		List<WebElement> assets_CollapseHidden = driver.findElements(By.xpath(
+				"//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-hidden')]"));
+		if (assets_CollapseHidden.size() > 0) {
+			if (asset.isDisplayed()) {
+				utility.WaitUntilElementIsNotClickable(asset, 10);
+				log.info("Waiting until Assets manu is clickable.");
+				utility.Submit(asset);
+				log.info("Click on Assets menu.");
+			} else {
+				throw new ApplicationException("Exception Occured", "Assets is not display.");
+			}
 		} else {
-			throw new ApplicationException("Exception Occured", "Assets is not display.");
+			log.info("Assets is already open.");
 		}
 	}
 
 	public void clickOnMenuItem(String menuNAme) throws ApplicationException, InterruptedException {
+		List<WebElement> assets_CollapseHidden = driver.findElements(By.xpath(
+				"//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-hidden')]"));
 
-		if (menuNAme.equals("Company")) {
-			selectMenu(companyMenu, menuNAme);
-		} else if (menuNAme.equals("Field")) {
-			// clickOnAssets(); // Temp
-			selectMenu(fieldMenu, menuNAme);
+		try {
+			if (assets_CollapseHidden.size() == 0 || assets_CollapseHidden.size() == ' ') {
+				if (menuNAme.equals("Company")) {
+					selectMenu(companyMenu, menuNAme);
+				} else if (menuNAme.equals("Field")) {
+					// clickOnAssets(); // Temp
+					selectMenu(fieldMenu, menuNAme);
+				}
+			} else {
+				utility.Submit(asset);
+
+			}
+		} catch (Exception e) {
+			log.info("Somthing not working for Assets-> " + e);
 		}
+
 	}
 
 	public void selectMenu(WebElement ele, String menuNAme) throws ApplicationException, InterruptedException {

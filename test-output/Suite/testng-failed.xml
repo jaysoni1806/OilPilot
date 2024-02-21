@@ -9,12 +9,15 @@
     <classes>
       <class name="testPackage.FieldAssetsTest">
         <methods>
-          <include name="editCompany"/>
           <include name="seperateCase"/>
           <include name="initializeExtentReport"/>
           <include name="assignObjectForClass"/>
+          <include name="createField"/>
+          <include name="deleteField"/>
+          <include name="editField"/>
           <include name="prerequisite"/>
           <include name="flush"/>
+          <include name="searchFleld"/>
         </methods>
       </class> <!-- testPackage.FieldAssetsTest -->
     </classes>

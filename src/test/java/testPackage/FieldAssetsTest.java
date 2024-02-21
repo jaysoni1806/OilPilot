@@ -15,8 +15,14 @@ public class FieldAssetsTest extends TestBase {
 
 	@Test(priority = 0, description = "Test create Field assets.")
 	public void createField() throws ApplicationException, InterruptedException {
-		fieldAstsop.verifyTheScreen();
-		ExtentReportManager.test.log(Status.PASS, "Navigate to Filed Screen.");
+		dashboard.clickOnAssets();
+		ExtentReportManager.test.log(Status.PASS, "Click on Assets");
+		dashboard.clickOnMenuItem("Field");
+		ExtentReportManager.test.log(Status.PASS, "Click on Field menu.");
+		/*
+		 * fieldAstsop.verifyTheScreen(); ExtentReportManager.test.log(Status.PASS,
+		 * "Navigate to Filed Screen.");
+		 */
 		fieldAstsop.clickAddButtonAndVerifyAddFieldHalfCardIsPresentOrNot();
 		ExtentReportManager.test.log(Status.PASS, "Click on Add button and Verify Add Field half card.");
 		fieldAstsop.EnterFiledDetails(field_name, sonris_id);
@@ -38,7 +44,7 @@ public class FieldAssetsTest extends TestBase {
 	}
 
 	@Test(priority = 2, description = "Test edit Field assets.")
-	public void editCompany() throws ApplicationException, InterruptedException {
+	public void editField() throws ApplicationException, InterruptedException {
 		fieldAstsop.searchRecentAddedFieldForEdit();
 		ExtentReportManager.test.log(Status.PASS, "Search recently created Field for Edit");
 		fieldAstsop.clickEdit_actionUnderThePerent_actionandVerifyEditHalfCardIsPresentOrNot();
@@ -52,7 +58,7 @@ public class FieldAssetsTest extends TestBase {
 	}
 
 	@Test(priority = 3, description = "Test Delete Field assets.")
-	public void deleteCompany() throws ApplicationException, InterruptedException {
+	public void deleteField() throws ApplicationException, InterruptedException {
 		fieldAstsop.searchRecentAddedFieldForDelete();
 		ExtentReportManager.test.log(Status.PASS, "Received recently updated field for Delete.");
 		fieldAstsop.clickDelete_actionUnderThePerent_actionandVerifyDeleteConfirmationpopupIsPresentOrNot();

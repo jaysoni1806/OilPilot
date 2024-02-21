@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods, 1 failed,   8 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testPackage.FieldAssetsTest" class="method navigator-link" hash-for-method="editCompany">editCompany</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,32 +104,17 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testPackage.CompanyAssetsTest" class="method navigator-link" hash-for-method="createCompany">createCompany</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testPackage.FieldAssetsTest" class="method navigator-link" hash-for-method="createField">createField</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testPackage.FieldAssetsTest" class="method navigator-link" hash-for-method="deleteCompany">deleteCompany</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testPackage.FieldAssetsTest" class="method navigator-link" hash-for-method="deleteField">deleteField</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testPackage.CompanyAssetsTest" class="method navigator-link" hash-for-method="deleteCompany">deleteCompany</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testPackage.CompanyAssetsTest" class="method navigator-link" hash-for-method="editCompany">editCompany</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testPackage.CompanyAssetsTest" class="method navigator-link" hash-for-method="searchCompany">searchCompany</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testPackage.FieldAssetsTest" class="method navigator-link" hash-for-method="editField">editField</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -168,73 +139,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testPackage.FieldAssetsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="editCompany">
-                  </a> <!-- editCompany -->
-                  <span class="method-name">editCompany</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [We have successfully updated the Company.] but found [We have successfully updated the Field.]
-	at pageClass.FiledAssetsOperations.clickOnsubmitAndVerifyThatTheFieldIsUpdateOrNot(FiledAssetsOperations.java:192)
-	at testPackage.FieldAssetsTest.editCompany(FieldAssetsTest.java:48)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 33 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(Test edit Field assets.)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testPackage.CompanyAssetsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="createCompany">
-                  </a> <!-- createCompany -->
-                  <span class="method-name">createCompany</span>
-                  <em>
-(Test create Company assets.)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="deleteCompany">
-                  </a> <!-- deleteCompany -->
-                  <span class="method-name">deleteCompany</span>
-                  <em>
-(Test Delete Company assets.)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="editCompany">
-                  </a> <!-- editCompany -->
-                  <span class="method-name">editCompany</span>
-                  <em>
-(Test Edit Company assets.)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="searchCompany">
-                  </a> <!-- searchCompany -->
-                  <span class="method-name">searchCompany</span>
-                  <em>
-(Test Search company.)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -270,11 +174,20 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="deleteCompany">
-                  </a> <!-- deleteCompany -->
-                  <span class="method-name">deleteCompany</span>
+                  <a name="deleteField">
+                  </a> <!-- deleteField -->
+                  <span class="method-name">deleteField</span>
                   <em>
 (Test Delete Field assets.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editField">
+                  </a> <!-- editField -->
+                  <span class="method-name">editField</span>
+                  <em>
+(Test edit Field assets.)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -305,7 +218,6 @@
   &lt;test thread-count=&quot;5&quot; name=&quot;Oilman&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testPackage.LoginTest&quot;/&gt;
-      &lt;class name=&quot;testPackage.CompanyAssetsTest&quot;/&gt;
       &lt;class name=&quot;testPackage.FieldAssetsTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Oilman --&gt;
@@ -320,7 +232,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Oilman (3 classes)</span>
+                <span class="test-name">Oilman (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -346,43 +258,27 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(9);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validLoginTest')
-data.setCell(0, 2, 'testPackage.LoginTest')
-data.setCell(0, 3, 31676);
+data.setCell(0, 1, 'createField')
+data.setCell(0, 2, 'testPackage.FieldAssetsTest')
+data.setCell(0, 3, 73114);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'deleteCompany')
-data.setCell(1, 2, 'testPackage.CompanyAssetsTest')
-data.setCell(1, 3, 25657);
+data.setCell(1, 1, 'deleteField')
+data.setCell(1, 2, 'testPackage.FieldAssetsTest')
+data.setCell(1, 3, 24198);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'deleteCompany')
-data.setCell(2, 2, 'testPackage.FieldAssetsTest')
-data.setCell(2, 3, 23383);
+data.setCell(2, 1, 'validLoginTest')
+data.setCell(2, 2, 'testPackage.LoginTest')
+data.setCell(2, 3, 24168);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'createField')
+data.setCell(3, 1, 'editField')
 data.setCell(3, 2, 'testPackage.FieldAssetsTest')
-data.setCell(3, 3, 20981);
+data.setCell(3, 3, 10069);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'editCompany')
-data.setCell(4, 2, 'testPackage.CompanyAssetsTest')
-data.setCell(4, 3, 9398);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'editCompany')
-data.setCell(5, 2, 'testPackage.FieldAssetsTest')
-data.setCell(5, 3, 8136);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'createCompany')
-data.setCell(6, 2, 'testPackage.CompanyAssetsTest')
-data.setCell(6, 3, 7948);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'searchFleld')
-data.setCell(7, 2, 'testPackage.FieldAssetsTest')
-data.setCell(7, 3, 5383);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'searchCompany')
-data.setCell(8, 2, 'testPackage.CompanyAssetsTest')
-data.setCell(8, 3, 3256);
+data.setCell(4, 1, 'searchFleld')
+data.setCell(4, 2, 'testPackage.FieldAssetsTest')
+data.setCell(4, 3, 4109);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -402,20 +298,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">6 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testPackage.CompanyAssetsTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">initializeExtentReport</span>
-                <br/>
-                <span class="ignored-method-name">prerequisite</span>
-                <br/>
-                <span class="ignored-method-name">flush</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
             <div class="ignored-class-div">
               <span class="ignored-class-name">testPackage.FieldAssetsTest</span>
               <div class="ignored-methods-div">
@@ -442,106 +327,65 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">initializeExtentReport</span>
-                <span class="method-start">24280 ms</span>
+                <span class="method-start">10216 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">assignObjectForClass</span>
-                <span class="method-start">26199 ms</span>
+                <span class="method-start">10650 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">seperateCase</span>
-                <span class="method-start">26298 ms</span>
+                <span class="method-start">10869 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validLoginTest(jay.soni+manager@openxcell.com, QA@12345)</span>
-                <span class="method-start">26303 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testPackage.CompanyAssetsTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">assignObjectForClass</span>
-                <span class="method-start">57989 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="configuration-method before">
-                <span class="method-name">seperateCase</span>
-                <span class="method-start">58003 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">createCompany</span>
-                <span class="method-start">58005 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">seperateCase</span>
-                <span class="method-start">65956 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">searchCompany</span>
-                <span class="method-start">65957 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">seperateCase</span>
-                <span class="method-start">69216 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">editCompany</span>
-                <span class="method-start">69217 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">seperateCase</span>
-                <span class="method-start">78618 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">deleteCompany</span>
-                <span class="method-start">78621 ms</span>
+                <span class="method-start">10877 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testPackage.FieldAssetsTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">assignObjectForClass</span>
-                <span class="method-start">104281 ms</span>
+                <span class="method-start">35060 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">seperateCase</span>
-                <span class="method-start">104294 ms</span>
+                <span class="method-start">35071 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createField</span>
-                <span class="method-start">104296 ms</span>
+                <span class="method-start">35073 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">seperateCase</span>
-                <span class="method-start">125280 ms</span>
+                <span class="method-start">108190 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchFleld</span>
-                <span class="method-start">125281 ms</span>
+                <span class="method-start">108193 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">seperateCase</span>
-                <span class="method-start">130666 ms</span>
+                <span class="method-start">112305 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">editCompany</span>
-                <span class="method-start">130669 ms</span>
+                <span class="method-name">editField</span>
+                <span class="method-start">112306 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">seperateCase</span>
-                <span class="method-start">140336 ms</span>
+                <span class="method-start">122379 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">deleteCompany</span>
-                <span class="method-start">140337 ms</span>
+                <span class="method-name">deleteField</span>
+                <span class="method-start">122380 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testPackage.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">flush</span>
-                <span class="method-start">163723 ms</span>
+                <span class="method-start">146580 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
