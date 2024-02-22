@@ -43,6 +43,9 @@ public class commonLocatorsRepo {
 	@FindBy(xpath = "//span[@role='progressbar']")
 	public static WebElement loaderSpinnitng;
 
+	// div[contains(@class,'paperAnchorRight')][not(contains(@style,'visibility:
+	// hidden'))]
+
 	public void input(String inputFiledplaceHolder, String inputFiledValue) {
 		WebElement inputCompanyName = driver
 				.findElement(By.xpath("//input[@placeholder='" + inputFiledplaceHolder + "']"));

@@ -1,18 +1,14 @@
-[
-	    {
-	      "username":"invalidemail",
-	      "password":"abcd@1234"
-	    },
-	  	{
-	      "username":"doe@abc.com",
-	      "password":"pwd4"
-		},
-		 {
-	      "username":"rendom@openxcell.com",
-	      "password":"admin@1234"
-	    },
-	   {
-	      "username":"viren@openxcell.com",
-	      "password":"admin@1234"
-	    }
-]
+{
+"validLoginTest":[
+	{
+        "username": "jay.soni+manager@openxcell.com",
+	    "password": "QA@12345"
+      }
+     ],
+"loginWithInvalidCredentials":[
+	{
+         "username": "doe@abc.com",
+	     "password": "pwd4"
+      }
+     ]
+ }

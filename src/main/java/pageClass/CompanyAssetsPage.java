@@ -13,7 +13,7 @@ import org.testng.Assert;
 import com.commonUtil.ApplicationException;
 import com.commonUtil.Utility;
 
-public class CompanyAssetsOperations {
+public class CompanyAssetsPage {
 
 	WebDriver driver;
 	Utility utility;
@@ -22,9 +22,9 @@ public class CompanyAssetsOperations {
 	public static String Company_name;
 	public String expactedToastMessage;
 	commonLocatorsRepo commLocators;
-	public static Logger log = Logger.getLogger(CompanyAssetsOperations.class);
+	public static Logger log = Logger.getLogger(CompanyAssetsPage.class);
 
-	public CompanyAssetsOperations(WebDriver driver) {
+	public CompanyAssetsPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(this.driver, this);
 		utility = new Utility(driver);

@@ -13,7 +13,7 @@ import org.testng.Assert;
 import com.commonUtil.ApplicationException;
 import com.commonUtil.Utility;
 
-public class FiledAssetsOperations {
+public class FiledAssetsPage {
 	WebDriver driver;
 	Utility utility;
 	DashBoardPage dashboard;
@@ -22,9 +22,9 @@ public class FiledAssetsOperations {
 	public String sonris_id;
 	public String updatedField;
 	public String updatedSonris_id;
-	public static Logger log = Logger.getLogger(FiledAssetsOperations.class);
+	public static Logger log = Logger.getLogger(FiledAssetsPage.class);
 
-	public FiledAssetsOperations(WebDriver driver) {
+	public FiledAssetsPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		utility = new Utility(driver);

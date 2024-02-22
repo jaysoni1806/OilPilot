@@ -33,6 +33,8 @@ public class DashBoardPage {
 	public WebElement companyMenu;
 	@FindBy(xpath = "//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-entered')]//li//a[@href='/assets/field/']")
 	public WebElement fieldMenu;
+	@FindBy(xpath = "//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-entered')]//li//a[@href='/assets/lease/']")
+	public WebElement leaseMenu;
 	@FindBy(xpath = "//div[contains(@class,'react-hot-toast')]//div[@role='status']")
 	public WebElement toastMessage;
 
@@ -65,12 +67,13 @@ public class DashBoardPage {
 				"//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-hidden')]"));
 
 		try {
-			if (assets_CollapseHidden.size() == 0 || assets_CollapseHidden.size() == ' ') {
+			if (assets_CollapseHidden.isEmpty()) {
 				if (menuNAme.equals("Company")) {
 					selectMenu(companyMenu, menuNAme);
 				} else if (menuNAme.equals("Field")) {
-					// clickOnAssets(); // Temp
 					selectMenu(fieldMenu, menuNAme);
+				} else if (menuNAme.equals("Lease")) {
+					selectMenu(leaseMenu, menuNAme);
 				}
 			} else {
 				utility.Submit(asset);
@@ -82,11 +85,11 @@ public class DashBoardPage {
 
 	}
 
-	public void selectMenu(WebElement ele, String menuNAme) throws ApplicationException, InterruptedException {
-		if (ele.isDisplayed()) {
-			utility.WaitUntilElementIsNotClickable(ele, 5);
+	public void selectMenu(WebElement MenuElement, String menuNAme) throws ApplicationException, InterruptedException {
+		if (MenuElement.isDisplayed()) {
+			utility.WaitUntilElementIsNotClickable(MenuElement, 5);
 			log.info("Wait until " + menuNAme + " manu is clickable.");
-			utility.Submit(ele);
+			utility.Submit(MenuElement);
 			log.info("Click on " + menuNAme + " manu item.");
 
 		} else if (assets_CollapseHidden.isDisplayed()) {

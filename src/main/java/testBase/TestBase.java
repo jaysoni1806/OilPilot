@@ -15,9 +15,10 @@ import org.testng.annotations.BeforeTest;
 import com.Listeners.ExtentReportListener;
 import com.commonUtil.ExtentReportManager;
 
-import pageClass.CompanyAssetsOperations;
+import pageClass.CompanyAssetsPage;
 import pageClass.DashBoardPage;
-import pageClass.FiledAssetsOperations;
+import pageClass.FiledAssetsPage;
+import pageClass.LeaseAssetsPage;
 import pageClass.LoginPage;
 import pageClass.commonLocatorsRepo;
 
@@ -26,9 +27,10 @@ public class TestBase {
 	public static WebDriver driver;
 	public LoginPage login;
 	public DashBoardPage dashboard;
-	public CompanyAssetsOperations cmpAstsOp;
-	public FiledAssetsOperations fieldAstsop;
-	commonLocatorsRepo commLocators;
+	public CompanyAssetsPage cmpAstsOp;
+	public FiledAssetsPage fieldAstsop;
+	public commonLocatorsRepo commLocators;
+	public LeaseAssetsPage leaseAstop;
 	public static Logger log = Logger.getLogger(TestBase.class);
 
 	@BeforeSuite
@@ -49,10 +51,10 @@ public class TestBase {
 	public void assignObjectForClass() {
 		login = new LoginPage(driver);
 		dashboard = new DashBoardPage(driver);
-		cmpAstsOp = new CompanyAssetsOperations(driver);
-		fieldAstsop = new FiledAssetsOperations(driver);
+		cmpAstsOp = new CompanyAssetsPage(driver);
+		fieldAstsop = new FiledAssetsPage(driver);
 		commLocators = new commonLocatorsRepo(driver);
-
+		leaseAstop = new LeaseAssetsPage(driver);
 	}
 
 	@BeforeTest

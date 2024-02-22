@@ -11,6 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -104,6 +105,11 @@ public class Utility {
 	public boolean WaitUntilElementVisibiltyGone(WebElement element, int second) {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(second));
 		return wait.until(ExpectedConditions.invisibilityOf(element));
+	}
+
+	public static void dropDownMethod(WebElement element, String str) {
+		Select select = new Select(element);
+		select.selectByVisibleText(str);
 	}
 
 	/*
