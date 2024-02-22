@@ -20,6 +20,7 @@ public class LeaseAssetsPage {
 	DashBoardPage dashboard;
 	commonLocatorsRepo commLocators;
 	private List<WebElement> searchRecords;
+	public String LeaseName;
 
 	public LeaseAssetsPage(WebDriver driver) {
 		this.driver = driver;
@@ -31,6 +32,12 @@ public class LeaseAssetsPage {
 
 	@FindBy(xpath = "//div[contains(@class,'paperAnchorRight')][not(contains(@style,'visibility: hidden'))]//form//div[text()='Select company']")
 	WebElement companyDropDown;
+	@FindBy(xpath = "//div[contains(@class,'paperAnchorRight')][not(contains(@style,'visibility: hidden'))]//form//input[@placeholder='Enter name']")
+	private WebElement inputLeaseName;
+	@FindBy(xpath = "//div[contains(@class,'paperAnchorRight')][not(contains(@style,'visibility: hidden'))]//form//button[@type='button']")
+	private WebElement cancelBtn;
+	@FindBy(xpath = "//div[contains(@class,'paperAnchorRight')][not(contains(@style,'visibility: hidden'))]//form//button[@type='submit']")
+	private WebElement submitBtn;
 
 	public void clickAddButtonAndVerifyCreateLeaseHalfCardIsPresentOrNot() throws ApplicationException {
 		searchRecords = driver.findElements(By.xpath("//div[contains(@class,'MuiDataGrid-row')]"));
@@ -39,14 +46,65 @@ public class LeaseAssetsPage {
 		commLocators.clickAddButton();
 	}
 
-	public void selectCompany() {
-		utility.WaitUntilElementIsNotClickable(companyDropDown, 5);
-		utility.Submit(companyDropDown);
-		List<WebElement> companyList = driver.findElements(By.xpath(
-				"//div[contains(@class,'MuiMenu-paper')][not(contains(@style,'visibility: hidden'))]//ul[contains(@class,'MuiMenu-list')]/li"));
+	public void enterLeaseName(String lease_name) throws ApplicationException {
+		// TODO Auto-generated method stub
+		LeaseName = lease_name;
 
-		utility.WaitFor2Second();
-		companyList.get(2).click();
+		if (inputLeaseName.isDisplayed()) {
+			utility.ClearTextBox(inputLeaseName);
+			log.info("Clear the Lease text box.");
+
+			utility.SendValues(inputLeaseName, LeaseName);
+			log.info("Enter Lease name.");
+		} else {
+			throw new ApplicationException("Exception Occured", "Add lease input field is not present.");
+		}
+	}
+
+	public void selectCompany() throws ApplicationException {
+		commLocators.selectValue("Select company", "Company", cancelBtn);
+	}
+
+	public void selectPumper() throws ApplicationException {
+		commLocators.selectValue("Select pumper name", "Pumper", cancelBtn);
+	}
+
+	public void clickAddButtonForCreateNewLease() throws ApplicationException {
+
+		if (submitBtn.isDisplayed()) {
+			utility.Submit(submitBtn);
+			log.info("Click on Submit button.");
+		} else {
+			throw new ApplicationException("Exception Occured", "Submit button is not present.");
+		}
+
+	}
+
+	public void verifyTheLeaseIsCreatedOrnot() throws ApplicationException, InterruptedException {
+
+		utility.WaitUntilElementVisibiltyGone(dashboard.toastMessage, 5);
+		enterCompanyNameinSearchBox(LeaseName);
+		verifySearchedCompanyIsExistsOrNot(LeaseName);
+		// utility.clearSearchBox();
+	}
+
+	public void enterCompanyNameinSearchBox(String leaseName) throws ApplicationException, InterruptedException {
+		commLocators.Search(LeaseName);
+	}
+
+	public void verifySearchedCompanyIsExistsOrNot(String LeaseName) throws ApplicationException {
+		searchRecords = driver.findElements(By.xpath("//div[contains(@class,'MuiDataGrid-row')]"));
+
+		if (searchRecords.size() != 0) {
+			for (WebElement searchedRecord : searchRecords) {
+				WebElement leaseRow = searchedRecord.findElement(By.xpath("//h6[contains(@class,'subtitle2')]"));
+				if (LeaseName.equals(leaseRow.getText())) {
+					log.info("Record searched successfully.");
+				}
+			}
+		} else {
+			throw new ApplicationException("Exception Occured", "Searched record is not present.");
+		}
 	}
 
 }

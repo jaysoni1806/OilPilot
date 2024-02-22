@@ -1,5 +1,7 @@
 package pageClass;
 
+import java.util.List;
+
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -42,9 +44,6 @@ public class commonLocatorsRepo {
 	public WebElement popupAddCompany;
 	@FindBy(xpath = "//span[@role='progressbar']")
 	public static WebElement loaderSpinnitng;
-
-	// div[contains(@class,'paperAnchorRight')][not(contains(@style,'visibility:
-	// hidden'))]
 
 	public void input(String inputFiledplaceHolder, String inputFiledValue) {
 		WebElement inputCompanyName = driver
@@ -92,10 +91,10 @@ public class commonLocatorsRepo {
 	public void clickAddButton() throws ApplicationException {
 		if (addBtton.isDisplayed()) {
 			utility.Submit(addBtton);
-			log.info("Click on Company Add button.");
+			log.info("Click on Add button.");
 
 			utility.WaitForASecond(popupAddCompany, 10);
-			log.info("Add company half card is present.");
+			log.info("Half card is present.");
 		} else {
 			throw new ApplicationException("Exception Occured", "Add button is not Present or Not Clickable.");
 		}
@@ -119,21 +118,29 @@ public class commonLocatorsRepo {
 		System.out.println("Loader icon finished");
 	}
 
-	public static void waitTillLoaderDisappear1() throws InterruptedException, ApplicationException {
-		int count = 0;
-		int maxWaitTime = 30;
-		if (loaderSpinnitng.isDisplayed()) {
-			do {
-				Thread.sleep(1000 * 2);
-				++count;
-				System.out.println("Loader icon in position !!!");
-			} while (loaderSpinnitng != null && count < maxWaitTime);
-			if (count >= maxWaitTime && loaderSpinnitng != null) {
-				throw new ApplicationException("waitTillLoaderDisappear",
-						"Page is stuck on Loading for more than " + (count * 2) + "s !!!");
+	public void selectValue(String dropdowniTem, String dropdownName, WebElement cancelButton)
+			throws ApplicationException {
+		WebElement dropdownElement = driver.findElement(By.xpath(
+				"//div[contains(@class,'paperAnchorRight')][not(contains(@style,'visibility: hidden'))]//form//div[text()='"
+						+ dropdowniTem + "']"));
+		if (dropdownElement.isDisplayed()) {
+			utility.WaitUntilElementIsNotClickable(dropdownElement, 5);
+			utility.Submit(dropdownElement);
+			List<WebElement> dropdownList = driver.findElements(By.xpath(
+					"//div[contains(@class,'MuiMenu-paper')][not(contains(@style,'visibility: hidden'))]//ul[contains(@class,'MuiMenu-list')]/li"));
+
+			utility.WaitFor2Second();
+			if (dropdownList.size() >= 2) {
+				utility.Submit(dropdownList.get(2));
+			} else {
+				utility.Submit(cancelButton);
+				throw new ApplicationException("Exception Occured", dropdownName + " List is null.");
+
 			}
+		} else {
+			throw new ApplicationException("Exception Occured", dropdownName + " Dropdown is not present.");
 		}
-		System.out.println("Loader icon finished");
+
 	}
 
 }

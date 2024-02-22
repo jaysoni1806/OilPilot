@@ -1,43 +1,194 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="5" passed="2" failed="0" skipped="0">
+<testng-results ignored="9" total="19" passed="9" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-22T17:11:05 IST" name="Suite" finished-at="2024-02-22T17:12:03 IST" duration-ms="58318">
+  <suite started-at="2024-02-22T23:57:36 IST" name="Suite" finished-at="2024-02-23T00:00:40 IST" duration-ms="184085">
     <groups>
     </groups>
-    <test started-at="2024-02-22T17:11:05 IST" name="Oilman" finished-at="2024-02-22T17:12:03 IST" duration-ms="58318">
-      <class name="testPackage.LeaseAssetsTest">
-        <test-method is-config="true" signature="assignObjectForClass()[pri:0, instance:testPackage.LeaseAssetsTest@750e2b97]" started-at="2024-02-22T17:11:30 IST" name="assignObjectForClass" finished-at="2024-02-22T17:11:30 IST" duration-ms="27" status="PASS">
+    <test started-at="2024-02-22T23:57:36 IST" name="Oilman" finished-at="2024-02-23T00:00:40 IST" duration-ms="184085">
+      <class name="testPackage.FieldAssetsTest">
+        <test-method is-config="true" signature="assignObjectForClass()[pri:0, instance:testPackage.FieldAssetsTest@4a83a74a]" started-at="2024-02-22T23:59:00 IST" name="assignObjectForClass" finished-at="2024-02-22T23:59:00 IST" duration-ms="10" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assignObjectForClass -->
-        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.LeaseAssetsTest@750e2b97]" started-at="2024-02-22T17:11:30 IST" name="seperateCase" finished-at="2024-02-22T17:11:30 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.FieldAssetsTest@4a83a74a]" started-at="2024-02-22T23:59:00 IST" name="seperateCase" finished-at="2024-02-22T23:59:00 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seperateCase -->
-        <test-method signature="createCompany()[pri:0, instance:testPackage.LeaseAssetsTest@750e2b97]" started-at="2024-02-22T17:11:30 IST" name="createCompany" description="Test create Company assets." finished-at="2024-02-22T17:12:02 IST" duration-ms="32382" status="PASS">
+        <test-method signature="createField()[pri:0, instance:testPackage.FieldAssetsTest@4a83a74a]" started-at="2024-02-22T23:59:00 IST" name="createField" description="Test create Field assets." finished-at="2024-02-22T23:59:31 IST" duration-ms="30678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createField -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.FieldAssetsTest@4a83a74a]" started-at="2024-02-22T23:59:31 IST" name="seperateCase" finished-at="2024-02-22T23:59:31 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="searchFleld()[pri:1, instance:testPackage.FieldAssetsTest@4a83a74a]" started-at="2024-02-22T23:59:31 IST" name="searchFleld" description="Test Search Field." finished-at="2024-02-22T23:59:37 IST" duration-ms="6585" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchFleld -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.FieldAssetsTest@4a83a74a]" started-at="2024-02-22T23:59:37 IST" name="seperateCase" finished-at="2024-02-22T23:59:37 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="editField()[pri:2, instance:testPackage.FieldAssetsTest@4a83a74a]" started-at="2024-02-22T23:59:37 IST" name="editField" description="Test edit Field assets." finished-at="2024-02-22T23:59:50 IST" duration-ms="12273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editField -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.FieldAssetsTest@4a83a74a]" started-at="2024-02-22T23:59:50 IST" name="seperateCase" finished-at="2024-02-22T23:59:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="deleteField()[pri:3, instance:testPackage.FieldAssetsTest@4a83a74a]" started-at="2024-02-22T23:59:50 IST" name="deleteField" description="Test Delete Field assets." finished-at="2024-02-23T00:00:17 IST" duration-ms="27121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteField -->
+      </class> <!-- testPackage.FieldAssetsTest -->
+      <class name="testPackage.CompanyAssetsTest">
+        <test-method is-config="true" signature="assignObjectForClass()[pri:0, instance:testPackage.CompanyAssetsTest@196a42c3]" started-at="2024-02-22T23:57:59 IST" name="assignObjectForClass" finished-at="2024-02-22T23:58:00 IST" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assignObjectForClass -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.CompanyAssetsTest@196a42c3]" started-at="2024-02-22T23:58:00 IST" name="seperateCase" finished-at="2024-02-22T23:58:00 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="createCompany()[pri:0, instance:testPackage.CompanyAssetsTest@196a42c3]" started-at="2024-02-22T23:58:00 IST" name="createCompany" description="Test create Company assets." finished-at="2024-02-22T23:58:19 IST" duration-ms="19353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCompany -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.CompanyAssetsTest@196a42c3]" started-at="2024-02-22T23:58:19 IST" name="seperateCase" finished-at="2024-02-22T23:58:19 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="searchCompany()[pri:1, instance:testPackage.CompanyAssetsTest@196a42c3]" started-at="2024-02-22T23:58:19 IST" name="searchCompany" description="Test Search company." finished-at="2024-02-22T23:58:24 IST" duration-ms="4505" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchCompany -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.CompanyAssetsTest@196a42c3]" started-at="2024-02-22T23:58:24 IST" name="seperateCase" finished-at="2024-02-22T23:58:24 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="editCompany()[pri:2, instance:testPackage.CompanyAssetsTest@196a42c3]" started-at="2024-02-22T23:58:24 IST" name="editCompany" description="Test Edit Company assets." finished-at="2024-02-22T23:58:35 IST" duration-ms="11128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editCompany -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.CompanyAssetsTest@196a42c3]" started-at="2024-02-22T23:58:35 IST" name="seperateCase" finished-at="2024-02-22T23:58:35 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="deleteCompany()[pri:3, instance:testPackage.CompanyAssetsTest@196a42c3]" started-at="2024-02-22T23:58:35 IST" name="deleteCompany" description="Test Delete Company assets." finished-at="2024-02-22T23:59:00 IST" duration-ms="25335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCompany -->
+      </class> <!-- testPackage.CompanyAssetsTest -->
+      <class name="testPackage.LeaseAssetsTest">
+        <test-method is-config="true" signature="assignObjectForClass()[pri:0, instance:testPackage.LeaseAssetsTest@1349883]" started-at="2024-02-23T00:00:17 IST" name="assignObjectForClass" finished-at="2024-02-23T00:00:17 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assignObjectForClass -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.LeaseAssetsTest@1349883]" started-at="2024-02-23T00:00:17 IST" name="seperateCase" finished-at="2024-02-23T00:00:17 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="createCompany()[pri:0, instance:testPackage.LeaseAssetsTest@1349883]" started-at="2024-02-23T00:00:17 IST" name="createCompany" description="Test create Lease assets." finished-at="2024-02-23T00:00:38 IST" duration-ms="21646" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=121.0.6167.187)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [83c438520b017d7879113f9fbe196dc9, isElementDisplayed {id=5707F0501F8D636282883FC398C75EFD_element_322}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.187, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\JAYSON~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53357}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53357/devtoo..., se:cdpVersion: 121.0.6167.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (83c438520b017d7879113f9fbe196dc9)] -> xpath: //div[contains(@class,'MuiDataGrid-row')]]
+Session ID: 83c438520b017d7879113f9fbe196dc9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=121.0.6167.187)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [83c438520b017d7879113f9fbe196dc9, isElementDisplayed {id=5707F0501F8D636282883FC398C75EFD_element_322}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.187, chrome: {chromedriverVersion: 121.0.6167.184 (057a8ae7deb..., userDataDir: C:\Users\JAYSON~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53357}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53357/devtoo..., se:cdpVersion: 121.0.6167.187, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (83c438520b017d7879113f9fbe196dc9)] -> xpath: //div[contains(@class,'MuiDataGrid-row')]]
+Session ID: 83c438520b017d7879113f9fbe196dc9
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.isDisplayed(RemoteWebElement.java:280)
+at org.openqa.selenium.support.ui.ExpectedConditions$9.apply(ExpectedConditions.java:264)
+at org.openqa.selenium.support.ui.ExpectedConditions$9.apply(ExpectedConditions.java:260)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:205)
+at com.commonUtil.Utility.WaitUntilListOfElementIsVisible(Utility.java:97)
+at pageClass.LeaseAssetsPage.clickAddButtonAndVerifyCreateLeaseHalfCardIsPresentOrNot(LeaseAssetsPage.java:44)
+at testPackage.LeaseAssetsTest.createCompany(LeaseAssetsTest.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createCompany -->
       </class> <!-- testPackage.LeaseAssetsTest -->
       <class name="testPackage.LoginTest">
-        <test-method is-config="true" signature="prerequisite()[pri:0, instance:testPackage.LoginTest@71ba6d4e]" started-at="2024-02-22T17:10:55 IST" name="prerequisite" finished-at="2024-02-22T17:11:05 IST" duration-ms="9651" status="PASS">
+        <test-method is-config="true" signature="prerequisite()[pri:0, instance:testPackage.LoginTest@cb0755b]" started-at="2024-02-22T23:57:25 IST" name="prerequisite" finished-at="2024-02-22T23:57:36 IST" duration-ms="11297" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prerequisite -->
-        <test-method is-config="true" signature="initializeExtentReport()[pri:0, instance:testPackage.LoginTest@71ba6d4e]" started-at="2024-02-22T17:11:05 IST" name="initializeExtentReport" finished-at="2024-02-22T17:11:05 IST" duration-ms="399" status="PASS">
+        <test-method is-config="true" signature="initializeExtentReport()[pri:0, instance:testPackage.LoginTest@cb0755b]" started-at="2024-02-22T23:57:36 IST" name="initializeExtentReport" finished-at="2024-02-22T23:57:37 IST" duration-ms="769" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeExtentReport -->
-        <test-method is-config="true" signature="assignObjectForClass()[pri:0, instance:testPackage.LoginTest@71ba6d4e]" started-at="2024-02-22T17:11:05 IST" name="assignObjectForClass" finished-at="2024-02-22T17:11:05 IST" duration-ms="92" status="PASS">
+        <test-method is-config="true" signature="assignObjectForClass()[pri:0, instance:testPackage.LoginTest@cb0755b]" started-at="2024-02-22T23:57:37 IST" name="assignObjectForClass" finished-at="2024-02-22T23:57:37 IST" duration-ms="147" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assignObjectForClass -->
-        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.LoginTest@71ba6d4e]" started-at="2024-02-22T17:11:05 IST" name="seperateCase" finished-at="2024-02-22T17:11:05 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.LoginTest@cb0755b]" started-at="2024-02-22T23:57:38 IST" name="seperateCase" finished-at="2024-02-22T23:57:38 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seperateCase -->
-        <test-method signature="validLoginTest(java.util.Map)[pri:0, instance:testPackage.LoginTest@71ba6d4e]" started-at="2024-02-22T17:11:05 IST" name="validLoginTest" description="Test Valid Login" data-provider="LoginTestData" finished-at="2024-02-22T17:11:30 IST" duration-ms="24411" status="PASS">
+        <test-method signature="validLoginTest(java.util.Map)[pri:0, instance:testPackage.LoginTest@cb0755b]" started-at="2024-02-22T23:57:38 IST" name="validLoginTest" description="Test Valid Login" data-provider="LoginTestData" finished-at="2024-02-22T23:57:59 IST" duration-ms="21372" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,7 +199,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="flush()[pri:0, instance:testPackage.LoginTest@71ba6d4e]" started-at="2024-02-22T17:12:02 IST" name="flush" finished-at="2024-02-22T17:12:03 IST" duration-ms="605" status="PASS">
+        <test-method is-config="true" signature="flush()[pri:0, instance:testPackage.LoginTest@cb0755b]" started-at="2024-02-23T00:00:39 IST" name="flush" finished-at="2024-02-23T00:00:40 IST" duration-ms="1457" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->
