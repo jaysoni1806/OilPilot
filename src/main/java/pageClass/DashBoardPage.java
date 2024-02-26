@@ -48,9 +48,10 @@ public class DashBoardPage {
 	public void clickOnAssets() throws ApplicationException {
 		List<WebElement> assets_CollapseHidden = driver.findElements(By.xpath(
 				"//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-hidden')]"));
+
 		if (assets_CollapseHidden.size() > 0) {
 			if (asset.isDisplayed()) {
-				utility.WaitUntilElementIsNotClickable(asset, 10);
+				utility.WaitUntilElementIsNotClickable(asset, 5);
 				log.info("Waiting until Assets manu is clickable.");
 				utility.Submit(asset);
 				log.info("Click on Assets menu.");

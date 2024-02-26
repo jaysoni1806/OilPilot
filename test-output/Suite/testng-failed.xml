@@ -12,9 +12,9 @@
           <include name="seperateCase"/>
           <include name="initializeExtentReport"/>
           <include name="assignObjectForClass"/>
+          <include name="createLease"/>
           <include name="prerequisite"/>
           <include name="flush"/>
-          <include name="createCompany"/>
         </methods>
       </class> <!-- testPackage.LeaseAssetsTest -->
     </classes>

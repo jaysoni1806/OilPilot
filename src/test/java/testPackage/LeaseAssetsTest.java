@@ -13,7 +13,7 @@ public class LeaseAssetsTest extends TestBase {
 	public String Lease_name = commonUtil.getRandomString(4);
 
 	@Test(priority = 0, description = "Test create Lease assets.")
-	public void createCompany() throws ApplicationException, InterruptedException {
+	public void createLease() throws ApplicationException, InterruptedException {
 
 		dashboard.clickOnAssets();
 		ExtentReportManager.test.log(Status.PASS, "Click on Assets");

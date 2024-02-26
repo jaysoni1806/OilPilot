@@ -126,10 +126,11 @@ public class commonLocatorsRepo {
 		if (dropdownElement.isDisplayed()) {
 			utility.WaitUntilElementIsNotClickable(dropdownElement, 5);
 			utility.Submit(dropdownElement);
+			utility.WaitFor2Second();
+
 			List<WebElement> dropdownList = driver.findElements(By.xpath(
 					"//div[contains(@class,'MuiMenu-paper')][not(contains(@style,'visibility: hidden'))]//ul[contains(@class,'MuiMenu-list')]/li"));
 
-			utility.WaitFor2Second();
 			if (dropdownList.size() >= 2) {
 				utility.Submit(dropdownList.get(2));
 			} else {

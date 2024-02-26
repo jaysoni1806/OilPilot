@@ -53,7 +53,6 @@ public class FiledAssetsPage {
 	}
 
 	public void clickAddButtonAndVerifyAddFieldHalfCardIsPresentOrNot() throws ApplicationException {
-
 		try {
 			List<WebElement> searchRecords = driver.findElements(By.xpath("//div[contains(@class,'MuiDataGrid-row')]"));
 			utility.WaitUntilListOfElementIsVisible(searchRecords, 5);

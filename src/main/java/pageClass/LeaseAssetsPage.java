@@ -40,8 +40,13 @@ public class LeaseAssetsPage {
 	private WebElement submitBtn;
 
 	public void clickAddButtonAndVerifyCreateLeaseHalfCardIsPresentOrNot() throws ApplicationException {
-		searchRecords = driver.findElements(By.xpath("//div[contains(@class,'MuiDataGrid-row')]"));
-		utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
+		try {
+			List<WebElement> searchRecords = driver.findElements(By.xpath("//div[contains(@class,'MuiDataGrid-row')]"));
+			utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
+		} catch (org.openqa.selenium.StaleElementReferenceException ex) {
+			List<WebElement> searchRecords = driver.findElements(By.xpath("//div[contains(@class,'MuiDataGrid-row')]"));
+			utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
+		}
 		log.info("Wait until loading lease list.");
 		commLocators.clickAddButton();
 	}
