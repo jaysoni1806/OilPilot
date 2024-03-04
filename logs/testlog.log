@@ -2541,3 +2541,119 @@ Session ID: 1ea31b6bfc39347331e0a93fc1a501d1
 2024-02-23 16:17:06 INFO  TestBase:68 - ------------------------------------------------------------------------ 
 2024-02-23 16:17:07 INFO  commonLocatorsRepo:81 - Clear searchbox. 
 2024-02-23 16:17:07 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-02-26 18:32:35 INFO  TestBase:41 - ************************************************************************ 
+2024-02-26 18:32:35 INFO  TestBase:42 - Chrome browser launched. 
+2024-02-26 18:33:27 INFO  TestBase:45 - Hit Oilman URL.  
+2024-02-26 18:35:43 INFO  TestBase:41 - ************************************************************************ 
+2024-02-26 18:35:43 INFO  TestBase:42 - Chrome browser launched. 
+2024-02-26 18:37:52 INFO  TestBase:45 - Hit Oilman URL.  
+2024-02-26 19:01:07 INFO  TestBase:41 - ************************************************************************ 
+2024-02-26 19:01:07 INFO  TestBase:42 - Chrome browser launched. 
+2024-02-26 19:01:08 INFO  TestBase:45 - Hit Oilman URL.  
+2024-02-26 19:01:14 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-02-26 19:01:15 INFO  LoginPage:53 - Enter Email id. 
+2024-02-26 19:01:15 INFO  LoginPage:67 - Enter Password. 
+2024-02-26 19:01:15 INFO  LoginPage:76 - Cliked on Submit button. 
+2024-02-26 19:01:31 INFO  LoginPage:87 - Logged successfully navigated on Dashboard 
+2024-02-26 19:01:31 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-02-26 19:01:31 INFO  DashBoardPage:55 - Waiting until Assets manu is clickable. 
+2024-02-26 19:01:32 INFO  DashBoardPage:57 - Click on Assets menu. 
+2024-02-26 19:01:42 INFO  DashBoardPage:92 - Wait until Company manu is clickable. 
+2024-02-26 19:01:42 INFO  DashBoardPage:94 - Click on Company manu item. 
+2024-02-26 19:01:43 INFO  CompanyAssetsPage:56 - Wait until loading company list. 
+2024-02-26 19:01:43 INFO  commonLocatorsRepo:94 - Click on Add button. 
+2024-02-26 19:01:43 INFO  commonLocatorsRepo:97 - Half card is present. 
+2024-02-26 19:01:43 INFO  CompanyAssetsPage:65 - Clear the Company text box. 
+2024-02-26 19:01:43 INFO  CompanyAssetsPage:68 - Enter Company name. 
+2024-02-26 19:01:43 INFO  CompanyAssetsPage:79 - Click on Submit button. 
+2024-02-26 19:01:47 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-02-26 19:01:47 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-02-26 19:01:49 INFO  CompanyAssetsPage:105 - Record searched successfully. 
+2024-02-26 19:01:49 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-02-26 19:01:50 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-02-26 19:01:50 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-02-26 19:01:52 INFO  CompanyAssetsPage:105 - Record searched successfully. 
+2024-02-26 19:01:52 INFO  CompanyAssetsPage:121 - Retrive all records 
+2024-02-26 19:01:52 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-02-26 19:01:53 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-02-26 19:01:53 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-02-26 19:01:55 INFO  CompanyAssetsPage:105 - Record searched successfully. 
+2024-02-26 19:01:55 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-02-26 19:01:55 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-02-26 19:01:55 INFO  commonLocatorsRepo:64 - Waiting until edit button is clickable. 
+2024-02-26 19:01:55 INFO  commonLocatorsRepo:67 - Action menu presented, Cliked Edit action. 
+2024-02-26 19:01:55 INFO  CompanyAssetsPage:141 - Edit Company half screen present. 
+2024-02-26 19:01:56 INFO  CompanyAssetsPage:159 - Click on Company name. 
+2024-02-26 19:01:58 INFO  CompanyAssetsPage:163 - Clear text box. 
+2024-02-26 19:02:00 INFO  CompanyAssetsPage:167 - Input upgreaded Company name. 
+2024-02-26 19:02:00 INFO  CompanyAssetsPage:177 - Click on Submit button. 
+2024-02-26 19:02:00 INFO  CompanyAssetsPage:182 - '54LREdited' Company update successfully. 
+2024-02-26 19:02:01 INFO  CompanyAssetsPage:121 - Retrive all records 
+2024-02-26 19:02:01 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-02-26 19:02:01 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-02-26 19:02:02 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-02-26 19:02:04 INFO  CompanyAssetsPage:105 - Record searched successfully. 
+2024-02-26 19:02:04 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-02-26 19:02:04 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-02-26 19:02:04 INFO  commonLocatorsRepo:72 - Waiting until delete button is clickable. 
+2024-02-26 19:02:04 INFO  commonLocatorsRepo:75 - Action menu presented, Cliked delete action. 
+2024-02-26 19:02:04 INFO  CompanyAssetsPage:203 - Delete confirmation popup is present. 
+2024-02-26 19:02:05 INFO  CompanyAssetsPage:219 - Cliked on Yes button to confirm delete record. 
+2024-02-26 19:02:09 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-02-26 19:02:09 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-02-26 19:02:21 INFO  CompanyAssetsPage:230 - '54LREdited' Company has been deleted successfully. 
+2024-02-26 19:02:24 INFO  CompanyAssetsPage:121 - Retrive all records 
+2024-02-26 19:02:24 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-02-26 19:02:34 INFO  DashBoardPage:62 - Assets is already open. 
+2024-02-26 19:02:44 INFO  DashBoardPage:92 - Wait until Field manu is clickable. 
+2024-02-26 19:02:45 INFO  DashBoardPage:94 - Click on Field manu item. 
+2024-02-26 19:02:46 INFO  FiledAssetsPage:64 - Wait until loading field list. 
+2024-02-26 19:02:46 INFO  commonLocatorsRepo:94 - Click on Add button. 
+2024-02-26 19:02:46 INFO  commonLocatorsRepo:97 - Half card is present. 
+2024-02-26 19:02:46 INFO  FiledAssetsPage:72 - Enter Filed name. 
+2024-02-26 19:02:46 INFO  FiledAssetsPage:75 - Enter SONRIS Field ID 
+2024-02-26 19:02:47 INFO  FiledAssetsPage:82 - Click on Submit button. 
+2024-02-26 19:02:50 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-02-26 19:02:50 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-02-26 19:02:52 INFO  FiledAssetsPage:108 - Record searched successfully. 
+2024-02-26 19:02:52 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-02-26 19:02:53 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-02-26 19:02:53 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-02-26 19:02:56 INFO  FiledAssetsPage:108 - Record searched successfully. 
+2024-02-26 19:02:56 INFO  FiledAssetsPage:124 - Retrive all records 
+2024-02-26 19:02:56 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-02-26 19:02:56 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-02-26 19:02:57 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-02-26 19:02:59 INFO  FiledAssetsPage:108 - Record searched successfully. 
+2024-02-26 19:02:59 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-02-26 19:02:59 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-02-26 19:02:59 INFO  commonLocatorsRepo:64 - Waiting until edit button is clickable. 
+2024-02-26 19:02:59 INFO  commonLocatorsRepo:67 - Action menu presented, Cliked Edit action. 
+2024-02-26 19:02:59 INFO  FiledAssetsPage:150 - Edit Field half screen present. 
+2024-02-26 19:02:59 INFO  FiledAssetsPage:169 - Click on Field name. 
+2024-02-26 19:03:01 INFO  FiledAssetsPage:173 - Clear text box. 
+2024-02-26 19:03:04 INFO  FiledAssetsPage:177 - Input upgreaded Field name. 
+2024-02-26 19:03:04 INFO  FiledAssetsPage:187 - Click on Submit button. 
+2024-02-26 19:03:05 INFO  FiledAssetsPage:192 - 'OL7AXTVYEdited' Field update successfully. 
+2024-02-26 19:03:06 INFO  FiledAssetsPage:124 - Retrive all records 
+2024-02-26 19:03:06 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-02-26 19:03:06 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-02-26 19:03:07 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-02-26 19:03:09 INFO  FiledAssetsPage:108 - Record searched successfully. 
+2024-02-26 19:03:09 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-02-26 19:03:09 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-02-26 19:03:09 INFO  commonLocatorsRepo:72 - Waiting until delete button is clickable. 
+2024-02-26 19:03:09 INFO  commonLocatorsRepo:75 - Action menu presented, Cliked delete action. 
+2024-02-26 19:03:09 INFO  FiledAssetsPage:208 - Delete confirmation popup is present. 
+2024-02-26 19:03:09 INFO  FiledAssetsPage:224 - Cliked on Yes button to confirm delete record. 
+2024-02-26 19:03:14 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-02-26 19:03:14 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-02-26 19:03:26 INFO  FiledAssetsPage:235 - 'OL7AXTVYEdited' Field has been deleted successfully. 
+2024-02-26 19:03:30 INFO  FiledAssetsPage:124 - Retrive all records 
+2024-02-26 19:03:30 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-02-26 19:03:40 INFO  DashBoardPage:62 - Assets is already open. 
+2024-02-26 19:03:50 INFO  DashBoardPage:92 - Wait until Lease manu is clickable. 
+2024-02-26 19:03:50 INFO  DashBoardPage:94 - Click on Lease manu item. 
+2024-02-26 19:03:53 INFO  LeaseAssetsPage:50 - Wait until loading lease list. 
+2024-02-26 19:03:53 INFO  commonLocatorsRepo:94 - Click on Add button. 
+2024-02-26 19:03:53 INFO  commonLocatorsRepo:97 - Half card is present. 

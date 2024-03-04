@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods,   10 passed</span>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testPackage.LeaseAssetsTest" class="method navigator-link" hash-for-method="createLease">createLease</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -110,11 +124,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testPackage.FieldAssetsTest" class="method navigator-link" hash-for-method="createField">createField</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testPackage.LeaseAssetsTest" class="method navigator-link" hash-for-method="createLease">createLease</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -164,6 +173,51 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testPackage.LeaseAssetsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createLease">
+                  </a> <!-- createLease -->
+                  <span class="method-name">createLease</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@class,&apos;paperAnchorRight&apos;)][not(contains(@style,&apos;visibility: hidden&apos;))]//form//input[@placeholder=&apos;Enter name&apos;]&quot;}
+  (Session info: chrome=122.0.6261.69)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.7&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7e6e9ecdfc5de3cdd1e50c522ed541be, findElement {using=xpath, value=//div[contains(@class,&apos;paperAnchorRight&apos;)][not(contains(@style,&apos;visibility: hidden&apos;))]//form//input[@placeholder=&apos;Enter name&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.69, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: /var/folders/p2/q2yjzrxs10s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55169}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55169/devtoo..., se:cdpVersion: 122.0.6261.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7e6e9ecdfc5de3cdd1e50c522ed541be
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.isDisplayed(Unknown Source)
+	at pageClass.LeaseAssetsPage.enterLeaseName(LeaseAssetsPage.java:58)
+	at testPackage.LeaseAssetsTest.createLease(LeaseAssetsTest.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Test create Lease assets.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -222,23 +276,6 @@
                   <span class="method-name">searchFleld</span>
                   <em>
 (Test Search Field.)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testPackage.LeaseAssetsTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="createLease">
-                  </a> <!-- createLease -->
-                  <span class="method-name">createLease</span>
-                  <em>
-(Test create Lease assets.)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -350,48 +387,48 @@ data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'createLease')
 data.setCell(0, 2, 'testPackage.LeaseAssetsTest')
-data.setCell(0, 3, 34231);
+data.setCell(0, 3, 33392);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'createField')
 data.setCell(1, 2, 'testPackage.FieldAssetsTest')
-data.setCell(1, 3, 30645);
+data.setCell(1, 3, 28171);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'deleteField')
 data.setCell(2, 2, 'testPackage.FieldAssetsTest')
-data.setCell(2, 3, 23499);
+data.setCell(2, 3, 24092);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'deleteCompany')
 data.setCell(3, 2, 'testPackage.CompanyAssetsTest')
-data.setCell(3, 3, 22411);
+data.setCell(3, 3, 22980);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'validLoginTest')
-data.setCell(4, 2, 'testPackage.LoginTest')
-data.setCell(4, 3, 21869);
+data.setCell(4, 1, 'createCompany')
+data.setCell(4, 2, 'testPackage.CompanyAssetsTest')
+data.setCell(4, 3, 18414);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'createCompany')
-data.setCell(5, 2, 'testPackage.CompanyAssetsTest')
-data.setCell(5, 3, 18660);
+data.setCell(5, 1, 'validLoginTest')
+data.setCell(5, 2, 'testPackage.LoginTest')
+data.setCell(5, 3, 16743);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'editField')
 data.setCell(6, 2, 'testPackage.FieldAssetsTest')
-data.setCell(6, 3, 10404);
+data.setCell(6, 3, 9327);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'editCompany')
 data.setCell(7, 2, 'testPackage.CompanyAssetsTest')
-data.setCell(7, 3, 10211);
+data.setCell(7, 3, 8737);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'searchFleld')
 data.setCell(8, 2, 'testPackage.FieldAssetsTest')
-data.setCell(8, 3, 4586);
+data.setCell(8, 3, 3963);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'searchCompany')
 data.setCell(9, 2, 'testPackage.CompanyAssetsTest')
-data.setCell(9, 3, 3723);
+data.setCell(9, 3, 3107);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -457,119 +494,121 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">initializeExtentReport</span>
-                <span class="method-start">14096 ms</span>
+                <span class="method-start">11896 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">assignObjectForClass</span>
-                <span class="method-start">14912 ms</span>
+                <span class="method-start">12301 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">seperateCase</span>
-                <span class="method-start">15678 ms</span>
+                <span class="method-start">12729 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validLoginTest({username=jay.soni+manager@openxcell.com, password=QA@12345})</span>
-                <span class="method-start">15681 ms</span>
+                <span class="method-start">12733 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testPackage.CompanyAssetsTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">assignObjectForClass</span>
-                <span class="method-start">37564 ms</span>
+                <span class="method-start">29488 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">seperateCase</span>
-                <span class="method-start">37600 ms</span>
+                <span class="method-start">29501 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createCompany</span>
-                <span class="method-start">37602 ms</span>
+                <span class="method-start">29502 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">seperateCase</span>
-                <span class="method-start">56265 ms</span>
+                <span class="method-start">47919 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchCompany</span>
-                <span class="method-start">56266 ms</span>
+                <span class="method-start">47920 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">seperateCase</span>
-                <span class="method-start">59993 ms</span>
+                <span class="method-start">51030 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">editCompany</span>
-                <span class="method-start">59995 ms</span>
+                <span class="method-start">51031 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">seperateCase</span>
-                <span class="method-start">70211 ms</span>
+                <span class="method-start">59773 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">deleteCompany</span>
-                <span class="method-start">70212 ms</span>
+                <span class="method-start">59777 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testPackage.FieldAssetsTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">assignObjectForClass</span>
-                <span class="method-start">92625 ms</span>
+                <span class="method-start">82759 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">seperateCase</span>
-                <span class="method-start">92637 ms</span>
+                <span class="method-start">82772 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createField</span>
-                <span class="method-start">92638 ms</span>
+                <span class="method-start">82774 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">seperateCase</span>
-                <span class="method-start">123302 ms</span>
+                <span class="method-start">110948 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">searchFleld</span>
-                <span class="method-start">123303 ms</span>
+                <span class="method-start">110949 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">seperateCase</span>
-                <span class="method-start">127892 ms</span>
+                <span class="method-start">114914 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">editField</span>
-                <span class="method-start">127895 ms</span>
+                <span class="method-start">114915 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">seperateCase</span>
-                <span class="method-start">138305 ms</span>
+                <span class="method-start">124246 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">deleteField</span>
-                <span class="method-start">138307 ms</span>
+                <span class="method-start">124247 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testPackage.LeaseAssetsTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">assignObjectForClass</span>
-                <span class="method-start">161810 ms</span>
+                <span class="method-start">148342 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">seperateCase</span>
-                <span class="method-start">161831 ms</span>
+                <span class="method-start">148354 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">createLease</span>
-                <span class="method-start">161831 ms</span>
+                <span class="method-start">148355 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testPackage.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">flush</span>
-                <span class="method-start">196064 ms</span>
+                <span class="method-start">182146 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
