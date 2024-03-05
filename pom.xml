@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>OilPilot</groupId>
 	<artifactId>OilPilot</artifactId>
-	<version>${project.name}v.1</version>
+	<version>0.0.1-SNAPSHOT</version>
 	
 	<properties>
 
@@ -23,7 +23,6 @@
 		    <groupId>org.testng</groupId>
 		    <artifactId>testng</artifactId>
 		    <version>7.9.0</version>
-		    <scope>test</scope>
 		</dependency>
 
 		
@@ -76,8 +75,6 @@
             <artifactId>jackson-databind</artifactId>
             <version>2.7.1</version>
         </dependency>
-
-
 </dependencies>
 
 	<build>
@@ -91,6 +88,31 @@
                         <target>1.8</target>
                 </configuration>
 			</plugin>
+			
+			<plugin>
+	          <artifactId>maven-clean-plugin</artifactId>
+	          <version>3.3.2</version>
+	        </plugin>
+	        <plugin>
+	          <artifactId>maven-surefire-plugin</artifactId>
+	          <version>3.2.5</version>
+	          <configuration>
+	          	<suiteXmlFiles>
+	          		<suiteXmlFile>testng.xml</suiteXmlFile>
+	          	</suiteXmlFiles>
+	          </configuration>
+	        </plugin>
+	        
+	        <plugin>
+	          <artifactId>maven-install-plugin</artifactId>
+	          <version>3.0.0-M1</version>
+	        </plugin>
+	     
+	        <plugin>
+	          <artifactId>maven-deploy-plugin</artifactId>
+	          <version>3.0.0-M1</version>
+	        </plugin>
+			
 		</plugins>
 		<finalName>project name</finalName>
 	</build>
