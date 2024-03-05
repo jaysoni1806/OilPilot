@@ -114,6 +114,6 @@
 	        </plugin>
 			
 		</plugins>
-		<finalName>project name</finalName>
+		<finalName>${project.name}</finalName>
 	</build>
 </project>
