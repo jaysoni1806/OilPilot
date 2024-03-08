@@ -44,8 +44,12 @@ public class commonUtil {
 	public static String screenShot(WebDriver driver, String filename) {
 		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
 		File source = takesScreenshot.getScreenshotAs(OutputType.FILE);
-		String destination = System.getProperty("user.dir") + "/ScreenShot/" + filename + "_"
-				+ commonUtil.getCurrentTime() + ".png";
+		/*
+		 * String destination = System.getProperty("user.dir") + "/ScreenShot/" +
+		 * filename + "_" + commonUtil.getCurrentTime() + ".png";
+		 */
+		String destination = "http://localhost:9090/job/OilPilot/ws/ScreenShot/" + filename + ".png";
+
 		File finalDestination = new File(destination);
 		try {
 			FileUtils.copyFile(source, finalDestination);
