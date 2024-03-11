@@ -48,7 +48,7 @@ public class commonUtil {
 		 * String destination = System.getProperty("user.dir") + "/ScreenShot/" +
 		 * filename + "_" + commonUtil.getCurrentTime() + ".png";
 		 */
-		String destination = System.getProperty("user.dir") + "/ScreenShot/" + filename + ".png";
+		String destination = "/Users/jay/.jenkins/workspace/OilPilot/ScreenShot/" + filename + ".png";
 
 		File finalDestination = new File(destination);
 		try {
