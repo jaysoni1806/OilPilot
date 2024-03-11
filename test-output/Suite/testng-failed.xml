@@ -7,16 +7,16 @@
   </listeners>
   <test thread-count="5" name="Oilman(failed)">
     <classes>
-      <class name="testPackage.LeaseAssetsTest">
+      <class name="testPackage.LoginTest">
         <methods>
           <include name="seperateCase"/>
+          <include name="validLoginTest" invocation-numbers="0 0 0 0"/>
           <include name="initializeExtentReport"/>
           <include name="assignObjectForClass"/>
-          <include name="createLease"/>
           <include name="prerequisite"/>
           <include name="flush"/>
         </methods>
-      </class> <!-- testPackage.LeaseAssetsTest -->
+      </class> <!-- testPackage.LoginTest -->
     </classes>
   </test> <!-- Oilman(failed) -->
 </suite> <!-- Failed suite [Suite] -->

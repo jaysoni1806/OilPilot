@@ -1,5 +1,6 @@
 package com.commonUtil;
 
+import org.apache.log4j.Logger;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 
@@ -9,6 +10,7 @@ public class RetryAnalyzerManager implements IRetryAnalyzer {
 
 	private static final int maxTry = 3;
 	private int count = 0;
+	public static Logger log = Logger.getLogger(RetryAnalyzerManager.class);
 
 	public boolean retry(final ITestResult iTestResult) {
 		if (!iTestResult.isSuccess()) {

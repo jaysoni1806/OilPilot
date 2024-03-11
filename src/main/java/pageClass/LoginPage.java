@@ -83,7 +83,7 @@ public class LoginPage {
 
 		utility.waitForSometime(dashBoard.dashboard);
 		if (driver.getCurrentUrl().equals("https://oilman-website.apps.openxcell.dev/dashboard/")) {
-			Assert.assertEquals(driver.getCurrentUrl(), "https://oilman-website.apps.openxcell.dev/dashboard/1");
+			Assert.assertEquals(driver.getCurrentUrl(), "https://oilman-website.apps.openxcell.dev/dashboard/");
 			log.info("Logged successfully navigated on Dashboard");
 		} else {
 			throw new ApplicationException("Exception Occured", "Dashboard URL is not present.");

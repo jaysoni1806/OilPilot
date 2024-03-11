@@ -2791,3 +2791,68 @@ Session ID: 1ea31b6bfc39347331e0a93fc1a501d1
 2024-03-07 18:54:37 INFO  LoginPage:67 - Enter Password. 
 2024-03-07 18:54:38 INFO  LoginPage:76 - Cliked on Submit button. 
 2024-03-07 18:54:56 INFO  LoginPage:87 - Logged successfully navigated on Dashboard 
+2024-03-11 10:55:26 INFO  TestBase:41 - ************************************************************************ 
+2024-03-11 10:55:26 INFO  TestBase:42 - Chrome browser launched. 
+2024-03-11 10:55:30 INFO  TestBase:45 - Hit Oilman URL.  
+2024-03-11 10:55:32 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-11 10:55:32 INFO  LoginPage:53 - Enter Email id. 
+2024-03-11 10:55:33 INFO  LoginPage:67 - Enter Password. 
+2024-03-11 10:55:33 INFO  LoginPage:76 - Cliked on Submit button. 
+2024-03-11 10:55:50 INFO  TestBase:16 - Retrying test validLoginTest with status FAILURE for the 1 time(s). 
+2024-03-11 10:55:50 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-11 10:56:00 INFO  TestBase:16 - Retrying test validLoginTest with status FAILURE for the 2 time(s). 
+2024-03-11 10:56:00 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-11 10:56:10 INFO  TestBase:16 - Retrying test validLoginTest with status FAILURE for the 3 time(s). 
+2024-03-11 10:56:10 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-11 10:59:14 INFO  TestBase:41 - ************************************************************************ 
+2024-03-11 10:59:14 INFO  TestBase:42 - Chrome browser launched. 
+2024-03-11 10:59:19 INFO  TestBase:45 - Hit Oilman URL.  
+2024-03-11 10:59:20 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-11 10:59:21 INFO  LoginPage:53 - Enter Email id. 
+2024-03-11 10:59:21 INFO  LoginPage:67 - Enter Password. 
+2024-03-11 10:59:21 INFO  LoginPage:76 - Cliked on Submit button. 
+2024-03-11 10:59:52 INFO  TestBase:18 - Retrying test validLoginTest with status FAILURE for the 1 time(s). 
+2024-03-11 10:59:52 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-11 10:59:52 INFO  TestBase:18 - Retrying test validLoginTest with status FAILURE for the 2 time(s). 
+2024-03-11 10:59:52 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-11 10:59:52 INFO  TestBase:18 - Retrying test validLoginTest with status FAILURE for the 3 time(s). 
+2024-03-11 10:59:52 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-11 11:00:36 INFO  TestBase:41 - ************************************************************************ 
+2024-03-11 11:00:36 INFO  TestBase:42 - Chrome browser launched. 
+2024-03-11 11:00:51 INFO  TestBase:45 - Hit Oilman URL.  
+2024-03-11 11:00:53 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-11 11:00:53 INFO  LoginPage:53 - Enter Email id. 
+2024-03-11 11:00:54 INFO  LoginPage:67 - Enter Password. 
+2024-03-11 11:00:54 INFO  LoginPage:76 - Cliked on Submit button. 
+2024-03-11 11:01:41 INFO  TestBase:18 - Retrying test validLoginTest with status FAILURE for the 1 time(s). 
+2024-03-11 11:01:41 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-11 11:01:57 INFO  TestBase:18 - Retrying test validLoginTest with status FAILURE for the 2 time(s). 
+2024-03-11 11:01:57 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-11 11:02:35 INFO  TestBase:18 - Retrying test validLoginTest with status FAILURE for the 3 time(s). 
+2024-03-11 11:02:35 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-11 11:05:37 INFO  TestBase:41 - ************************************************************************ 
+2024-03-11 11:05:37 INFO  TestBase:42 - Chrome browser launched. 
+2024-03-11 11:05:53 INFO  TestBase:45 - Hit Oilman URL.  
+2024-03-11 11:05:54 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-11 11:05:55 INFO  LoginPage:53 - Enter Email id. 
+2024-03-11 11:05:55 INFO  LoginPage:67 - Enter Password. 
+2024-03-11 11:05:56 INFO  LoginPage:76 - Cliked on Submit button. 
+2024-03-11 11:06:11 INFO  LoginPage:87 - Logged successfully navigated on Dashboard 
+2024-03-11 11:07:01 INFO  TestBase:41 - ************************************************************************ 
+2024-03-11 11:07:01 INFO  TestBase:42 - Chrome browser launched. 
+2024-03-11 11:07:17 INFO  TestBase:45 - Hit Oilman URL.  
+2024-03-11 11:07:20 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-11 11:07:21 INFO  LoginPage:53 - Enter Email id. 
+2024-03-11 11:07:22 INFO  LoginPage:67 - Enter Password. 
+2024-03-11 11:07:46 INFO  TestBase:18 - Retrying test validLoginTest with status FAILURE for the 1 time(s). 
+2024-03-11 11:07:46 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-11 11:07:46 INFO  LoginPage:53 - Enter Email id. 
+2024-03-11 11:07:46 INFO  LoginPage:67 - Enter Password. 
+2024-03-11 11:08:05 INFO  TestBase:18 - Retrying test validLoginTest with status FAILURE for the 2 time(s). 
+2024-03-11 11:08:05 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-11 11:08:06 INFO  LoginPage:53 - Enter Email id. 
+2024-03-11 11:08:06 INFO  LoginPage:67 - Enter Password. 
+2024-03-11 11:08:19 INFO  TestBase:18 - Retrying test validLoginTest with status FAILURE for the 3 time(s). 
+2024-03-11 11:08:19 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-11 11:08:20 INFO  LoginPage:53 - Enter Email id. 
+2024-03-11 11:08:20 INFO  LoginPage:67 - Enter Password. 
