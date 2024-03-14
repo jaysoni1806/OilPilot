@@ -34,7 +34,6 @@ public class FiledAssetsPage {
 
 	@FindBy(xpath = "//h5[text()='Add Field']/parent::div/following-sibling::div//button[@type='submit']")
 	private WebElement addField_SubmitButton;
-	private List<WebElement> searchRecords;
 	@FindBy(xpath = "//h5[text()='Edit Field']")
 	private WebElement popupEditField;
 	@FindBy(xpath = "//div[contains(@class,'MuiDrawer-paperAnchorRight')][not(contains(@style,'visibility: hidden'))]//input[@placeholder='Field Name']")
@@ -43,6 +42,8 @@ public class FiledAssetsPage {
 	private WebElement editField_SubmitButton;
 	@FindBy(xpath = "//div[@aria-describedby='alert-dialog-description-Delete confirmation for Field']//button[text()='Yes']")
 	private WebElement deleteConfirmYesButton;
+	@FindBy(xpath = "//div[contains(@class,'MuiDataGrid-row')]")
+	private List<WebElement> searchRecords;
 
 	public void verifyTheScreen() throws ApplicationException, InterruptedException {
 		String headerText = commLocators.screenHeader.getText();
@@ -54,10 +55,8 @@ public class FiledAssetsPage {
 
 	public void clickAddButtonAndVerifyAddFieldHalfCardIsPresentOrNot() throws ApplicationException {
 		try {
-			List<WebElement> searchRecords = driver.findElements(By.xpath("//div[contains(@class,'MuiDataGrid-row')]"));
 			utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
 		} catch (org.openqa.selenium.StaleElementReferenceException ex) {
-			List<WebElement> searchRecords = driver.findElements(By.xpath("//div[contains(@class,'MuiDataGrid-row')]"));
 			utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
 		}
 
@@ -114,7 +113,8 @@ public class FiledAssetsPage {
 	public void verifyTheFieldListAfterClearSearchBox() throws ApplicationException, InterruptedException {
 		if (commLocators.inputSearch.isDisplayed()) {
 			utility.clearSearchBox(commLocators.inputSearch);
-
+			// utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
+			System.out.println(searchRecords.size());
 			if (searchRecords.size() >= 1) {
 				log.info("Retrive all records");
 			} else {
@@ -222,7 +222,6 @@ public class FiledAssetsPage {
 			String expactedToastMessage = dashboard.toastMessage.getText();
 			utility.WaitUntilElementVisibiltyGone(dashboard.toastMessage, 5);
 			enterFieldNameinSearchBox(updatedField);
-			searchRecords = driver.findElements(By.xpath("//div[contains(@class,'MuiDataGrid-row')]"));
 
 			if (searchRecords.size() == 0) {
 				Assert.assertEquals(expactedToastMessage, "We have successfully deleted the Field.");

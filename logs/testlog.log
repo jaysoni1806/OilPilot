@@ -4001,3 +4001,809 @@ Session ID: d6f570d4314288e940e6ba30a1f3e356
 2024-03-14 14:22:16 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
 2024-03-14 14:22:28 INFO  LeaseAssetsPage:244 - 'FMCAEdited' Lease has been deleted successfully. 
 2024-03-14 14:22:32 INFO  LeaseAssetsPage:134 - Retrive all records 
+2024-03-14 14:45:24 INFO  TestBase:41 - ************************************************************************ 
+2024-03-14 14:45:24 INFO  TestBase:42 - Chrome browser launched. 
+2024-03-14 15:19:05 INFO  TestBase:41 - ************************************************************************ 
+2024-03-14 15:19:05 INFO  TestBase:42 - Chrome browser launched. 
+2024-03-14 15:19:13 INFO  TestBase:45 - Hit Oilman URL.  
+2024-03-14 15:19:15 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:19:15 INFO  LoginPage:53 - Enter Email id. 
+2024-03-14 15:19:15 INFO  LoginPage:67 - Enter Password. 
+2024-03-14 15:19:15 INFO  LoginPage:76 - Cliked on Submit button. 
+2024-03-14 15:19:31 INFO  LoginPage:87 - Logged successfully navigated on Dashboard 
+2024-03-14 15:19:31 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:19:31 INFO  DashBoardPage:55 - Waiting until Assets manu is clickable. 
+2024-03-14 15:19:31 INFO  DashBoardPage:58 - Click on Assets menu. 
+2024-03-14 15:19:41 INFO  DashBoardPage:95 - Click on Company manu item. 
+2024-03-14 15:19:42 INFO  CompanyAssetsPage:57 - Wait until loading company list. 
+2024-03-14 15:19:42 INFO  commonLocatorsRepo:94 - Click on Add button. 
+2024-03-14 15:19:42 INFO  commonLocatorsRepo:97 - Half card is present. 
+2024-03-14 15:19:43 INFO  CompanyAssetsPage:66 - Clear the Company text box. 
+2024-03-14 15:19:43 INFO  CompanyAssetsPage:69 - Enter Company name. 
+2024-03-14 15:19:43 INFO  CompanyAssetsPage:80 - Click on Submit button. 
+2024-03-14 15:19:49 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 15:19:49 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 15:19:51 INFO  CompanyAssetsPage:107 - Record searched successfully. 
+2024-03-14 15:19:51 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:19:55 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 15:19:55 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 15:19:57 INFO  CompanyAssetsPage:107 - Record searched successfully. 
+2024-03-14 15:20:03 INFO  CompanyAssetsPage:124 - Retrive all records 
+2024-03-14 15:20:03 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:20:07 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 15:20:07 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 15:20:09 INFO  CompanyAssetsPage:107 - Record searched successfully. 
+2024-03-14 15:20:09 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-14 15:20:09 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-14 15:20:09 INFO  commonLocatorsRepo:64 - Waiting until edit button is clickable. 
+2024-03-14 15:20:09 INFO  commonLocatorsRepo:67 - Action menu presented, Cliked Edit action. 
+2024-03-14 15:20:10 INFO  CompanyAssetsPage:144 - Edit Company half screen present. 
+2024-03-14 15:20:10 INFO  CompanyAssetsPage:162 - Click on Company name. 
+2024-03-14 15:20:12 INFO  CompanyAssetsPage:166 - Clear text box. 
+2024-03-14 15:20:14 INFO  CompanyAssetsPage:170 - Input upgreaded Company name. 
+2024-03-14 15:20:14 INFO  CompanyAssetsPage:180 - Click on Submit button. 
+2024-03-14 15:20:15 INFO  CompanyAssetsPage:185 - 'ZVWKEdited' Company update successfully. 
+2024-03-14 15:20:22 INFO  CompanyAssetsPage:124 - Retrive all records 
+2024-03-14 15:20:22 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:20:25 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 15:20:26 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 15:20:28 INFO  CompanyAssetsPage:107 - Record searched successfully. 
+2024-03-14 15:20:28 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-14 15:20:28 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-14 15:20:28 INFO  commonLocatorsRepo:72 - Waiting until delete button is clickable. 
+2024-03-14 15:20:28 INFO  commonLocatorsRepo:75 - Action menu presented, Cliked delete action. 
+2024-03-14 15:20:28 INFO  CompanyAssetsPage:206 - Delete confirmation popup is present. 
+2024-03-14 15:20:29 INFO  CompanyAssetsPage:222 - Cliked on Yes button to confirm delete record. 
+2024-03-14 15:20:35 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 15:20:36 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 15:20:48 INFO  CompanyAssetsPage:234 - 'ZVWKEdited' Company has been deleted successfully. 
+2024-03-14 15:20:55 INFO  CompanyAssetsPage:124 - Retrive all records 
+2024-03-14 15:20:55 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:21:05 INFO  DashBoardPage:65 - Assets is already open. 
+2024-03-14 15:21:15 INFO  DashBoardPage:95 - Click on Field manu item. 
+2024-03-14 15:21:16 INFO  FiledAssetsPage:64 - Wait until loading field list. 
+2024-03-14 15:21:16 INFO  commonLocatorsRepo:94 - Click on Add button. 
+2024-03-14 15:21:17 INFO  commonLocatorsRepo:97 - Half card is present. 
+2024-03-14 15:21:17 INFO  FiledAssetsPage:72 - Enter Filed name. 
+2024-03-14 15:21:17 INFO  FiledAssetsPage:75 - Enter SONRIS Field ID 
+2024-03-14 15:21:17 INFO  FiledAssetsPage:82 - Click on Submit button. 
+2024-03-14 15:21:23 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 15:21:24 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 15:21:26 INFO  TestBase:18 - Retrying test createField with status FAILURE for the 1 time(s). 
+2024-03-14 15:21:26 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:21:36 INFO  DashBoardPage:65 - Assets is already open. 
+2024-03-14 15:21:46 INFO  DashBoardPage:95 - Click on Field manu item. 
+2024-03-14 15:21:47 INFO  FiledAssetsPage:64 - Wait until loading field list. 
+2024-03-14 15:21:47 INFO  commonLocatorsRepo:94 - Click on Add button. 
+2024-03-14 15:21:47 INFO  commonLocatorsRepo:97 - Half card is present. 
+2024-03-14 15:21:47 INFO  FiledAssetsPage:72 - Enter Filed name. 
+2024-03-14 15:21:47 INFO  FiledAssetsPage:75 - Enter SONRIS Field ID 
+2024-03-14 15:21:47 INFO  FiledAssetsPage:82 - Click on Submit button. 
+2024-03-14 15:21:53 INFO  TestBase:18 - Retrying test createField with status FAILURE for the 2 time(s). 
+2024-03-14 15:21:53 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:22:03 INFO  DashBoardPage:65 - Assets is already open. 
+2024-03-14 15:22:14 INFO  DashBoardPage:85 - Somthing not working for Assets-> org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters active css-1m07bk9" tabindex="0" href="/assets/field/">...</a> is not clickable at point (130, 293). Other element would receive the click: <div aria-hidden="true" class="MuiBackdrop-root MuiModal-backdrop css-nmvoug" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"></div>
+  (Session info: chrome=122.0.6261.128)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [884407dd6470a3d6fe29d73ad0717c4a, clickElement {id=f.E0927B44D21326C689181C5B081251F3.d.946BA06EF286DC756324034C98D9513F.e.220}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.128, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: /var/folders/p2/q2yjzrxs10s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59072}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59072/devtoo..., se:cdpVersion: 122.0.6261.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (884407dd6470a3d6fe29d73ad0717c4a)] -> xpath: //p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-entered')]//li//a[@href='/assets/field/']]
+Session ID: 884407dd6470a3d6fe29d73ad0717c4a 
+2024-03-14 15:22:14 INFO  FiledAssetsPage:64 - Wait until loading field list. 
+2024-03-14 15:22:15 INFO  TestBase:18 - Retrying test createField with status FAILURE for the 3 time(s). 
+2024-03-14 15:22:15 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:22:25 INFO  DashBoardPage:65 - Assets is already open. 
+2024-03-14 15:22:36 INFO  DashBoardPage:85 - Somthing not working for Assets-> org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters active css-1m07bk9" tabindex="0" href="/assets/field/">...</a> is not clickable at point (130, 293). Other element would receive the click: <div aria-hidden="true" class="MuiBackdrop-root MuiModal-backdrop css-nmvoug" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"></div>
+  (Session info: chrome=122.0.6261.128)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [884407dd6470a3d6fe29d73ad0717c4a, clickElement {id=f.E0927B44D21326C689181C5B081251F3.d.946BA06EF286DC756324034C98D9513F.e.220}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.128, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: /var/folders/p2/q2yjzrxs10s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59072}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59072/devtoo..., se:cdpVersion: 122.0.6261.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (884407dd6470a3d6fe29d73ad0717c4a)] -> xpath: //p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-entered')]//li//a[@href='/assets/field/']]
+Session ID: 884407dd6470a3d6fe29d73ad0717c4a 
+2024-03-14 15:22:36 INFO  FiledAssetsPage:64 - Wait until loading field list. 
+2024-03-14 15:22:38 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:22:38 INFO  TestBase:18 - Retrying test searchFleld with status FAILURE for the 1 time(s). 
+2024-03-14 15:22:38 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:22:38 INFO  TestBase:18 - Retrying test searchFleld with status FAILURE for the 2 time(s). 
+2024-03-14 15:22:38 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:22:38 INFO  TestBase:18 - Retrying test searchFleld with status FAILURE for the 3 time(s). 
+2024-03-14 15:22:38 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:22:39 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:22:39 INFO  TestBase:18 - Retrying test editField with status FAILURE for the 1 time(s). 
+2024-03-14 15:22:39 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:22:39 INFO  TestBase:18 - Retrying test editField with status FAILURE for the 2 time(s). 
+2024-03-14 15:22:39 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:22:39 INFO  TestBase:18 - Retrying test editField with status FAILURE for the 3 time(s). 
+2024-03-14 15:22:39 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:22:40 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:22:40 INFO  TestBase:18 - Retrying test deleteField with status FAILURE for the 1 time(s). 
+2024-03-14 15:22:40 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:22:40 INFO  TestBase:18 - Retrying test deleteField with status FAILURE for the 2 time(s). 
+2024-03-14 15:22:40 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:22:40 INFO  TestBase:18 - Retrying test deleteField with status FAILURE for the 3 time(s). 
+2024-03-14 15:22:40 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:22:41 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:22:51 INFO  DashBoardPage:65 - Assets is already open. 
+2024-03-14 15:23:02 INFO  DashBoardPage:85 - Somthing not working for Assets-> org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters  css-1m07bk9" tabindex="0" href="/assets/lease/">...</a> is not clickable at point (130, 335). Other element would receive the click: <div aria-hidden="true" class="MuiBackdrop-root MuiModal-backdrop css-nmvoug" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"></div>
+  (Session info: chrome=122.0.6261.128)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [884407dd6470a3d6fe29d73ad0717c4a, clickElement {id=f.E0927B44D21326C689181C5B081251F3.d.946BA06EF286DC756324034C98D9513F.e.278}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.128, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: /var/folders/p2/q2yjzrxs10s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59072}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59072/devtoo..., se:cdpVersion: 122.0.6261.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (884407dd6470a3d6fe29d73ad0717c4a)] -> xpath: //p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-entered')]//li//a[@href='/assets/lease/']]
+Session ID: 884407dd6470a3d6fe29d73ad0717c4a 
+2024-03-14 15:23:02 INFO  LeaseAssetsPage:59 - Wait until loading lease list. 
+2024-03-14 15:23:03 INFO  TestBase:18 - Retrying test createLease with status FAILURE for the 1 time(s). 
+2024-03-14 15:23:03 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:23:13 INFO  DashBoardPage:65 - Assets is already open. 
+2024-03-14 15:23:24 INFO  DashBoardPage:85 - Somthing not working for Assets-> org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters  css-1m07bk9" tabindex="0" href="/assets/lease/">...</a> is not clickable at point (130, 335). Other element would receive the click: <div aria-hidden="true" class="MuiBackdrop-root MuiModal-backdrop css-nmvoug" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"></div>
+  (Session info: chrome=122.0.6261.128)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [884407dd6470a3d6fe29d73ad0717c4a, clickElement {id=f.E0927B44D21326C689181C5B081251F3.d.946BA06EF286DC756324034C98D9513F.e.278}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.128, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: /var/folders/p2/q2yjzrxs10s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59072}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59072/devtoo..., se:cdpVersion: 122.0.6261.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (884407dd6470a3d6fe29d73ad0717c4a)] -> xpath: //p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-entered')]//li//a[@href='/assets/lease/']]
+Session ID: 884407dd6470a3d6fe29d73ad0717c4a 
+2024-03-14 15:23:24 INFO  LeaseAssetsPage:59 - Wait until loading lease list. 
+2024-03-14 15:23:25 INFO  TestBase:18 - Retrying test createLease with status FAILURE for the 2 time(s). 
+2024-03-14 15:23:25 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:23:35 INFO  DashBoardPage:65 - Assets is already open. 
+2024-03-14 15:23:47 INFO  DashBoardPage:85 - Somthing not working for Assets-> org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters  css-1m07bk9" tabindex="0" href="/assets/lease/">...</a> is not clickable at point (130, 335). Other element would receive the click: <div aria-hidden="true" class="MuiBackdrop-root MuiModal-backdrop css-nmvoug" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"></div>
+  (Session info: chrome=122.0.6261.128)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [884407dd6470a3d6fe29d73ad0717c4a, clickElement {id=f.E0927B44D21326C689181C5B081251F3.d.946BA06EF286DC756324034C98D9513F.e.278}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.128, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: /var/folders/p2/q2yjzrxs10s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59072}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59072/devtoo..., se:cdpVersion: 122.0.6261.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (884407dd6470a3d6fe29d73ad0717c4a)] -> xpath: //p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-entered')]//li//a[@href='/assets/lease/']]
+Session ID: 884407dd6470a3d6fe29d73ad0717c4a 
+2024-03-14 15:23:47 INFO  LeaseAssetsPage:59 - Wait until loading lease list. 
+2024-03-14 15:23:48 INFO  TestBase:18 - Retrying test createLease with status FAILURE for the 3 time(s). 
+2024-03-14 15:23:48 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:23:58 INFO  DashBoardPage:65 - Assets is already open. 
+2024-03-14 15:24:09 INFO  DashBoardPage:85 - Somthing not working for Assets-> org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters  css-1m07bk9" tabindex="0" href="/assets/lease/">...</a> is not clickable at point (130, 335). Other element would receive the click: <div aria-hidden="true" class="MuiBackdrop-root MuiModal-backdrop css-nmvoug" style="opacity: 1; transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;"></div>
+  (Session info: chrome=122.0.6261.128)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [884407dd6470a3d6fe29d73ad0717c4a, clickElement {id=f.E0927B44D21326C689181C5B081251F3.d.946BA06EF286DC756324034C98D9513F.e.278}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.128, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: /var/folders/p2/q2yjzrxs10s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59072}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:59072/devtoo..., se:cdpVersion: 122.0.6261.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (884407dd6470a3d6fe29d73ad0717c4a)] -> xpath: //p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-entered')]//li//a[@href='/assets/lease/']]
+Session ID: 884407dd6470a3d6fe29d73ad0717c4a 
+2024-03-14 15:24:09 INFO  LeaseAssetsPage:59 - Wait until loading lease list. 
+2024-03-14 15:24:10 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:24:10 INFO  TestBase:18 - Retrying test searchLease with status FAILURE for the 1 time(s). 
+2024-03-14 15:24:10 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:24:11 INFO  TestBase:18 - Retrying test searchLease with status FAILURE for the 2 time(s). 
+2024-03-14 15:24:11 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:24:11 INFO  TestBase:18 - Retrying test searchLease with status FAILURE for the 3 time(s). 
+2024-03-14 15:24:11 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:24:11 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:24:12 INFO  TestBase:18 - Retrying test editField with status FAILURE for the 1 time(s). 
+2024-03-14 15:24:12 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:24:12 INFO  TestBase:18 - Retrying test editField with status FAILURE for the 2 time(s). 
+2024-03-14 15:24:12 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:24:12 INFO  TestBase:18 - Retrying test editField with status FAILURE for the 3 time(s). 
+2024-03-14 15:24:12 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:24:12 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:24:12 INFO  TestBase:18 - Retrying test deleteLease with status FAILURE for the 1 time(s). 
+2024-03-14 15:24:12 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:24:12 INFO  TestBase:18 - Retrying test deleteLease with status FAILURE for the 2 time(s). 
+2024-03-14 15:24:12 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 15:24:12 INFO  TestBase:18 - Retrying test deleteLease with status FAILURE for the 3 time(s). 
+2024-03-14 15:24:12 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 16:39:40 INFO  TestBase:41 - ************************************************************************ 
+2024-03-14 16:39:40 INFO  TestBase:42 - Chrome browser launched. 
+2024-03-14 16:39:44 INFO  TestBase:45 - Hit Oilman URL.  
+2024-03-14 16:39:46 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 16:39:46 INFO  LoginPage:53 - Enter Email id. 
+2024-03-14 16:39:46 INFO  LoginPage:67 - Enter Password. 
+2024-03-14 16:39:46 INFO  LoginPage:76 - Cliked on Submit button. 
+2024-03-14 16:40:30 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 16:40:31 INFO  DashBoardPage:55 - Waiting until Assets manu is clickable. 
+2024-03-14 16:40:31 INFO  DashBoardPage:58 - Click on Assets menu. 
+2024-03-14 16:40:41 INFO  DashBoardPage:95 - Click on Company manu item. 
+2024-03-14 16:40:42 INFO  CompanyAssetsPage:57 - Wait until loading company list. 
+2024-03-14 16:40:42 INFO  commonLocatorsRepo:94 - Click on Add button. 
+2024-03-14 16:40:43 INFO  commonLocatorsRepo:97 - Half card is present. 
+2024-03-14 16:40:43 INFO  CompanyAssetsPage:66 - Clear the Company text box. 
+2024-03-14 16:40:43 INFO  CompanyAssetsPage:69 - Enter Company name. 
+2024-03-14 16:40:43 INFO  CompanyAssetsPage:80 - Click on Submit button. 
+2024-03-14 16:40:49 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 16:40:50 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 16:40:52 INFO  CompanyAssetsPage:107 - Record searched successfully. 
+2024-03-14 16:40:52 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 16:40:55 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 16:40:56 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 16:40:58 INFO  CompanyAssetsPage:107 - Record searched successfully. 
+2024-03-14 16:41:04 INFO  CompanyAssetsPage:124 - Retrive all records 
+2024-03-14 16:41:04 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 16:41:07 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 16:41:08 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 16:41:10 INFO  CompanyAssetsPage:107 - Record searched successfully. 
+2024-03-14 16:41:10 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-14 16:41:10 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-14 16:41:10 INFO  commonLocatorsRepo:64 - Waiting until edit button is clickable. 
+2024-03-14 16:41:10 INFO  commonLocatorsRepo:67 - Action menu presented, Cliked Edit action. 
+2024-03-14 16:41:10 INFO  CompanyAssetsPage:144 - Edit Company half screen present. 
+2024-03-14 16:41:11 INFO  CompanyAssetsPage:162 - Click on Company name. 
+2024-03-14 16:41:13 INFO  CompanyAssetsPage:166 - Clear text box. 
+2024-03-14 16:41:15 INFO  CompanyAssetsPage:170 - Input upgreaded Company name. 
+2024-03-14 16:41:15 INFO  CompanyAssetsPage:180 - Click on Submit button. 
+2024-03-14 16:41:15 INFO  CompanyAssetsPage:185 - 'Y0RXEdited' Company update successfully. 
+2024-03-14 16:41:22 INFO  CompanyAssetsPage:124 - Retrive all records 
+2024-03-14 16:41:22 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 16:41:25 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 16:41:26 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 16:41:28 INFO  CompanyAssetsPage:107 - Record searched successfully. 
+2024-03-14 16:41:28 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-14 16:41:28 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-14 16:41:28 INFO  commonLocatorsRepo:72 - Waiting until delete button is clickable. 
+2024-03-14 16:41:28 INFO  commonLocatorsRepo:75 - Action menu presented, Cliked delete action. 
+2024-03-14 16:41:28 INFO  CompanyAssetsPage:206 - Delete confirmation popup is present. 
+2024-03-14 16:41:29 INFO  CompanyAssetsPage:222 - Cliked on Yes button to confirm delete record. 
+2024-03-14 16:41:35 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 16:41:36 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 16:41:48 INFO  CompanyAssetsPage:234 - 'Y0RXEdited' Company has been deleted successfully. 
+2024-03-14 16:41:55 INFO  CompanyAssetsPage:124 - Retrive all records 
+2024-03-14 16:41:55 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 16:42:05 INFO  DashBoardPage:65 - Assets is already open. 
+2024-03-14 16:42:15 INFO  DashBoardPage:95 - Click on Field manu item. 
+2024-03-14 16:42:16 INFO  FiledAssetsPage:63 - Wait until loading field list. 
+2024-03-14 16:42:16 INFO  commonLocatorsRepo:94 - Click on Add button. 
+2024-03-14 16:42:17 INFO  commonLocatorsRepo:97 - Half card is present. 
+2024-03-14 16:42:17 INFO  FiledAssetsPage:71 - Enter Filed name. 
+2024-03-14 16:42:17 INFO  FiledAssetsPage:74 - Enter SONRIS Field ID 
+2024-03-14 16:42:17 INFO  FiledAssetsPage:81 - Click on Submit button. 
+2024-03-14 16:42:23 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 16:42:24 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 16:42:26 INFO  FiledAssetsPage:105 - Record searched successfully. 
+2024-03-14 16:42:26 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 16:42:30 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 16:42:30 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 16:42:33 INFO  FiledAssetsPage:105 - Record searched successfully. 
+2024-03-14 16:42:36 INFO  FiledAssetsPage:118 - Retrive all records 
+2024-03-14 16:42:36 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 16:42:39 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 16:42:40 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 16:42:42 INFO  FiledAssetsPage:105 - Record searched successfully. 
+2024-03-14 16:42:42 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-14 16:42:42 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-14 16:42:42 INFO  commonLocatorsRepo:64 - Waiting until edit button is clickable. 
+2024-03-14 16:42:43 INFO  commonLocatorsRepo:67 - Action menu presented, Cliked Edit action. 
+2024-03-14 16:42:43 INFO  FiledAssetsPage:143 - Edit Field half screen present. 
+2024-03-14 16:42:43 INFO  FiledAssetsPage:162 - Click on Field name. 
+2024-03-14 16:42:45 INFO  FiledAssetsPage:166 - Clear text box. 
+2024-03-14 16:42:47 INFO  FiledAssetsPage:170 - Input upgreaded Field name. 
+2024-03-14 16:42:47 INFO  FiledAssetsPage:180 - Click on Submit button. 
+2024-03-14 16:42:48 INFO  FiledAssetsPage:185 - 'B9JX9GINEdited' Field update successfully. 
+2024-03-14 16:42:52 INFO  FiledAssetsPage:118 - Retrive all records 
+2024-03-14 16:42:52 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 16:42:55 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 16:42:56 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 16:42:58 INFO  FiledAssetsPage:105 - Record searched successfully. 
+2024-03-14 16:42:59 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-14 16:42:59 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-14 16:42:59 INFO  commonLocatorsRepo:72 - Waiting until delete button is clickable. 
+2024-03-14 16:42:59 INFO  commonLocatorsRepo:75 - Action menu presented, Cliked delete action. 
+2024-03-14 16:42:59 INFO  FiledAssetsPage:201 - Delete confirmation popup is present. 
+2024-03-14 16:42:59 INFO  FiledAssetsPage:217 - Cliked on Yes button to confirm delete record. 
+2024-03-14 16:43:06 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 16:43:07 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 16:43:19 INFO  FiledAssetsPage:228 - 'B9JX9GINEdited' Field has been deleted successfully. 
+2024-03-14 16:43:23 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 16:43:33 INFO  DashBoardPage:65 - Assets is already open. 
+2024-03-14 16:43:44 INFO  DashBoardPage:95 - Click on Lease manu item. 
+2024-03-14 16:43:46 INFO  LeaseAssetsPage:59 - Wait until loading lease list. 
+2024-03-14 16:43:46 INFO  commonLocatorsRepo:94 - Click on Add button. 
+2024-03-14 16:43:46 INFO  commonLocatorsRepo:97 - Half card is present. 
+2024-03-14 16:43:46 INFO  LeaseAssetsPage:69 - Clear the Lease text box. 
+2024-03-14 16:43:46 INFO  LeaseAssetsPage:72 - Enter Lease name. 
+2024-03-14 16:43:49 INFO  LeaseAssetsPage:85 - Pumper selected. 
+2024-03-14 16:43:51 INFO  LeaseAssetsPage:80 - Company selected. 
+2024-03-14 16:43:51 INFO  LeaseAssetsPage:92 - Click on Submit button. 
+2024-03-14 16:43:57 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 16:43:57 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 16:43:59 INFO  LeaseAssetsPage:116 - Record searched successfully. 
+2024-03-14 16:43:59 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 16:44:03 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 16:44:03 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 16:44:05 INFO  LeaseAssetsPage:116 - Record searched successfully. 
+2024-03-14 16:44:09 INFO  LeaseAssetsPage:130 - Retrive all records 
+2024-03-14 16:44:09 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 16:44:12 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 16:44:12 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 16:44:14 INFO  LeaseAssetsPage:116 - Record searched successfully. 
+2024-03-14 16:44:14 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-14 16:44:15 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-14 16:44:15 INFO  commonLocatorsRepo:64 - Waiting until edit button is clickable. 
+2024-03-14 16:44:15 INFO  commonLocatorsRepo:67 - Action menu presented, Cliked Edit action. 
+2024-03-14 16:44:15 INFO  LeaseAssetsPage:157 - Edit Lease half screen present. 
+2024-03-14 16:44:15 INFO  LeaseAssetsPage:175 - Click on Lease name. 
+2024-03-14 16:44:17 INFO  LeaseAssetsPage:179 - Clear text box. 
+2024-03-14 16:44:19 INFO  LeaseAssetsPage:183 - Input upgreaded Lease name. 
+2024-03-14 16:44:19 INFO  LeaseAssetsPage:193 - Click on Submit button. 
+2024-03-14 16:44:20 INFO  LeaseAssetsPage:198 - 'M3ZNEdited' Lease update successfully. 
+2024-03-14 16:44:24 INFO  LeaseAssetsPage:130 - Retrive all records 
+2024-03-14 16:44:24 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 16:44:27 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 16:44:28 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 16:44:30 INFO  LeaseAssetsPage:116 - Record searched successfully. 
+2024-03-14 16:44:30 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-14 16:44:30 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-14 16:44:30 INFO  commonLocatorsRepo:72 - Waiting until delete button is clickable. 
+2024-03-14 16:44:31 INFO  commonLocatorsRepo:75 - Action menu presented, Cliked delete action. 
+2024-03-14 16:44:31 INFO  LeaseAssetsPage:214 - Delete confirmation popup is present. 
+2024-03-14 16:44:31 INFO  LeaseAssetsPage:230 - Cliked on Yes button to confirm delete record. 
+2024-03-14 16:44:38 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 16:44:39 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 16:44:51 INFO  LeaseAssetsPage:240 - 'M3ZNEdited' Lease has been deleted successfully. 
+2024-03-14 16:44:55 INFO  LeaseAssetsPage:130 - Retrive all records 
+2024-03-14 17:16:51 INFO  TestBase:41 - ************************************************************************ 
+2024-03-14 17:16:51 INFO  TestBase:42 - Chrome browser launched. 
+2024-03-14 17:17:17 INFO  TestBase:45 - Hit Oilman URL.  
+2024-03-14 17:17:19 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 17:17:19 INFO  LoginPage:53 - Enter Email id. 
+2024-03-14 17:17:19 INFO  LoginPage:67 - Enter Password. 
+2024-03-14 17:17:19 INFO  LoginPage:76 - Cliked on Submit button. 
+2024-03-14 17:17:39 INFO  LoginPage:87 - Logged successfully navigated on Dashboard 
+2024-03-14 17:17:39 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 17:17:39 INFO  DashBoardPage:55 - Waiting until Assets manu is clickable. 
+2024-03-14 17:17:39 INFO  DashBoardPage:58 - Click on Assets menu. 
+2024-03-14 17:17:49 INFO  DashBoardPage:95 - Click on Company manu item. 
+2024-03-14 17:17:50 INFO  CompanyAssetsPage:57 - Wait until loading company list. 
+2024-03-14 17:17:50 INFO  commonLocatorsRepo:94 - Click on Add button. 
+2024-03-14 17:17:50 INFO  commonLocatorsRepo:97 - Half card is present. 
+2024-03-14 17:17:50 INFO  CompanyAssetsPage:66 - Clear the Company text box. 
+2024-03-14 17:17:51 INFO  CompanyAssetsPage:69 - Enter Company name. 
+2024-03-14 17:17:51 INFO  CompanyAssetsPage:80 - Click on Submit button. 
+2024-03-14 17:18:28 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 17:18:28 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 17:18:30 INFO  CompanyAssetsPage:107 - Record searched successfully. 
+2024-03-14 17:18:30 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 17:18:34 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 17:18:34 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 17:18:36 INFO  CompanyAssetsPage:107 - Record searched successfully. 
+2024-03-14 17:18:43 INFO  CompanyAssetsPage:124 - Retrive all records 
+2024-03-14 17:18:43 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 17:18:46 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 17:18:46 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 17:18:48 INFO  CompanyAssetsPage:107 - Record searched successfully. 
+2024-03-14 17:18:48 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-14 17:18:48 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-14 17:18:48 INFO  commonLocatorsRepo:64 - Waiting until edit button is clickable. 
+2024-03-14 17:18:48 INFO  commonLocatorsRepo:67 - Action menu presented, Cliked Edit action. 
+2024-03-14 17:18:48 INFO  CompanyAssetsPage:144 - Edit Company half screen present. 
+2024-03-14 17:18:49 INFO  CompanyAssetsPage:162 - Click on Company name. 
+2024-03-14 17:18:51 INFO  CompanyAssetsPage:166 - Clear text box. 
+2024-03-14 17:18:53 INFO  CompanyAssetsPage:170 - Input upgreaded Company name. 
+2024-03-14 17:18:53 INFO  CompanyAssetsPage:180 - Click on Submit button. 
+2024-03-14 17:18:54 INFO  CompanyAssetsPage:185 - '5DJ4Edited' Company update successfully. 
+2024-03-14 17:19:00 INFO  CompanyAssetsPage:124 - Retrive all records 
+2024-03-14 17:19:00 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 17:19:04 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 17:19:04 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 17:19:06 INFO  CompanyAssetsPage:107 - Record searched successfully. 
+2024-03-14 17:19:06 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-14 17:19:06 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-14 17:19:06 INFO  commonLocatorsRepo:72 - Waiting until delete button is clickable. 
+2024-03-14 17:19:07 INFO  commonLocatorsRepo:75 - Action menu presented, Cliked delete action. 
+2024-03-14 17:19:07 INFO  CompanyAssetsPage:206 - Delete confirmation popup is present. 
+2024-03-14 17:19:07 INFO  CompanyAssetsPage:222 - Cliked on Yes button to confirm delete record. 
+2024-03-14 17:19:13 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 17:19:14 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 17:19:26 INFO  CompanyAssetsPage:234 - '5DJ4Edited' Company has been deleted successfully. 
+2024-03-14 17:19:33 INFO  CompanyAssetsPage:124 - Retrive all records 
+2024-03-14 17:19:33 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 17:19:43 INFO  DashBoardPage:65 - Assets is already open. 
+2024-03-14 17:19:53 INFO  DashBoardPage:95 - Click on Field manu item. 
+2024-03-14 17:19:55 INFO  FiledAssetsPage:63 - Wait until loading field list. 
+2024-03-14 17:19:55 INFO  commonLocatorsRepo:94 - Click on Add button. 
+2024-03-14 17:19:55 INFO  commonLocatorsRepo:97 - Half card is present. 
+2024-03-14 17:19:55 INFO  FiledAssetsPage:71 - Enter Filed name. 
+2024-03-14 17:19:55 INFO  FiledAssetsPage:74 - Enter SONRIS Field ID 
+2024-03-14 17:19:55 INFO  FiledAssetsPage:81 - Click on Submit button. 
+2024-03-14 17:20:02 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 17:20:03 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 17:20:05 INFO  FiledAssetsPage:105 - Record searched successfully. 
+2024-03-14 17:20:05 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 17:20:09 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 17:20:09 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 17:20:11 INFO  FiledAssetsPage:105 - Record searched successfully. 
+2024-03-14 17:20:15 INFO  FiledAssetsPage:118 - Retrive all records 
+2024-03-14 17:20:15 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 17:20:18 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 17:20:19 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 17:20:21 INFO  FiledAssetsPage:105 - Record searched successfully. 
+2024-03-14 17:20:21 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-14 17:20:21 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-14 17:20:21 INFO  commonLocatorsRepo:64 - Waiting until edit button is clickable. 
+2024-03-14 17:20:21 INFO  commonLocatorsRepo:67 - Action menu presented, Cliked Edit action. 
+2024-03-14 17:20:21 INFO  FiledAssetsPage:143 - Edit Field half screen present. 
+2024-03-14 17:20:22 INFO  FiledAssetsPage:162 - Click on Field name. 
+2024-03-14 17:20:24 INFO  FiledAssetsPage:166 - Clear text box. 
+2024-03-14 17:20:26 INFO  FiledAssetsPage:170 - Input upgreaded Field name. 
+2024-03-14 17:20:26 INFO  FiledAssetsPage:180 - Click on Submit button. 
+2024-03-14 17:20:29 INFO  FiledAssetsPage:185 - '2SY7WGZTEdited' Field update successfully. 
+2024-03-14 17:20:33 INFO  FiledAssetsPage:118 - Retrive all records 
+2024-03-14 17:20:33 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 17:20:36 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 17:20:37 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 17:20:39 INFO  FiledAssetsPage:105 - Record searched successfully. 
+2024-03-14 17:20:39 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-14 17:20:39 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-14 17:20:39 INFO  commonLocatorsRepo:72 - Waiting until delete button is clickable. 
+2024-03-14 17:20:40 INFO  commonLocatorsRepo:75 - Action menu presented, Cliked delete action. 
+2024-03-14 17:20:40 INFO  FiledAssetsPage:201 - Delete confirmation popup is present. 
+2024-03-14 17:20:40 INFO  FiledAssetsPage:217 - Cliked on Yes button to confirm delete record. 
+2024-03-14 17:20:48 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 17:20:49 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 17:21:01 INFO  FiledAssetsPage:228 - '2SY7WGZTEdited' Field has been deleted successfully. 
+2024-03-14 17:21:06 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 17:21:16 INFO  DashBoardPage:65 - Assets is already open. 
+2024-03-14 17:21:26 INFO  DashBoardPage:95 - Click on Lease manu item. 
+2024-03-14 17:21:28 INFO  LeaseAssetsPage:59 - Wait until loading lease list. 
+2024-03-14 17:21:28 INFO  commonLocatorsRepo:94 - Click on Add button. 
+2024-03-14 17:21:28 INFO  commonLocatorsRepo:97 - Half card is present. 
+2024-03-14 17:21:28 INFO  LeaseAssetsPage:69 - Clear the Lease text box. 
+2024-03-14 17:21:29 INFO  LeaseAssetsPage:72 - Enter Lease name. 
+2024-03-14 17:21:31 INFO  LeaseAssetsPage:85 - Pumper selected. 
+2024-03-14 17:21:33 INFO  LeaseAssetsPage:80 - Company selected. 
+2024-03-14 17:21:33 INFO  LeaseAssetsPage:92 - Click on Submit button. 
+2024-03-14 17:21:40 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 17:21:40 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 17:21:42 INFO  LeaseAssetsPage:116 - Record searched successfully. 
+2024-03-14 17:21:42 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 17:21:46 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 17:21:46 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 17:21:48 INFO  LeaseAssetsPage:116 - Record searched successfully. 
+2024-03-14 17:21:52 INFO  LeaseAssetsPage:130 - Retrive all records 
+2024-03-14 17:21:52 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 17:21:55 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 17:21:55 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 17:21:57 INFO  LeaseAssetsPage:116 - Record searched successfully. 
+2024-03-14 17:21:57 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-14 17:21:57 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-14 17:21:58 INFO  commonLocatorsRepo:64 - Waiting until edit button is clickable. 
+2024-03-14 17:21:58 INFO  commonLocatorsRepo:67 - Action menu presented, Cliked Edit action. 
+2024-03-14 17:21:58 INFO  LeaseAssetsPage:157 - Edit Lease half screen present. 
+2024-03-14 17:21:58 INFO  LeaseAssetsPage:175 - Click on Lease name. 
+2024-03-14 17:22:00 INFO  LeaseAssetsPage:179 - Clear text box. 
+2024-03-14 17:22:02 INFO  LeaseAssetsPage:183 - Input upgreaded Lease name. 
+2024-03-14 17:22:02 INFO  LeaseAssetsPage:193 - Click on Submit button. 
+2024-03-14 17:22:04 INFO  LeaseAssetsPage:198 - 'T39CEdited' Lease update successfully. 
+2024-03-14 17:22:07 INFO  LeaseAssetsPage:130 - Retrive all records 
+2024-03-14 17:22:07 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 17:22:11 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 17:22:11 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 17:22:13 INFO  LeaseAssetsPage:116 - Record searched successfully. 
+2024-03-14 17:22:13 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-14 17:22:14 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-14 17:22:14 INFO  commonLocatorsRepo:72 - Waiting until delete button is clickable. 
+2024-03-14 17:22:14 INFO  commonLocatorsRepo:75 - Action menu presented, Cliked delete action. 
+2024-03-14 17:22:14 INFO  LeaseAssetsPage:214 - Delete confirmation popup is present. 
+2024-03-14 17:22:14 INFO  LeaseAssetsPage:230 - Cliked on Yes button to confirm delete record. 
+2024-03-14 17:22:21 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 17:22:22 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 17:22:34 INFO  LeaseAssetsPage:240 - 'T39CEdited' Lease has been deleted successfully. 
+2024-03-14 17:22:38 INFO  LeaseAssetsPage:130 - Retrive all records 
+2024-03-14 17:28:13 INFO  TestBase:41 - ************************************************************************ 
+2024-03-14 17:28:13 INFO  TestBase:42 - Chrome browser launched. 
+2024-03-14 17:28:20 INFO  TestBase:45 - Hit Oilman URL.  
+2024-03-14 17:28:22 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 17:28:23 INFO  LoginPage:53 - Enter Email id. 
+2024-03-14 17:28:23 INFO  LoginPage:67 - Enter Password. 
+2024-03-14 17:28:23 INFO  LoginPage:76 - Cliked on Submit button. 
+2024-03-14 17:28:43 INFO  LoginPage:87 - Logged successfully navigated on Dashboard 
+2024-03-14 17:28:43 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 17:28:43 INFO  DashBoardPage:55 - Waiting until Assets manu is clickable. 
+2024-03-14 17:28:43 INFO  DashBoardPage:58 - Click on Assets menu. 
+2024-03-14 17:28:54 INFO  DashBoardPage:95 - Click on Company manu item. 
+2024-03-14 17:28:55 INFO  CompanyAssetsPage:57 - Wait until loading company list. 
+2024-03-14 17:28:56 INFO  commonLocatorsRepo:94 - Click on Add button. 
+2024-03-14 17:28:56 INFO  commonLocatorsRepo:97 - Half card is present. 
+2024-03-14 17:28:56 INFO  CompanyAssetsPage:66 - Clear the Company text box. 
+2024-03-14 17:28:56 INFO  CompanyAssetsPage:69 - Enter Company name. 
+2024-03-14 17:28:56 INFO  CompanyAssetsPage:80 - Click on Submit button. 
+2024-03-14 17:29:03 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 17:29:03 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 17:29:05 INFO  CompanyAssetsPage:107 - Record searched successfully. 
+2024-03-14 17:29:05 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 17:29:09 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 17:29:09 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 17:29:11 INFO  CompanyAssetsPage:107 - Record searched successfully. 
+2024-03-14 17:29:18 INFO  CompanyAssetsPage:124 - Retrive all records 
+2024-03-14 17:29:18 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 17:29:21 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 17:29:22 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 17:29:24 INFO  CompanyAssetsPage:107 - Record searched successfully. 
+2024-03-14 17:29:24 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-14 17:29:24 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-14 17:29:24 INFO  commonLocatorsRepo:64 - Waiting until edit button is clickable. 
+2024-03-14 17:29:24 INFO  commonLocatorsRepo:67 - Action menu presented, Cliked Edit action. 
+2024-03-14 17:29:25 INFO  CompanyAssetsPage:144 - Edit Company half screen present. 
+2024-03-14 17:29:25 INFO  CompanyAssetsPage:162 - Click on Company name. 
+2024-03-14 17:29:27 INFO  CompanyAssetsPage:166 - Clear text box. 
+2024-03-14 17:29:29 INFO  CompanyAssetsPage:170 - Input upgreaded Company name. 
+2024-03-14 17:29:29 INFO  CompanyAssetsPage:180 - Click on Submit button. 
+2024-03-14 17:29:30 INFO  CompanyAssetsPage:185 - 'P39REdited' Company update successfully. 
+2024-03-14 17:29:38 INFO  CompanyAssetsPage:124 - Retrive all records 
+2024-03-14 17:29:38 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 17:29:41 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 17:29:41 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 17:29:43 INFO  CompanyAssetsPage:107 - Record searched successfully. 
+2024-03-14 17:29:43 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-14 17:29:44 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-14 17:29:44 INFO  commonLocatorsRepo:72 - Waiting until delete button is clickable. 
+2024-03-14 17:29:44 INFO  commonLocatorsRepo:75 - Action menu presented, Cliked delete action. 
+2024-03-14 17:29:44 INFO  CompanyAssetsPage:206 - Delete confirmation popup is present. 
+2024-03-14 17:29:45 INFO  CompanyAssetsPage:222 - Cliked on Yes button to confirm delete record. 
+2024-03-14 17:29:52 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 17:29:53 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 17:30:05 INFO  CompanyAssetsPage:234 - 'P39REdited' Company has been deleted successfully. 
+2024-03-14 17:30:12 INFO  CompanyAssetsPage:124 - Retrive all records 
+2024-03-14 17:30:12 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 17:30:22 INFO  DashBoardPage:65 - Assets is already open. 
+2024-03-14 17:30:32 INFO  DashBoardPage:95 - Click on Field manu item. 
+2024-03-14 17:30:34 INFO  FiledAssetsPage:63 - Wait until loading field list. 
+2024-03-14 17:30:34 INFO  commonLocatorsRepo:94 - Click on Add button. 
+2024-03-14 17:30:35 INFO  commonLocatorsRepo:97 - Half card is present. 
+2024-03-14 17:30:35 INFO  FiledAssetsPage:71 - Enter Filed name. 
+2024-03-14 17:30:35 INFO  FiledAssetsPage:74 - Enter SONRIS Field ID 
+2024-03-14 17:30:35 INFO  FiledAssetsPage:81 - Click on Submit button. 
+2024-03-14 17:30:42 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 17:30:42 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 17:30:44 INFO  FiledAssetsPage:105 - Record searched successfully. 
+2024-03-14 17:30:44 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 17:30:49 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 17:30:49 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 17:30:51 INFO  FiledAssetsPage:105 - Record searched successfully. 
+2024-03-14 17:30:56 INFO  FiledAssetsPage:119 - Retrive all records 
+2024-03-14 17:30:56 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 17:30:59 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 17:30:59 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 17:31:01 INFO  FiledAssetsPage:105 - Record searched successfully. 
+2024-03-14 17:31:02 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-14 17:31:02 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-14 17:31:02 INFO  commonLocatorsRepo:64 - Waiting until edit button is clickable. 
+2024-03-14 17:31:02 INFO  commonLocatorsRepo:67 - Action menu presented, Cliked Edit action. 
+2024-03-14 17:31:02 INFO  FiledAssetsPage:144 - Edit Field half screen present. 
+2024-03-14 17:31:03 INFO  FiledAssetsPage:163 - Click on Field name. 
+2024-03-14 17:31:05 INFO  FiledAssetsPage:167 - Clear text box. 
+2024-03-14 17:31:07 INFO  FiledAssetsPage:171 - Input upgreaded Field name. 
+2024-03-14 17:31:07 INFO  FiledAssetsPage:181 - Click on Submit button. 
+2024-03-14 17:31:08 INFO  FiledAssetsPage:186 - '2M3W79QEEdited' Field update successfully. 
+2024-03-14 17:31:13 INFO  FiledAssetsPage:119 - Retrive all records 
+2024-03-14 17:31:13 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 17:31:16 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 17:31:18 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 17:31:20 INFO  FiledAssetsPage:105 - Record searched successfully. 
+2024-03-14 17:31:20 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-14 17:31:20 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-14 17:31:20 INFO  commonLocatorsRepo:72 - Waiting until delete button is clickable. 
+2024-03-14 17:31:20 INFO  commonLocatorsRepo:75 - Action menu presented, Cliked delete action. 
+2024-03-14 17:31:21 INFO  FiledAssetsPage:202 - Delete confirmation popup is present. 
+2024-03-14 17:31:21 INFO  FiledAssetsPage:218 - Cliked on Yes button to confirm delete record. 
+2024-03-14 17:31:28 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 17:31:29 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 17:31:41 INFO  FiledAssetsPage:229 - '2M3W79QEEdited' Field has been deleted successfully. 
+2024-03-14 17:31:51 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 17:32:01 INFO  DashBoardPage:65 - Assets is already open. 
+2024-03-14 17:32:12 INFO  DashBoardPage:95 - Click on Lease manu item. 
+2024-03-14 17:32:14 INFO  LeaseAssetsPage:59 - Wait until loading lease list. 
+2024-03-14 17:32:15 INFO  commonLocatorsRepo:94 - Click on Add button. 
+2024-03-14 17:32:15 INFO  commonLocatorsRepo:97 - Half card is present. 
+2024-03-14 17:32:15 INFO  LeaseAssetsPage:69 - Clear the Lease text box. 
+2024-03-14 17:32:15 INFO  LeaseAssetsPage:72 - Enter Lease name. 
+2024-03-14 17:32:18 INFO  LeaseAssetsPage:85 - Pumper selected. 
+2024-03-14 17:32:20 INFO  LeaseAssetsPage:80 - Company selected. 
+2024-03-14 17:32:20 INFO  LeaseAssetsPage:92 - Click on Submit button. 
+2024-03-14 17:32:26 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 17:32:27 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 17:32:29 INFO  LeaseAssetsPage:116 - Record searched successfully. 
+2024-03-14 17:32:29 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 17:32:33 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 17:32:34 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 17:32:36 INFO  LeaseAssetsPage:116 - Record searched successfully. 
+2024-03-14 17:32:39 INFO  LeaseAssetsPage:130 - Retrive all records 
+2024-03-14 17:32:39 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 17:32:43 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 17:32:43 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 17:32:45 INFO  LeaseAssetsPage:116 - Record searched successfully. 
+2024-03-14 17:32:45 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-14 17:32:45 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-14 17:32:46 INFO  commonLocatorsRepo:64 - Waiting until edit button is clickable. 
+2024-03-14 17:32:46 INFO  commonLocatorsRepo:67 - Action menu presented, Cliked Edit action. 
+2024-03-14 17:32:46 INFO  LeaseAssetsPage:157 - Edit Lease half screen present. 
+2024-03-14 17:32:47 INFO  LeaseAssetsPage:175 - Click on Lease name. 
+2024-03-14 17:32:49 INFO  LeaseAssetsPage:179 - Clear text box. 
+2024-03-14 17:32:51 INFO  LeaseAssetsPage:183 - Input upgreaded Lease name. 
+2024-03-14 17:32:51 INFO  LeaseAssetsPage:193 - Click on Submit button. 
+2024-03-14 17:32:52 INFO  LeaseAssetsPage:198 - '138QEdited' Lease update successfully. 
+2024-03-14 17:32:57 INFO  LeaseAssetsPage:130 - Retrive all records 
+2024-03-14 17:32:57 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 17:33:00 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 17:33:01 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 17:33:03 INFO  LeaseAssetsPage:116 - Record searched successfully. 
+2024-03-14 17:33:03 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-14 17:33:03 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-14 17:33:03 INFO  commonLocatorsRepo:72 - Waiting until delete button is clickable. 
+2024-03-14 17:33:03 INFO  commonLocatorsRepo:75 - Action menu presented, Cliked delete action. 
+2024-03-14 17:33:04 INFO  LeaseAssetsPage:214 - Delete confirmation popup is present. 
+2024-03-14 17:33:04 INFO  LeaseAssetsPage:230 - Cliked on Yes button to confirm delete record. 
+2024-03-14 17:33:11 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 17:33:12 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 17:33:24 INFO  LeaseAssetsPage:240 - '138QEdited' Lease has been deleted successfully. 
+2024-03-14 17:33:29 INFO  LeaseAssetsPage:130 - Retrive all records 
+2024-03-14 17:59:27 INFO  TestBase:41 - ************************************************************************ 
+2024-03-14 17:59:27 INFO  TestBase:42 - Chrome browser launched. 
+2024-03-14 17:59:30 INFO  TestBase:45 - Hit Oilman URL.  
+2024-03-14 17:59:31 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 17:59:32 INFO  LoginPage:53 - Enter Email id. 
+2024-03-14 17:59:32 INFO  LoginPage:67 - Enter Password. 
+2024-03-14 17:59:33 INFO  LoginPage:76 - Cliked on Submit button. 
+2024-03-14 17:59:50 INFO  LoginPage:87 - Logged successfully navigated on Dashboard 
+2024-03-14 17:59:50 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 17:59:50 INFO  DashBoardPage:55 - Waiting until Assets manu is clickable. 
+2024-03-14 17:59:50 INFO  DashBoardPage:58 - Click on Assets menu. 
+2024-03-14 18:00:00 INFO  DashBoardPage:95 - Click on Company manu item. 
+2024-03-14 18:00:01 INFO  CompanyAssetsPage:57 - Wait until loading company list. 
+2024-03-14 18:00:01 INFO  commonLocatorsRepo:94 - Click on Add button. 
+2024-03-14 18:00:01 INFO  commonLocatorsRepo:97 - Half card is present. 
+2024-03-14 18:00:02 INFO  CompanyAssetsPage:66 - Clear the Company text box. 
+2024-03-14 18:00:02 INFO  CompanyAssetsPage:69 - Enter Company name. 
+2024-03-14 18:00:02 INFO  CompanyAssetsPage:80 - Click on Submit button. 
+2024-03-14 18:00:08 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 18:00:08 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 18:00:10 INFO  CompanyAssetsPage:107 - Record searched successfully. 
+2024-03-14 18:00:10 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 18:00:14 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 18:00:14 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 18:00:16 INFO  CompanyAssetsPage:107 - Record searched successfully. 
+2024-03-14 18:00:23 INFO  CompanyAssetsPage:124 - Retrive all records 
+2024-03-14 18:00:23 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 18:00:26 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 18:00:26 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 18:00:28 INFO  CompanyAssetsPage:107 - Record searched successfully. 
+2024-03-14 18:00:28 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-14 18:00:28 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-14 18:00:28 INFO  commonLocatorsRepo:64 - Waiting until edit button is clickable. 
+2024-03-14 18:00:29 INFO  commonLocatorsRepo:67 - Action menu presented, Cliked Edit action. 
+2024-03-14 18:00:29 INFO  CompanyAssetsPage:144 - Edit Company half screen present. 
+2024-03-14 18:00:29 INFO  CompanyAssetsPage:162 - Click on Company name. 
+2024-03-14 18:00:31 INFO  CompanyAssetsPage:166 - Clear text box. 
+2024-03-14 18:00:33 INFO  CompanyAssetsPage:170 - Input upgreaded Company name. 
+2024-03-14 18:00:33 INFO  CompanyAssetsPage:180 - Click on Submit button. 
+2024-03-14 18:00:34 INFO  CompanyAssetsPage:185 - 'WL8OEdited' Company update successfully. 
+2024-03-14 18:00:41 INFO  CompanyAssetsPage:124 - Retrive all records 
+2024-03-14 18:00:41 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 18:00:44 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 18:00:44 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 18:00:46 INFO  CompanyAssetsPage:107 - Record searched successfully. 
+2024-03-14 18:00:46 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-14 18:00:46 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-14 18:00:46 INFO  commonLocatorsRepo:72 - Waiting until delete button is clickable. 
+2024-03-14 18:00:47 INFO  commonLocatorsRepo:75 - Action menu presented, Cliked delete action. 
+2024-03-14 18:00:47 INFO  CompanyAssetsPage:206 - Delete confirmation popup is present. 
+2024-03-14 18:00:47 INFO  CompanyAssetsPage:222 - Cliked on Yes button to confirm delete record. 
+2024-03-14 18:00:54 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 18:00:54 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 18:01:06 INFO  CompanyAssetsPage:234 - 'WL8OEdited' Company has been deleted successfully. 
+2024-03-14 18:01:13 INFO  CompanyAssetsPage:124 - Retrive all records 
+2024-03-14 18:01:13 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 18:01:23 INFO  DashBoardPage:65 - Assets is already open. 
+2024-03-14 18:01:34 INFO  DashBoardPage:95 - Click on Field manu item. 
+2024-03-14 18:01:34 INFO  FiledAssetsPage:63 - Wait until loading field list. 
+2024-03-14 18:01:35 INFO  commonLocatorsRepo:94 - Click on Add button. 
+2024-03-14 18:01:35 INFO  commonLocatorsRepo:97 - Half card is present. 
+2024-03-14 18:01:35 INFO  FiledAssetsPage:71 - Enter Filed name. 
+2024-03-14 18:01:35 INFO  FiledAssetsPage:74 - Enter SONRIS Field ID 
+2024-03-14 18:01:35 INFO  FiledAssetsPage:81 - Click on Submit button. 
+2024-03-14 18:01:41 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 18:01:42 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 18:01:44 INFO  FiledAssetsPage:105 - Record searched successfully. 
+2024-03-14 18:01:44 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 18:01:48 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 18:01:48 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 18:01:50 INFO  FiledAssetsPage:105 - Record searched successfully. 
+2024-03-14 18:01:54 INFO  FiledAssetsPage:119 - Retrive all records 
+2024-03-14 18:01:54 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 18:01:57 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 18:01:58 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 18:02:00 INFO  FiledAssetsPage:105 - Record searched successfully. 
+2024-03-14 18:02:00 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-14 18:02:00 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-14 18:02:00 INFO  commonLocatorsRepo:64 - Waiting until edit button is clickable. 
+2024-03-14 18:02:00 INFO  commonLocatorsRepo:67 - Action menu presented, Cliked Edit action. 
+2024-03-14 18:02:00 INFO  FiledAssetsPage:144 - Edit Field half screen present. 
+2024-03-14 18:02:01 INFO  FiledAssetsPage:163 - Click on Field name. 
+2024-03-14 18:02:03 INFO  FiledAssetsPage:167 - Clear text box. 
+2024-03-14 18:02:05 INFO  FiledAssetsPage:171 - Input upgreaded Field name. 
+2024-03-14 18:02:05 INFO  FiledAssetsPage:181 - Click on Submit button. 
+2024-03-14 18:02:05 INFO  FiledAssetsPage:186 - 'X33FQIRQEdited' Field update successfully. 
+2024-03-14 18:02:10 INFO  FiledAssetsPage:119 - Retrive all records 
+2024-03-14 18:02:10 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 18:02:13 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 18:02:14 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 18:02:16 INFO  FiledAssetsPage:105 - Record searched successfully. 
+2024-03-14 18:02:16 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-14 18:02:16 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-14 18:02:16 INFO  commonLocatorsRepo:72 - Waiting until delete button is clickable. 
+2024-03-14 18:02:16 INFO  commonLocatorsRepo:75 - Action menu presented, Cliked delete action. 
+2024-03-14 18:02:16 INFO  FiledAssetsPage:202 - Delete confirmation popup is present. 
+2024-03-14 18:02:16 INFO  FiledAssetsPage:218 - Cliked on Yes button to confirm delete record. 
+2024-03-14 18:02:23 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 18:02:24 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 18:02:36 INFO  FiledAssetsPage:229 - 'X33FQIRQEdited' Field has been deleted successfully. 
+2024-03-14 18:02:40 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 18:02:50 INFO  DashBoardPage:65 - Assets is already open. 
+2024-03-14 18:03:01 INFO  DashBoardPage:95 - Click on Lease manu item. 
+2024-03-14 18:03:03 INFO  LeaseAssetsPage:59 - Wait until loading lease list. 
+2024-03-14 18:03:03 INFO  commonLocatorsRepo:94 - Click on Add button. 
+2024-03-14 18:03:03 INFO  commonLocatorsRepo:97 - Half card is present. 
+2024-03-14 18:03:03 INFO  LeaseAssetsPage:69 - Clear the Lease text box. 
+2024-03-14 18:03:03 INFO  LeaseAssetsPage:72 - Enter Lease name. 
+2024-03-14 18:03:05 INFO  LeaseAssetsPage:85 - Pumper selected. 
+2024-03-14 18:03:08 INFO  LeaseAssetsPage:80 - Company selected. 
+2024-03-14 18:03:08 INFO  LeaseAssetsPage:92 - Click on Submit button. 
+2024-03-14 18:19:48 INFO  TestBase:41 - ************************************************************************ 
+2024-03-14 18:19:48 INFO  TestBase:42 - Chrome browser launched. 
+2024-03-14 18:19:51 INFO  TestBase:45 - Hit Oilman URL.  
+2024-03-14 18:19:53 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 18:19:53 INFO  LoginPage:53 - Enter Email id. 
+2024-03-14 18:19:54 INFO  LoginPage:67 - Enter Password. 
+2024-03-14 18:19:54 INFO  LoginPage:76 - Cliked on Submit button. 
+2024-03-14 18:20:09 INFO  LoginPage:87 - Logged successfully navigated on Dashboard 
+2024-03-14 18:20:09 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 18:20:09 INFO  DashBoardPage:55 - Waiting until Assets manu is clickable. 
+2024-03-14 18:20:09 INFO  DashBoardPage:58 - Click on Assets menu. 
+2024-03-14 18:20:19 INFO  DashBoardPage:95 - Click on Field manu item. 
+2024-03-14 18:20:21 INFO  FiledAssetsPage:63 - Wait until loading field list. 
+2024-03-14 18:20:21 INFO  commonLocatorsRepo:94 - Click on Add button. 
+2024-03-14 18:20:21 INFO  commonLocatorsRepo:97 - Half card is present. 
+2024-03-14 18:20:21 INFO  FiledAssetsPage:71 - Enter Filed name. 
+2024-03-14 18:20:21 INFO  FiledAssetsPage:74 - Enter SONRIS Field ID 
+2024-03-14 18:20:22 INFO  FiledAssetsPage:81 - Click on Submit button. 
+2024-03-14 18:20:28 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 18:20:28 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 18:20:30 INFO  FiledAssetsPage:105 - Record searched successfully. 
+2024-03-14 18:20:30 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 18:20:34 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 18:20:35 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 18:20:37 INFO  FiledAssetsPage:105 - Record searched successfully. 
+2024-03-14 18:20:51 INFO  FiledAssetsPage:119 - Retrive all records 
+2024-03-14 18:20:51 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 18:20:54 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 18:20:54 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 18:20:56 INFO  FiledAssetsPage:105 - Record searched successfully. 
+2024-03-14 18:20:56 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-14 18:20:57 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-14 18:20:57 INFO  commonLocatorsRepo:64 - Waiting until edit button is clickable. 
+2024-03-14 18:20:57 INFO  commonLocatorsRepo:67 - Action menu presented, Cliked Edit action. 
+2024-03-14 18:20:57 INFO  FiledAssetsPage:144 - Edit Field half screen present. 
+2024-03-14 18:20:57 INFO  FiledAssetsPage:163 - Click on Field name. 
+2024-03-14 18:20:59 INFO  FiledAssetsPage:167 - Clear text box. 
+2024-03-14 18:21:01 INFO  FiledAssetsPage:171 - Input upgreaded Field name. 
+2024-03-14 18:21:01 INFO  FiledAssetsPage:181 - Click on Submit button. 
+2024-03-14 18:21:02 INFO  FiledAssetsPage:186 - '2BU3C1YIEdited' Field update successfully. 
+2024-03-14 18:21:12 INFO  FiledAssetsPage:119 - Retrive all records 
+2024-03-14 18:21:12 INFO  TestBase:68 - ------------------------------------------------------------------------ 
+2024-03-14 18:21:15 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 18:21:16 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 18:21:18 INFO  FiledAssetsPage:105 - Record searched successfully. 
+2024-03-14 18:21:18 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-14 18:21:18 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-14 18:21:18 INFO  commonLocatorsRepo:72 - Waiting until delete button is clickable. 
+2024-03-14 18:21:19 INFO  commonLocatorsRepo:75 - Action menu presented, Cliked delete action. 
+2024-03-14 18:21:19 INFO  FiledAssetsPage:202 - Delete confirmation popup is present. 
+2024-03-14 18:21:20 INFO  FiledAssetsPage:218 - Cliked on Yes button to confirm delete record. 
+2024-03-14 18:21:28 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-14 18:21:29 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-14 18:21:41 INFO  FiledAssetsPage:228 - '2BU3C1YIEdited' Field has been deleted successfully. 
+2024-03-14 18:21:51 INFO  FiledAssetsPage:119 - Retrive all records 

@@ -61,7 +61,7 @@ public class FieldAssetsTest extends TestBase {
 		ExtentReportManager.test.log(Status.PASS,
 				"Verify the Delete Confirmation popup is Present or not when click on delete action button.");
 		fieldAstsop.verifyTheFieldIsDeletedorNotAfterConfirm();
-		ExtentReportManager.test.log(Status.PASS, "Verify that the field is Delete or not afte confirm.");
+		ExtentReportManager.test.log(Status.PASS, "Verify that the field is Delete or not after confirm.");
 		fieldAstsop.verifyTheFieldListAfterClearSearchBox();
 		ExtentReportManager.test.log(Status.PASS, "Clear searchbox to get all companies.");
 	}

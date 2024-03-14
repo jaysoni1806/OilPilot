@@ -3,20 +3,19 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.Listeners.ExtentReportListener"/>
-    <listener class-name="com.Listeners.IRetryAnalyzerListener"/>
   </listeners>
   <test thread-count="5" name="Oilman(failed)">
     <classes>
-      <class name="testPackage.LeaseAssetsTest">
+      <class name="testPackage.FieldAssetsTest">
         <methods>
           <include name="seperateCase"/>
           <include name="initializeExtentReport"/>
           <include name="assignObjectForClass"/>
-          <include name="deleteLease"/>
+          <include name="deleteField"/>
           <include name="prerequisite"/>
           <include name="flush"/>
         </methods>
-      </class> <!-- testPackage.LeaseAssetsTest -->
+      </class> <!-- testPackage.FieldAssetsTest -->
     </classes>
   </test> <!-- Oilman(failed) -->
 </suite> <!-- Failed suite [Suite] -->
