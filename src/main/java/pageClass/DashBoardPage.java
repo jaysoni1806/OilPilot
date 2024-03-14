@@ -3,7 +3,6 @@ package pageClass;
 import java.util.List;
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -37,6 +36,8 @@ public class DashBoardPage {
 	public WebElement leaseMenu;
 	@FindBy(xpath = "//div[contains(@class,'react-hot-toast')]//div[@role='status']")
 	public WebElement toastMessage;
+	@FindBy(xpath = "//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-hidden')]")
+	public List<WebElement> assets_CollapseHidden1;
 
 	public DashBoardPage(WebDriver driver) {
 		this.driver = driver;
@@ -46,29 +47,29 @@ public class DashBoardPage {
 	}
 
 	public void clickOnAssets() throws ApplicationException {
-		List<WebElement> assets_CollapseHidden = driver.findElements(By.xpath(
-				"//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-hidden')]"));
 
-		if (assets_CollapseHidden.size() > 0) {
+		if (assets_CollapseHidden1.size() > 0) {
+
 			if (asset.isDisplayed()) {
 				utility.WaitUntilElementIsNotClickable(asset, 5);
 				log.info("Waiting until Assets manu is clickable.");
+
 				utility.Submit(asset);
 				log.info("Click on Assets menu.");
+
 			} else {
 				throw new ApplicationException("Exception Occured", "Assets is not display.");
 			}
+
 		} else {
 			log.info("Assets is already open.");
 		}
 	}
 
 	public void clickOnMenuItem(String menuNAme) throws ApplicationException, InterruptedException {
-		List<WebElement> assets_CollapseHidden = driver.findElements(By.xpath(
-				"//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-hidden')]"));
 
 		try {
-			if (assets_CollapseHidden.isEmpty()) {
+			if (assets_CollapseHidden1.size() == 0) {
 				if (menuNAme.equals("Company")) {
 					selectMenu(companyMenu, menuNAme);
 				} else if (menuNAme.equals("Field")) {
@@ -87,13 +88,13 @@ public class DashBoardPage {
 	}
 
 	public void selectMenu(WebElement MenuElement, String menuNAme) throws ApplicationException, InterruptedException {
+
 		if (MenuElement.isDisplayed()) {
-			utility.WaitUntilElementIsNotClickable(MenuElement, 5);
-			log.info("Wait until " + menuNAme + " manu is clickable.");
+
 			utility.Submit(MenuElement);
 			log.info("Click on " + menuNAme + " manu item.");
 
-		} else if (assets_CollapseHidden.isDisplayed()) {
+		} else if (assets_CollapseHidden1.size() > 0) {
 			log.info("Assets menu has been collepse");
 			clickOnAssets();
 			log.info("Call Click Assets function again");
@@ -103,10 +104,6 @@ public class DashBoardPage {
 			throw new ApplicationException("Exception Occured",
 					commLocators.screenHeader.getText() + "Assets is not display.");
 		}
-	}
-
-	public void clickOnSubmitButtonAndVerifyThatTheFiledIsCreateOrNot() {
-
 	}
 
 }

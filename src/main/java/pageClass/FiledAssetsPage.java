@@ -99,8 +99,6 @@ public class FiledAssetsPage {
 	}
 
 	public void verifySearchedFieldIsExistsOrNot(String field_name) throws ApplicationException {
-		List<WebElement> searchRecords = driver.findElements(By.xpath("//div[contains(@class,'MuiDataGrid-row')]"));
-
 		if (searchRecords.size() != 0) {
 			for (WebElement searchedRecord : searchRecords) {
 				WebElement filedsRow = searchedRecord.findElement(By.xpath("//h6[contains(@class,'subtitle2')]"));
@@ -117,9 +115,6 @@ public class FiledAssetsPage {
 		if (commLocators.inputSearch.isDisplayed()) {
 			utility.clearSearchBox(commLocators.inputSearch);
 
-			searchRecords = driver.findElements(By.xpath("//div[contains(@class,'MuiDataGrid-row')]"));
-			utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
-
 			if (searchRecords.size() >= 1) {
 				log.info("Retrive all records");
 			} else {
@@ -128,7 +123,6 @@ public class FiledAssetsPage {
 		} else {
 			throw new ApplicationException("Exception Occured", "Search box is not present.");
 		}
-
 	}
 
 	public void searchRecentAddedFieldForEdit() throws ApplicationException, InterruptedException {

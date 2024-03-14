@@ -26,7 +26,7 @@ public class LoginPage {
 	public WebElement email;
 	@FindBy(xpath = "//input[@type='password']")
 	public WebElement pass;
-	@FindBy(xpath = "//button[@type='submit1']")
+	@FindBy(xpath = "//button[@type='submit']")
 	public WebElement sbtBtn;
 	@FindBy(xpath = "//div[contains(@class,'css-acwcvw')]//p[contains(@id,'helper-text')]")
 	public List<WebElement> emailError;

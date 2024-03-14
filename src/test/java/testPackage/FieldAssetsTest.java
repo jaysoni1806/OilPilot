@@ -19,10 +19,6 @@ public class FieldAssetsTest extends TestBase {
 		ExtentReportManager.test.log(Status.PASS, "Click on Assets");
 		dashboard.clickOnMenuItem("Field");
 		ExtentReportManager.test.log(Status.PASS, "Click on Field menu.");
-		/*
-		 * fieldAstsop.verifyTheScreen(); ExtentReportManager.test.log(Status.PASS,
-		 * "Navigate to Filed Screen.");
-		 */
 		fieldAstsop.clickAddButtonAndVerifyAddFieldHalfCardIsPresentOrNot();
 		ExtentReportManager.test.log(Status.PASS, "Click on Add button and Verify Add Field half card.");
 		fieldAstsop.EnterFiledDetails(field_name, sonris_id);

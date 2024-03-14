@@ -121,15 +121,15 @@ public class commonLocatorsRepo {
 	public void selectValue(String dropdowniTem, String dropdownName, WebElement cancelButton)
 			throws ApplicationException {
 		WebElement dropdownElement = driver.findElement(By.xpath(
-				"//div[contains(@class,'paperAnchorRight')][not(contains(@style,'visibility: hidden'))]//form//div[text()='"
+				"//div[contains(@class,'paperAnchorRight')][not(contains(@style,'visibility: hidden'))]//form//input[@placeholder='"
 						+ dropdowniTem + "']"));
 		if (dropdownElement.isDisplayed()) {
 			utility.WaitUntilElementIsNotClickable(dropdownElement, 5);
 			utility.Submit(dropdownElement);
 			utility.WaitFor2Second();
 
-			List<WebElement> dropdownList = driver.findElements(By.xpath(
-					"//div[contains(@class,'MuiMenu-paper')][not(contains(@style,'visibility: hidden'))]//ul[contains(@class,'MuiMenu-list')]/li"));
+			List<WebElement> dropdownList = driver
+					.findElements(By.xpath("//ul[contains(@class,'MuiAutocomplete-listbox')]/li"));
 
 			if (dropdownList.size() >= 2) {
 				utility.Submit(dropdownList.get(2));

@@ -47,11 +47,12 @@ public class CompanyAssetsPage {
 	private WebElement editCompny_SubmitButton;
 	@FindBy(xpath = "//div[@aria-describedby='alert-dialog-description-Delete confirmation for Company']//button[text()='Yes']")
 	private WebElement deleteConfirmYesButton;
-
+	@FindBy(xpath = "//div[contains(@class,'MuiDataGrid-row')]")
 	private List<WebElement> searchRecords;
 
 	public void clickAddButtonAndVerifyCreateCompnayHalfCardIsPresentOrNot() throws ApplicationException {
-		searchRecords = driver.findElements(By.xpath("//div[contains(@class,'MuiDataGrid-row')]"));
+		// searchRecords =
+		// driver.findElements(By.xpath("//div[contains(@class,'MuiDataGrid-row')]"));
 		utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
 		log.info("Wait until loading company list.");
 		commLocators.clickAddButton();
@@ -96,7 +97,8 @@ public class CompanyAssetsPage {
 	}
 
 	public void verifySearchedCompanyIsExistsOrNot(String CmpName) throws ApplicationException {
-		searchRecords = driver.findElements(By.xpath("//div[contains(@class,'MuiDataGrid-row')]"));
+		// searchRecords =
+		// driver.findElements(By.xpath("//div[contains(@class,'MuiDataGrid-row')]"));
 
 		if (searchRecords.size() != 0) {
 			for (WebElement searchedRecord : searchRecords) {
@@ -113,9 +115,10 @@ public class CompanyAssetsPage {
 	public void verifyTheCompanyListAfterClearSearchBox() throws ApplicationException, InterruptedException {
 		if (commLocators.inputSearch.isDisplayed()) {
 			utility.clearSearchBox(commLocators.inputSearch);
-
-			searchRecords = driver.findElements(By.xpath("//div[contains(@class,'MuiDataGrid-row')]"));
-			utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
+			Thread.sleep(3000);
+			// searchRecords =
+			// driver.findElements(By.xpath("//div[contains(@class,'MuiDataGrid-row')]"));
+			// utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
 
 			if (searchRecords.size() >= 1) {
 				log.info("Retrive all records");
@@ -223,7 +226,8 @@ public class CompanyAssetsPage {
 			String expactedToastMessage = dashboard.toastMessage.getText();
 			utility.WaitUntilElementVisibiltyGone(dashboard.toastMessage, 5);
 			enterCompanyNameinSearchBox(updatedComp);
-			searchRecords = driver.findElements(By.xpath("//div[contains(@class,'MuiDataGrid-row')]"));
+			// searchRecords =
+			// driver.findElements(By.xpath("//div[contains(@class,'MuiDataGrid-row')]"));
 
 			if (searchRecords.size() == 0) {
 				Assert.assertEquals(expactedToastMessage, "We have successfully deleted the Company.");

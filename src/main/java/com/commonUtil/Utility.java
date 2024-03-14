@@ -3,7 +3,6 @@ package com.commonUtil;
 import java.time.Duration;
 import java.util.List;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
@@ -56,6 +55,7 @@ public class Utility {
 			element.sendKeys(Keys.BACK_SPACE);
 			// commonLocatorsRepo.waitTillLoaderDisappear();
 		}
+		Thread.sleep(3000);
 	}
 
 	public void cleanText(WebElement elem) throws InterruptedException {
@@ -138,16 +138,12 @@ public class Utility {
 		 */
 	}
 
-	public boolean isElementPresent(List<WebElement> element) {
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0));
-		try {
-			driver.findElements((By) element);
-			return true;
-		} catch (NoSuchElementException e) {
-			return false;
-		} finally {
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		}
-	}
+	/*
+	 * public boolean isElementPresent(List<WebElement> element) {
+	 * driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(0)); try {
+	 * driver.findElements((By) element); return true; } catch
+	 * (NoSuchElementException e) { return false; } finally {
+	 * driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); } }
+	 */
 
 }
