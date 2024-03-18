@@ -38,7 +38,7 @@ public class LeaseAssetsTest extends TestBase {
 		leaseAstop.enterLeaseNameinSearchBox(Lease_name);
 		ExtentReportManager.test.log(Status.PASS, "Enter Lease name in searchbox");
 		leaseAstop.verifySearchedLeaseIsExistsOrNot(Lease_name);
-		ExtentReportManager.test.log(Status.PASS, "Verify the searched Field is exists or not.");
+		ExtentReportManager.test.log(Status.PASS, "Verify the searched Lease is exists or not.");
 		leaseAstop.verifyTheLeaseListAfterClearSearchBox();
 		ExtentReportManager.test.log(Status.PASS, "Clear searchbox to get all Field.");
 	}

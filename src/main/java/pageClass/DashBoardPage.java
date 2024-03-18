@@ -34,6 +34,8 @@ public class DashBoardPage {
 	public WebElement fieldMenu;
 	@FindBy(xpath = "//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-entered')]//li//a[@href='/assets/lease/']")
 	public WebElement leaseMenu;
+	@FindBy(xpath = "//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-entered')]//li//a[@href='/assets/sublease/']")
+	public WebElement subleaseMenu;
 	@FindBy(xpath = "//div[contains(@class,'react-hot-toast')]//div[@role='status']")
 	public WebElement toastMessage;
 	@FindBy(xpath = "//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-hidden')]")
@@ -76,6 +78,8 @@ public class DashBoardPage {
 					selectMenu(fieldMenu, menuNAme);
 				} else if (menuNAme.equals("Lease")) {
 					selectMenu(leaseMenu, menuNAme);
+				} else if (menuNAme.equals("Sublease")) {
+					selectMenu(subleaseMenu, menuNAme);
 				}
 			} else {
 				utility.Submit(asset);

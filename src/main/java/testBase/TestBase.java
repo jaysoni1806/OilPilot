@@ -20,6 +20,7 @@ import pageClass.DashBoardPage;
 import pageClass.FiledAssetsPage;
 import pageClass.LeaseAssetsPage;
 import pageClass.LoginPage;
+import pageClass.SubLeaseAssetsPage;
 import pageClass.commonLocatorsRepo;
 
 public class TestBase {
@@ -31,6 +32,7 @@ public class TestBase {
 	public FiledAssetsPage fieldAstsop;
 	public commonLocatorsRepo commLocators;
 	public LeaseAssetsPage leaseAstop;
+	public SubLeaseAssetsPage subleaseAstop;
 	public static Logger log = Logger.getLogger(TestBase.class);
 
 	@BeforeSuite
@@ -55,6 +57,7 @@ public class TestBase {
 		fieldAstsop = new FiledAssetsPage(driver);
 		commLocators = new commonLocatorsRepo(driver);
 		leaseAstop = new LeaseAssetsPage(driver);
+		subleaseAstop = new SubLeaseAssetsPage(driver);
 	}
 
 	@BeforeTest

@@ -1,82 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="8" passed="5" failed="0" skipped="0">
+<testng-results ignored="2" total="2" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-14T18:19:52 IST" name="Suite" finished-at="2024-03-14T18:21:52 IST" duration-ms="119729">
+  <suite started-at="2024-03-18T17:49:25 IST" name="Default suite" finished-at="2024-03-18T17:49:26 IST" duration-ms="919">
     <groups>
     </groups>
-    <test started-at="2024-03-14T18:19:52 IST" name="Oilman" finished-at="2024-03-14T18:21:52 IST" duration-ms="119729">
-      <class name="testPackage.FieldAssetsTest">
-        <test-method is-config="true" signature="assignObjectForClass()[pri:0, instance:testPackage.FieldAssetsTest@4145bad8]" started-at="2024-03-14T18:20:09 IST" name="assignObjectForClass" finished-at="2024-03-14T18:20:09 IST" duration-ms="19" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- assignObjectForClass -->
-        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.FieldAssetsTest@4145bad8]" started-at="2024-03-14T18:20:09 IST" name="seperateCase" finished-at="2024-03-14T18:20:09 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- seperateCase -->
-        <test-method signature="createField()[pri:0, instance:testPackage.FieldAssetsTest@4145bad8]" started-at="2024-03-14T18:20:09 IST" name="createField" description="Test create Field assets." finished-at="2024-03-14T18:20:30 IST" duration-ms="21418" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createField -->
-        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.FieldAssetsTest@4145bad8]" started-at="2024-03-14T18:20:30 IST" name="seperateCase" finished-at="2024-03-14T18:20:30 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- seperateCase -->
-        <test-method signature="searchFleld()[pri:1, instance:testPackage.FieldAssetsTest@4145bad8]" started-at="2024-03-14T18:20:30 IST" name="searchFleld" description="Test Search Field." finished-at="2024-03-14T18:20:51 IST" duration-ms="20159" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchFleld -->
-        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.FieldAssetsTest@4145bad8]" started-at="2024-03-14T18:20:51 IST" name="seperateCase" finished-at="2024-03-14T18:20:51 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- seperateCase -->
-        <test-method signature="editField()[pri:2, instance:testPackage.FieldAssetsTest@4145bad8]" started-at="2024-03-14T18:20:51 IST" name="editField" description="Test edit Field assets." finished-at="2024-03-14T18:21:12 IST" duration-ms="21403" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editField -->
-        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.FieldAssetsTest@4145bad8]" started-at="2024-03-14T18:21:12 IST" name="seperateCase" finished-at="2024-03-14T18:21:12 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- seperateCase -->
-        <test-method signature="deleteField()[pri:3, instance:testPackage.FieldAssetsTest@4145bad8]" started-at="2024-03-14T18:21:12 IST" name="deleteField" description="Test Delete Field assets." finished-at="2024-03-14T18:21:51 IST" duration-ms="39431" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteField -->
-      </class> <!-- testPackage.FieldAssetsTest -->
-      <class name="testPackage.LoginTest">
-        <test-method is-config="true" signature="prerequisite()[pri:0, instance:testPackage.LoginTest@20140db9]" started-at="2024-03-14T18:19:44 IST" name="prerequisite" finished-at="2024-03-14T18:19:52 IST" duration-ms="8471" status="PASS">
+    <test started-at="2024-03-18T17:49:25 IST" name="Default test" finished-at="2024-03-18T17:49:26 IST" duration-ms="919">
+      <class name="testPackage.SubLeaseAssetsTest">
+        <test-method is-config="true" signature="prerequisite()[pri:0, instance:testPackage.SubLeaseAssetsTest@6fdbe764]" started-at="2024-03-18T17:49:12 IST" name="prerequisite" finished-at="2024-03-18T17:49:25 IST" duration-ms="13449" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prerequisite -->
-        <test-method is-config="true" signature="initializeExtentReport()[pri:0, instance:testPackage.LoginTest@20140db9]" started-at="2024-03-14T18:19:52 IST" name="initializeExtentReport" finished-at="2024-03-14T18:19:52 IST" duration-ms="335" status="PASS">
+        <test-method is-config="true" signature="initializeExtentReport()[pri:0, instance:testPackage.SubLeaseAssetsTest@6fdbe764]" started-at="2024-03-18T17:49:25 IST" name="initializeExtentReport" finished-at="2024-03-18T17:49:25 IST" duration-ms="432" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeExtentReport -->
-        <test-method is-config="true" signature="assignObjectForClass()[pri:0, instance:testPackage.LoginTest@20140db9]" started-at="2024-03-14T18:19:53 IST" name="assignObjectForClass" finished-at="2024-03-14T18:19:53 IST" duration-ms="126" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- assignObjectForClass -->
-        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.LoginTest@20140db9]" started-at="2024-03-14T18:19:53 IST" name="seperateCase" finished-at="2024-03-14T18:19:53 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- seperateCase -->
-        <test-method signature="validLoginTest(java.util.Map)[pri:0, instance:testPackage.LoginTest@20140db9]" started-at="2024-03-14T18:19:53 IST" name="validLoginTest" description="Test Valid Login" data-provider="LoginTestData" finished-at="2024-03-14T18:20:09 IST" duration-ms="15994" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{username=jay.soni+manager@openxcell.com, password=QA@12345}]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="flush()[pri:0, instance:testPackage.LoginTest@20140db9]" started-at="2024-03-14T18:21:51 IST" name="flush" finished-at="2024-03-14T18:21:52 IST" duration-ms="497" status="PASS">
+        <test-method is-config="true" signature="flush()[pri:0, instance:testPackage.SubLeaseAssetsTest@6fdbe764]" started-at="2024-03-18T17:49:25 IST" name="flush" finished-at="2024-03-18T17:49:26 IST" duration-ms="476" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->
-      </class> <!-- testPackage.LoginTest -->
-    </test> <!-- Oilman -->
-  </suite> <!-- Suite -->
+      </class> <!-- testPackage.SubLeaseAssetsTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
