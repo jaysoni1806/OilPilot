@@ -223,7 +223,7 @@ public class FiledAssetsPage {
 			utility.WaitUntilElementVisibiltyGone(dashboard.toastMessage, 5);
 			enterFieldNameinSearchBox(updatedField);
 
-			if (searchRecords.size() == 0) {
+			if (commLocators.noRow.isDisplayed()) {
 				Assert.assertEquals(expactedToastMessage, "We have successfully deleted the Field.");
 				log.info("'" + updatedField + "'" + " Field has been deleted successfully.");
 			} else {

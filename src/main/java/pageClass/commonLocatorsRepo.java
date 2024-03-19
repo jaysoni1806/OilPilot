@@ -44,6 +44,8 @@ public class commonLocatorsRepo {
 	public WebElement popupAddCompany;
 	@FindBy(xpath = "//span[@role='progressbar']")
 	public static WebElement loaderSpinnitng;
+	@FindBy(xpath = "//div[text()='No rows']")
+	public WebElement noRow;
 
 	public void input(String inputFiledplaceHolder, String inputFiledValue) {
 		WebElement inputCompanyName = driver

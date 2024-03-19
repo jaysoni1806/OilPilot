@@ -235,7 +235,7 @@ public class LeaseAssetsPage {
 			utility.WaitUntilElementVisibiltyGone(dashboard.toastMessage, 5);
 			enterLeaseNameinSearchBox(updatedLease);
 
-			if (searchRecords.size() == 0) {
+			if (commLocators.noRow.isDisplayed()) {
 				Assert.assertEquals(expactedToastMessage, "We have successfully deleted the Lease.");
 				log.info("'" + updatedLease + "'" + " Lease has been deleted successfully.");
 			} else {

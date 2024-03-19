@@ -1,25 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="2" passed="0" failed="0" skipped="0">
+<testng-results ignored="3" total="8" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-18T17:49:25 IST" name="Default suite" finished-at="2024-03-18T17:49:26 IST" duration-ms="919">
+  <suite started-at="2024-03-19T15:51:19 IST" name="Suite" finished-at="2024-03-19T15:52:55 IST" duration-ms="96043">
     <groups>
     </groups>
-    <test started-at="2024-03-18T17:49:25 IST" name="Default test" finished-at="2024-03-18T17:49:26 IST" duration-ms="919">
-      <class name="testPackage.SubLeaseAssetsTest">
-        <test-method is-config="true" signature="prerequisite()[pri:0, instance:testPackage.SubLeaseAssetsTest@6fdbe764]" started-at="2024-03-18T17:49:12 IST" name="prerequisite" finished-at="2024-03-18T17:49:25 IST" duration-ms="13449" status="PASS">
+    <test started-at="2024-03-19T15:51:19 IST" name="Oilman" finished-at="2024-03-19T15:52:55 IST" duration-ms="96043">
+      <class name="testPackage.LoginTest">
+        <test-method is-config="true" signature="prerequisite()[pri:0, instance:testPackage.LoginTest@60099951]" started-at="2024-03-19T15:51:08 IST" name="prerequisite" finished-at="2024-03-19T15:51:19 IST" duration-ms="10773" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prerequisite -->
-        <test-method is-config="true" signature="initializeExtentReport()[pri:0, instance:testPackage.SubLeaseAssetsTest@6fdbe764]" started-at="2024-03-18T17:49:25 IST" name="initializeExtentReport" finished-at="2024-03-18T17:49:25 IST" duration-ms="432" status="PASS">
+        <test-method is-config="true" signature="initializeExtentReport()[pri:0, instance:testPackage.LoginTest@60099951]" started-at="2024-03-19T15:51:19 IST" name="initializeExtentReport" finished-at="2024-03-19T15:51:19 IST" duration-ms="330" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeExtentReport -->
-        <test-method is-config="true" signature="flush()[pri:0, instance:testPackage.SubLeaseAssetsTest@6fdbe764]" started-at="2024-03-18T17:49:25 IST" name="flush" finished-at="2024-03-18T17:49:26 IST" duration-ms="476" status="PASS">
+        <test-method is-config="true" signature="assignObjectForClass()[pri:0, instance:testPackage.LoginTest@60099951]" started-at="2024-03-19T15:51:19 IST" name="assignObjectForClass" finished-at="2024-03-19T15:51:19 IST" duration-ms="101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assignObjectForClass -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.LoginTest@60099951]" started-at="2024-03-19T15:51:19 IST" name="seperateCase" finished-at="2024-03-19T15:51:19 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="validLoginTest(java.util.Map)[pri:0, instance:testPackage.LoginTest@60099951]" started-at="2024-03-19T15:51:19 IST" name="validLoginTest" description="Test Valid Login" data-provider="LoginTestData" finished-at="2024-03-19T15:51:39 IST" duration-ms="19585" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{username=jay.soni+manager@openxcell.com, password=QA@12345}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:testPackage.LoginTest@60099951]" started-at="2024-03-19T15:52:54 IST" name="flush" finished-at="2024-03-19T15:52:55 IST" duration-ms="589" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->
+      </class> <!-- testPackage.LoginTest -->
+      <class name="testPackage.SubLeaseAssetsTest">
+        <test-method is-config="true" signature="assignObjectForClass()[pri:0, instance:testPackage.SubLeaseAssetsTest@63376bed]" started-at="2024-03-19T15:51:39 IST" name="assignObjectForClass" finished-at="2024-03-19T15:51:39 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assignObjectForClass -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.SubLeaseAssetsTest@63376bed]" started-at="2024-03-19T15:51:39 IST" name="seperateCase" finished-at="2024-03-19T15:51:39 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="createLease()[pri:0, instance:testPackage.SubLeaseAssetsTest@63376bed]" started-at="2024-03-19T15:51:39 IST" name="createLease" description="Test create Sublease assets." finished-at="2024-03-19T15:52:06 IST" duration-ms="27210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createLease -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.SubLeaseAssetsTest@63376bed]" started-at="2024-03-19T15:52:06 IST" name="seperateCase" finished-at="2024-03-19T15:52:06 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="searchSublease()[pri:1, instance:testPackage.SubLeaseAssetsTest@63376bed]" started-at="2024-03-19T15:52:06 IST" name="searchSublease" description="Test Search Sublease." finished-at="2024-03-19T15:52:16 IST" duration-ms="9742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchSublease -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.SubLeaseAssetsTest@63376bed]" started-at="2024-03-19T15:52:16 IST" name="seperateCase" finished-at="2024-03-19T15:52:16 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="editField()[pri:2, instance:testPackage.SubLeaseAssetsTest@63376bed]" started-at="2024-03-19T15:52:16 IST" name="editField" description="Test edit Sublease assets." finished-at="2024-03-19T15:52:32 IST" duration-ms="15820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editField -->
+        <test-method signature="deleteLease()[pri:3, instance:testPackage.SubLeaseAssetsTest@63376bed]" started-at="2024-03-19T15:52:32 IST" name="deleteLease" description="Test Delete Lease assets." finished-at="2024-03-19T15:52:54 IST" duration-ms="22226" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteLease -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.SubLeaseAssetsTest@63376bed]" started-at="2024-03-19T15:52:32 IST" name="seperateCase" finished-at="2024-03-19T15:52:32 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
       </class> <!-- testPackage.SubLeaseAssetsTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Oilman -->
+  </suite> <!-- Suite -->
 </testng-results>

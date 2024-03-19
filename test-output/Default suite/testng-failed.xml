@@ -5,14 +5,26 @@
     <classes>
       <class name="testPackage.LoginTest">
         <methods>
-          <include name="validLoginTest1"/>
           <include name="seperateCase"/>
+          <include name="validLoginTest" invocation-numbers="0"/>
           <include name="initializeExtentReport"/>
           <include name="assignObjectForClass"/>
           <include name="prerequisite"/>
           <include name="flush"/>
         </methods>
       </class> <!-- testPackage.LoginTest -->
+      <class name="testPackage.SubLeaseAssetsTest2">
+        <methods>
+          <include name="seperateCase"/>
+          <include name="validLoginTest" invocation-numbers="0"/>
+          <include name="initializeExtentReport"/>
+          <include name="assignObjectForClass"/>
+          <include name="searchSublease"/>
+          <include name="createLease"/>
+          <include name="prerequisite"/>
+          <include name="flush"/>
+        </methods>
+      </class> <!-- testPackage.SubLeaseAssetsTest2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import com.commonUtil.ApplicationException;
 import com.commonUtil.Utility;
@@ -38,6 +39,14 @@ public class SubLeaseAssetsPage {
 	private WebElement inputTaxRate;
 	@FindBy(xpath = "//div[contains(@class,'paperAnchorRight')][not(contains(@style,'visibility: hidden'))]//form//button[@type='submit']")
 	private WebElement submitBtn;
+	@FindBy(xpath = "//h5[text()='Edit Sublease']")
+	private WebElement popupEditSublease;
+	@FindBy(xpath = "//div[contains(@class,'MuiDrawer-paperAnchorRight')][not(contains(@style,'visibility: hidden'))]//input[@placeholder='Enter sublease name']")
+	private WebElement inputEditSubleaseName;
+	@FindBy(xpath = "//div[contains(@class,'MuiDrawer-paperAnchorRight')][not(contains(@style,'visibility: hidden'))]//form//button[@type='submit']")
+	private WebElement editSublease_SubmitButton;
+	@FindBy(xpath = "//div[@aria-describedby='alert-dialog-description-Delete confirmation for Sublease']//button[text()='Yes']")
+	private WebElement deleteConfirmYesButton;
 
 	public SubLeaseAssetsPage(WebDriver driver) {
 		this.driver = driver;
@@ -159,4 +168,115 @@ public class SubLeaseAssetsPage {
 		}
 	}
 
+	public void searchLease(int flag) throws ApplicationException, InterruptedException {
+
+		if (flag == 1) {
+			enterSubleaseNameinSearchBox(SubLeaseName);
+			verifySearchedSubleaseIsExistsOrNot(SubLeaseName);
+		}
+		if (flag == 2) {
+			enterSubleaseNameinSearchBox(updatedSubLease);
+			verifySearchedSubleaseIsExistsOrNot(updatedSubLease);
+		}
+	}
+
+	public void clickEdit_actionUnderThePerent_actionandVerifyEditHalfCardIsPresentOrNot() throws ApplicationException {
+		if (commLocators.actionBtton.isDisplayed()) {
+			commLocators.clickOnActionButton();
+			if (commLocators.editAction.isDisplayed()) {
+				commLocators.clickOnEditActionButton();
+				if (popupEditSublease.isDisplayed()) {
+					log.info("Edit Sublease half screen present.");
+				} else {
+					throw new ApplicationException("Exception Occured", "Edit Sublease half screen is not present.");
+				}
+			} else {
+				throw new ApplicationException("Exception Occured", "Edit button is not present.");
+			}
+
+		} else {
+			throw new ApplicationException("Exception Occured", "Action button is not present.");
+		}
+	}
+
+	public void enterNewSubleaseName() throws ApplicationException {
+		updatedSubLease = SubLeaseName.concat("Edited");
+
+		if (inputEditSubleaseName.isDisplayed()) {
+			utility.Submit(inputEditSubleaseName);
+			log.info("Click on Sublease name.");
+			utility.WaitFor2Second();
+
+			utility.ClearTextBox(inputEditSubleaseName);
+			log.info("Clear text box.");
+			utility.WaitFor2Second();
+
+			utility.SendValues(inputEditSubleaseName, updatedSubLease);
+			log.info("Input upgreaded Sublease name.");
+
+		} else {
+			throw new ApplicationException("Exception Occured", "Sublease inputbox is not present.");
+		}
+	}
+
+	public void clickOnSubmitAndVerifyThatTheLeaseIsUpdateOrNot() throws ApplicationException {
+		if (editSublease_SubmitButton.isDisplayed()) {
+			utility.Submit(editSublease_SubmitButton);
+			log.info("Click on Submit button.");
+			utility.waitUntilToastPresent(dashboard.toastMessage);
+
+			if (dashboard.toastMessage.isDisplayed()) {
+				Assert.assertEquals(dashboard.toastMessage.getText(), "We have successfully updated the Sublease.");
+				log.info("'" + updatedSubLease + "'" + " Sublease update successfully.");
+			} else {
+				throw new ApplicationException("Exception Occured", "Sublease is not Updated.");
+			}
+		} else {
+			throw new ApplicationException("Exception Occured", "Update button in not present.");
+		}
+	}
+
+	public void clickDelete_actionUnderThePerent_actionandVerifyDeleteConfirmationpopupIsPresentOrNot()
+			throws ApplicationException {
+		if (commLocators.actionBtton.isDisplayed()) {
+			commLocators.clickOnActionButton();
+			if (commLocators.deleteAction.isDisplayed()) {
+				commLocators.clickOnDeleteActionButton();
+				if (deleteConfirmYesButton.isDisplayed()) {
+					log.info("Delete confirmation popup is present.");
+				} else {
+					throw new ApplicationException("Exception Occured", "Delete confirmation popup is not present.");
+				}
+			} else {
+				throw new ApplicationException("Exception Occured", "Delete button is not present.");
+			}
+
+		} else {
+			throw new ApplicationException("Exception Occured", "Action button is not present.");
+		}
+	}
+
+	public void verifyTheSubleaseIsDeletedorNotAfterConfirm() throws ApplicationException, InterruptedException {
+
+		utility.Submit(deleteConfirmYesButton);
+		log.info("Cliked on Yes button to confirm delete record.");
+		utility.waitUntilToastPresent(dashboard.toastMessage);
+
+		if (dashboard.toastMessage.isDisplayed()) {
+			String expactedToastMessage = dashboard.toastMessage.getText();
+			utility.WaitUntilElementVisibiltyGone(dashboard.toastMessage, 5);
+			enterSubleaseNameinSearchBox(updatedSubLease);
+
+			if (commLocators.noRow.isDisplayed()) {
+				Assert.assertEquals(expactedToastMessage, "We have successfully deleted the Sublease.");
+				log.info("'" + updatedSubLease + "'" + " Sublease has been deleted successfully.");
+			} else {
+
+			}
+
+		} else {
+			throw new ApplicationException("Exception Occured", "Still record is not present.");
+		}
+
+	}
 }

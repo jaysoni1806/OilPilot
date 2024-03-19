@@ -4916,3 +4916,298 @@ Session ID: 1a91e2d964299bfff0fe452a03a52359
 2024-03-18 17:49:21 INFO  TestBase:43 - ************************************************************************ 
 2024-03-18 17:49:21 INFO  TestBase:44 - Chrome browser launched. 
 2024-03-18 17:49:24 INFO  TestBase:47 - Hit Oilman URL.  
+2024-03-19 11:34:58 INFO  TestBase:43 - ************************************************************************ 
+2024-03-19 11:34:58 INFO  TestBase:44 - Chrome browser launched. 
+2024-03-19 11:35:31 INFO  TestBase:47 - Hit Oilman URL.  
+2024-03-19 11:35:33 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 11:35:34 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 11:35:44 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:27:13 INFO  TestBase:43 - ************************************************************************ 
+2024-03-19 15:27:13 INFO  TestBase:44 - Chrome browser launched. 
+2024-03-19 15:27:25 INFO  TestBase:47 - Hit Oilman URL.  
+2024-03-19 15:27:28 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:27:28 INFO  LoginPage:53 - Enter Email id. 
+2024-03-19 15:27:29 INFO  LoginPage:67 - Enter Password. 
+2024-03-19 15:27:29 INFO  LoginPage:76 - Cliked on Submit button. 
+2024-03-19 15:27:44 INFO  LoginPage:87 - Logged successfully navigated on Dashboard 
+2024-03-19 15:27:44 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:27:45 INFO  DashBoardPage:57 - Waiting until Assets manu is clickable. 
+2024-03-19 15:27:45 INFO  DashBoardPage:60 - Click on Assets menu. 
+2024-03-19 15:27:55 INFO  DashBoardPage:99 - Click on Sublease manu item. 
+2024-03-19 15:27:57 INFO  SubLeaseAssetsPage:65 - Wait until loading Sublease list. 
+2024-03-19 15:27:58 INFO  commonLocatorsRepo:94 - Click on Add button. 
+2024-03-19 15:27:58 INFO  commonLocatorsRepo:97 - Half card is present. 
+2024-03-19 15:27:58 INFO  SubLeaseAssetsPage:75 - Clear the Sublease text box. 
+2024-03-19 15:27:58 INFO  SubLeaseAssetsPage:78 - Enter Sublease name. 
+2024-03-19 15:28:01 INFO  SubLeaseAssetsPage:86 - Lease selected. 
+2024-03-19 15:28:01 INFO  SubLeaseAssetsPage:98 - Clear the NRI text box. 
+2024-03-19 15:28:01 INFO  SubLeaseAssetsPage:101 - Enter NRI Value. 
+2024-03-19 15:28:01 INFO  SubLeaseAssetsPage:111 - Clear the Tax Rate text box. 
+2024-03-19 15:28:01 INFO  SubLeaseAssetsPage:114 - Enter Tax Rate. 
+2024-03-19 15:28:03 INFO  SubLeaseAssetsPage:91 - Field selected. 
+2024-03-19 15:28:03 INFO  SubLeaseAssetsPage:124 - Click on Submit button. 
+2024-03-19 15:28:09 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-19 15:28:10 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-19 15:28:12 INFO  SubLeaseAssetsPage:148 - Record searched successfully. 
+2024-03-19 15:28:12 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:28:15 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-19 15:28:16 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-19 15:28:18 INFO  SubLeaseAssetsPage:148 - Record searched successfully. 
+2024-03-19 15:28:22 INFO  SubLeaseAssetsPage:162 - Retrive all records 
+2024-03-19 15:28:22 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:28:25 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-19 15:28:25 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-19 15:28:27 INFO  SubLeaseAssetsPage:148 - Record searched successfully. 
+2024-03-19 15:28:27 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-19 15:28:27 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-19 15:28:28 INFO  commonLocatorsRepo:64 - Waiting until edit button is clickable. 
+2024-03-19 15:28:28 INFO  commonLocatorsRepo:67 - Action menu presented, Cliked Edit action. 
+2024-03-19 15:28:38 INFO  TestBase:18 - Retrying test editField with status FAILURE for the 1 time(s). 
+2024-03-19 15:28:38 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:28:38 INFO  TestBase:18 - Retrying test editField with status FAILURE for the 2 time(s). 
+2024-03-19 15:28:38 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:28:38 INFO  TestBase:18 - Retrying test editField with status FAILURE for the 3 time(s). 
+2024-03-19 15:28:38 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:28:39 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:28:39 INFO  TestBase:18 - Retrying test deleteLease with status FAILURE for the 1 time(s). 
+2024-03-19 15:28:39 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:28:39 INFO  TestBase:18 - Retrying test deleteLease with status FAILURE for the 2 time(s). 
+2024-03-19 15:28:39 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:28:39 INFO  TestBase:18 - Retrying test deleteLease with status FAILURE for the 3 time(s). 
+2024-03-19 15:28:39 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:35:39 INFO  TestBase:43 - ************************************************************************ 
+2024-03-19 15:35:39 INFO  TestBase:44 - Chrome browser launched. 
+2024-03-19 15:35:43 INFO  TestBase:47 - Hit Oilman URL.  
+2024-03-19 15:35:45 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:35:46 INFO  LoginPage:53 - Enter Email id. 
+2024-03-19 15:35:46 INFO  LoginPage:67 - Enter Password. 
+2024-03-19 15:35:46 INFO  LoginPage:76 - Cliked on Submit button. 
+2024-03-19 15:36:02 INFO  LoginPage:87 - Logged successfully navigated on Dashboard 
+2024-03-19 15:36:02 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:36:02 INFO  DashBoardPage:57 - Waiting until Assets manu is clickable. 
+2024-03-19 15:36:02 INFO  DashBoardPage:60 - Click on Assets menu. 
+2024-03-19 15:36:13 INFO  DashBoardPage:99 - Click on Sublease manu item. 
+2024-03-19 15:36:14 INFO  SubLeaseAssetsPage:65 - Wait until loading Sublease list. 
+2024-03-19 15:36:15 INFO  commonLocatorsRepo:94 - Click on Add button. 
+2024-03-19 15:36:15 INFO  commonLocatorsRepo:97 - Half card is present. 
+2024-03-19 15:36:15 INFO  SubLeaseAssetsPage:75 - Clear the Sublease text box. 
+2024-03-19 15:36:15 INFO  SubLeaseAssetsPage:78 - Enter Sublease name. 
+2024-03-19 15:36:17 INFO  SubLeaseAssetsPage:86 - Lease selected. 
+2024-03-19 15:36:18 INFO  SubLeaseAssetsPage:98 - Clear the NRI text box. 
+2024-03-19 15:36:18 INFO  SubLeaseAssetsPage:101 - Enter NRI Value. 
+2024-03-19 15:36:18 INFO  SubLeaseAssetsPage:111 - Clear the Tax Rate text box. 
+2024-03-19 15:36:18 INFO  SubLeaseAssetsPage:114 - Enter Tax Rate. 
+2024-03-19 15:36:20 INFO  SubLeaseAssetsPage:91 - Field selected. 
+2024-03-19 15:36:20 INFO  SubLeaseAssetsPage:124 - Click on Submit button. 
+2024-03-19 15:36:26 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-19 15:36:27 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-19 15:36:29 INFO  SubLeaseAssetsPage:148 - Record searched successfully. 
+2024-03-19 15:36:29 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:36:32 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-19 15:36:33 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-19 15:36:35 INFO  SubLeaseAssetsPage:148 - Record searched successfully. 
+2024-03-19 15:36:38 INFO  SubLeaseAssetsPage:162 - Retrive all records 
+2024-03-19 15:36:38 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:36:42 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-19 15:36:42 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-19 15:36:44 INFO  SubLeaseAssetsPage:148 - Record searched successfully. 
+2024-03-19 15:36:44 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-19 15:36:44 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-19 15:36:45 INFO  commonLocatorsRepo:64 - Waiting until edit button is clickable. 
+2024-03-19 15:36:45 INFO  commonLocatorsRepo:67 - Action menu presented, Cliked Edit action. 
+2024-03-19 15:36:55 INFO  TestBase:18 - Retrying test editField with status FAILURE for the 1 time(s). 
+2024-03-19 15:36:55 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:36:55 INFO  TestBase:18 - Retrying test editField with status FAILURE for the 2 time(s). 
+2024-03-19 15:36:55 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:36:55 INFO  TestBase:18 - Retrying test editField with status FAILURE for the 3 time(s). 
+2024-03-19 15:36:55 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:36:56 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:36:56 INFO  TestBase:18 - Retrying test deleteLease with status FAILURE for the 1 time(s). 
+2024-03-19 15:36:56 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:36:56 INFO  TestBase:18 - Retrying test deleteLease with status FAILURE for the 2 time(s). 
+2024-03-19 15:36:56 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:36:56 INFO  TestBase:18 - Retrying test deleteLease with status FAILURE for the 3 time(s). 
+2024-03-19 15:36:56 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:40:49 INFO  TestBase:43 - ************************************************************************ 
+2024-03-19 15:40:49 INFO  TestBase:44 - Chrome browser launched. 
+2024-03-19 15:40:52 INFO  TestBase:47 - Hit Oilman URL.  
+2024-03-19 15:40:54 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:40:55 INFO  LoginPage:53 - Enter Email id. 
+2024-03-19 15:40:55 INFO  LoginPage:67 - Enter Password. 
+2024-03-19 15:40:56 INFO  LoginPage:76 - Cliked on Submit button. 
+2024-03-19 15:41:11 INFO  LoginPage:87 - Logged successfully navigated on Dashboard 
+2024-03-19 15:41:11 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:41:11 INFO  DashBoardPage:57 - Waiting until Assets manu is clickable. 
+2024-03-19 15:41:11 INFO  DashBoardPage:60 - Click on Assets menu. 
+2024-03-19 15:41:21 INFO  DashBoardPage:99 - Click on Sublease manu item. 
+2024-03-19 15:41:23 INFO  SubLeaseAssetsPage:65 - Wait until loading Sublease list. 
+2024-03-19 15:41:24 INFO  commonLocatorsRepo:94 - Click on Add button. 
+2024-03-19 15:41:24 INFO  commonLocatorsRepo:97 - Half card is present. 
+2024-03-19 15:41:24 INFO  SubLeaseAssetsPage:75 - Clear the Sublease text box. 
+2024-03-19 15:41:24 INFO  SubLeaseAssetsPage:78 - Enter Sublease name. 
+2024-03-19 15:41:26 INFO  SubLeaseAssetsPage:86 - Lease selected. 
+2024-03-19 15:41:27 INFO  SubLeaseAssetsPage:98 - Clear the NRI text box. 
+2024-03-19 15:41:27 INFO  SubLeaseAssetsPage:101 - Enter NRI Value. 
+2024-03-19 15:41:27 INFO  SubLeaseAssetsPage:111 - Clear the Tax Rate text box. 
+2024-03-19 15:41:27 INFO  SubLeaseAssetsPage:114 - Enter Tax Rate. 
+2024-03-19 15:41:29 INFO  SubLeaseAssetsPage:91 - Field selected. 
+2024-03-19 15:41:29 INFO  SubLeaseAssetsPage:124 - Click on Submit button. 
+2024-03-19 15:41:35 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-19 15:41:36 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-19 15:41:38 INFO  SubLeaseAssetsPage:148 - Record searched successfully. 
+2024-03-19 15:41:38 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:41:41 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-19 15:41:42 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-19 15:41:44 INFO  SubLeaseAssetsPage:148 - Record searched successfully. 
+2024-03-19 15:41:47 INFO  SubLeaseAssetsPage:162 - Retrive all records 
+2024-03-19 15:41:47 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:41:51 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-19 15:41:51 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-19 15:41:53 INFO  SubLeaseAssetsPage:148 - Record searched successfully. 
+2024-03-19 15:41:53 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-19 15:41:53 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-19 15:41:53 INFO  commonLocatorsRepo:64 - Waiting until edit button is clickable. 
+2024-03-19 15:41:54 INFO  commonLocatorsRepo:67 - Action menu presented, Cliked Edit action. 
+2024-03-19 15:41:54 INFO  SubLeaseAssetsPage:189 - Edit Sublease half screen present. 
+2024-03-19 15:42:00 INFO  SubLeaseAssetsPage:207 - Click on Sublease name. 
+2024-03-19 15:42:05 INFO  SubLeaseAssetsPage:211 - Clear text box. 
+2024-03-19 15:42:07 INFO  SubLeaseAssetsPage:215 - Input upgreaded Sublease name. 
+2024-03-19 15:42:08 INFO  SubLeaseAssetsPage:225 - Click on Submit button. 
+2024-03-19 15:42:08 INFO  SubLeaseAssetsPage:230 - 'YVRJEdited' Sublease update successfully. 
+2024-03-19 15:42:13 INFO  SubLeaseAssetsPage:162 - Retrive all records 
+2024-03-19 15:42:13 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:42:16 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-19 15:42:17 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-19 15:42:19 INFO  SubLeaseAssetsPage:148 - Record searched successfully. 
+2024-03-19 15:42:19 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-19 15:42:19 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-19 15:42:19 INFO  commonLocatorsRepo:72 - Waiting until delete button is clickable. 
+2024-03-19 15:42:19 INFO  commonLocatorsRepo:75 - Action menu presented, Cliked delete action. 
+2024-03-19 15:42:19 INFO  SubLeaseAssetsPage:246 - Delete confirmation popup is present. 
+2024-03-19 15:42:19 INFO  SubLeaseAssetsPage:262 - Cliked on Yes button to confirm delete record. 
+2024-03-19 15:42:26 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-19 15:42:27 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-19 15:42:39 INFO  SubLeaseAssetsPage:272 - 'YVRJEdited' Sublease has been deleted successfully. 
+2024-03-19 15:42:43 INFO  SubLeaseAssetsPage:162 - Retrive all records 
+2024-03-19 15:47:54 INFO  TestBase:43 - ************************************************************************ 
+2024-03-19 15:47:54 INFO  TestBase:44 - Chrome browser launched. 
+2024-03-19 15:47:57 INFO  TestBase:47 - Hit Oilman URL.  
+2024-03-19 15:47:59 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:47:59 INFO  LoginPage:53 - Enter Email id. 
+2024-03-19 15:48:00 INFO  LoginPage:67 - Enter Password. 
+2024-03-19 15:48:00 INFO  LoginPage:76 - Cliked on Submit button. 
+2024-03-19 15:48:18 INFO  LoginPage:87 - Logged successfully navigated on Dashboard 
+2024-03-19 15:48:18 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:48:18 INFO  DashBoardPage:57 - Waiting until Assets manu is clickable. 
+2024-03-19 15:48:19 INFO  DashBoardPage:60 - Click on Assets menu. 
+2024-03-19 15:48:29 INFO  DashBoardPage:99 - Click on Sublease manu item. 
+2024-03-19 15:48:31 INFO  SubLeaseAssetsPage:67 - Wait until loading Sublease list. 
+2024-03-19 15:48:31 INFO  commonLocatorsRepo:94 - Click on Add button. 
+2024-03-19 15:48:31 INFO  commonLocatorsRepo:97 - Half card is present. 
+2024-03-19 15:48:31 INFO  SubLeaseAssetsPage:77 - Clear the Sublease text box. 
+2024-03-19 15:48:31 INFO  SubLeaseAssetsPage:80 - Enter Sublease name. 
+2024-03-19 15:48:34 INFO  SubLeaseAssetsPage:88 - Lease selected. 
+2024-03-19 15:48:34 INFO  SubLeaseAssetsPage:100 - Clear the NRI text box. 
+2024-03-19 15:48:34 INFO  SubLeaseAssetsPage:103 - Enter NRI Value. 
+2024-03-19 15:48:34 INFO  SubLeaseAssetsPage:113 - Clear the Tax Rate text box. 
+2024-03-19 15:48:34 INFO  SubLeaseAssetsPage:116 - Enter Tax Rate. 
+2024-03-19 15:48:36 INFO  SubLeaseAssetsPage:93 - Field selected. 
+2024-03-19 15:48:36 INFO  SubLeaseAssetsPage:126 - Click on Submit button. 
+2024-03-19 15:48:42 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-19 15:48:43 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-19 15:48:45 INFO  SubLeaseAssetsPage:150 - Record searched successfully. 
+2024-03-19 15:48:45 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:48:49 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-19 15:48:49 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-19 15:48:51 INFO  SubLeaseAssetsPage:150 - Record searched successfully. 
+2024-03-19 15:48:55 INFO  SubLeaseAssetsPage:164 - Retrive all records 
+2024-03-19 15:48:55 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:48:58 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-19 15:48:58 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-19 15:49:00 INFO  SubLeaseAssetsPage:150 - Record searched successfully. 
+2024-03-19 15:49:00 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-19 15:49:01 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-19 15:49:01 INFO  commonLocatorsRepo:64 - Waiting until edit button is clickable. 
+2024-03-19 15:49:01 INFO  commonLocatorsRepo:67 - Action menu presented, Cliked Edit action. 
+2024-03-19 15:49:01 INFO  SubLeaseAssetsPage:191 - Edit Sublease half screen present. 
+2024-03-19 15:49:01 INFO  SubLeaseAssetsPage:209 - Click on Sublease name. 
+2024-03-19 15:49:03 INFO  SubLeaseAssetsPage:213 - Clear text box. 
+2024-03-19 15:49:05 INFO  SubLeaseAssetsPage:217 - Input upgreaded Sublease name. 
+2024-03-19 15:49:05 INFO  SubLeaseAssetsPage:227 - Click on Submit button. 
+2024-03-19 15:49:06 INFO  SubLeaseAssetsPage:232 - 'ZRP3Edited' Sublease update successfully. 
+2024-03-19 15:49:10 INFO  SubLeaseAssetsPage:164 - Retrive all records 
+2024-03-19 15:49:10 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:49:13 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-19 15:49:14 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-19 15:49:16 INFO  SubLeaseAssetsPage:150 - Record searched successfully. 
+2024-03-19 15:49:16 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-19 15:49:16 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-19 15:49:17 INFO  commonLocatorsRepo:72 - Waiting until delete button is clickable. 
+2024-03-19 15:49:17 INFO  commonLocatorsRepo:75 - Action menu presented, Cliked delete action. 
+2024-03-19 15:49:17 INFO  SubLeaseAssetsPage:248 - Delete confirmation popup is present. 
+2024-03-19 15:49:17 INFO  SubLeaseAssetsPage:264 - Cliked on Yes button to confirm delete record. 
+2024-03-19 15:49:24 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-19 15:49:27 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-19 15:50:11 INFO  SubLeaseAssetsPage:274 - 'ZRP3Edited' Sublease has been deleted successfully. 
+2024-03-19 15:50:16 INFO  SubLeaseAssetsPage:164 - Retrive all records 
+2024-03-19 15:51:13 INFO  TestBase:43 - ************************************************************************ 
+2024-03-19 15:51:13 INFO  TestBase:44 - Chrome browser launched. 
+2024-03-19 15:51:18 INFO  TestBase:47 - Hit Oilman URL.  
+2024-03-19 15:51:19 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:51:20 INFO  LoginPage:53 - Enter Email id. 
+2024-03-19 15:51:20 INFO  LoginPage:67 - Enter Password. 
+2024-03-19 15:51:20 INFO  LoginPage:76 - Cliked on Submit button. 
+2024-03-19 15:51:39 INFO  LoginPage:87 - Logged successfully navigated on Dashboard 
+2024-03-19 15:51:39 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:51:39 INFO  DashBoardPage:57 - Waiting until Assets manu is clickable. 
+2024-03-19 15:51:40 INFO  DashBoardPage:60 - Click on Assets menu. 
+2024-03-19 15:51:50 INFO  DashBoardPage:99 - Click on Sublease manu item. 
+2024-03-19 15:51:52 INFO  SubLeaseAssetsPage:67 - Wait until loading Sublease list. 
+2024-03-19 15:51:52 INFO  commonLocatorsRepo:94 - Click on Add button. 
+2024-03-19 15:51:53 INFO  commonLocatorsRepo:97 - Half card is present. 
+2024-03-19 15:51:53 INFO  SubLeaseAssetsPage:77 - Clear the Sublease text box. 
+2024-03-19 15:51:53 INFO  SubLeaseAssetsPage:80 - Enter Sublease name. 
+2024-03-19 15:51:55 INFO  SubLeaseAssetsPage:88 - Lease selected. 
+2024-03-19 15:51:55 INFO  SubLeaseAssetsPage:100 - Clear the NRI text box. 
+2024-03-19 15:51:55 INFO  SubLeaseAssetsPage:103 - Enter NRI Value. 
+2024-03-19 15:51:55 INFO  SubLeaseAssetsPage:113 - Clear the Tax Rate text box. 
+2024-03-19 15:51:56 INFO  SubLeaseAssetsPage:116 - Enter Tax Rate. 
+2024-03-19 15:51:58 INFO  SubLeaseAssetsPage:93 - Field selected. 
+2024-03-19 15:51:58 INFO  SubLeaseAssetsPage:126 - Click on Submit button. 
+2024-03-19 15:52:04 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-19 15:52:04 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-19 15:52:06 INFO  SubLeaseAssetsPage:150 - Record searched successfully. 
+2024-03-19 15:52:06 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:52:10 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-19 15:52:10 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-19 15:52:12 INFO  SubLeaseAssetsPage:150 - Record searched successfully. 
+2024-03-19 15:52:16 INFO  SubLeaseAssetsPage:164 - Retrive all records 
+2024-03-19 15:52:16 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:52:19 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-19 15:52:20 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-19 15:52:22 INFO  SubLeaseAssetsPage:150 - Record searched successfully. 
+2024-03-19 15:52:22 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-19 15:52:22 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-19 15:52:22 INFO  commonLocatorsRepo:64 - Waiting until edit button is clickable. 
+2024-03-19 15:52:22 INFO  commonLocatorsRepo:67 - Action menu presented, Cliked Edit action. 
+2024-03-19 15:52:22 INFO  SubLeaseAssetsPage:191 - Edit Sublease half screen present. 
+2024-03-19 15:52:23 INFO  SubLeaseAssetsPage:209 - Click on Sublease name. 
+2024-03-19 15:52:25 INFO  SubLeaseAssetsPage:213 - Clear text box. 
+2024-03-19 15:52:27 INFO  SubLeaseAssetsPage:217 - Input upgreaded Sublease name. 
+2024-03-19 15:52:27 INFO  SubLeaseAssetsPage:227 - Click on Submit button. 
+2024-03-19 15:52:28 INFO  SubLeaseAssetsPage:232 - '0XUXEdited' Sublease update successfully. 
+2024-03-19 15:52:32 INFO  SubLeaseAssetsPage:164 - Retrive all records 
+2024-03-19 15:52:32 INFO  TestBase:71 - ------------------------------------------------------------------------ 
+2024-03-19 15:52:35 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-19 15:52:36 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-19 15:52:38 INFO  SubLeaseAssetsPage:150 - Record searched successfully. 
+2024-03-19 15:52:38 INFO  commonLocatorsRepo:56 - Waiting until action button is clickable. 
+2024-03-19 15:52:38 INFO  commonLocatorsRepo:59 - Click action button. 
+2024-03-19 15:52:38 INFO  commonLocatorsRepo:72 - Waiting until delete button is clickable. 
+2024-03-19 15:52:39 INFO  commonLocatorsRepo:75 - Action menu presented, Cliked delete action. 
+2024-03-19 15:52:39 INFO  SubLeaseAssetsPage:248 - Delete confirmation popup is present. 
+2024-03-19 15:52:39 INFO  SubLeaseAssetsPage:264 - Cliked on Yes button to confirm delete record. 
+2024-03-19 15:52:46 INFO  commonLocatorsRepo:81 - Clear searchbox. 
+2024-03-19 15:52:47 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
+2024-03-19 15:52:49 INFO  SubLeaseAssetsPage:274 - '0XUXEdited' Sublease has been deleted successfully. 
+2024-03-19 15:52:54 INFO  SubLeaseAssetsPage:164 - Retrive all records 

@@ -229,7 +229,7 @@ public class CompanyAssetsPage {
 			// searchRecords =
 			// driver.findElements(By.xpath("//div[contains(@class,'MuiDataGrid-row')]"));
 
-			if (searchRecords.size() == 0) {
+			if (commLocators.noRow.isDisplayed()) {
 				Assert.assertEquals(expactedToastMessage, "We have successfully deleted the Company.");
 				log.info("'" + updatedComp + "'" + " Company has been deleted successfully.");
 			} else {
