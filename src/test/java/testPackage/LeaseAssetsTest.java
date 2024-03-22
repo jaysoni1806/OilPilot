@@ -44,7 +44,7 @@ public class LeaseAssetsTest extends TestBase {
 	}
 
 	@Test(priority = 2, description = "Test edit Lease assets.")
-	public void editField() throws ApplicationException, InterruptedException {
+	public void EditLease() throws ApplicationException, InterruptedException {
 		leaseAstop.searchLease(1);
 		ExtentReportManager.test.log(Status.PASS, "Search recently created Lease for Edit");
 		leaseAstop.clickEdit_actionUnderThePerent_actionandVerifyEditHalfCardIsPresentOrNot();

@@ -36,6 +36,10 @@ public class DashBoardPage {
 	public WebElement leaseMenu;
 	@FindBy(xpath = "//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-entered')]//li//a[@href='/assets/sublease/']")
 	public WebElement subleaseMenu;
+	@FindBy(xpath = "//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-entered')]//li//a[@href='/assets/tank-battery/']")
+	public WebElement tankbatteryMenu;
+	@FindBy(xpath = "//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-entered')]//li//a[@href='/assets/tanks/']")
+	public WebElement tankMenu;
 	@FindBy(xpath = "//div[contains(@class,'react-hot-toast')]//div[@role='status']")
 	public WebElement toastMessage;
 	@FindBy(xpath = "//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-hidden')]")
@@ -80,13 +84,17 @@ public class DashBoardPage {
 					selectMenu(leaseMenu, menuNAme);
 				} else if (menuNAme.equals("Sublease")) {
 					selectMenu(subleaseMenu, menuNAme);
+				} else if (menuNAme.equals("Tank Battery")) {
+					selectMenu(tankbatteryMenu, menuNAme);
+				} else if (menuNAme.equals("Tank")) {
+					selectMenu(tankMenu, menuNAme);
 				}
 			} else {
 				utility.Submit(asset);
 
 			}
 		} catch (Exception e) {
-			log.info("Somthing not working for Assets-> " + e);
+			log.info("Something not working for Assets-> " + e);
 		}
 
 	}

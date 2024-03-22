@@ -6,6 +6,7 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -21,6 +22,8 @@ import pageClass.FiledAssetsPage;
 import pageClass.LeaseAssetsPage;
 import pageClass.LoginPage;
 import pageClass.SubLeaseAssetsPage;
+import pageClass.TankAssetsPage;
+import pageClass.TankBatteryAssetsPage;
 import pageClass.commonLocatorsRepo;
 
 public class TestBase {
@@ -33,6 +36,8 @@ public class TestBase {
 	public commonLocatorsRepo commLocators;
 	public LeaseAssetsPage leaseAstop;
 	public SubLeaseAssetsPage subleaseAstop;
+	public TankBatteryAssetsPage tankBatteryAstop;
+	public TankAssetsPage tankAssetsop;
 	public static Logger log = Logger.getLogger(TestBase.class);
 
 	@BeforeSuite
@@ -58,6 +63,8 @@ public class TestBase {
 		commLocators = new commonLocatorsRepo(driver);
 		leaseAstop = new LeaseAssetsPage(driver);
 		subleaseAstop = new SubLeaseAssetsPage(driver);
+		tankBatteryAstop = new TankBatteryAssetsPage(driver);
+		tankAssetsop = new TankAssetsPage(driver);
 	}
 
 	@BeforeTest
@@ -76,7 +83,7 @@ public class TestBase {
 		ExtentReportListener.flush();
 	}
 
-	// @AfterSuite
+	@AfterSuite
 	public void closeBrowser() {
 		driver.close();
 	}

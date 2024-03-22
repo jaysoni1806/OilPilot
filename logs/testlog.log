@@ -5211,3 +5211,133 @@ Session ID: 1a91e2d964299bfff0fe452a03a52359
 2024-03-19 15:52:47 INFO  commonLocatorsRepo:84 - Entered value in searchbox. 
 2024-03-19 15:52:49 INFO  SubLeaseAssetsPage:274 - '0XUXEdited' Sublease has been deleted successfully. 
 2024-03-19 15:52:54 INFO  SubLeaseAssetsPage:164 - Retrive all records 
+2024-03-21 14:08:03 INFO  TestBase:45 - ************************************************************************ 
+2024-03-21 14:08:03 INFO  TestBase:46 - Chrome browser launched. 
+2024-03-21 14:08:06 INFO  TestBase:49 - Hit Oilman URL.  
+2024-03-21 14:08:08 INFO  TestBase:74 - ------------------------------------------------------------------------ 
+2024-03-21 14:08:09 INFO  LoginPage:53 - Enter Email id. 
+2024-03-21 14:08:09 INFO  LoginPage:67 - Enter Password. 
+2024-03-21 14:08:10 INFO  LoginPage:76 - Cliked on Submit button. 
+2024-03-21 14:08:28 INFO  LoginPage:87 - Logged successfully navigated on Dashboard 
+2024-03-21 14:08:28 INFO  TestBase:74 - ------------------------------------------------------------------------ 
+2024-03-21 14:08:28 INFO  DashBoardPage:57 - Waiting until Assets manu is clickable. 
+2024-03-21 14:08:28 INFO  DashBoardPage:60 - Click on Assets menu. 
+2024-03-21 14:08:38 INFO  DashBoardPage:99 - Click on Sublease manu item. 
+2024-03-21 14:08:40 INFO  SubLeaseAssetsPage:64 - Wait until loading Sublease list. 
+2024-03-21 14:08:40 INFO  commonLocatorsRepo:96 - Click on Add button. 
+2024-03-21 14:08:40 INFO  commonLocatorsRepo:99 - Half card is present. 
+2024-03-21 14:08:45 INFO  TestBase:18 - Retrying test createTankBattery with status FAILURE for the 1 time(s). 
+2024-03-21 14:09:16 INFO  TestBase:45 - ************************************************************************ 
+2024-03-21 14:09:16 INFO  TestBase:46 - Chrome browser launched. 
+2024-03-21 14:09:19 INFO  TestBase:49 - Hit Oilman URL.  
+2024-03-21 14:09:21 INFO  TestBase:74 - ------------------------------------------------------------------------ 
+2024-03-21 14:09:21 INFO  LoginPage:53 - Enter Email id. 
+2024-03-21 14:09:21 INFO  LoginPage:67 - Enter Password. 
+2024-03-21 14:09:22 INFO  LoginPage:76 - Cliked on Submit button. 
+2024-03-21 14:09:39 INFO  LoginPage:87 - Logged successfully navigated on Dashboard 
+2024-03-21 14:09:40 INFO  TestBase:74 - ------------------------------------------------------------------------ 
+2024-03-21 14:09:40 INFO  DashBoardPage:57 - Waiting until Assets manu is clickable. 
+2024-03-21 14:09:40 INFO  DashBoardPage:60 - Click on Assets menu. 
+2024-03-21 14:10:20 INFO  TestBase:18 - Retrying test createTankBattery with status FAILURE for the 1 time(s). 
+2024-03-21 14:10:20 INFO  TestBase:74 - ------------------------------------------------------------------------ 
+2024-03-21 14:10:30 INFO  DashBoardPage:67 - Assets is already open. 
+2024-03-21 14:10:57 INFO  TestBase:18 - Retrying test createTankBattery with status FAILURE for the 2 time(s). 
+2024-03-21 14:10:57 INFO  TestBase:74 - ------------------------------------------------------------------------ 
+2024-03-21 14:12:28 INFO  TestBase:45 - ************************************************************************ 
+2024-03-21 14:12:28 INFO  TestBase:46 - Chrome browser launched. 
+2024-03-21 14:12:32 INFO  TestBase:49 - Hit Oilman URL.  
+2024-03-21 14:12:34 INFO  TestBase:74 - ------------------------------------------------------------------------ 
+2024-03-21 14:12:34 INFO  LoginPage:53 - Enter Email id. 
+2024-03-21 14:12:34 INFO  LoginPage:67 - Enter Password. 
+2024-03-21 14:12:35 INFO  LoginPage:76 - Cliked on Submit button. 
+2024-03-21 14:12:50 INFO  LoginPage:87 - Logged successfully navigated on Dashboard 
+2024-03-21 14:12:50 INFO  TestBase:74 - ------------------------------------------------------------------------ 
+2024-03-21 14:12:51 INFO  DashBoardPage:59 - Waiting until Assets manu is clickable. 
+2024-03-21 14:12:51 INFO  DashBoardPage:62 - Click on Assets menu. 
+2024-03-21 14:13:01 INFO  DashBoardPage:103 - Click on Tank Battery manu item. 
+2024-03-21 14:13:03 INFO  SubLeaseAssetsPage:64 - Wait until loading Sublease list. 
+2024-03-21 14:13:03 INFO  commonLocatorsRepo:96 - Click on Add button. 
+2024-03-21 14:13:03 INFO  commonLocatorsRepo:99 - Half card is present. 
+2024-03-21 14:13:03 INFO  SubLeaseAssetsPage:74 - Clear the Tank Battery text box. 
+2024-03-21 14:13:03 INFO  SubLeaseAssetsPage:77 - Enter Tank Battery name. 
+2024-03-21 14:13:06 INFO  SubLeaseAssetsPage:85 - Sublease selected. 
+2024-03-21 14:13:06 INFO  SubLeaseAssetsPage:97 - Clear the Latitude text box. 
+2024-03-21 14:13:06 INFO  SubLeaseAssetsPage:100 - Enter Latitude Value. 
+2024-03-21 14:13:06 INFO  SubLeaseAssetsPage:97 - Clear the Latitude text box. 
+2024-03-21 14:13:06 INFO  SubLeaseAssetsPage:100 - Enter Latitude Value. 
+2024-03-21 14:13:07 INFO  SubLeaseAssetsPage:123 - Click on Submit button. 
+2024-03-21 14:13:17 INFO  TestBase:18 - Retrying test createTankBattery with status FAILURE for the 1 time(s). 
+2024-03-21 14:13:17 INFO  TestBase:74 - ------------------------------------------------------------------------ 
+2024-03-21 14:13:27 INFO  DashBoardPage:69 - Assets is already open. 
+2024-03-21 14:13:33 INFO  DashBoardPage:93 - Somthing not working for Assets-> org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4a1ec56e06e0cca2ced0a8ab40756696, findElements [using, value]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.129, chrome: {chromedriverVersion: 122.0.6261.128 (f18a44fedeb..., userDataDir: /var/folders/p2/q2yjzrxs10s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52792}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:52792/devtoo..., se:cdpVersion: 122.0.6261.129, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4a1ec56e06e0cca2ced0a8ab40756696 
+2024-03-21 14:13:33 INFO  TestBase:18 - Retrying test createTankBattery with status FAILURE for the 2 time(s). 
+2024-03-21 14:13:33 INFO  TestBase:74 - ------------------------------------------------------------------------ 
+2024-03-21 14:14:53 INFO  TestBase:45 - ************************************************************************ 
+2024-03-21 14:14:53 INFO  TestBase:46 - Chrome browser launched. 
+2024-03-21 14:14:56 INFO  TestBase:49 - Hit Oilman URL.  
+2024-03-21 14:14:58 INFO  TestBase:74 - ------------------------------------------------------------------------ 
+2024-03-21 14:14:58 INFO  LoginPage:53 - Enter Email id. 
+2024-03-21 14:14:59 INFO  LoginPage:67 - Enter Password. 
+2024-03-21 14:14:59 INFO  LoginPage:76 - Cliked on Submit button. 
+2024-03-21 14:15:17 INFO  LoginPage:87 - Logged successfully navigated on Dashboard 
+2024-03-21 14:15:17 INFO  TestBase:74 - ------------------------------------------------------------------------ 
+2024-03-21 14:15:17 INFO  DashBoardPage:59 - Waiting until Assets manu is clickable. 
+2024-03-21 14:15:17 INFO  DashBoardPage:62 - Click on Assets menu. 
+2024-03-21 14:15:27 INFO  DashBoardPage:103 - Click on Tank Battery manu item. 
+2024-03-21 14:15:29 INFO  SubLeaseAssetsPage:64 - Wait until loading Sublease list. 
+2024-03-21 14:15:30 INFO  commonLocatorsRepo:96 - Click on Add button. 
+2024-03-21 14:15:30 INFO  commonLocatorsRepo:99 - Half card is present. 
+2024-03-21 14:15:30 INFO  SubLeaseAssetsPage:74 - Clear the Tank Battery text box. 
+2024-03-21 14:15:30 INFO  SubLeaseAssetsPage:77 - Enter Tank Battery name. 
+2024-03-21 14:15:33 INFO  SubLeaseAssetsPage:85 - Sublease selected. 
+2024-03-21 14:15:33 INFO  SubLeaseAssetsPage:97 - Clear the Latitude text box. 
+2024-03-21 14:15:33 INFO  SubLeaseAssetsPage:100 - Enter Latitude Value. 
+2024-03-21 14:15:33 INFO  SubLeaseAssetsPage:110 - Clear the Longitude text box. 
+2024-03-21 14:15:33 INFO  SubLeaseAssetsPage:113 - Enter Longitude value. 
+2024-03-21 14:15:33 INFO  SubLeaseAssetsPage:123 - Click on Submit button. 
+2024-03-21 14:15:39 INFO  commonLocatorsRepo:83 - Clear searchbox. 
+2024-03-21 14:15:39 INFO  commonLocatorsRepo:86 - Entered value in searchbox. 
+2024-03-21 14:15:42 INFO  SubLeaseAssetsPage:148 - Record searched successfully. 
+2024-03-21 14:15:42 INFO  TestBase:74 - ------------------------------------------------------------------------ 
+2024-03-21 14:15:45 INFO  commonLocatorsRepo:83 - Clear searchbox. 
+2024-03-21 14:15:45 INFO  commonLocatorsRepo:86 - Entered value in searchbox. 
+2024-03-21 14:15:48 INFO  SubLeaseAssetsPage:148 - Record searched successfully. 
+2024-03-21 14:15:51 INFO  SubLeaseAssetsPage:162 - Retrive all records 
+2024-03-21 14:15:51 INFO  TestBase:74 - ------------------------------------------------------------------------ 
+2024-03-21 14:15:54 INFO  commonLocatorsRepo:83 - Clear searchbox. 
+2024-03-21 14:15:55 INFO  commonLocatorsRepo:86 - Entered value in searchbox. 
+2024-03-21 14:15:57 INFO  SubLeaseAssetsPage:148 - Record searched successfully. 
+2024-03-21 14:15:57 INFO  commonLocatorsRepo:58 - Waiting until action button is clickable. 
+2024-03-21 14:15:57 INFO  commonLocatorsRepo:61 - Click action button. 
+2024-03-21 14:15:57 INFO  commonLocatorsRepo:66 - Waiting until edit button is clickable. 
+2024-03-21 14:15:57 INFO  commonLocatorsRepo:69 - Action menu presented, Cliked Edit action. 
+2024-03-21 14:15:57 INFO  SubLeaseAssetsPage:189 - Edit Tank Battery half screen present. 
+2024-03-21 14:15:58 INFO  SubLeaseAssetsPage:208 - Click on Tank Battery name. 
+2024-03-21 14:16:00 INFO  SubLeaseAssetsPage:212 - Clear text box. 
+2024-03-21 14:16:02 INFO  SubLeaseAssetsPage:216 - Input upgreaded Tank Battery name. 
+2024-03-21 14:16:02 INFO  SubLeaseAssetsPage:226 - Click on Submit button. 
+2024-03-21 14:16:02 INFO  SubLeaseAssetsPage:231 - 'W07ZEdited' Tank Battery update successfully. 
+2024-03-21 14:16:06 INFO  SubLeaseAssetsPage:162 - Retrive all records 
+2024-03-21 14:16:06 INFO  TestBase:74 - ------------------------------------------------------------------------ 
+2024-03-21 14:16:09 INFO  commonLocatorsRepo:83 - Clear searchbox. 
+2024-03-21 14:16:10 INFO  commonLocatorsRepo:86 - Entered value in searchbox. 
+2024-03-21 14:16:12 INFO  SubLeaseAssetsPage:148 - Record searched successfully. 
+2024-03-21 14:16:13 INFO  commonLocatorsRepo:58 - Waiting until action button is clickable. 
+2024-03-21 14:16:13 INFO  commonLocatorsRepo:61 - Click action button. 
+2024-03-21 14:16:13 INFO  commonLocatorsRepo:74 - Waiting until delete button is clickable. 
+2024-03-21 14:16:13 INFO  commonLocatorsRepo:77 - Action menu presented, Cliked delete action. 
+2024-03-21 14:16:13 INFO  SubLeaseAssetsPage:247 - Delete confirmation popup is present. 
+2024-03-21 14:16:13 INFO  SubLeaseAssetsPage:263 - Cliked on Yes button to confirm delete record. 
+2024-03-21 14:16:20 INFO  commonLocatorsRepo:83 - Clear searchbox. 
+2024-03-21 14:16:21 INFO  commonLocatorsRepo:86 - Entered value in searchbox. 
+2024-03-21 14:16:23 INFO  SubLeaseAssetsPage:273 - 'W07ZEdited' Tank Battery has been deleted successfully. 
+2024-03-21 14:16:27 INFO  SubLeaseAssetsPage:162 - Retrive all records 
+2024-03-21 18:03:59 INFO  TestBase:48 - ************************************************************************ 
+2024-03-21 18:03:59 INFO  TestBase:49 - Chrome browser launched. 
+2024-03-21 18:04:30 INFO  TestBase:52 - Hit Oilman URL.  

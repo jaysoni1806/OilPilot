@@ -21,7 +21,6 @@ public class commonLocatorsRepo {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		utility = new Utility(driver);
-
 	}
 
 	@FindBy(xpath = "//div[contains(@class,'MuiGrid-root ')]//h5[contains(@class,'MuiTypography-h5')]")
@@ -97,6 +96,18 @@ public class commonLocatorsRepo {
 
 			utility.WaitForASecond(popupAddCompany, 10);
 			log.info("Half card is present.");
+		} else {
+			throw new ApplicationException("Exception Occured", "Add button is not Present or Not Clickable.");
+		}
+	}
+
+	public void clickAddButton(WebElement webElement) throws ApplicationException {
+		if (webElement.isDisplayed()) {
+			utility.Submit(webElement);
+			log.info("Click on Add button.");
+
+			utility.WaitForASecond(tank_page.addTankScreen, 10);
+			log.info("Add screen presented;");
 		} else {
 			throw new ApplicationException("Exception Occured", "Add button is not Present or Not Clickable.");
 		}

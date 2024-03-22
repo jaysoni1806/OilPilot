@@ -5,13 +5,15 @@
         <listener class-name="com.Listeners.ExtentReportListener"/>
         <listener class-name="com.Listeners.IRetryAnalyzerListener"/>
     </listeners>
-  <test thread-count="5" name="Oilman">
+  <test thread-count="5" name="OilPilot">
     <classes>
       <class name="testPackage.LoginTest"/>
-      <class name="testPackage.CompanyAssetsTest"/>
+      <!--<class name="testPackage.CompanyAssetsTest"/>
       <class name="testPackage.FieldAssetsTest"/>
       <class name="testPackage.LeaseAssetsTest"/>
       <class name="testPackage.SubLeaseAssetsTest"/>
+      <class name="testPackage.TankBatteryAssetsTest"/>-->
+      <class name="testPackage.TankAssetsTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

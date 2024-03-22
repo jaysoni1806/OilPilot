@@ -5,19 +5,30 @@
     <listener class-name="com.Listeners.ExtentReportListener"/>
     <listener class-name="com.Listeners.IRetryAnalyzerListener"/>
   </listeners>
-  <test thread-count="5" name="Oilman(failed)">
+  <test thread-count="5" name="OilPilot(failed)">
     <classes>
-      <class name="testPackage.SubLeaseAssetsTest">
+      <class name="testPackage.TankAssetsTest">
         <methods>
           <include name="seperateCase"/>
           <include name="initializeExtentReport"/>
           <include name="assignObjectForClass"/>
+          <include name="closeBrowser"/>
           <include name="prerequisite"/>
           <include name="flush"/>
-          <include name="editField"/>
-          <include name="deleteLease"/>
+          <include name="createTank"/>
         </methods>
-      </class> <!-- testPackage.SubLeaseAssetsTest -->
+      </class> <!-- testPackage.TankAssetsTest -->
+      <class name="testPackage.LoginTest">
+        <methods>
+          <include name="seperateCase"/>
+          <include name="validLoginTest"/>
+          <include name="initializeExtentReport"/>
+          <include name="assignObjectForClass"/>
+          <include name="closeBrowser"/>
+          <include name="prerequisite"/>
+          <include name="flush"/>
+        </methods>
+      </class> <!-- testPackage.LoginTest -->
     </classes>
-  </test> <!-- Oilman(failed) -->
+  </test> <!-- OilPilot(failed) -->
 </suite> <!-- Failed suite [Suite] -->

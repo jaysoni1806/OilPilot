@@ -13,7 +13,7 @@ public class SubLeaseAssetsTest extends TestBase {
 	public String subLease_name = commonUtil.getRandomString(4);
 
 	@Test(priority = 0, description = "Test create Sublease assets.")
-	public void createLease() throws ApplicationException, InterruptedException {
+	public void createSublease() throws ApplicationException, InterruptedException {
 
 		dashboard.clickOnAssets();
 		ExtentReportManager.test.log(Status.PASS, "Click on Assets");
@@ -58,7 +58,7 @@ public class SubLeaseAssetsTest extends TestBase {
 	}
 
 	@Test(priority = 2, description = "Test edit Sublease assets.")
-	public void editField() throws ApplicationException, InterruptedException {
+	public void EditSublease() throws ApplicationException, InterruptedException {
 		subleaseAstop.searchLease(1);
 		ExtentReportManager.test.log(Status.PASS, "Search recently created Sublease for Edit");
 		subleaseAstop.clickEdit_actionUnderThePerent_actionandVerifyEditHalfCardIsPresentOrNot();
@@ -73,14 +73,14 @@ public class SubLeaseAssetsTest extends TestBase {
 	}
 
 	@Test(priority = 3, description = "Test Delete Lease assets.")
-	public void deleteLease() throws ApplicationException, InterruptedException {
+	public void deleteSublease() throws ApplicationException, InterruptedException {
 		subleaseAstop.searchLease(2);
 		ExtentReportManager.test.log(Status.PASS, "Search Sublease for Delete");
 		subleaseAstop.clickDelete_actionUnderThePerent_actionandVerifyDeleteConfirmationpopupIsPresentOrNot();
 		ExtentReportManager.test.log(Status.PASS,
 				"Verify the Delete Confirmation popup is Present or not when click on delete action button.");
 		subleaseAstop.verifyTheSubleaseIsDeletedorNotAfterConfirm();
-		ExtentReportManager.test.log(Status.PASS, "Verify that the field is Delete or not afte confirm.");
+		ExtentReportManager.test.log(Status.PASS, "Verify that the Sublease is Delete or not after confirm.");
 		subleaseAstop.verifyTheSubleaseListAfterClearSearchBox();
 		ExtentReportManager.test.log(Status.PASS, "Clear searchbox to get all Sublease.");
 	}
