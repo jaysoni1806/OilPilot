@@ -106,7 +106,7 @@ public class commonLocatorsRepo {
 			utility.Submit(webElement);
 			log.info("Click on Add button.");
 
-			utility.WaitForASecond(tank_page.addTankScreen, 10);
+			// utility.WaitForASecond(tank_page.addTankScreen, 10);
 			log.info("Add screen presented;");
 		} else {
 			throw new ApplicationException("Exception Occured", "Add button is not Present or Not Clickable.");

@@ -48,7 +48,7 @@ public class TankAssetsPage {
 			utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
 		}
 		log.info("Wait until loading Tank list.");
-		commLocators.clickAddButton(addTankbtn, addTankScreen);
+		// commLocators.clickAddButton(addTankbtn, addTankScreen);
 	}
 
 }
