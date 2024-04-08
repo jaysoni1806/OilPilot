@@ -113,6 +113,18 @@ public class commonLocatorsRepo {
 		}
 	}
 
+	public void clickAddButton(WebElement addTankbtn, WebElement addTankScreen) throws ApplicationException {
+		if (addTankbtn.isDisplayed()) {
+			utility.Submit(addTankbtn);
+			log.info("Click on Add button.");
+
+			utility.WaitForASecond(addTankScreen, 10);
+			log.info("Add screen presented;");
+		} else {
+			throw new ApplicationException("Exception Occured", "Add button is not Present or Not Clickable.");
+		}
+	}
+
 	public static void waitTillLoaderDisappear() throws InterruptedException, ApplicationException {
 		int count = 0;
 		int maxWaitTime = 30;

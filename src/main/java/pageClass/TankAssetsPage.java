@@ -36,10 +36,12 @@ public class TankAssetsPage {
 
 	@FindBy(xpath = "//div[contains(@class,'MuiDataGrid-row')]")
 	private List<WebElement> searchRecords;
-	@FindBy(xpath = "//li[@class='MuiBreadcrumbs-li']/p[text()='Add Well']")
+	@FindBy(xpath = "//li[@class='MuiBreadcrumbs-li']/p[text()='Add Tank']")
 	public WebElement addTankScreen;
 	@FindBy(xpath = "//div[contains(@class,'css-1b8fkut')]//a[@href='/assets/tanks/add/']")
 	public WebElement addTankbtn;
+	@FindBy(xpath = "//input[@placeholder='Tank Name']")
+	public WebElement inputTankName;
 
 	public void clickAddButtonAndVerifyCreateTankSceenIsPresentOrNot() throws ApplicationException {
 		try {
@@ -48,7 +50,12 @@ public class TankAssetsPage {
 			utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
 		}
 		log.info("Wait until loading Tank list.");
-		// commLocators.clickAddButton(addTankbtn, addTankScreen);
+		commLocators.clickAddButton(addTankbtn, addTankScreen);
+	}
+
+	public void enterRequiredDetailsToAddTank() {
+		// TODO Auto-generated method stub
+
 	}
 
 }

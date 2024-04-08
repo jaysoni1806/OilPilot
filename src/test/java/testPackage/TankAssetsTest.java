@@ -21,6 +21,7 @@ public class TankAssetsTest extends TestBase {
 		ExtentReportManager.test.log(Status.PASS, "Click on Tank menu.");
 		tankAssetsop.clickAddButtonAndVerifyCreateTankSceenIsPresentOrNot();
 		ExtentReportManager.test.log(Status.PASS, "Click on Add button and verify Add Tank screen.");
+		tankAssetsop.enterRequiredDetailsToAddTank();
 	}
 
 }
