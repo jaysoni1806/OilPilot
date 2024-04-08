@@ -12,8 +12,8 @@
       <class name="testPackage.FieldAssetsTest"/>
       <class name="testPackage.LeaseGroupAssetsTest"/>
       <class name="testPackage.LeaseAssetsTest"/>
-      <class name="testPackage.TankBatteryAssetsTest"/>-->
-      <class name="testPackage.TankAssetsTest"/> 
+      <class name="testPackage.TankBatteryAssetsTest"/>
+      <class name="testPackage.TankAssetsTest"/> -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
