@@ -14,6 +14,7 @@ import com.commonUtil.ApplicationException;
 import com.commonUtil.Utility;
 
 public class LeaseAssetsPage {
+
 	public static Logger log = Logger.getLogger(LeaseAssetsPage.class);
 
 	WebDriver driver;
@@ -23,6 +24,30 @@ public class LeaseAssetsPage {
 	public String LeaseName;
 	public String updatedLease;
 
+	private static final String NRI = "25";
+	private static final String TAXRATE = "0.20";
+
+	@FindBy(xpath = "//div[contains(@class,'MuiDataGrid-row')]")
+	private List<WebElement> searchRecords;
+	@FindBy(xpath = "//div[contains(@class,'paperAnchorRight')][not(contains(@style,'visibility: hidden'))]//form//input[@placeholder='Enter lease name']")
+	private WebElement inputLeaseName;
+	@FindBy(xpath = "//div[contains(@class,'paperAnchorRight')][not(contains(@style,'visibility: hidden'))]//form//button[@type='button']")
+	private WebElement cancelBtn;
+	@FindBy(xpath = "//div[contains(@class,'paperAnchorRight')][not(contains(@style,'visibility: hidden'))]//form//input[@placeholder='Enter NRI']")
+	private WebElement inputNRI;
+	@FindBy(xpath = "//div[contains(@class,'paperAnchorRight')][not(contains(@style,'visibility: hidden'))]//form//input[@placeholder='Enter tax rate']")
+	private WebElement inputTaxRate;
+	@FindBy(xpath = "//div[contains(@class,'paperAnchorRight')][not(contains(@style,'visibility: hidden'))]//form//button[@type='submit']")
+	private WebElement submitBtn;
+	@FindBy(xpath = "//h5[text()='Edit Lease']")
+	private WebElement popupEditLease;
+	@FindBy(xpath = "//div[contains(@class,'MuiDrawer-paperAnchorRight')][not(contains(@style,'visibility: hidden'))]//input[@placeholder='Enter lease name']")
+	private WebElement inputEditLeaseName;
+	@FindBy(xpath = "//div[contains(@class,'MuiDrawer-paperAnchorRight')][not(contains(@style,'visibility: hidden'))]//form//button[@type='submit']")
+	private WebElement editLease_SubmitButton;
+	@FindBy(xpath = "//div[@aria-describedby='alert-dialog-description-Delete confirmation for Lease']//button[text()='Yes']")
+	private WebElement deleteConfirmYesButton;
+
 	public LeaseAssetsPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(this.driver, this);
@@ -31,32 +56,13 @@ public class LeaseAssetsPage {
 		commLocators = new commonLocatorsRepo(driver);
 	}
 
-	@FindBy(xpath = "//div[contains(@class,'paperAnchorRight')][not(contains(@style,'visibility: hidden'))]//form//div[text()='Select company']")
-	WebElement companyDropDown;
-	@FindBy(xpath = "//div[contains(@class,'paperAnchorRight')][not(contains(@style,'visibility: hidden'))]//form//input[@placeholder='Enter Name']")
-	private WebElement inputLeaseName;
-	@FindBy(xpath = "//div[contains(@class,'paperAnchorRight')][not(contains(@style,'visibility: hidden'))]//form//button[@type='button']")
-	private WebElement cancelBtn;
-	@FindBy(xpath = "//div[contains(@class,'paperAnchorRight')][not(contains(@style,'visibility: hidden'))]//form//button[@type='submit']")
-	private WebElement submitBtn;
-	@FindBy(xpath = "//div[contains(@class,'MuiDataGrid-row')]")
-	private List<WebElement> searchRecords;
-	@FindBy(xpath = "//h5[text()='Edit Lease']")
-	private WebElement popupEditLease;
-	@FindBy(xpath = "//div[contains(@class,'MuiDrawer-paperAnchorRight')][not(contains(@style,'visibility: hidden'))]//input[@placeholder='Enter Name']")
-	private WebElement inputEditLeaseName;
-	@FindBy(xpath = "//div[contains(@class,'MuiDrawer-paperAnchorRight')][not(contains(@style,'visibility: hidden'))]//form//button[@type='submit']")
-	private WebElement editLease_SubmitButton;
-	@FindBy(xpath = "//div[@aria-describedby='alert-dialog-description-Delete confirmation for Lease']//button[text()='Yes']")
-	private WebElement deleteConfirmYesButton;
-
 	public void clickAddButtonAndVerifyCreateLeaseHalfCardIsPresentOrNot() throws ApplicationException {
 		try {
 			utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
 		} catch (org.openqa.selenium.StaleElementReferenceException ex) {
 			utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
 		}
-		log.info("Wait until loading lease list.");
+		log.info("Wait until loading LeaseName list.");
 		commLocators.clickAddButton();
 	}
 
@@ -71,18 +77,44 @@ public class LeaseAssetsPage {
 			utility.SendValues(inputLeaseName, LeaseName);
 			log.info("Enter Lease name.");
 		} else {
-			throw new ApplicationException("Exception Occured", "Add lease input field is not present.");
+			throw new ApplicationException("Exception Occured", "Add Lease input field is not present.");
 		}
 	}
 
-	public void selectCompany() throws ApplicationException {
-		commLocators.selectValue("Select Company", "Company", cancelBtn);
-		log.info("Company selected.");
+	public void selectLease() throws ApplicationException {
+		commLocators.selectValue("Select lease group", "Lease Group", cancelBtn);
+		log.info("Lease Group selected.");
 	}
 
-	public void selectPumper() throws ApplicationException {
-		commLocators.selectValue("Select Pumper", "Pumper", cancelBtn);
-		log.info("Pumper selected.");
+	public void selectField() throws ApplicationException {
+		commLocators.selectValue("Select field", "Field", cancelBtn);
+		log.info("Field selected.");
+	}
+
+	public void enterNRIValue() throws ApplicationException {
+
+		if (inputNRI.isDisplayed()) {
+			utility.ClearTextBox(inputNRI);
+			log.info("Clear the NRI text box.");
+
+			utility.SendValues(inputNRI, NRI);
+			log.info("Enter NRI Value.");
+		} else {
+			throw new ApplicationException("Exception Occured", "NRI input field is not present.");
+		}
+	}
+
+	public void enterTaxRateValue() throws ApplicationException {
+
+		if (inputTaxRate.isDisplayed()) {
+			utility.ClearTextBox(inputTaxRate);
+			log.info("Clear the Tax Rate text box.");
+
+			utility.SendValues(inputTaxRate, TAXRATE);
+			log.info("Enter Tax Rate.");
+		} else {
+			throw new ApplicationException("Exception Occured", "Tax Rate input field is not present.");
+		}
 	}
 
 	public void clickAddButtonForCreateNewLease() throws ApplicationException {
@@ -108,11 +140,11 @@ public class LeaseAssetsPage {
 		commLocators.Search(lease_Name);
 	}
 
-	public void verifySearchedLeaseIsExistsOrNot(String lease_name) throws ApplicationException {
+	public void verifySearchedLeaseIsExistsOrNot(String lease_Name) throws ApplicationException {
 		if (searchRecords.size() != 0) {
 			for (WebElement searchedRecord : searchRecords) {
-				WebElement filedsRow = searchedRecord.findElement(By.xpath("//h6[contains(@class,'subtitle2')]"));
-				if (lease_name.equals(filedsRow.getText())) {
+				WebElement filedsRow = searchedRecord.findElement(By.xpath("//div[@class='MuiBox-root css-y60j5q']"));
+				if (lease_Name.equals(filedsRow.getText())) {
 					log.info("Record searched successfully.");
 				}
 			}
@@ -247,5 +279,4 @@ public class LeaseAssetsPage {
 		}
 
 	}
-
 }

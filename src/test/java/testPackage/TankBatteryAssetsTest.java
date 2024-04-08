@@ -27,8 +27,8 @@ public class TankBatteryAssetsTest extends TestBase {
 		tankBatteryAstop.enterTankBatteryName(tankBattery_name);
 		ExtentReportManager.test.log(Status.PASS, "Enter Tank Battery name.");
 
-		tankBatteryAstop.selectSubLease();
-		ExtentReportManager.test.log(Status.PASS, "Select Sublease.");
+		tankBatteryAstop.selectLease();
+		ExtentReportManager.test.log(Status.PASS, "Select Lease.");
 
 		tankBatteryAstop.enterLatValue();
 		ExtentReportManager.test.log(Status.PASS, "Enter Latitude value.");

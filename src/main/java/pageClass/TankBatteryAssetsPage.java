@@ -80,15 +80,16 @@ public class TankBatteryAssetsPage {
 		}
 	}
 
-	public void selectSubLease() throws ApplicationException {
-		commLocators.selectValue("Select Sublease", "Sublease", cancelBtn);
-		log.info("Sublease selected.");
+	public void selectLease() throws ApplicationException {
+		commLocators.selectValue("Select Lease", "Lease", cancelBtn);
+		log.info("Lease selected.");
 	}
 
-	public void selectField() throws ApplicationException {
-		commLocators.selectValue("Select field", "Field", cancelBtn);
-		log.info("Field selected.");
-	}
+	/*
+	 * public void selectField() throws ApplicationException {
+	 * commLocators.selectValue("Select field", "Field", cancelBtn);
+	 * log.info("Field selected."); }
+	 */
 
 	public void enterLatValue() throws ApplicationException {
 

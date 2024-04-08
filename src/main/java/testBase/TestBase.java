@@ -1,6 +1,8 @@
 package testBase;
 
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -20,8 +22,8 @@ import pageClass.CompanyAssetsPage;
 import pageClass.DashBoardPage;
 import pageClass.FiledAssetsPage;
 import pageClass.LeaseAssetsPage;
+import pageClass.LeaseGroupAssetsPage;
 import pageClass.LoginPage;
-import pageClass.SubLeaseAssetsPage;
 import pageClass.TankAssetsPage;
 import pageClass.TankBatteryAssetsPage;
 import pageClass.commonLocatorsRepo;
@@ -34,8 +36,8 @@ public class TestBase {
 	public CompanyAssetsPage cmpAstsOp;
 	public FiledAssetsPage fieldAstsop;
 	public commonLocatorsRepo commLocators;
+	public LeaseGroupAssetsPage lease_groupAstop;
 	public LeaseAssetsPage leaseAstop;
-	public SubLeaseAssetsPage subleaseAstop;
 	public TankBatteryAssetsPage tankBatteryAstop;
 	public TankAssetsPage tankAssetsop;
 	public static Logger log = Logger.getLogger(TestBase.class);
@@ -44,6 +46,8 @@ public class TestBase {
 	public void prerequisite() {
 		driver = new ChromeDriver();
 
+		SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy-hh-mm-ss");
+		System.setProperty("current.date.time", dateFormat.format(new Date()));
 		PropertyConfigurator.configure(System.getProperty("user.dir") + "/Resource/log4j.properties");
 		log.info("************************************************************************");
 		log.info("Chrome browser launched.");
@@ -61,8 +65,8 @@ public class TestBase {
 		cmpAstsOp = new CompanyAssetsPage(driver);
 		fieldAstsop = new FiledAssetsPage(driver);
 		commLocators = new commonLocatorsRepo(driver);
+		lease_groupAstop = new LeaseGroupAssetsPage(driver);
 		leaseAstop = new LeaseAssetsPage(driver);
-		subleaseAstop = new SubLeaseAssetsPage(driver);
 		tankBatteryAstop = new TankBatteryAssetsPage(driver);
 		tankAssetsop = new TankAssetsPage(driver);
 	}

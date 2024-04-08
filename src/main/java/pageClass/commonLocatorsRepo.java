@@ -40,7 +40,7 @@ public class commonLocatorsRepo {
 	@FindBy(xpath = "//div[contains(@class,'css-1b8fkut')]//button")
 	public WebElement addBtton;
 	@FindBy(xpath = "//h5[contains(text(),'Add')]")
-	public WebElement popupAddCompany;
+	public WebElement popupAddAssets;
 	@FindBy(xpath = "//span[@role='progressbar']")
 	public static WebElement loaderSpinnitng;
 	@FindBy(xpath = "//div[text()='No rows']")
@@ -94,7 +94,7 @@ public class commonLocatorsRepo {
 			utility.Submit(addBtton);
 			log.info("Click on Add button.");
 
-			utility.WaitForASecond(popupAddCompany, 10);
+			utility.WaitForASecond(popupAddAssets, 10);
 			log.info("Half card is present.");
 		} else {
 			throw new ApplicationException("Exception Occured", "Add button is not Present or Not Clickable.");
@@ -148,11 +148,11 @@ public class commonLocatorsRepo {
 				utility.Submit(dropdownList.get(2));
 			} else {
 				utility.Submit(cancelButton);
-				throw new ApplicationException("Exception Occured", dropdownName + " List is null.");
+				throw new ApplicationException("Exception Occured", dropdownName + " list is null.");
 
 			}
 		} else {
-			throw new ApplicationException("Exception Occured", dropdownName + " Dropdown is not present.");
+			throw new ApplicationException("Exception Occured", dropdownName + " dropdown is not present.");
 		}
 
 	}

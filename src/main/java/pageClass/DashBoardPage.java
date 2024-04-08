@@ -32,10 +32,10 @@ public class DashBoardPage {
 	public WebElement companyMenu;
 	@FindBy(xpath = "//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-entered')]//li//a[@href='/assets/field/']")
 	public WebElement fieldMenu;
+	@FindBy(xpath = "//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-entered')]//li//a[@href='/assets/lease-group/']")
+	public WebElement lease_groupMenu;
 	@FindBy(xpath = "//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-entered')]//li//a[@href='/assets/lease/']")
 	public WebElement leaseMenu;
-	@FindBy(xpath = "//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-entered')]//li//a[@href='/assets/sublease/']")
-	public WebElement subleaseMenu;
 	@FindBy(xpath = "//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-entered')]//li//a[@href='/assets/tank-battery/']")
 	public WebElement tankbatteryMenu;
 	@FindBy(xpath = "//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-entered')]//li//a[@href='/assets/tanks/']")
@@ -80,10 +80,10 @@ public class DashBoardPage {
 					selectMenu(companyMenu, menuNAme);
 				} else if (menuNAme.equals("Field")) {
 					selectMenu(fieldMenu, menuNAme);
+				} else if (menuNAme.equals("Lease Group")) {
+					selectMenu(lease_groupMenu, menuNAme);
 				} else if (menuNAme.equals("Lease")) {
 					selectMenu(leaseMenu, menuNAme);
-				} else if (menuNAme.equals("Sublease")) {
-					selectMenu(subleaseMenu, menuNAme);
 				} else if (menuNAme.equals("Tank Battery")) {
 					selectMenu(tankbatteryMenu, menuNAme);
 				} else if (menuNAme.equals("Tank")) {

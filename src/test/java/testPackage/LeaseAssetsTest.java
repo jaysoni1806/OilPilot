@@ -17,20 +17,34 @@ public class LeaseAssetsTest extends TestBase {
 
 		dashboard.clickOnAssets();
 		ExtentReportManager.test.log(Status.PASS, "Click on Assets");
+
 		dashboard.clickOnMenuItem("Lease");
 		ExtentReportManager.test.log(Status.PASS, "Click on Lease menu.");
+
 		leaseAstop.clickAddButtonAndVerifyCreateLeaseHalfCardIsPresentOrNot();
 		ExtentReportManager.test.log(Status.PASS, "Click on Add button and Verify Create Lease half card.");
+
 		leaseAstop.enterLeaseName(Lease_name);
 		ExtentReportManager.test.log(Status.PASS, "Enter Lease name.");
-		leaseAstop.selectPumper();
-		ExtentReportManager.test.log(Status.PASS, "Select pumper");
-		leaseAstop.selectCompany();
-		ExtentReportManager.test.log(Status.PASS, "Select company");
+
+		leaseAstop.selectLease();
+		ExtentReportManager.test.log(Status.PASS, "Select lease.");
+
+		leaseAstop.enterNRIValue();
+		ExtentReportManager.test.log(Status.PASS, "Enter NRI value.");
+
+		leaseAstop.enterTaxRateValue();
+		ExtentReportManager.test.log(Status.PASS, "Enter Tax Rate value.");
+
+		leaseAstop.selectField();
+		ExtentReportManager.test.log(Status.PASS, "Enter field value.");
+
 		leaseAstop.clickAddButtonForCreateNewLease();
 		ExtentReportManager.test.log(Status.PASS, "Click on Submit button.");
+
 		leaseAstop.verifyTheLeaseIsCreatedOrnot();
 		ExtentReportManager.test.log(Status.PASS, "'" + Lease_name + "'" + " Lease successfully created.");
+
 	}
 
 	@Test(priority = 1, description = "Test Search Lease.")
@@ -40,7 +54,7 @@ public class LeaseAssetsTest extends TestBase {
 		leaseAstop.verifySearchedLeaseIsExistsOrNot(Lease_name);
 		ExtentReportManager.test.log(Status.PASS, "Verify the searched Lease is exists or not.");
 		leaseAstop.verifyTheLeaseListAfterClearSearchBox();
-		ExtentReportManager.test.log(Status.PASS, "Clear searchbox to get all Field.");
+		ExtentReportManager.test.log(Status.PASS, "Clear searchbox to get all Lease.");
 	}
 
 	@Test(priority = 2, description = "Test edit Lease assets.")
@@ -50,11 +64,11 @@ public class LeaseAssetsTest extends TestBase {
 		leaseAstop.clickEdit_actionUnderThePerent_actionandVerifyEditHalfCardIsPresentOrNot();
 		ExtentReportManager.test.log(Status.PASS, "Verify the Edit action button is present or not.");
 		leaseAstop.enterNewLeaseName();
-		ExtentReportManager.test.log(Status.PASS, "Enter Updated lease name.");
+		ExtentReportManager.test.log(Status.PASS, "Enter Updated Lease name.");
 		leaseAstop.clickOnSubmitAndVerifyThatTheLeaseIsUpdateOrNot();
-		ExtentReportManager.test.log(Status.PASS, "Verify that the lease is update or not.");
+		ExtentReportManager.test.log(Status.PASS, "Verify that the Lease is update or not.");
 		leaseAstop.verifyTheLeaseListAfterClearSearchBox();
-		ExtentReportManager.test.log(Status.PASS, "Clear searchbox to get all field.");
+		ExtentReportManager.test.log(Status.PASS, "Clear searchbox to get all Lease.");
 	}
 
 	@Test(priority = 3, description = "Test Delete Lease assets.")
@@ -65,9 +79,9 @@ public class LeaseAssetsTest extends TestBase {
 		ExtentReportManager.test.log(Status.PASS,
 				"Verify the Delete Confirmation popup is Present or not when click on delete action button.");
 		leaseAstop.verifyTheLeaseIsDeletedorNotAfterConfirm();
-		ExtentReportManager.test.log(Status.PASS, "Verify that the field is Delete or not afte confirm.");
+		ExtentReportManager.test.log(Status.PASS, "Verify that the Lease is Delete or not after confirm.");
 		leaseAstop.verifyTheLeaseListAfterClearSearchBox();
-		ExtentReportManager.test.log(Status.PASS, "Clear searchbox to get all companies.");
+		ExtentReportManager.test.log(Status.PASS, "Clear searchbox to get all Lease.");
 	}
 
 }
