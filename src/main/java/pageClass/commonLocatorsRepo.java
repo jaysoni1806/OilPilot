@@ -169,4 +169,26 @@ public class commonLocatorsRepo {
 
 	}
 
+	public void selectDropdownValue(String dropdowniTem, String dropdownName) throws ApplicationException {
+		WebElement dropdownElement = driver.findElement(By.xpath("//input[@placeholder='" + dropdowniTem + "']"));
+
+		if (dropdownElement.isDisplayed()) {
+			utility.WaitUntilElementIsNotClickable(dropdownElement, 5);
+			utility.Submit(dropdownElement);
+			utility.WaitFor2Second();
+
+			List<WebElement> dropdownList = driver
+					.findElements(By.xpath("//ul[contains(@class,'MuiAutocomplete-listbox')]/li"));
+			if (dropdownList.size() >= 2) {
+				utility.Submit(dropdownList.get(0));
+			} else {
+				throw new ApplicationException("Exception Occured", dropdownName + " list is null.");
+
+			}
+		} else {
+			throw new ApplicationException("Exception Occured", dropdownName + " dropdown is not present.");
+		}
+
+	}
+
 }

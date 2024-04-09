@@ -8,7 +8,6 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -55,7 +54,7 @@ public class TestBase {
 		driver.get("https://oilman-website.apps.openxcell.dev/login/");
 		log.info("Hit Oilman URL. ");
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 
 	@BeforeClass
@@ -87,7 +86,7 @@ public class TestBase {
 		ExtentReportListener.flush();
 	}
 
-	@AfterSuite
+	// @AfterSuite
 	public void closeBrowser() {
 		driver.close();
 	}

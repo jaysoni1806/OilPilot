@@ -58,6 +58,16 @@ public class Utility {
 		Thread.sleep(3000);
 	}
 
+	public void clearTextBox(WebElement element) throws InterruptedException, ApplicationException {
+		element.click();
+		Thread.sleep(2000);
+		for (int i = element.getAttribute("value").length(); i >= 0; i--) {
+			element.sendKeys(Keys.BACK_SPACE);
+
+			// commonLocatorsRepo.waitTillLoaderDisappear();
+		}
+	}
+
 	public void cleanText(WebElement elem) throws InterruptedException {
 
 		String text = elem.getAttribute("value");

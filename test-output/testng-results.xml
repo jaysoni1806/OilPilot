@@ -1,29 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="3" total="7" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-08T15:16:03 IST" name="Suite" finished-at="2024-04-08T15:16:27 IST" duration-ms="24286">
+  <suite started-at="2024-04-09T18:33:22 IST" name="Suite" finished-at="2024-04-09T18:34:44 IST" duration-ms="82377">
     <groups>
     </groups>
-    <test started-at="2024-04-08T15:16:03 IST" name="OilPilot" finished-at="2024-04-08T15:16:27 IST" duration-ms="24286">
-      <class name="testPackage.LoginTest">
-        <test-method is-config="true" signature="prerequisite()[pri:0, instance:testPackage.LoginTest@1ffaf86]" started-at="2024-04-08T15:15:28 IST" name="prerequisite" finished-at="2024-04-08T15:16:03 IST" duration-ms="34989" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- prerequisite -->
-        <test-method is-config="true" signature="initializeExtentReport()[pri:0, instance:testPackage.LoginTest@1ffaf86]" started-at="2024-04-08T15:16:03 IST" name="initializeExtentReport" finished-at="2024-04-08T15:16:03 IST" duration-ms="328" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeExtentReport -->
-        <test-method is-config="true" signature="assignObjectForClass()[pri:0, instance:testPackage.LoginTest@1ffaf86]" started-at="2024-04-08T15:16:03 IST" name="assignObjectForClass" finished-at="2024-04-08T15:16:03 IST" duration-ms="87" status="PASS">
+    <test started-at="2024-04-09T18:33:22 IST" name="OilPilot" finished-at="2024-04-09T18:34:44 IST" duration-ms="82377">
+      <class name="testPackage.TankAssetsTest">
+        <test-method is-config="true" signature="assignObjectForClass()[pri:0, instance:testPackage.TankAssetsTest@738dc9b]" started-at="2024-04-09T18:33:40 IST" name="assignObjectForClass" finished-at="2024-04-09T18:33:41 IST" duration-ms="69" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assignObjectForClass -->
-        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.LoginTest@1ffaf86]" started-at="2024-04-08T15:16:04 IST" name="seperateCase" finished-at="2024-04-08T15:16:04 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.TankAssetsTest@738dc9b]" started-at="2024-04-09T18:33:41 IST" name="seperateCase" finished-at="2024-04-09T18:33:41 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seperateCase -->
-        <test-method signature="validLoginTest(java.util.Map)[pri:0, instance:testPackage.LoginTest@1ffaf86]" started-at="2024-04-08T15:16:04 IST" name="validLoginTest" description="Test Valid Login" data-provider="LoginTestData" finished-at="2024-04-08T15:16:26 IST" duration-ms="22937" status="PASS">
+        <test-method signature="createTank()[pri:0, instance:testPackage.TankAssetsTest@738dc9b]" started-at="2024-04-09T18:33:41 IST" name="createTank" description="Test create tank assets." finished-at="2024-04-09T18:34:16 IST" duration-ms="35045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTank -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.TankAssetsTest@738dc9b]" started-at="2024-04-09T18:34:16 IST" name="seperateCase" finished-at="2024-04-09T18:34:16 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="editTank()[pri:1, instance:testPackage.TankAssetsTest@738dc9b]" started-at="2024-04-09T18:34:16 IST" name="editTank" description="Test edit tank assets." finished-at="2024-04-09T18:34:29 IST" duration-ms="13568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editTank -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.TankAssetsTest@738dc9b]" started-at="2024-04-09T18:34:29 IST" name="seperateCase" finished-at="2024-04-09T18:34:29 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="deleteTank()[pri:2, instance:testPackage.TankAssetsTest@738dc9b]" started-at="2024-04-09T18:34:29 IST" name="deleteTank" description="Test delete tank assets." finished-at="2024-04-09T18:34:44 IST" duration-ms="14685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTank -->
+      </class> <!-- testPackage.TankAssetsTest -->
+      <class name="testPackage.LoginTest">
+        <test-method is-config="true" signature="prerequisite()[pri:0, instance:testPackage.LoginTest@6c1a5b54]" started-at="2024-04-09T18:33:11 IST" name="prerequisite" finished-at="2024-04-09T18:33:22 IST" duration-ms="11019" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prerequisite -->
+        <test-method is-config="true" signature="initializeExtentReport()[pri:0, instance:testPackage.LoginTest@6c1a5b54]" started-at="2024-04-09T18:33:22 IST" name="initializeExtentReport" finished-at="2024-04-09T18:33:22 IST" duration-ms="386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeExtentReport -->
+        <test-method is-config="true" signature="assignObjectForClass()[pri:0, instance:testPackage.LoginTest@6c1a5b54]" started-at="2024-04-09T18:33:22 IST" name="assignObjectForClass" finished-at="2024-04-09T18:33:22 IST" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assignObjectForClass -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.LoginTest@6c1a5b54]" started-at="2024-04-09T18:33:23 IST" name="seperateCase" finished-at="2024-04-09T18:33:23 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="validLoginTest(java.util.Map)[pri:0, instance:testPackage.LoginTest@6c1a5b54]" started-at="2024-04-09T18:33:23 IST" name="validLoginTest" description="Test Valid Login" data-provider="LoginTestData" finished-at="2024-04-09T18:33:40 IST" duration-ms="17605" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,14 +64,10 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="flush()[pri:0, instance:testPackage.LoginTest@1ffaf86]" started-at="2024-04-08T15:16:27 IST" name="flush" finished-at="2024-04-08T15:16:27 IST" duration-ms="579" status="PASS">
+        <test-method is-config="true" signature="flush()[pri:0, instance:testPackage.LoginTest@6c1a5b54]" started-at="2024-04-09T18:34:44 IST" name="flush" finished-at="2024-04-09T18:34:44 IST" duration-ms="485" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flush -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testPackage.LoginTest@1ffaf86]" started-at="2024-04-08T15:16:27 IST" name="closeBrowser" finished-at="2024-04-08T15:16:28 IST" duration-ms="442" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
       </class> <!-- testPackage.LoginTest -->
     </test> <!-- OilPilot -->
   </suite> <!-- Suite -->
