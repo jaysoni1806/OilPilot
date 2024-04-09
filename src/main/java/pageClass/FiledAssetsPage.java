@@ -114,7 +114,6 @@ public class FiledAssetsPage {
 		if (commLocators.inputSearch.isDisplayed()) {
 			utility.clearSearchBox(commLocators.inputSearch);
 			// utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
-			System.out.println(searchRecords.size());
 			if (searchRecords.size() >= 1) {
 				log.info("Retrive all records");
 			} else {
