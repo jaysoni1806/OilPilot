@@ -8,10 +8,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 
 import com.commonUtil.ApplicationException;
 import com.commonUtil.Utility;
+
+import testBase.TestBase;
 
 public class TankAssetsPage {
 	public static Logger log = Logger.getLogger(TankAssetsPage.class);
@@ -146,7 +147,8 @@ public class TankAssetsPage {
 			utility.waitUntilToastPresent(dashboard.toastMessage);
 
 			if (dashboard.toastMessage.isDisplayed()) {
-				Assert.assertEquals(dashboard.toastMessage.getText(), "We have successfully created the Tank.");
+				TestBase.softAssert.assertEquals(dashboard.toastMessage.getText(),
+						"We have successfully created the Tank.");
 				enterTankNameinSearchBox(Tankname);
 				verifySearchedTankIsExistsOrNot(Tankname);
 				log.info("'" + Tankname + "'" + " tank created successfully.");
@@ -212,7 +214,8 @@ public class TankAssetsPage {
 			utility.waitUntilToastPresent(dashboard.toastMessage);
 
 			if (dashboard.toastMessage.isDisplayed()) {
-				Assert.assertEquals(dashboard.toastMessage.getText(), "We have successfully updated the Tank.");
+				TestBase.softAssert.assertEquals(dashboard.toastMessage.getText(),
+						"We have successfully updated the Tank.");
 				enterTankNameinSearchBox(updatedTank);
 				verifySearchedTankIsExistsOrNot(updatedTank);
 				log.info("'" + Tankname + "'" + " tank is updated successfully with '" + updatedTank + "'.");
@@ -258,7 +261,7 @@ public class TankAssetsPage {
 			enterTankNameinSearchBox(updatedTank);
 
 			if (commLocators.noRow.isDisplayed()) {
-				Assert.assertEquals(expactedToastMessage, "We have successfully deleted the Tank.");
+				TestBase.softAssert.assertEquals(expactedToastMessage, "We have successfully deleted the Tank.");
 				log.info("'" + updatedTank + "'" + " tank has been deleted successfully.");
 			} else {
 

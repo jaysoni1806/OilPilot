@@ -8,10 +8,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 
 import com.commonUtil.ApplicationException;
 import com.commonUtil.Utility;
+
+import testBase.TestBase;
 
 public class LeaseGroupAssetsPage {
 	public static Logger log = Logger.getLogger(LeaseGroupAssetsPage.class);
@@ -195,7 +196,8 @@ public class LeaseGroupAssetsPage {
 			utility.waitUntilToastPresent(dashboard.toastMessage);
 
 			if (dashboard.toastMessage.isDisplayed()) {
-				Assert.assertEquals(dashboard.toastMessage.getText(), "We have successfully updated the Lease Group.");
+				TestBase.softAssert.assertEquals(dashboard.toastMessage.getText(),
+						"We have successfully updated the Lease Group.");
 				log.info("'" + updatedLeaseGroup + "'" + " Lease Group update successfully.");
 			} else {
 				throw new ApplicationException("Exception Occured", "Lease Group is not updated.");
@@ -237,7 +239,7 @@ public class LeaseGroupAssetsPage {
 			enterLeaseGroupNameinSearchBox(updatedLeaseGroup);
 
 			if (commLocators.noRow.isDisplayed()) {
-				Assert.assertEquals(expactedToastMessage, "We have successfully deleted the Lease Group.");
+				TestBase.softAssert.assertEquals(expactedToastMessage, "We have successfully deleted the Lease Group.");
 				log.info("'" + updatedLeaseGroup + "'" + " Lease has been deleted successfully.");
 			} else {
 

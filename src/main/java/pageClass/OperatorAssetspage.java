@@ -93,7 +93,7 @@ public class OperatorAssetspage {
 
 	public void enterOperatorEmail() throws ApplicationException {
 
-		String rendomEmail = "test" + commonUtil.getRandomString(4) + "@openxcell.com";
+		String rendomEmail = "test" + commonUtil.getRandomNumber(4) + "@openxcell.com";
 
 		if (inputOperatorEmail.isDisplayed()) {
 			utility.ClearTextBox(inputOperatorEmail);

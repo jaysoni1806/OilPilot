@@ -9,10 +9,11 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 
 import com.commonUtil.ApplicationException;
 import com.commonUtil.Utility;
+
+import testBase.TestBase;
 
 public class LoginPage {
 	WebDriver driver;
@@ -83,7 +84,8 @@ public class LoginPage {
 
 		utility.waitForSometime(dashBoard.dashboard);
 		if (driver.getCurrentUrl().equals("https://oilman-website.apps.openxcell.dev/dashboard/")) {
-			Assert.assertEquals(driver.getCurrentUrl(), "https://oilman-website.apps.openxcell.dev/dashboard/");
+			TestBase.softAssert.assertEquals(driver.getCurrentUrl(),
+					"https://oilman-website.apps.openxcell.dev/dashboard/");
 			log.info("Logged successfully navigated on Dashboard");
 		} else {
 			throw new ApplicationException("Exception Occured", "Dashboard URL is not present.");

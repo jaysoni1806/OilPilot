@@ -8,10 +8,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 
 import com.commonUtil.ApplicationException;
 import com.commonUtil.Utility;
+
+import testBase.TestBase;
 
 public class FiledAssetsPage {
 	WebDriver driver;
@@ -181,7 +182,8 @@ public class FiledAssetsPage {
 			utility.waitUntilToastPresent(dashboard.toastMessage);
 
 			if (dashboard.toastMessage.isDisplayed()) {
-				Assert.assertEquals(dashboard.toastMessage.getText(), "We have successfully updated the Field.");
+				TestBase.softAssert.assertEquals(dashboard.toastMessage.getText(),
+						"We have successfully updated the Field.");
 				log.info("'" + updatedField + "'" + " Field update successfully.");
 			} else {
 				throw new ApplicationException("Exception Occured", "Field is not Updated.");
@@ -223,7 +225,7 @@ public class FiledAssetsPage {
 			enterFieldNameinSearchBox(updatedField);
 
 			if (commLocators.noRow.isDisplayed()) {
-				Assert.assertEquals(expactedToastMessage, "We have successfully deleted the Field.");
+				TestBase.softAssert.assertEquals(expactedToastMessage, "We have successfully deleted the Field.");
 				log.info("'" + updatedField + "'" + " Field has been deleted successfully.");
 			} else {
 

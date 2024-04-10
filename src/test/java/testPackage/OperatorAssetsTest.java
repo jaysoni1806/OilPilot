@@ -26,13 +26,13 @@ public class OperatorAssetsTest extends TestBase {
 		operatorAssetsop.enterOperatorPhone();
 		ExtentReportManager.test.log(Status.PASS, "Enter operator phone.");
 		operatorAssetsop.enterOperatorEmail();
-		ExtentReportManager.test.log(Status.PASS, "Enter operator phone.");
+		ExtentReportManager.test.log(Status.PASS, "Enter operator email.");
 		operatorAssetsop.enterOperatorAddress();
 		ExtentReportManager.test.log(Status.PASS, "Enter operator address.");
 		operatorAssetsop.selectStatus();
 		ExtentReportManager.test.log(Status.PASS, "Status selected.");
 		operatorAssetsop.clickAddButtonForCreateNewLease();
-		ExtentReportManager.test.log(Status.PASS, "Click on Submit button.");
+		ExtentReportManager.test.log(Status.PASS, "Click on submit button.");
 		operatorAssetsop.verifyTheLeaseIsCreatedOrnot();
 		ExtentReportManager.test.log(Status.PASS, "'" + operatore_name + "'" + " operator successfully created.");
 	}
@@ -48,17 +48,17 @@ public class OperatorAssetsTest extends TestBase {
 	}
 
 	@Test(priority = 2, description = "Test edit operator assets.")
-	public void EditOperator() throws ApplicationException, InterruptedException {
+	public void editOperator() throws ApplicationException, InterruptedException {
 		operatorAssetsop.searchOperator(1);
-		ExtentReportManager.test.log(Status.PASS, "Search recently created Lease for Edit");
+		ExtentReportManager.test.log(Status.PASS, "Search recently created operator for Edit");
 		operatorAssetsop.clickEdit_actionUnderThePerent_actionandVerifyEditHalfCardIsPresentOrNot();
 		ExtentReportManager.test.log(Status.PASS, "Verify the Edit half card is present or not when click edit.");
 		operatorAssetsop.enterNewOperatorName();
 		ExtentReportManager.test.log(Status.PASS, "Enter updated operator name.");
 		operatorAssetsop.clickOnSubmitAndVerifyThatTheOperatorIsUpdateOrNot();
-		ExtentReportManager.test.log(Status.PASS, "Verify that the Lease is update or not.");
+		ExtentReportManager.test.log(Status.PASS, "Verify that the operator is update or not.");
 		operatorAssetsop.verifyTheOperatorListAfterClearSearchBox();
-		ExtentReportManager.test.log(Status.PASS, "Clear searchbox to get all Lease.");
+		ExtentReportManager.test.log(Status.PASS, "Clear searchbox to get all operator.");
 	}
 
 	@Test(priority = 3, description = "Test delete operator assets.")

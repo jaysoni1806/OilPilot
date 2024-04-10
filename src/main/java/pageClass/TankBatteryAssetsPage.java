@@ -8,10 +8,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 
 import com.commonUtil.ApplicationException;
 import com.commonUtil.Utility;
+
+import testBase.TestBase;
 
 public class TankBatteryAssetsPage {
 	public static Logger log = Logger.getLogger(TankBatteryAssetsPage.class);
@@ -228,7 +229,8 @@ public class TankBatteryAssetsPage {
 			utility.waitUntilToastPresent(dashboard.toastMessage);
 
 			if (dashboard.toastMessage.isDisplayed()) {
-				Assert.assertEquals(dashboard.toastMessage.getText(), "We have successfully updated the Tank Battery.");
+				TestBase.softAssert.assertEquals(dashboard.toastMessage.getText(),
+						"We have successfully updated the Tank Battery.");
 				log.info("'" + updatedTankBattery + "'" + " Tank Battery update successfully.");
 			} else {
 				throw new ApplicationException("Exception Occured", "Tank Battery is not Updated.");
@@ -270,7 +272,8 @@ public class TankBatteryAssetsPage {
 			enterTankBatteryNameinSearchBox(updatedTankBattery);
 
 			if (commLocators.noRow.isDisplayed()) {
-				Assert.assertEquals(expactedToastMessage, "We have successfully deleted the Tank Battery.");
+				TestBase.softAssert.assertEquals(expactedToastMessage,
+						"We have successfully deleted the Tank Battery.");
 				log.info("'" + updatedTankBattery + "'" + " Tank Battery has been deleted successfully.");
 			} else {
 
