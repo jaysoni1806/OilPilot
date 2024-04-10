@@ -13,6 +13,8 @@ import org.testng.Assert;
 import com.commonUtil.ApplicationException;
 import com.commonUtil.Utility;
 
+import testBase.TestBase;
+
 public class CompanyAssetsPage {
 
 	WebDriver driver;
@@ -223,14 +225,14 @@ public class CompanyAssetsPage {
 		utility.waitUntilToastPresent(dashboard.toastMessage);
 
 		if (dashboard.toastMessage.isDisplayed()) {
-			String expactedToastMessage = dashboard.toastMessage.getText();
+			String actual = dashboard.toastMessage.getText();
 			utility.WaitUntilElementVisibiltyGone(dashboard.toastMessage, 5);
 			enterCompanyNameinSearchBox(updatedComp);
 			// searchRecords =
 			// driver.findElements(By.xpath("//div[contains(@class,'MuiDataGrid-row')]"));
 
 			if (commLocators.noRow.isDisplayed()) {
-				Assert.assertEquals(expactedToastMessage, "We have successfully deleted the Company.");
+				TestBase.softAssert.assertEquals(actual, "We have successfully deleted the Company.");
 				log.info("'" + updatedComp + "'" + " Company has been deleted successfully.");
 			} else {
 

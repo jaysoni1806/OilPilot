@@ -44,12 +44,13 @@ public class commonUtil {
 	public static String screenShot(WebDriver driver, String filename) {
 		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
 		File source = takesScreenshot.getScreenshotAs(OutputType.FILE);
+
+		String destination = System.getProperty("user.dir") + "/ScreenShot/" + filename + "_"
+				+ commonUtil.getCurrentTime() + ".png";
+
 		/*
-		 * String destination = System.getProperty("user.dir") + "/ScreenShot/" +
-		 * filename + "_" + commonUtil.getCurrentTime() + ".png";
+		 * String path = "ScreenShot/"; String destination = path + filename + ".png";
 		 */
-		String path = "ScreenShot/";
-		String destination = path + filename + ".png";
 
 		File finalDestination = new File(destination);
 		try {

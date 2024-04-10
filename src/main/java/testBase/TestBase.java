@@ -8,11 +8,13 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.asserts.SoftAssert;
 
 import com.Listeners.ExtentReportListener;
 import com.commonUtil.ExtentReportManager;
@@ -23,6 +25,7 @@ import pageClass.FiledAssetsPage;
 import pageClass.LeaseAssetsPage;
 import pageClass.LeaseGroupAssetsPage;
 import pageClass.LoginPage;
+import pageClass.OperatorAssetspage;
 import pageClass.TankAssetsPage;
 import pageClass.TankBatteryAssetsPage;
 import pageClass.commonLocatorsRepo;
@@ -39,7 +42,9 @@ public class TestBase {
 	public LeaseAssetsPage leaseAstop;
 	public TankBatteryAssetsPage tankBatteryAstop;
 	public TankAssetsPage tankAssetsop;
+	public OperatorAssetspage operatorAssetsop;
 	public static Logger log = Logger.getLogger(TestBase.class);
+	public static SoftAssert softAssert = new SoftAssert();
 
 	@BeforeSuite
 	public void prerequisite() {
@@ -68,6 +73,7 @@ public class TestBase {
 		leaseAstop = new LeaseAssetsPage(driver);
 		tankBatteryAstop = new TankBatteryAssetsPage(driver);
 		tankAssetsop = new TankAssetsPage(driver);
+		operatorAssetsop = new OperatorAssetspage(driver);
 	}
 
 	@BeforeTest
@@ -86,8 +92,9 @@ public class TestBase {
 		ExtentReportListener.flush();
 	}
 
-	// @AfterSuite
+	@AfterSuite
 	public void closeBrowser() {
+		softAssert.assertAll();
 		driver.close();
 	}
 

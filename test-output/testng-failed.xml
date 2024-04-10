@@ -6,16 +6,16 @@
   </listeners>
   <test thread-count="5" name="OilPilot(failed)">
     <classes>
-      <class name="testPackage.TankAssetsTest">
+      <class name="testPackage.OperatorAssetsTest">
         <methods>
           <include name="seperateCase"/>
           <include name="initializeExtentReport"/>
           <include name="assignObjectForClass"/>
           <include name="prerequisite"/>
           <include name="flush"/>
-          <include name="editTank"/>
+          <include name="createOperator"/>
         </methods>
-      </class> <!-- testPackage.TankAssetsTest -->
+      </class> <!-- testPackage.OperatorAssetsTest -->
     </classes>
   </test> <!-- OilPilot(failed) -->
 </suite> <!-- Failed suite [Suite] -->

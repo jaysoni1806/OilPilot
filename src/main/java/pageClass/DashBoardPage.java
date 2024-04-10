@@ -40,6 +40,8 @@ public class DashBoardPage {
 	public WebElement tankbatteryMenu;
 	@FindBy(xpath = "//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-entered')]//li//a[@href='/assets/tanks/']")
 	public WebElement tankMenu;
+	@FindBy(xpath = "//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-entered')]//li//a[@href='/assets/operator/']")
+	public WebElement operatorMenu;
 	@FindBy(xpath = "//div[contains(@class,'react-hot-toast')]//div[@role='status']")
 	public WebElement toastMessage;
 	@FindBy(xpath = "//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-hidden')]")
@@ -88,6 +90,8 @@ public class DashBoardPage {
 					selectMenu(tankbatteryMenu, menuNAme);
 				} else if (menuNAme.equals("Tank")) {
 					selectMenu(tankMenu, menuNAme);
+				} else if (menuNAme.equals("Operator")) {
+					selectMenu(operatorMenu, menuNAme);
 				}
 			} else {
 				utility.Submit(asset);

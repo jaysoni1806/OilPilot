@@ -157,7 +157,7 @@ public class commonLocatorsRepo {
 					.findElements(By.xpath("//ul[contains(@class,'MuiAutocomplete-listbox')]/li"));
 
 			if (dropdownList.size() >= 2) {
-				utility.Submit(dropdownList.get(2));
+				utility.Submit(dropdownList.get(0));
 			} else {
 				utility.Submit(cancelButton);
 				throw new ApplicationException("Exception Occured", dropdownName + " list is null.");
