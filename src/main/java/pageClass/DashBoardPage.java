@@ -40,6 +40,8 @@ public class DashBoardPage {
 	public WebElement tankbatteryMenu;
 	@FindBy(xpath = "//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-entered')]//li//a[@href='/assets/tanks/']")
 	public WebElement tankMenu;
+	@FindBy(xpath = "//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-entered')]//li//a[@href='/assets/well/']")
+	public WebElement wellMenu;
 	@FindBy(xpath = "//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-entered')]//li//a[@href='/assets/operator/']")
 	public WebElement operatorMenu;
 	@FindBy(xpath = "//div[contains(@class,'react-hot-toast')]//div[@role='status']")
@@ -92,6 +94,8 @@ public class DashBoardPage {
 					selectMenu(tankMenu, menuNAme);
 				} else if (menuNAme.equals("Operator")) {
 					selectMenu(operatorMenu, menuNAme);
+				} else if (menuNAme.equals("Well")) {
+					selectMenu(wellMenu, menuNAme);
 				}
 			} else {
 				utility.Submit(asset);
@@ -113,7 +117,7 @@ public class DashBoardPage {
 		} else if (assets_CollapseHidden1.size() > 0) {
 			log.info("Assets menu has been collepse");
 			clickOnAssets();
-			log.info("Call Click Assets function again");
+			log.info("Call click assets function again");
 		}
 
 		else {

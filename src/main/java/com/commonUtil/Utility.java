@@ -98,6 +98,10 @@ public class Utility {
 		fluentWait.until(ExpectedConditions.visibilityOf(element));
 	}
 
+	public void waitUntillListPresent(List<WebElement> searchRecords) {
+		fluentWait.until(ExpectedConditions.visibilityOfAllElements(searchRecords));
+	}
+
 	public void WaitUntilElementIsNotClickable(WebElement element, int second) {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(second));
 		wait.until(ExpectedConditions.elementToBeClickable(element));

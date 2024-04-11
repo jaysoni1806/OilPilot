@@ -92,36 +92,5 @@ public class LoginPage {
 		}
 
 	}
-	/*
-	 * public void loginTest(String username, String password) throws
-	 * InterruptedException {
-	 * 
-	 * email.click(); utility.ClearTextBox(email); utility.SendValues(email,
-	 * username);
-	 * 
-	 * pass.click(); utility.ClearTextBox(pass); utility.SendValues(pass, password);
-	 * utility.Submit(sbtBtn); Thread.sleep(2000);
-	 * 
-	 * if(sbtBtn.isEnabled()) { if(emailError.size() > 0) {
-	 * //Assert.assertEquals(((WebElement) emailError).getText(),
-	 * "email must be a valid email");
-	 * System.out.println("Email must be a valid email."); } else
-	 * if(passError.size() > 0) { //Assert.assertEquals(((WebElement)
-	 * passError).getText(), "password must be at least 5 characters");
-	 * System.out.println("Password must be at least 5 characters"); } } else{ try {
-	 * wait.until(ExpectedConditions.invisibilityOf(progressbar));
-	 * if(sbtBtn.isDisplayed()!= true) { currentUrl = driver.getCurrentUrl();
-	 * if(currentUrl.equalsIgnoreCase(
-	 * "https://oilman-website.apps.openxcell.dev/dashboard")) {
-	 * System.out.println("User Successfully Logged In."); } else
-	 * System.out.println("Invalid credentials"); } }
-	 * 
-	 * catch (Exception e) { // TODO: handle exception } }
-	 * 
-	 * }
-	 * 
-	 * public DashBoardPage dashBoardPage(WebDriver driver) { return new
-	 * DashBoardPage(driver); }
-	 */
 
 }

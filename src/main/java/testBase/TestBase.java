@@ -28,6 +28,7 @@ import pageClass.LoginPage;
 import pageClass.OperatorAssetspage;
 import pageClass.TankAssetsPage;
 import pageClass.TankBatteryAssetsPage;
+import pageClass.WellAssetsPage;
 import pageClass.commonLocatorsRepo;
 
 public class TestBase {
@@ -43,6 +44,7 @@ public class TestBase {
 	public TankBatteryAssetsPage tankBatteryAstop;
 	public TankAssetsPage tankAssetsop;
 	public OperatorAssetspage operatorAssetsop;
+	public WellAssetsPage wellAssetsop;
 	public static Logger log = Logger.getLogger(TestBase.class);
 	public static SoftAssert softAssert = new SoftAssert();
 
@@ -74,6 +76,7 @@ public class TestBase {
 		tankBatteryAstop = new TankBatteryAssetsPage(driver);
 		tankAssetsop = new TankAssetsPage(driver);
 		operatorAssetsop = new OperatorAssetspage(driver);
+		wellAssetsop = new WellAssetsPage(driver);
 	}
 
 	@BeforeTest
@@ -95,7 +98,7 @@ public class TestBase {
 	@AfterSuite
 	public void closeBrowser() {
 		softAssert.assertAll();
-		driver.close();
+		// driver.close();
 	}
 
 }

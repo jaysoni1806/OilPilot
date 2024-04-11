@@ -107,7 +107,7 @@ public class commonLocatorsRepo {
 			log.info("Click on Add button.");
 
 			// utility.WaitForASecond(tank_page.addTankScreen, 10);
-			log.info("Add screen presented;");
+			log.info("Add screen presented.");
 		} else {
 			throw new ApplicationException("Exception Occured", "Add button is not Present or Not Clickable.");
 		}
@@ -119,7 +119,7 @@ public class commonLocatorsRepo {
 			log.info("Click on Add button.");
 
 			utility.WaitForASecond(addTankScreen, 10);
-			log.info("Add screen presented;");
+			log.info("Add screen presented.");
 		} else {
 			throw new ApplicationException("Exception Occured", "Add button is not Present or Not Clickable.");
 		}
@@ -179,8 +179,32 @@ public class commonLocatorsRepo {
 
 			List<WebElement> dropdownList = driver
 					.findElements(By.xpath("//ul[contains(@class,'MuiAutocomplete-listbox')]/li"));
-			if (dropdownList.size() >= 2) {
+			if (dropdownList.size() >= 1) {
 				utility.Submit(dropdownList.get(0));
+			} else {
+				throw new ApplicationException("Exception Occured", dropdownName + " list is null.");
+
+			}
+		} else {
+			throw new ApplicationException("Exception Occured", dropdownName + " dropdown is not present.");
+		}
+
+	}
+
+	public void SelectDropdownValueBasedOnSearchRecords(String well_param, String dropdowniTem, String dropdownName)
+			throws ApplicationException {
+		WebElement dropdownElement = driver.findElement(By.xpath("//input[@placeholder='" + dropdowniTem + "']"));
+
+		if (dropdownElement.isDisplayed()) {
+			utility.WaitUntilElementIsNotClickable(dropdownElement, 5);
+			utility.Submit(dropdownElement);
+			utility.SendValues(dropdownElement, well_param);
+			utility.WaitFor2Second();
+
+			List<WebElement> dropdownList = driver
+					.findElements(By.xpath("//ul[contains(@class,'MuiAutocomplete-listbox')]/li"));
+			if (dropdownList.size() >= 2) {
+				utility.Submit(dropdownList.get(2));
 			} else {
 				throw new ApplicationException("Exception Occured", dropdownName + " list is null.");
 
