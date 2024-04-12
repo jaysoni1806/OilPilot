@@ -27,7 +27,7 @@ public class EmailableListener implements ITestListener {
 				+ "<h2 style=\"color: #5e9ca0;\"><span style=\"color: #0B977C;\">Execution report:</span></h2>\n"
 				+ "<table border=\"1\">\n" + "<thead>\n" + "<tr style=\"background-color:#0B977C\">\n"
 				+ "<td style=\"width: 40%;\"><strong>Test case name</strong></td>\n"
-				+ "<td style=\"width: 40%;\"><strong>Status</strong></td>\n"
+				+ "<td style=\"width: 40%;\" align=\"center\"><strong>Status</strong></td>\n"
 				+ "<td style=\"width: 10%;\"><strong>Msg</strong></td>\n" + "</tr>\n" + "</thead>\n" + "<tbody>";
 
 	}
@@ -44,8 +44,8 @@ public class EmailableListener implements ITestListener {
 		passCount++;
 		System.setProperty("passed", String.valueOf(passCount));
 		reportHtml = reportHtml + "<tr>\n" + "<td style=\"width: 40%;\">" + result.getMethod().getMethodName()
-				+ "</td>\n" + "<td style=\"width: 40%;\">Pass</td>\n" + "<td style=\"width: 10%;\">&nbsp;</td>\n"
-				+ "</tr>";
+				+ "</td>\n" + "<td style=\"width: 40%;\" align=\"center\">Pass</td>\n"
+				+ "<td style=\"width: 10%;\">&nbsp;</td>\n" + "</tr>";
 
 	}
 

@@ -1,8 +1,0 @@
-2024-04-12 11:54:09 INFO  TestBase:58 - ************************************************************************ 
-2024-04-12 11:54:09 INFO  TestBase:59 - Chrome browser launched. 
-2024-04-12 11:54:12 INFO  TestBase:62 - Hit Oilman URL.  
-2024-04-12 11:54:14 INFO  TestBase:90 - ------------------------------------------------------------------------ 
-2024-04-12 11:54:15 INFO  LoginPage:54 - Enter Email id. 
-2024-04-12 11:54:15 INFO  LoginPage:68 - Enter Password. 
-2024-04-12 11:54:15 INFO  LoginPage:77 - Cliked on Submit button. 
-2024-04-12 11:54:30 INFO  LoginPage:89 - Logged successfully navigated on Dashboard 
