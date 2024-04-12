@@ -1,0 +1,26 @@
+2024-04-12 11:16:08 INFO  TestBase:58 - ************************************************************************ 
+2024-04-12 11:16:08 INFO  TestBase:59 - Chrome browser launched. 
+2024-04-12 11:16:12 INFO  TestBase:62 - Hit Oilman URL.  
+2024-04-12 11:16:15 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 11:16:15 INFO  LoginPage:54 - Enter Email id. 
+2024-04-12 11:16:16 INFO  LoginPage:68 - Enter Password. 
+2024-04-12 11:16:16 INFO  LoginPage:77 - Cliked on Submit button. 
+2024-04-12 11:16:30 INFO  LoginPage:89 - Logged successfully navigated on Dashboard 
+2024-04-12 11:16:30 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 11:16:30 INFO  DashBoardPage:65 - Waiting until Assets manu is clickable. 
+2024-04-12 11:16:30 INFO  DashBoardPage:68 - Click on Assets menu. 
+2024-04-12 11:16:36 INFO  DashBoardPage:115 - Click on Tank manu item. 
+2024-04-12 11:16:38 INFO  TankAssetsPage:74 - Wait until loading tank list. 
+2024-04-12 11:16:38 INFO  commonLocatorsRepo:119 - Click on Add button. 
+2024-04-12 11:16:38 INFO  commonLocatorsRepo:122 - Add screen presented. 
+2024-04-12 11:16:41 INFO  TankAssetsPage:95 - Enter tank name. 
+2024-04-12 11:16:48 INFO  TankAssetsPage:100 - Select tank status 
+2024-04-12 11:16:51 INFO  TankAssetsPage:105 - Select associated tank battery. 
+2024-04-12 11:16:51 INFO  TankAssetsPage:110 - Enter max capacity. 
+2024-04-12 11:16:51 INFO  TankAssetsPage:115 - Enter conversion rate. 
+2024-04-12 11:16:51 INFO  TankAssetsPage:120 - Enter sequence order. 
+2024-04-12 11:16:52 INFO  TankAssetsPage:125 - Enter height. 
+2024-04-12 11:16:52 INFO  TankAssetsPage:130 - Enter bottom. 
+2024-04-12 11:16:52 INFO  TankAssetsPage:135 - Enter latitude. 
+2024-04-12 11:16:52 INFO  TankAssetsPage:140 - Enter longtitude. 
+2024-04-12 11:16:53 INFO  TankAssetsPage:146 - Clicked submit button. 

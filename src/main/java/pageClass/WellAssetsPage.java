@@ -131,14 +131,19 @@ public class WellAssetsPage {
 		if (btnSubmit.isDisplayed()) {
 			utility.Submit(btnSubmit);
 			log.info("Clicked submit button.");
-			utility.waitUntilToastPresent(dashboard.toastMessage);
+			utility.waitUntilToastPresent(dashboard.toastMessage, 50);
 
 			if (dashboard.toastMessage.isDisplayed()) {
 				TestBase.softAssert.assertEquals(dashboard.toastMessage.getText(),
 						"We have successfully created the Well.");
-				utility.waitUntillListPresent(searchRecords);
-				enterWellNameinSearchBox(Wellname);
-				verifySearchedWellIsExistsOrNot(Wellname);
+				if (!searchRecords.isEmpty()) {
+					enterWellNameinSearchBox(Wellname);
+					verifySearchedWellIsExistsOrNot(Wellname);
+				} else {
+					utility.waitUntillListPresent(searchRecords);
+					enterWellNameinSearchBox(Wellname);
+					verifySearchedWellIsExistsOrNot(Wellname);
+				}
 				log.info("'" + Wellname + "'" + " well created successfully.");
 			} else {
 				throw new ApplicationException("Exception Occured", "Well is not created");
@@ -190,6 +195,7 @@ public class WellAssetsPage {
 	}
 
 	public void enterNewWellName() throws InterruptedException, ApplicationException {
+		utility.WaitFor2Second();
 		updatedWell = Wellname.concat("Edited");
 		inputWellName(updatedWell);
 	}

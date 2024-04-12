@@ -1,0 +1,102 @@
+2024-04-12 11:28:03 INFO  TestBase:58 - ************************************************************************ 
+2024-04-12 11:28:03 INFO  TestBase:59 - Chrome browser launched. 
+2024-04-12 11:28:06 INFO  TestBase:62 - Hit Oilman URL.  
+2024-04-12 11:28:07 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 11:28:08 INFO  LoginPage:54 - Enter Email id. 
+2024-04-12 11:28:08 INFO  LoginPage:68 - Enter Password. 
+2024-04-12 11:28:08 INFO  LoginPage:77 - Cliked on Submit button. 
+2024-04-12 11:28:23 INFO  LoginPage:89 - Logged successfully navigated on Dashboard 
+2024-04-12 11:28:23 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 11:28:23 INFO  DashBoardPage:65 - Waiting until Assets manu is clickable. 
+2024-04-12 11:28:24 INFO  DashBoardPage:68 - Click on Assets menu. 
+2024-04-12 11:28:29 INFO  DashBoardPage:115 - Click on Tank manu item. 
+2024-04-12 11:28:31 INFO  TankAssetsPage:74 - Wait until loading tank list. 
+2024-04-12 11:28:31 INFO  commonLocatorsRepo:119 - Click on Add button. 
+2024-04-12 11:28:32 INFO  commonLocatorsRepo:122 - Add screen presented. 
+2024-04-12 11:28:34 INFO  TankAssetsPage:95 - Enter tank name. 
+2024-04-12 11:28:36 INFO  TankAssetsPage:100 - Select tank status 
+2024-04-12 11:28:38 INFO  TankAssetsPage:105 - Select associated tank battery. 
+2024-04-12 11:28:39 INFO  TankAssetsPage:110 - Enter max capacity. 
+2024-04-12 11:28:39 INFO  TankAssetsPage:115 - Enter conversion rate. 
+2024-04-12 11:28:39 INFO  TankAssetsPage:120 - Enter sequence order. 
+2024-04-12 11:28:39 INFO  TankAssetsPage:125 - Enter height. 
+2024-04-12 11:28:39 INFO  TankAssetsPage:130 - Enter bottom. 
+2024-04-12 11:28:39 INFO  TankAssetsPage:135 - Enter latitude. 
+2024-04-12 11:28:39 INFO  TankAssetsPage:140 - Enter longtitude. 
+2024-04-12 11:28:40 INFO  TankAssetsPage:146 - Clicked submit button. 
+2024-04-12 11:28:49 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 11:28:50 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 11:28:52 INFO  TankAssetsPage:196 - Record searched successfully. 
+2024-04-12 11:28:52 INFO  TankAssetsPage:154 - 'QJLW' tank created successfully. 
+2024-04-12 11:28:52 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 11:28:52 INFO  commonLocatorsRepo:57 - Waiting until action button is clickable. 
+2024-04-12 11:28:52 INFO  commonLocatorsRepo:60 - Click action button. 
+2024-04-12 11:28:52 INFO  TankAssetsPage:168 - Clicked on action button. 
+2024-04-12 11:28:52 INFO  commonLocatorsRepo:65 - Waiting until edit button is clickable. 
+2024-04-12 11:28:52 INFO  commonLocatorsRepo:68 - Action menu presented, Cliked Edit action. 
+2024-04-12 11:28:52 INFO  TankAssetsPage:171 - Clicked on edit action menu. 
+2024-04-12 11:28:53 INFO  TankAssetsPage:173 - Edit tank screen present. 
+2024-04-12 11:28:55 INFO  TankAssetsPage:95 - Enter tank name. 
+2024-04-12 11:28:57 INFO  TankAssetsPage:213 - Clicked submit button. 
+2024-04-12 11:29:02 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 11:29:03 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 11:29:05 INFO  TankAssetsPage:196 - Record searched successfully. 
+2024-04-12 11:29:05 INFO  TankAssetsPage:221 - 'QJLW' tank is updated successfully with 'QJLWEdited'. 
+2024-04-12 11:29:05 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 11:29:05 INFO  commonLocatorsRepo:57 - Waiting until action button is clickable. 
+2024-04-12 11:29:05 INFO  commonLocatorsRepo:60 - Click action button. 
+2024-04-12 11:29:05 INFO  TankAssetsPage:236 - Clicked on action button. 
+2024-04-12 11:29:05 INFO  commonLocatorsRepo:73 - Waiting until delete button is clickable. 
+2024-04-12 11:29:05 INFO  commonLocatorsRepo:76 - Action menu presented, Cliked delete action. 
+2024-04-12 11:29:05 INFO  TankAssetsPage:240 - Delete confirmation popup is present. 
+2024-04-12 11:29:05 INFO  TankAssetsPage:255 - Cliked on Yes button to confirm delete record. 
+2024-04-12 11:29:12 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 11:29:13 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 11:29:15 INFO  TankAssetsPage:265 - 'QJLWEdited' tank has been deleted successfully. 
+2024-04-12 11:29:19 INFO  TankAssetsPage:279 - Clear searchbox. 
+2024-04-12 11:29:19 INFO  TankAssetsPage:283 - Retrive all records 
+2024-04-12 11:29:20 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 11:29:25 INFO  DashBoardPage:75 - Assets is already open. 
+2024-04-12 11:29:30 INFO  DashBoardPage:115 - Click on Well manu item. 
+2024-04-12 11:29:32 INFO  WellAssetsPage:69 - Wait until loading well list. 
+2024-04-12 11:29:33 INFO  commonLocatorsRepo:119 - Click on Add button. 
+2024-04-12 11:29:33 INFO  commonLocatorsRepo:122 - Add screen presented. 
+2024-04-12 11:29:38 INFO  WellAssetsPage:76 - Lease selected. 
+2024-04-12 11:29:42 INFO  WellAssetsPage:78 - Tank Battery selected. 
+2024-04-12 11:29:44 INFO  WellAssetsPage:80 - Enter well number. 
+2024-04-12 11:29:48 INFO  WellAssetsPage:82 - Enter well name. 
+2024-04-12 11:29:50 INFO  WellAssetsPage:84 - Well category selected. 
+2024-04-12 11:29:50 INFO  WellAssetsPage:86 - Enter latitude. 
+2024-04-12 11:29:50 INFO  WellAssetsPage:88 - Enter longtitude. 
+2024-04-12 11:29:51 INFO  WellAssetsPage:90 - Enter API number. 
+2024-04-12 11:29:51 INFO  WellAssetsPage:133 - Clicked submit button. 
+2024-04-12 11:30:03 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 11:30:04 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 11:30:06 INFO  WellAssetsPage:189 - Record searched successfully. 
+2024-04-12 11:30:06 INFO  WellAssetsPage:147 - 'QA Well 105' well created successfully. 
+2024-04-12 11:30:06 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 11:30:06 INFO  commonLocatorsRepo:57 - Waiting until action button is clickable. 
+2024-04-12 11:30:06 INFO  commonLocatorsRepo:60 - Click action button. 
+2024-04-12 11:30:06 INFO  WellAssetsPage:161 - Clicked on action button. 
+2024-04-12 11:30:07 INFO  commonLocatorsRepo:65 - Waiting until edit button is clickable. 
+2024-04-12 11:30:07 INFO  commonLocatorsRepo:68 - Action menu presented, Cliked Edit action. 
+2024-04-12 11:30:07 INFO  WellAssetsPage:164 - Clicked on edit action menu. 
+2024-04-12 11:30:07 INFO  WellAssetsPage:166 - Edit well screen present. 
+2024-04-12 11:30:14 INFO  WellAssetsPage:207 - Clicked submit button. 
+2024-04-12 11:30:19 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 11:30:21 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 11:30:23 INFO  WellAssetsPage:189 - Record searched successfully. 
+2024-04-12 11:30:23 INFO  WellAssetsPage:215 - 'QA Well 105' tank is updated successfully with 'QA Well 105Edited'. 
+2024-04-12 11:30:23 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 11:30:23 INFO  commonLocatorsRepo:57 - Waiting until action button is clickable. 
+2024-04-12 11:30:23 INFO  commonLocatorsRepo:60 - Click action button. 
+2024-04-12 11:30:23 INFO  WellAssetsPage:230 - Clicked on action button. 
+2024-04-12 11:30:23 INFO  commonLocatorsRepo:73 - Waiting until delete button is clickable. 
+2024-04-12 11:30:23 INFO  commonLocatorsRepo:76 - Action menu presented, Cliked delete action. 
+2024-04-12 11:30:23 INFO  WellAssetsPage:234 - Delete confirmation popup is present. 
+2024-04-12 11:30:23 INFO  WellAssetsPage:249 - Cliked on Yes button to confirm delete record. 
+2024-04-12 11:30:32 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 11:30:33 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 11:30:35 INFO  WellAssetsPage:259 - 'QA Well 105Edited' well has been deleted successfully. 
+2024-04-12 11:30:40 INFO  WellAssetsPage:273 - Clear searchbox. 
+2024-04-12 11:30:40 INFO  WellAssetsPage:277 - Retrive all records 

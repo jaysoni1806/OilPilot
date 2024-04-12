@@ -4,18 +4,20 @@
     <listeners>
         <listener class-name="com.Listeners.ExtentReportListener"/>
         <!--<listener class-name="com.Listeners.IRetryAnalyzerListener"/>-->
+        <listener class-name="com.Listeners.EmailableListener"/>
     </listeners>
   <test thread-count="5" name="OilPilot">
     <classes>
       <class name="testPackage.LoginTest"/>
-   	  <class name="testPackage.CompanyAssetsTest"/>
+	  <class name="testPackage.CompanyAssetsTest"/>
       <class name="testPackage.FieldAssetsTest"/>
-      <class name="testPackage.LeaseGroupAssetsTest"/>
+     <!-- <class name="testPackage.LeaseGroupAssetsTest"/>
       <class name="testPackage.LeaseAssetsTest"/>
       <class name="testPackage.TankBatteryAssetsTest"/>
       <class name="testPackage.TankAssetsTest"/>
-      <class name="testPackage.OperatorAssetsTest"/><!---->
       <class name="testPackage.WellAssetsTest"/>
+      <class name="testPackage.OperatorAssetsTest"/>
+      <class name="testPackage.WellAssetsTest"/>-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

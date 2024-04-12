@@ -144,7 +144,7 @@ public class TankAssetsPage {
 		if (btnSubmit.isDisplayed()) {
 			utility.Submit(btnSubmit);
 			log.info("Clicked submit button.");
-			utility.waitUntilToastPresent(dashboard.toastMessage);
+			utility.waitUntilToastPresent(dashboard.toastMessage, 50);
 
 			if (dashboard.toastMessage.isDisplayed()) {
 				TestBase.softAssert.assertEquals(dashboard.toastMessage.getText(),

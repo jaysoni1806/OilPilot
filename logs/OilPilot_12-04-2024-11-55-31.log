@@ -1,0 +1,338 @@
+2024-04-12 11:55:31 INFO  TestBase:58 - ************************************************************************ 
+2024-04-12 11:55:31 INFO  TestBase:59 - Chrome browser launched. 
+2024-04-12 11:55:34 INFO  TestBase:62 - Hit Oilman URL.  
+2024-04-12 11:55:36 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 11:55:36 INFO  LoginPage:54 - Enter Email id. 
+2024-04-12 11:55:37 INFO  LoginPage:68 - Enter Password. 
+2024-04-12 11:55:37 INFO  LoginPage:77 - Cliked on Submit button. 
+2024-04-12 11:55:52 INFO  LoginPage:89 - Logged successfully navigated on Dashboard 
+2024-04-12 11:55:52 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 11:55:52 INFO  DashBoardPage:65 - Waiting until Assets manu is clickable. 
+2024-04-12 11:55:52 INFO  DashBoardPage:68 - Click on Assets menu. 
+2024-04-12 11:55:57 INFO  DashBoardPage:115 - Click on Company manu item. 
+2024-04-12 11:55:58 INFO  CompanyAssetsPage:59 - Wait until loading company list. 
+2024-04-12 11:55:59 INFO  commonLocatorsRepo:95 - Click on Add button. 
+2024-04-12 11:55:59 INFO  commonLocatorsRepo:98 - Half card is present. 
+2024-04-12 11:55:59 INFO  CompanyAssetsPage:68 - Clear the Company text box. 
+2024-04-12 11:55:59 INFO  CompanyAssetsPage:71 - Enter Company name. 
+2024-04-12 11:55:59 INFO  CompanyAssetsPage:82 - Click on Submit button. 
+2024-04-12 11:56:06 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 11:56:06 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 11:56:08 INFO  CompanyAssetsPage:109 - Record searched successfully. 
+2024-04-12 11:56:08 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 11:56:12 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 11:56:12 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 11:56:14 INFO  CompanyAssetsPage:109 - Record searched successfully. 
+2024-04-12 11:56:20 INFO  CompanyAssetsPage:126 - Retrive all records 
+2024-04-12 11:56:20 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 11:56:24 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 11:56:24 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 11:56:26 INFO  CompanyAssetsPage:109 - Record searched successfully. 
+2024-04-12 11:56:26 INFO  commonLocatorsRepo:57 - Waiting until action button is clickable. 
+2024-04-12 11:56:26 INFO  commonLocatorsRepo:60 - Click action button. 
+2024-04-12 11:56:26 INFO  commonLocatorsRepo:65 - Waiting until edit button is clickable. 
+2024-04-12 11:56:26 INFO  commonLocatorsRepo:68 - Action menu presented, Cliked Edit action. 
+2024-04-12 11:56:26 INFO  CompanyAssetsPage:146 - Edit Company half screen present. 
+2024-04-12 11:56:27 INFO  CompanyAssetsPage:164 - Click on Company name. 
+2024-04-12 11:56:29 INFO  CompanyAssetsPage:168 - Clear text box. 
+2024-04-12 11:56:31 INFO  CompanyAssetsPage:172 - Input upgreaded Company name. 
+2024-04-12 11:56:31 INFO  CompanyAssetsPage:182 - Click on Submit button. 
+2024-04-12 11:56:32 INFO  CompanyAssetsPage:187 - '84JREdited' Company update successfully. 
+2024-04-12 11:56:38 INFO  CompanyAssetsPage:126 - Retrive all records 
+2024-04-12 11:56:38 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 11:56:41 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 11:56:42 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 11:56:44 INFO  CompanyAssetsPage:109 - Record searched successfully. 
+2024-04-12 11:56:44 INFO  commonLocatorsRepo:57 - Waiting until action button is clickable. 
+2024-04-12 11:56:44 INFO  commonLocatorsRepo:60 - Click action button. 
+2024-04-12 11:56:45 INFO  commonLocatorsRepo:73 - Waiting until delete button is clickable. 
+2024-04-12 11:56:45 INFO  commonLocatorsRepo:76 - Action menu presented, Cliked delete action. 
+2024-04-12 11:56:45 INFO  CompanyAssetsPage:208 - Delete confirmation popup is present. 
+2024-04-12 11:56:45 INFO  CompanyAssetsPage:224 - Cliked on Yes button to confirm delete record. 
+2024-04-12 11:56:52 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 11:56:53 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 11:56:55 INFO  CompanyAssetsPage:236 - '84JREdited' Company has been deleted successfully. 
+2024-04-12 11:57:02 INFO  CompanyAssetsPage:126 - Retrive all records 
+2024-04-12 11:57:02 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 11:57:07 INFO  DashBoardPage:75 - Assets is already open. 
+2024-04-12 11:57:12 INFO  DashBoardPage:115 - Click on Field manu item. 
+2024-04-12 11:57:13 INFO  FiledAssetsPage:64 - Wait until loading field list. 
+2024-04-12 11:57:14 INFO  commonLocatorsRepo:95 - Click on Add button. 
+2024-04-12 11:57:14 INFO  commonLocatorsRepo:98 - Half card is present. 
+2024-04-12 11:57:14 INFO  FiledAssetsPage:72 - Enter Filed name. 
+2024-04-12 11:57:14 INFO  FiledAssetsPage:75 - Enter SONRIS Field ID 
+2024-04-12 11:57:14 INFO  FiledAssetsPage:82 - Click on Submit button. 
+2024-04-12 11:57:21 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 11:57:21 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 11:57:23 INFO  FiledAssetsPage:106 - Record searched successfully. 
+2024-04-12 11:57:23 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 11:57:27 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 11:57:28 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 11:57:30 INFO  FiledAssetsPage:106 - Record searched successfully. 
+2024-04-12 11:57:34 INFO  FiledAssetsPage:119 - Retrive all records 
+2024-04-12 11:57:34 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 11:57:37 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 11:57:38 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 11:57:40 INFO  FiledAssetsPage:106 - Record searched successfully. 
+2024-04-12 11:57:40 INFO  commonLocatorsRepo:57 - Waiting until action button is clickable. 
+2024-04-12 11:57:40 INFO  commonLocatorsRepo:60 - Click action button. 
+2024-04-12 11:57:40 INFO  commonLocatorsRepo:65 - Waiting until edit button is clickable. 
+2024-04-12 11:57:40 INFO  commonLocatorsRepo:68 - Action menu presented, Cliked Edit action. 
+2024-04-12 11:57:40 INFO  FiledAssetsPage:144 - Edit Field half screen present. 
+2024-04-12 11:57:41 INFO  FiledAssetsPage:163 - Click on Field name. 
+2024-04-12 11:57:43 INFO  FiledAssetsPage:167 - Clear text box. 
+2024-04-12 11:57:45 INFO  FiledAssetsPage:171 - Input upgreaded Field name. 
+2024-04-12 11:57:45 INFO  FiledAssetsPage:181 - Click on Submit button. 
+2024-04-12 11:57:45 INFO  FiledAssetsPage:187 - 'GDPFI1CJEdited' Field update successfully. 
+2024-04-12 11:57:50 INFO  FiledAssetsPage:119 - Retrive all records 
+2024-04-12 11:57:50 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 11:57:53 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 11:57:54 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 11:57:56 INFO  FiledAssetsPage:106 - Record searched successfully. 
+2024-04-12 11:57:56 INFO  commonLocatorsRepo:57 - Waiting until action button is clickable. 
+2024-04-12 11:57:56 INFO  commonLocatorsRepo:60 - Click action button. 
+2024-04-12 11:57:56 INFO  commonLocatorsRepo:73 - Waiting until delete button is clickable. 
+2024-04-12 11:57:56 INFO  commonLocatorsRepo:76 - Action menu presented, Cliked delete action. 
+2024-04-12 11:57:57 INFO  FiledAssetsPage:203 - Delete confirmation popup is present. 
+2024-04-12 11:57:57 INFO  FiledAssetsPage:219 - Cliked on Yes button to confirm delete record. 
+2024-04-12 11:58:04 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 11:58:05 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 11:58:07 INFO  FiledAssetsPage:229 - 'GDPFI1CJEdited' Field has been deleted successfully. 
+2024-04-12 11:58:11 INFO  FiledAssetsPage:119 - Retrive all records 
+2024-04-12 11:58:11 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 11:58:16 INFO  DashBoardPage:75 - Assets is already open. 
+2024-04-12 11:58:21 INFO  DashBoardPage:115 - Click on Lease Group manu item. 
+2024-04-12 11:58:23 INFO  LeaseGroupAssetsPage:60 - Wait until loading lease list. 
+2024-04-12 11:58:23 INFO  commonLocatorsRepo:95 - Click on Add button. 
+2024-04-12 11:58:23 INFO  commonLocatorsRepo:98 - Half card is present. 
+2024-04-12 11:58:24 INFO  LeaseGroupAssetsPage:70 - Clear the Lease Group text box. 
+2024-04-12 11:58:24 INFO  LeaseGroupAssetsPage:73 - Enter Lease Group name. 
+2024-04-12 11:58:26 INFO  LeaseGroupAssetsPage:86 - Pumper selected. 
+2024-04-12 11:58:28 INFO  LeaseGroupAssetsPage:81 - Company selected. 
+2024-04-12 11:58:28 INFO  LeaseGroupAssetsPage:93 - Click on Submit button. 
+2024-04-12 11:58:36 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 11:58:36 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 11:58:38 INFO  LeaseGroupAssetsPage:118 - Record searched successfully. 
+2024-04-12 11:58:38 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 11:58:42 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 11:58:42 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 11:58:44 INFO  LeaseGroupAssetsPage:118 - Record searched successfully. 
+2024-04-12 11:58:48 INFO  LeaseGroupAssetsPage:132 - Retrive all records 
+2024-04-12 11:58:48 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 11:58:51 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 11:58:52 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 11:58:54 INFO  LeaseGroupAssetsPage:118 - Record searched successfully. 
+2024-04-12 11:58:54 INFO  commonLocatorsRepo:57 - Waiting until action button is clickable. 
+2024-04-12 11:58:54 INFO  commonLocatorsRepo:60 - Click action button. 
+2024-04-12 11:58:54 INFO  commonLocatorsRepo:65 - Waiting until edit button is clickable. 
+2024-04-12 11:58:54 INFO  commonLocatorsRepo:68 - Action menu presented, Cliked Edit action. 
+2024-04-12 11:58:54 INFO  LeaseGroupAssetsPage:159 - Edit Lease Group half screen present. 
+2024-04-12 11:58:54 INFO  LeaseGroupAssetsPage:177 - Click on Lease Group name. 
+2024-04-12 11:58:56 INFO  LeaseGroupAssetsPage:181 - Clear text box. 
+2024-04-12 11:58:59 INFO  LeaseGroupAssetsPage:185 - Input upgreaded Lease Group name. 
+2024-04-12 11:58:59 INFO  LeaseGroupAssetsPage:195 - Click on Submit button. 
+2024-04-12 11:58:59 INFO  LeaseGroupAssetsPage:201 - 'B4XSEdited' Lease Group update successfully. 
+2024-04-12 11:59:03 INFO  LeaseGroupAssetsPage:132 - Retrive all records 
+2024-04-12 11:59:03 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 11:59:07 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 11:59:08 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 11:59:10 INFO  LeaseGroupAssetsPage:118 - Record searched successfully. 
+2024-04-12 11:59:10 INFO  commonLocatorsRepo:57 - Waiting until action button is clickable. 
+2024-04-12 11:59:10 INFO  commonLocatorsRepo:60 - Click action button. 
+2024-04-12 11:59:10 INFO  commonLocatorsRepo:73 - Waiting until delete button is clickable. 
+2024-04-12 11:59:10 INFO  commonLocatorsRepo:76 - Action menu presented, Cliked delete action. 
+2024-04-12 11:59:10 INFO  LeaseGroupAssetsPage:217 - Delete confirmation popup is present. 
+2024-04-12 11:59:10 INFO  LeaseGroupAssetsPage:233 - Cliked on Yes button to confirm delete record. 
+2024-04-12 11:59:17 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 11:59:18 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 11:59:20 INFO  LeaseGroupAssetsPage:243 - 'B4XSEdited' Lease has been deleted successfully. 
+2024-04-12 11:59:24 INFO  LeaseGroupAssetsPage:132 - Retrive all records 
+2024-04-12 11:59:24 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 11:59:29 INFO  DashBoardPage:75 - Assets is already open. 
+2024-04-12 11:59:35 INFO  DashBoardPage:115 - Click on Lease manu item. 
+2024-04-12 11:59:36 INFO  LeaseAssetsPage:66 - Wait until loading LeaseName list. 
+2024-04-12 11:59:37 INFO  commonLocatorsRepo:95 - Click on Add button. 
+2024-04-12 11:59:37 INFO  commonLocatorsRepo:98 - Half card is present. 
+2024-04-12 11:59:37 INFO  LeaseAssetsPage:76 - Clear the Lease text box. 
+2024-04-12 11:59:37 INFO  LeaseAssetsPage:79 - Enter Lease name. 
+2024-04-12 11:59:39 INFO  LeaseAssetsPage:87 - Lease Group selected. 
+2024-04-12 11:59:39 INFO  LeaseAssetsPage:99 - Clear the NRI text box. 
+2024-04-12 11:59:39 INFO  LeaseAssetsPage:102 - Enter NRI Value. 
+2024-04-12 11:59:40 INFO  LeaseAssetsPage:112 - Clear the Tax Rate text box. 
+2024-04-12 11:59:40 INFO  LeaseAssetsPage:115 - Enter Tax Rate. 
+2024-04-12 11:59:42 INFO  LeaseAssetsPage:92 - Field selected. 
+2024-04-12 11:59:42 INFO  LeaseAssetsPage:125 - Click on Submit button. 
+2024-04-12 11:59:48 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 11:59:48 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 11:59:51 INFO  LeaseAssetsPage:149 - Record searched successfully. 
+2024-04-12 11:59:51 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 11:59:54 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 11:59:55 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 11:59:57 INFO  LeaseAssetsPage:149 - Record searched successfully. 
+2024-04-12 12:00:00 INFO  LeaseAssetsPage:163 - Retrive all records 
+2024-04-12 12:00:00 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 12:00:03 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 12:00:04 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 12:00:06 INFO  LeaseAssetsPage:149 - Record searched successfully. 
+2024-04-12 12:00:06 INFO  commonLocatorsRepo:57 - Waiting until action button is clickable. 
+2024-04-12 12:00:06 INFO  commonLocatorsRepo:60 - Click action button. 
+2024-04-12 12:00:06 INFO  commonLocatorsRepo:65 - Waiting until edit button is clickable. 
+2024-04-12 12:00:07 INFO  commonLocatorsRepo:68 - Action menu presented, Cliked Edit action. 
+2024-04-12 12:00:07 INFO  LeaseAssetsPage:190 - Edit Lease half screen present. 
+2024-04-12 12:00:07 INFO  LeaseAssetsPage:208 - Click on Lease name. 
+2024-04-12 12:00:09 INFO  LeaseAssetsPage:212 - Clear text box. 
+2024-04-12 12:00:11 INFO  LeaseAssetsPage:216 - Input upgreaded Lease name. 
+2024-04-12 12:00:11 INFO  LeaseAssetsPage:226 - Click on Submit button. 
+2024-04-12 12:00:12 INFO  LeaseAssetsPage:232 - 'GIZTEdited' Lease update successfully. 
+2024-04-12 12:00:16 INFO  LeaseAssetsPage:163 - Retrive all records 
+2024-04-12 12:00:16 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 12:00:19 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 12:00:20 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 12:00:22 INFO  LeaseAssetsPage:149 - Record searched successfully. 
+2024-04-12 12:00:22 INFO  commonLocatorsRepo:57 - Waiting until action button is clickable. 
+2024-04-12 12:00:22 INFO  commonLocatorsRepo:60 - Click action button. 
+2024-04-12 12:00:22 INFO  commonLocatorsRepo:73 - Waiting until delete button is clickable. 
+2024-04-12 12:00:23 INFO  commonLocatorsRepo:76 - Action menu presented, Cliked delete action. 
+2024-04-12 12:00:23 INFO  LeaseAssetsPage:248 - Delete confirmation popup is present. 
+2024-04-12 12:00:23 INFO  LeaseAssetsPage:264 - Cliked on Yes button to confirm delete record. 
+2024-04-12 12:00:31 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 12:00:32 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 12:00:34 INFO  LeaseAssetsPage:274 - 'GIZTEdited' Lease has been deleted successfully. 
+2024-04-12 12:00:38 INFO  LeaseAssetsPage:163 - Retrive all records 
+2024-04-12 12:00:38 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 12:00:43 INFO  DashBoardPage:75 - Assets is already open. 
+2024-04-12 12:00:48 INFO  DashBoardPage:115 - Click on Tank Battery manu item. 
+2024-04-12 12:00:51 INFO  TankBatteryAssetsPage:65 - Wait until loading Sublease list. 
+2024-04-12 12:00:51 INFO  commonLocatorsRepo:95 - Click on Add button. 
+2024-04-12 12:00:51 INFO  commonLocatorsRepo:98 - Half card is present. 
+2024-04-12 12:00:51 INFO  TankBatteryAssetsPage:75 - Clear the Tank Battery text box. 
+2024-04-12 12:00:51 INFO  TankBatteryAssetsPage:78 - Enter Tank Battery name. 
+2024-04-12 12:00:53 INFO  TankBatteryAssetsPage:86 - Lease selected. 
+2024-04-12 12:00:54 INFO  TankBatteryAssetsPage:99 - Clear the Latitude text box. 
+2024-04-12 12:00:54 INFO  TankBatteryAssetsPage:102 - Enter Latitude Value. 
+2024-04-12 12:00:54 INFO  TankBatteryAssetsPage:112 - Clear the Longitude text box. 
+2024-04-12 12:00:54 INFO  TankBatteryAssetsPage:115 - Enter Longitude value. 
+2024-04-12 12:00:54 INFO  TankBatteryAssetsPage:125 - Click on Submit button. 
+2024-04-12 12:01:00 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 12:01:01 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 12:01:03 INFO  TankBatteryAssetsPage:150 - Record searched successfully. 
+2024-04-12 12:01:03 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 12:01:06 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 12:01:07 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 12:01:09 INFO  TankBatteryAssetsPage:150 - Record searched successfully. 
+2024-04-12 12:01:12 INFO  TankBatteryAssetsPage:164 - Retrive all records 
+2024-04-12 12:01:12 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 12:01:16 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 12:01:16 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 12:01:18 INFO  TankBatteryAssetsPage:150 - Record searched successfully. 
+2024-04-12 12:01:18 INFO  commonLocatorsRepo:57 - Waiting until action button is clickable. 
+2024-04-12 12:01:18 INFO  commonLocatorsRepo:60 - Click action button. 
+2024-04-12 12:01:18 INFO  commonLocatorsRepo:65 - Waiting until edit button is clickable. 
+2024-04-12 12:01:19 INFO  commonLocatorsRepo:68 - Action menu presented, Cliked Edit action. 
+2024-04-12 12:01:19 INFO  TankBatteryAssetsPage:191 - Edit Tank Battery half screen present. 
+2024-04-12 12:01:19 INFO  TankBatteryAssetsPage:210 - Click on Tank Battery name. 
+2024-04-12 12:01:21 INFO  TankBatteryAssetsPage:214 - Clear text box. 
+2024-04-12 12:01:23 INFO  TankBatteryAssetsPage:218 - Input upgreaded Tank Battery name. 
+2024-04-12 12:01:23 INFO  TankBatteryAssetsPage:228 - Click on Submit button. 
+2024-04-12 12:01:24 INFO  TankBatteryAssetsPage:234 - '1ZPAEdited' Tank Battery update successfully. 
+2024-04-12 12:01:28 INFO  TankBatteryAssetsPage:164 - Retrive all records 
+2024-04-12 12:01:28 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 12:01:31 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 12:01:32 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 12:01:34 INFO  TankBatteryAssetsPage:150 - Record searched successfully. 
+2024-04-12 12:01:34 INFO  commonLocatorsRepo:57 - Waiting until action button is clickable. 
+2024-04-12 12:01:34 INFO  commonLocatorsRepo:60 - Click action button. 
+2024-04-12 12:01:34 INFO  commonLocatorsRepo:73 - Waiting until delete button is clickable. 
+2024-04-12 12:01:35 INFO  commonLocatorsRepo:76 - Action menu presented, Cliked delete action. 
+2024-04-12 12:01:35 INFO  TankBatteryAssetsPage:250 - Delete confirmation popup is present. 
+2024-04-12 12:01:35 INFO  TankBatteryAssetsPage:266 - Cliked on Yes button to confirm delete record. 
+2024-04-12 12:01:42 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 12:01:43 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 12:01:45 INFO  TankBatteryAssetsPage:277 - '1ZPAEdited' Tank Battery has been deleted successfully. 
+2024-04-12 12:01:49 INFO  TankBatteryAssetsPage:164 - Retrive all records 
+2024-04-12 12:01:49 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 12:01:54 INFO  DashBoardPage:75 - Assets is already open. 
+2024-04-12 12:02:00 INFO  DashBoardPage:115 - Click on Tank manu item. 
+2024-04-12 12:02:02 INFO  TankAssetsPage:74 - Wait until loading tank list. 
+2024-04-12 12:02:02 INFO  commonLocatorsRepo:119 - Click on Add button. 
+2024-04-12 12:02:02 INFO  commonLocatorsRepo:122 - Add screen presented. 
+2024-04-12 12:02:04 INFO  TankAssetsPage:95 - Enter tank name. 
+2024-04-12 12:02:07 INFO  TankAssetsPage:100 - Select tank status 
+2024-04-12 12:02:09 INFO  TankAssetsPage:105 - Select associated tank battery. 
+2024-04-12 12:02:09 INFO  TankAssetsPage:110 - Enter max capacity. 
+2024-04-12 12:02:09 INFO  TankAssetsPage:115 - Enter conversion rate. 
+2024-04-12 12:02:09 INFO  TankAssetsPage:120 - Enter sequence order. 
+2024-04-12 12:02:09 INFO  TankAssetsPage:125 - Enter height. 
+2024-04-12 12:02:09 INFO  TankAssetsPage:130 - Enter bottom. 
+2024-04-12 12:02:10 INFO  TankAssetsPage:135 - Enter latitude. 
+2024-04-12 12:02:10 INFO  TankAssetsPage:140 - Enter longtitude. 
+2024-04-12 12:02:10 INFO  TankAssetsPage:146 - Clicked submit button. 
+2024-04-12 12:02:19 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 12:02:20 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 12:02:27 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 12:02:32 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 12:02:38 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 12:02:43 INFO  DashBoardPage:75 - Assets is already open. 
+2024-04-12 12:02:48 INFO  DashBoardPage:115 - Click on Well manu item. 
+2024-04-12 12:03:02 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 12:03:02 INFO  commonLocatorsRepo:57 - Waiting until action button is clickable. 
+2024-04-12 12:03:02 INFO  commonLocatorsRepo:60 - Click action button. 
+2024-04-12 12:03:02 INFO  WellAssetsPage:161 - Clicked on action button. 
+2024-04-12 12:03:02 INFO  commonLocatorsRepo:65 - Waiting until edit button is clickable. 
+2024-04-12 12:03:02 INFO  commonLocatorsRepo:68 - Action menu presented, Cliked Edit action. 
+2024-04-12 12:03:02 INFO  WellAssetsPage:164 - Clicked on edit action menu. 
+2024-04-12 12:03:03 INFO  WellAssetsPage:166 - Edit well screen present. 
+2024-04-12 12:03:05 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 12:03:11 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 12:03:16 INFO  DashBoardPage:75 - Assets is already open. 
+2024-04-12 12:03:21 INFO  DashBoardPage:115 - Click on Operator manu item. 
+2024-04-12 12:03:22 INFO  LeaseAssetsPage:63 - Wait until loading operator list. 
+2024-04-12 12:03:22 INFO  commonLocatorsRepo:95 - Click on Add button. 
+2024-04-12 12:03:22 INFO  commonLocatorsRepo:98 - Half card is present. 
+2024-04-12 12:03:22 INFO  LeaseAssetsPage:72 - Clear the operator text box. 
+2024-04-12 12:03:22 INFO  LeaseAssetsPage:75 - Enter operator name. 
+2024-04-12 12:03:23 INFO  LeaseAssetsPage:85 - Clear the operator phone text box. 
+2024-04-12 12:03:23 INFO  LeaseAssetsPage:88 - Enter operator Value. 
+2024-04-12 12:03:23 INFO  LeaseAssetsPage:100 - Clear the operator email text box. 
+2024-04-12 12:03:23 INFO  LeaseAssetsPage:103 - Enter email Value. 
+2024-04-12 12:03:23 INFO  LeaseAssetsPage:113 - Clear the operator address text box. 
+2024-04-12 12:03:23 INFO  LeaseAssetsPage:116 - Enter operator address. 
+2024-04-12 12:03:26 INFO  LeaseAssetsPage:124 - Status selected. 
+2024-04-12 12:03:26 INFO  LeaseAssetsPage:131 - Click on Submit button. 
+2024-04-12 12:03:30 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 12:03:30 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 12:03:33 INFO  LeaseAssetsPage:159 - Record searched successfully. 
+2024-04-12 12:03:33 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 12:03:37 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 12:03:38 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 12:03:40 INFO  LeaseAssetsPage:159 - Record searched successfully. 
+2024-04-12 12:03:44 INFO  LeaseAssetsPage:173 - Retrive all records 
+2024-04-12 12:03:44 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 12:03:47 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 12:03:48 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 12:03:50 INFO  LeaseAssetsPage:159 - Record searched successfully. 
+2024-04-12 12:03:50 INFO  commonLocatorsRepo:57 - Waiting until action button is clickable. 
+2024-04-12 12:03:50 INFO  commonLocatorsRepo:60 - Click action button. 
+2024-04-12 12:03:50 INFO  commonLocatorsRepo:65 - Waiting until edit button is clickable. 
+2024-04-12 12:03:51 INFO  commonLocatorsRepo:68 - Action menu presented, Cliked Edit action. 
+2024-04-12 12:03:51 INFO  LeaseAssetsPage:200 - Edit operator half screen present. 
+2024-04-12 12:03:51 INFO  LeaseAssetsPage:218 - Click on operator name. 
+2024-04-12 12:03:53 INFO  LeaseAssetsPage:222 - Clear text box. 
+2024-04-12 12:03:55 INFO  LeaseAssetsPage:226 - Input upgreaded operator name. 
+2024-04-12 12:03:55 INFO  LeaseAssetsPage:236 - Click on Submit button. 
+2024-04-12 12:03:56 INFO  LeaseAssetsPage:241 - '6QHFXG2J4EEdited' Operator update successfully. 
+2024-04-12 12:04:01 INFO  LeaseAssetsPage:173 - Retrive all records 
+2024-04-12 12:04:01 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 12:04:04 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 12:04:05 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 12:04:07 INFO  LeaseAssetsPage:159 - Record searched successfully. 
+2024-04-12 12:04:07 INFO  commonLocatorsRepo:57 - Waiting until action button is clickable. 
+2024-04-12 12:04:07 INFO  commonLocatorsRepo:60 - Click action button. 
+2024-04-12 12:04:07 INFO  commonLocatorsRepo:73 - Waiting until delete button is clickable. 
+2024-04-12 12:04:07 INFO  commonLocatorsRepo:76 - Action menu presented, Cliked delete action. 
+2024-04-12 12:04:08 INFO  LeaseAssetsPage:257 - Delete confirmation popup is present. 
+2024-04-12 12:04:08 INFO  LeaseAssetsPage:273 - Cliked on Yes button to confirm delete record. 
+2024-04-12 12:04:15 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 12:04:16 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 12:04:18 INFO  LeaseAssetsPage:283 - '6QHFXG2J4EEdited' Operator has been deleted successfully. 
+2024-04-12 12:04:23 INFO  LeaseAssetsPage:173 - Retrive all records 

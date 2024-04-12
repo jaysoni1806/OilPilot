@@ -3,6 +3,7 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.Listeners.ExtentReportListener"/>
+    <listener class-name="com.Listeners.EmailableListener"/>
   </listeners>
   <test thread-count="5" name="OilPilot(failed)">
     <classes>
@@ -11,11 +12,27 @@
           <include name="seperateCase"/>
           <include name="initializeExtentReport"/>
           <include name="assignObjectForClass"/>
+          <include name="closeBrowser"/>
+          <include name="deleteWell"/>
+          <include name="editWell"/>
           <include name="prerequisite"/>
           <include name="flush"/>
           <include name="createWell"/>
         </methods>
       </class> <!-- testPackage.WellAssetsTest -->
+      <class name="testPackage.TankAssetsTest">
+        <methods>
+          <include name="seperateCase"/>
+          <include name="initializeExtentReport"/>
+          <include name="assignObjectForClass"/>
+          <include name="deleteTank"/>
+          <include name="closeBrowser"/>
+          <include name="prerequisite"/>
+          <include name="flush"/>
+          <include name="createTank"/>
+          <include name="editTank"/>
+        </methods>
+      </class> <!-- testPackage.TankAssetsTest -->
     </classes>
   </test> <!-- OilPilot(failed) -->
 </suite> <!-- Failed suite [Suite] -->

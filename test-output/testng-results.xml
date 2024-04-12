@@ -1,64 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="8" passed="4" failed="0" skipped="0">
+<testng-results ignored="32" total="63" passed="25" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-11T14:59:01 IST" name="Suite" finished-at="2024-04-11T15:00:47 IST" duration-ms="105993">
+  <suite started-at="2024-04-12T11:55:35 IST" name="Suite" finished-at="2024-04-12T12:04:24 IST" duration-ms="528437">
     <groups>
     </groups>
-    <test started-at="2024-04-11T14:59:01 IST" name="OilPilot" finished-at="2024-04-11T15:00:47 IST" duration-ms="105993">
-      <class name="testPackage.LoginTest">
-        <test-method is-config="true" signature="prerequisite()[pri:0, instance:testPackage.LoginTest@63376bed]" started-at="2024-04-11T14:58:48 IST" name="prerequisite" finished-at="2024-04-11T14:59:01 IST" duration-ms="13349" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- prerequisite -->
-        <test-method is-config="true" signature="initializeExtentReport()[pri:0, instance:testPackage.LoginTest@63376bed]" started-at="2024-04-11T14:59:01 IST" name="initializeExtentReport" finished-at="2024-04-11T14:59:02 IST" duration-ms="399" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initializeExtentReport -->
-        <test-method is-config="true" signature="assignObjectForClass()[pri:0, instance:testPackage.LoginTest@63376bed]" started-at="2024-04-11T14:59:02 IST" name="assignObjectForClass" finished-at="2024-04-11T14:59:02 IST" duration-ms="117" status="PASS">
+    <test started-at="2024-04-12T11:55:35 IST" name="OilPilot" finished-at="2024-04-12T12:04:24 IST" duration-ms="528437">
+      <class name="testPackage.TankBatteryAssetsTest">
+        <test-method is-config="true" signature="assignObjectForClass()[pri:0, instance:testPackage.TankBatteryAssetsTest@3e8c3cb]" started-at="2024-04-12T12:00:38 IST" name="assignObjectForClass" finished-at="2024-04-12T12:00:38 IST" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assignObjectForClass -->
-        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.LoginTest@63376bed]" started-at="2024-04-11T14:59:02 IST" name="seperateCase" finished-at="2024-04-11T14:59:02 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.TankBatteryAssetsTest@3e8c3cb]" started-at="2024-04-12T12:00:38 IST" name="seperateCase" finished-at="2024-04-12T12:00:38 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seperateCase -->
-        <test-method signature="validLoginTest(java.util.Map)[pri:0, instance:testPackage.LoginTest@63376bed]" started-at="2024-04-11T14:59:02 IST" name="validLoginTest" description="Test Valid Login" data-provider="LoginTestData" finished-at="2024-04-11T14:59:24 IST" duration-ms="22028" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{username=jay.soni+manager@openxcell.com, password=QA@12345}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="createTankBattery()[pri:0, instance:testPackage.TankBatteryAssetsTest@3e8c3cb]" started-at="2024-04-12T12:00:38 IST" name="createTankBattery" description="Test create Tank Battery assets." finished-at="2024-04-12T12:01:03 IST" duration-ms="24639" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validLoginTest -->
-        <test-method is-config="true" signature="flush()[pri:0, instance:testPackage.LoginTest@63376bed]" started-at="2024-04-11T15:00:47 IST" name="flush" finished-at="2024-04-11T15:00:47 IST" duration-ms="515" status="PASS">
+        </test-method> <!-- createTankBattery -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.TankBatteryAssetsTest@3e8c3cb]" started-at="2024-04-12T12:01:03 IST" name="seperateCase" finished-at="2024-04-12T12:01:03 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- flush -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testPackage.LoginTest@63376bed]" started-at="2024-04-11T15:00:48 IST" name="closeBrowser" finished-at="2024-04-11T15:00:48 IST" duration-ms="1" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- seperateCase -->
+        <test-method signature="searchTankBattery()[pri:1, instance:testPackage.TankBatteryAssetsTest@3e8c3cb]" started-at="2024-04-12T12:01:03 IST" name="searchTankBattery" description="Test Search Tank Battery." finished-at="2024-04-12T12:01:12 IST" duration-ms="9775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchTankBattery -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.TankBatteryAssetsTest@3e8c3cb]" started-at="2024-04-12T12:01:12 IST" name="seperateCase" finished-at="2024-04-12T12:01:12 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="EditTankBattery()[pri:2, instance:testPackage.TankBatteryAssetsTest@3e8c3cb]" started-at="2024-04-12T12:01:12 IST" name="EditTankBattery" description="Test edit Tank Battery assets." finished-at="2024-04-12T12:01:28 IST" duration-ms="15326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditTankBattery -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.TankBatteryAssetsTest@3e8c3cb]" started-at="2024-04-12T12:01:28 IST" name="seperateCase" finished-at="2024-04-12T12:01:28 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="deleteSublease()[pri:3, instance:testPackage.TankBatteryAssetsTest@3e8c3cb]" started-at="2024-04-12T12:01:28 IST" name="deleteSublease" description="Test Delete Tank Battery assets." finished-at="2024-04-12T12:01:49 IST" duration-ms="21543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteSublease -->
+      </class> <!-- testPackage.TankBatteryAssetsTest -->
+      <class name="testPackage.FieldAssetsTest">
+        <test-method is-config="true" signature="assignObjectForClass()[pri:0, instance:testPackage.FieldAssetsTest@248e319b]" started-at="2024-04-12T11:57:02 IST" name="assignObjectForClass" finished-at="2024-04-12T11:57:02 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assignObjectForClass -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.FieldAssetsTest@248e319b]" started-at="2024-04-12T11:57:02 IST" name="seperateCase" finished-at="2024-04-12T11:57:02 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="createField()[pri:0, instance:testPackage.FieldAssetsTest@248e319b]" started-at="2024-04-12T11:57:02 IST" name="createField" description="Test create Field assets." finished-at="2024-04-12T11:57:23 IST" duration-ms="21494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createField -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.FieldAssetsTest@248e319b]" started-at="2024-04-12T11:57:23 IST" name="seperateCase" finished-at="2024-04-12T11:57:23 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="searchFleld()[pri:1, instance:testPackage.FieldAssetsTest@248e319b]" started-at="2024-04-12T11:57:23 IST" name="searchFleld" description="Test Search Field." finished-at="2024-04-12T11:57:34 IST" duration-ms="10628" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchFleld -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.FieldAssetsTest@248e319b]" started-at="2024-04-12T11:57:34 IST" name="seperateCase" finished-at="2024-04-12T11:57:34 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="editField()[pri:2, instance:testPackage.FieldAssetsTest@248e319b]" started-at="2024-04-12T11:57:34 IST" name="editField" description="Test edit Field assets." finished-at="2024-04-12T11:57:50 IST" duration-ms="15840" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editField -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.FieldAssetsTest@248e319b]" started-at="2024-04-12T11:57:50 IST" name="seperateCase" finished-at="2024-04-12T11:57:50 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="deleteField()[pri:3, instance:testPackage.FieldAssetsTest@248e319b]" started-at="2024-04-12T11:57:50 IST" name="deleteField" description="Test Delete Field assets." finished-at="2024-04-12T11:58:11 IST" duration-ms="21057" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteField -->
+      </class> <!-- testPackage.FieldAssetsTest -->
+      <class name="testPackage.CompanyAssetsTest">
+        <test-method is-config="true" signature="assignObjectForClass()[pri:0, instance:testPackage.CompanyAssetsTest@76b1e9b8]" started-at="2024-04-12T11:55:52 IST" name="assignObjectForClass" finished-at="2024-04-12T11:55:52 IST" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assignObjectForClass -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.CompanyAssetsTest@76b1e9b8]" started-at="2024-04-12T11:55:52 IST" name="seperateCase" finished-at="2024-04-12T11:55:52 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="createCompany()[pri:0, instance:testPackage.CompanyAssetsTest@76b1e9b8]" started-at="2024-04-12T11:55:52 IST" name="createCompany" description="Test create Company assets." finished-at="2024-04-12T11:56:08 IST" duration-ms="16245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCompany -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.CompanyAssetsTest@76b1e9b8]" started-at="2024-04-12T11:56:08 IST" name="seperateCase" finished-at="2024-04-12T11:56:08 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="searchCompany()[pri:1, instance:testPackage.CompanyAssetsTest@76b1e9b8]" started-at="2024-04-12T11:56:08 IST" name="searchCompany" description="Test Search company." finished-at="2024-04-12T11:56:20 IST" duration-ms="12438" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchCompany -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.CompanyAssetsTest@76b1e9b8]" started-at="2024-04-12T11:56:20 IST" name="seperateCase" finished-at="2024-04-12T11:56:20 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="editCompany()[pri:2, instance:testPackage.CompanyAssetsTest@76b1e9b8]" started-at="2024-04-12T11:56:20 IST" name="editCompany" description="Test Edit Company assets." finished-at="2024-04-12T11:56:38 IST" duration-ms="17877" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editCompany -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.CompanyAssetsTest@76b1e9b8]" started-at="2024-04-12T11:56:38 IST" name="seperateCase" finished-at="2024-04-12T11:56:38 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="deleteCompany()[pri:3, instance:testPackage.CompanyAssetsTest@76b1e9b8]" started-at="2024-04-12T11:56:38 IST" name="deleteCompany" description="Test Delete Company assets." finished-at="2024-04-12T11:57:02 IST" duration-ms="23468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteCompany -->
+      </class> <!-- testPackage.CompanyAssetsTest -->
+      <class name="testPackage.TankAssetsTest">
+        <test-method is-config="true" signature="assignObjectForClass()[pri:0, instance:testPackage.TankAssetsTest@563f38c4]" started-at="2024-04-12T12:01:49 IST" name="assignObjectForClass" finished-at="2024-04-12T12:01:49 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assignObjectForClass -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.TankAssetsTest@563f38c4]" started-at="2024-04-12T12:01:49 IST" name="seperateCase" finished-at="2024-04-12T12:01:49 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="createTank()[pri:0, instance:testPackage.TankAssetsTest@563f38c4]" started-at="2024-04-12T12:01:49 IST" name="createTank" description="Test create tank assets." finished-at="2024-04-12T12:02:27 IST" duration-ms="37464" status="FAIL">
+          <exception class="com.commonUtil.ApplicationException">
             <message>
-              <![CDATA[The following asserts failed:
-expected [We have successfully updated the Tank.] but found [We have successfully updated the Well.]]]>
+              <![CDATA[Searched record is not present.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [We have successfully updated the Tank.] but found [We have successfully updated the Well.]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at testBase.TestBase.closeBrowser(TestBase.java:100)
+              <![CDATA[com.commonUtil.ApplicationException: Searched record is not present.
+at pageClass.TankAssetsPage.verifySearchedTankIsExistsOrNot(TankAssetsPage.java:200)
+at pageClass.TankAssetsPage.clickOnSubmitAndVerifyTankIsCreateOrNot(TankAssetsPage.java:153)
+at testPackage.TankAssetsTest.createTank(TankAssetsTest.java:26)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:344)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
 at org.testng.SuiteRunner.run(SuiteRunner.java:276)
 at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
 at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
@@ -71,41 +169,521 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- com.commonUtil.ApplicationException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTank -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.TankAssetsTest@563f38c4]" started-at="2024-04-12T12:02:27 IST" name="seperateCase" finished-at="2024-04-12T12:02:27 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="editTank()[pri:1, instance:testPackage.TankAssetsTest@563f38c4]" started-at="2024-04-12T12:02:27 IST" name="editTank" description="Test edit tank assets." finished-at="2024-04-12T12:02:32 IST" duration-ms="5055" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'MuiDataGrid-row')]//div[@data-field='actions']/button"}
+  (Session info: chrome=123.0.6312.122)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [20545f211e84c4d44ffcd7407be600ae, findElement {using=xpath, value=//div[contains(@class,'MuiDataGrid-row')]//div[@data-field='actions']/button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.122, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: /var/folders/p2/q2yjzrxs10s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49827}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49827/devtoo..., se:cdpVersion: 123.0.6312.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 20545f211e84c4d44ffcd7407be600ae]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'MuiDataGrid-row')]//div[@data-field='actions']/button"}
+  (Session info: chrome=123.0.6312.122)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [20545f211e84c4d44ffcd7407be600ae, findElement {using=xpath, value=//div[contains(@class,'MuiDataGrid-row')]//div[@data-field='actions']/button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.122, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: /var/folders/p2/q2yjzrxs10s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49827}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49827/devtoo..., se:cdpVersion: 123.0.6312.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 20545f211e84c4d44ffcd7407be600ae
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy22.isDisplayed(Unknown Source)
+at pageClass.TankAssetsPage.clickEdit_actionUnderThePerent_actionandVerifyEditTankScreenIsPresentOrNot(TankAssetsPage.java:166)
+at testPackage.TankAssetsTest.editTank(TankAssetsTest.java:32)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editTank -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.TankAssetsTest@563f38c4]" started-at="2024-04-12T12:02:32 IST" name="seperateCase" finished-at="2024-04-12T12:02:32 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="deleteTank()[pri:2, instance:testPackage.TankAssetsTest@563f38c4]" started-at="2024-04-12T12:02:32 IST" name="deleteTank" description="Test delete tank assets." finished-at="2024-04-12T12:02:38 IST" duration-ms="5042" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'MuiDataGrid-row')]//div[@data-field='actions']/button"}
+  (Session info: chrome=123.0.6312.122)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [20545f211e84c4d44ffcd7407be600ae, findElement {using=xpath, value=//div[contains(@class,'MuiDataGrid-row')]//div[@data-field='actions']/button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.122, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: /var/folders/p2/q2yjzrxs10s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49827}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49827/devtoo..., se:cdpVersion: 123.0.6312.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 20545f211e84c4d44ffcd7407be600ae]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'MuiDataGrid-row')]//div[@data-field='actions']/button"}
+  (Session info: chrome=123.0.6312.122)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [20545f211e84c4d44ffcd7407be600ae, findElement {using=xpath, value=//div[contains(@class,'MuiDataGrid-row')]//div[@data-field='actions']/button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.122, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: /var/folders/p2/q2yjzrxs10s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49827}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49827/devtoo..., se:cdpVersion: 123.0.6312.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 20545f211e84c4d44ffcd7407be600ae
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy22.isDisplayed(Unknown Source)
+at pageClass.TankAssetsPage.clickDelete_actionUnderThePerent_actionandVerifyDeleteConfirmationpopupIsPresentOrNot(TankAssetsPage.java:234)
+at testPackage.TankAssetsTest.deleteTank(TankAssetsTest.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTank -->
+      </class> <!-- testPackage.TankAssetsTest -->
+      <class name="testPackage.LeaseAssetsTest">
+        <test-method is-config="true" signature="assignObjectForClass()[pri:0, instance:testPackage.LeaseAssetsTest@793f29ff]" started-at="2024-04-12T11:59:24 IST" name="assignObjectForClass" finished-at="2024-04-12T11:59:24 IST" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assignObjectForClass -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.LeaseAssetsTest@793f29ff]" started-at="2024-04-12T11:59:24 IST" name="seperateCase" finished-at="2024-04-12T11:59:24 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="createLease()[pri:0, instance:testPackage.LeaseAssetsTest@793f29ff]" started-at="2024-04-12T11:59:24 IST" name="createLease" description="Test create Lease assets." finished-at="2024-04-12T11:59:51 IST" duration-ms="26378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createLease -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.LeaseAssetsTest@793f29ff]" started-at="2024-04-12T11:59:51 IST" name="seperateCase" finished-at="2024-04-12T11:59:51 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="searchLease()[pri:1, instance:testPackage.LeaseAssetsTest@793f29ff]" started-at="2024-04-12T11:59:51 IST" name="searchLease" description="Test Search Lease." finished-at="2024-04-12T12:00:00 IST" duration-ms="9803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchLease -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.LeaseAssetsTest@793f29ff]" started-at="2024-04-12T12:00:00 IST" name="seperateCase" finished-at="2024-04-12T12:00:00 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="EditLease()[pri:2, instance:testPackage.LeaseAssetsTest@793f29ff]" started-at="2024-04-12T12:00:00 IST" name="EditLease" description="Test edit Lease assets." finished-at="2024-04-12T12:00:16 IST" duration-ms="15460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditLease -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.LeaseAssetsTest@793f29ff]" started-at="2024-04-12T12:00:16 IST" name="seperateCase" finished-at="2024-04-12T12:00:16 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="deleteLease()[pri:3, instance:testPackage.LeaseAssetsTest@793f29ff]" started-at="2024-04-12T12:00:16 IST" name="deleteLease" description="Test Delete Lease assets." finished-at="2024-04-12T12:00:38 IST" duration-ms="22183" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteLease -->
+      </class> <!-- testPackage.LeaseAssetsTest -->
+      <class name="testPackage.OperatorAssetsTest">
+        <test-method is-config="true" signature="assignObjectForClass()[pri:0, instance:testPackage.OperatorAssetsTest@54422e18]" started-at="2024-04-12T12:03:11 IST" name="assignObjectForClass" finished-at="2024-04-12T12:03:11 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assignObjectForClass -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.OperatorAssetsTest@54422e18]" started-at="2024-04-12T12:03:11 IST" name="seperateCase" finished-at="2024-04-12T12:03:11 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="createOperator()[pri:0, instance:testPackage.OperatorAssetsTest@54422e18]" started-at="2024-04-12T12:03:11 IST" name="createOperator" description="Test create Operator assets." finished-at="2024-04-12T12:03:33 IST" duration-ms="21817" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOperator -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.OperatorAssetsTest@54422e18]" started-at="2024-04-12T12:03:33 IST" name="seperateCase" finished-at="2024-04-12T12:03:33 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="searchOperator()[pri:1, instance:testPackage.OperatorAssetsTest@54422e18]" started-at="2024-04-12T12:03:33 IST" name="searchOperator" description="Test search operator." finished-at="2024-04-12T12:03:44 IST" duration-ms="11780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchOperator -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.OperatorAssetsTest@54422e18]" started-at="2024-04-12T12:03:44 IST" name="seperateCase" finished-at="2024-04-12T12:03:44 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="editOperator()[pri:2, instance:testPackage.OperatorAssetsTest@54422e18]" started-at="2024-04-12T12:03:44 IST" name="editOperator" description="Test edit operator assets." finished-at="2024-04-12T12:04:01 IST" duration-ms="16311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editOperator -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.OperatorAssetsTest@54422e18]" started-at="2024-04-12T12:04:01 IST" name="seperateCase" finished-at="2024-04-12T12:04:01 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="deleteOperator()[pri:3, instance:testPackage.OperatorAssetsTest@54422e18]" started-at="2024-04-12T12:04:01 IST" name="deleteOperator" description="Test delete operator assets." finished-at="2024-04-12T12:04:23 IST" duration-ms="22347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteOperator -->
+      </class> <!-- testPackage.OperatorAssetsTest -->
+      <class name="testPackage.LoginTest">
+        <test-method is-config="true" signature="prerequisite()[pri:0, instance:testPackage.LoginTest@2eae8e6e]" started-at="2024-04-12T11:55:27 IST" name="prerequisite" finished-at="2024-04-12T11:55:35 IST" duration-ms="7951" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prerequisite -->
+        <test-method is-config="true" signature="initializeExtentReport()[pri:0, instance:testPackage.LoginTest@2eae8e6e]" started-at="2024-04-12T11:55:35 IST" name="initializeExtentReport" finished-at="2024-04-12T11:55:36 IST" duration-ms="301" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeExtentReport -->
+        <test-method is-config="true" signature="assignObjectForClass()[pri:0, instance:testPackage.LoginTest@2eae8e6e]" started-at="2024-04-12T11:55:36 IST" name="assignObjectForClass" finished-at="2024-04-12T11:55:36 IST" duration-ms="104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assignObjectForClass -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.LoginTest@2eae8e6e]" started-at="2024-04-12T11:55:36 IST" name="seperateCase" finished-at="2024-04-12T11:55:36 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="validLoginTest(java.util.Map)[pri:0, instance:testPackage.LoginTest@2eae8e6e]" started-at="2024-04-12T11:55:36 IST" name="validLoginTest" description="Test Valid Login" data-provider="LoginTestData" finished-at="2024-04-12T11:55:52 IST" duration-ms="15754" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{username=jay.soni+manager@openxcell.com, password=QA@12345}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginTest -->
+        <test-method is-config="true" signature="flush()[pri:0, instance:testPackage.LoginTest@2eae8e6e]" started-at="2024-04-12T12:04:23 IST" name="flush" finished-at="2024-04-12T12:04:24 IST" duration-ms="664" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testPackage.LoginTest@2eae8e6e]" started-at="2024-04-12T12:04:25 IST" name="closeBrowser" finished-at="2024-04-12T12:04:25 IST" duration-ms="198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- testPackage.LoginTest -->
       <class name="testPackage.WellAssetsTest">
-        <test-method is-config="true" signature="assignObjectForClass()[pri:0, instance:testPackage.WellAssetsTest@298a5e20]" started-at="2024-04-11T14:59:24 IST" name="assignObjectForClass" finished-at="2024-04-11T14:59:24 IST" duration-ms="26" status="PASS">
+        <test-method is-config="true" signature="assignObjectForClass()[pri:0, instance:testPackage.WellAssetsTest@543295b0]" started-at="2024-04-12T12:02:38 IST" name="assignObjectForClass" finished-at="2024-04-12T12:02:38 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assignObjectForClass -->
-        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.WellAssetsTest@298a5e20]" started-at="2024-04-11T14:59:24 IST" name="seperateCase" finished-at="2024-04-11T14:59:24 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.WellAssetsTest@543295b0]" started-at="2024-04-12T12:02:38 IST" name="seperateCase" finished-at="2024-04-12T12:02:38 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seperateCase -->
-        <test-method signature="createWell()[pri:0, instance:testPackage.WellAssetsTest@298a5e20]" started-at="2024-04-11T14:59:24 IST" name="createWell" description="Test create well assets." finished-at="2024-04-11T15:00:09 IST" duration-ms="44728" status="PASS">
+        <test-method signature="createWell()[pri:0, instance:testPackage.WellAssetsTest@543295b0]" started-at="2024-04-12T12:02:38 IST" name="createWell" description="Test create well assets." finished-at="2024-04-12T12:03:02 IST" duration-ms="23943" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of all [[[ChromeDriver: chrome on mac (20545f211e84c4d44ffcd7407be600ae)] -> xpath: //div[contains(@class,'MuiDataGrid-row')]], [[ChromeDriver: chrome on mac (20545f211e84c4d44ffcd7407be600ae)] -> xpath: //div[contains(@class,'MuiDataGrid-row')]], [[ChromeDriver: chrome on mac (20545f211e84c4d44ffcd7407be600ae)] -> xpath: //div[contains(@class,'MuiDataGrid-row')]], [[ChromeDriver: chrome on mac (20545f211e84c4d44ffcd7407be600ae)] -> xpath: //div[contains(@class,'MuiDataGrid-row')]], [[ChromeDriver: chrome on mac (20545f211e84c4d44ffcd7407be600ae)] -> xpath: //div[contains(@class,'MuiDataGrid-row')]], [[ChromeDriver: chrome on mac (20545f211e84c4d44ffcd7407be600ae)] -> xpath: //div[contains(@class,'MuiDataGrid-row')]], [[ChromeDriver: chrome on mac (20545f211e84c4d44ffcd7407be600ae)] -> xpath: //div[contains(@class,'MuiDataGrid-row')]], [[ChromeDriver: chrome on mac (20545f211e84c4d44ffcd7407be600ae)] -> xpath: //div[contains(@class,'MuiDataGrid-row')]], [[ChromeDriver: chrome on mac (20545f211e84c4d44ffcd7407be600ae)] -> xpath: //div[contains(@class,'MuiDataGrid-row')]], [[ChromeDriver: chrome on mac (20545f211e84c4d44ffcd7407be600ae)] -> xpath: //div[contains(@class,'MuiDataGrid-row')]]] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.122, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: /var/folders/p2/q2yjzrxs10s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49827}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49827/devtoo..., se:cdpVersion: 123.0.6312.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 20545f211e84c4d44ffcd7407be600ae]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all [[[ChromeDriver: chrome on mac (20545f211e84c4d44ffcd7407be600ae)] -> xpath: //div[contains(@class,'MuiDataGrid-row')]], [[ChromeDriver: chrome on mac (20545f211e84c4d44ffcd7407be600ae)] -> xpath: //div[contains(@class,'MuiDataGrid-row')]], [[ChromeDriver: chrome on mac (20545f211e84c4d44ffcd7407be600ae)] -> xpath: //div[contains(@class,'MuiDataGrid-row')]], [[ChromeDriver: chrome on mac (20545f211e84c4d44ffcd7407be600ae)] -> xpath: //div[contains(@class,'MuiDataGrid-row')]], [[ChromeDriver: chrome on mac (20545f211e84c4d44ffcd7407be600ae)] -> xpath: //div[contains(@class,'MuiDataGrid-row')]], [[ChromeDriver: chrome on mac (20545f211e84c4d44ffcd7407be600ae)] -> xpath: //div[contains(@class,'MuiDataGrid-row')]], [[ChromeDriver: chrome on mac (20545f211e84c4d44ffcd7407be600ae)] -> xpath: //div[contains(@class,'MuiDataGrid-row')]], [[ChromeDriver: chrome on mac (20545f211e84c4d44ffcd7407be600ae)] -> xpath: //div[contains(@class,'MuiDataGrid-row')]], [[ChromeDriver: chrome on mac (20545f211e84c4d44ffcd7407be600ae)] -> xpath: //div[contains(@class,'MuiDataGrid-row')]], [[ChromeDriver: chrome on mac (20545f211e84c4d44ffcd7407be600ae)] -> xpath: //div[contains(@class,'MuiDataGrid-row')]]] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.122, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: /var/folders/p2/q2yjzrxs10s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49827}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49827/devtoo..., se:cdpVersion: 123.0.6312.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 20545f211e84c4d44ffcd7407be600ae
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+at com.commonUtil.Utility.WaitUntilListOfElementIsVisible(Utility.java:117)
+at pageClass.WellAssetsPage.clickAddButtonAndVerifyCreateWellSceenIsPresentOrNot(WellAssetsPage.java:65)
+at testPackage.WellAssetsTest.createWell(WellAssetsTest.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createWell -->
-        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.WellAssetsTest@298a5e20]" started-at="2024-04-11T15:00:09 IST" name="seperateCase" finished-at="2024-04-11T15:00:09 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.WellAssetsTest@543295b0]" started-at="2024-04-12T12:03:02 IST" name="seperateCase" finished-at="2024-04-12T12:03:02 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seperateCase -->
-        <test-method signature="editWell()[pri:1, instance:testPackage.WellAssetsTest@298a5e20]" started-at="2024-04-11T15:00:09 IST" name="editWell" description="Test edit well assets." finished-at="2024-04-11T15:00:28 IST" duration-ms="19187" status="PASS">
+        <test-method signature="editWell()[pri:1, instance:testPackage.WellAssetsTest@543295b0]" started-at="2024-04-12T12:03:02 IST" name="editWell" description="Test edit well assets." finished-at="2024-04-12T12:03:05 IST" duration-ms="3121" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "String.concat(String)" because "this.Wellname" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.concat(String)" because "this.Wellname" is null
+at pageClass.WellAssetsPage.enterNewWellName(WellAssetsPage.java:199)
+at testPackage.WellAssetsTest.editWell(WellAssetsTest.java:34)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editWell -->
-        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.WellAssetsTest@298a5e20]" started-at="2024-04-11T15:00:28 IST" name="seperateCase" finished-at="2024-04-11T15:00:28 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- seperateCase -->
-        <test-method signature="deleteWell()[pri:2, instance:testPackage.WellAssetsTest@298a5e20]" started-at="2024-04-11T15:00:28 IST" name="deleteWell" description="Test delete well assets." finished-at="2024-04-11T15:00:47 IST" duration-ms="18598" status="PASS">
+        <test-method signature="deleteWell()[pri:2, instance:testPackage.WellAssetsTest@543295b0]" started-at="2024-04-12T12:03:05 IST" name="deleteWell" description="Test delete well assets." finished-at="2024-04-12T12:03:10 IST" duration-ms="5060" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'MuiDataGrid-row')]//div[@data-field='actions']/button"}
+  (Session info: chrome=123.0.6312.122)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [20545f211e84c4d44ffcd7407be600ae, findElement {using=xpath, value=//div[contains(@class,'MuiDataGrid-row')]//div[@data-field='actions']/button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.122, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: /var/folders/p2/q2yjzrxs10s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49827}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49827/devtoo..., se:cdpVersion: 123.0.6312.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 20545f211e84c4d44ffcd7407be600ae]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class,'MuiDataGrid-row')]//div[@data-field='actions']/button"}
+  (Session info: chrome=123.0.6312.122)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '17.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [20545f211e84c4d44ffcd7407be600ae, findElement {using=xpath, value=//div[contains(@class,'MuiDataGrid-row')]//div[@data-field='actions']/button}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.122, chrome: {chromedriverVersion: 123.0.6312.122 (31f8248cdd9..., userDataDir: /var/folders/p2/q2yjzrxs10s...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49827}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:49827/devtoo..., se:cdpVersion: 123.0.6312.122, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 20545f211e84c4d44ffcd7407be600ae
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy22.isDisplayed(Unknown Source)
+at pageClass.WellAssetsPage.clickDelete_actionUnderThePerent_actionandVerifyDeleteConfirmationpopupIsPresentOrNot(WellAssetsPage.java:228)
+at testPackage.WellAssetsTest.deleteWell(WellAssetsTest.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteWell -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.WellAssetsTest@543295b0]" started-at="2024-04-12T12:03:05 IST" name="seperateCase" finished-at="2024-04-12T12:03:05 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
       </class> <!-- testPackage.WellAssetsTest -->
+      <class name="testPackage.LeaseGroupAssetsTest">
+        <test-method is-config="true" signature="assignObjectForClass()[pri:0, instance:testPackage.LeaseGroupAssetsTest@5d0bf09b]" started-at="2024-04-12T11:58:11 IST" name="assignObjectForClass" finished-at="2024-04-12T11:58:11 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assignObjectForClass -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.LeaseGroupAssetsTest@5d0bf09b]" started-at="2024-04-12T11:58:11 IST" name="seperateCase" finished-at="2024-04-12T11:58:11 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="createLeaseGroup()[pri:0, instance:testPackage.LeaseGroupAssetsTest@5d0bf09b]" started-at="2024-04-12T11:58:11 IST" name="createLeaseGroup" description="Test create Lease Group assets." finished-at="2024-04-12T11:58:38 IST" duration-ms="27404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createLeaseGroup -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.LeaseGroupAssetsTest@5d0bf09b]" started-at="2024-04-12T11:58:38 IST" name="seperateCase" finished-at="2024-04-12T11:58:38 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="searchLeaseGroup()[pri:1, instance:testPackage.LeaseGroupAssetsTest@5d0bf09b]" started-at="2024-04-12T11:58:38 IST" name="searchLeaseGroup" description="Test Search Lease Group." finished-at="2024-04-12T11:58:48 IST" duration-ms="9805" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchLeaseGroup -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.LeaseGroupAssetsTest@5d0bf09b]" started-at="2024-04-12T11:58:48 IST" name="seperateCase" finished-at="2024-04-12T11:58:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="EditLeaseGroup()[pri:2, instance:testPackage.LeaseGroupAssetsTest@5d0bf09b]" started-at="2024-04-12T11:58:48 IST" name="EditLeaseGroup" description="Test edit Lease Group assets." finished-at="2024-04-12T11:59:03 IST" duration-ms="15352" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditLeaseGroup -->
+        <test-method is-config="true" signature="seperateCase()[pri:0, instance:testPackage.LeaseGroupAssetsTest@5d0bf09b]" started-at="2024-04-12T11:59:03 IST" name="seperateCase" finished-at="2024-04-12T11:59:03 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seperateCase -->
+        <test-method signature="deleteLeaseGroup()[pri:3, instance:testPackage.LeaseGroupAssetsTest@5d0bf09b]" started-at="2024-04-12T11:59:03 IST" name="deleteLeaseGroup" description="Test Delete Lease Group assets." finished-at="2024-04-12T11:59:24 IST" duration-ms="20672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteLeaseGroup -->
+      </class> <!-- testPackage.LeaseGroupAssetsTest -->
     </test> <!-- OilPilot -->
   </suite> <!-- Suite -->
 </testng-results>

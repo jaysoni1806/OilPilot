@@ -98,7 +98,7 @@ public class TestBase {
 	@AfterSuite
 	public void closeBrowser() {
 		softAssert.assertAll();
-		// driver.close();
+		driver.close();
 	}
 
 }

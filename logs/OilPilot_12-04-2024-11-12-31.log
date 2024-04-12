@@ -1,0 +1,57 @@
+2024-04-12 11:12:31 INFO  TestBase:58 - ************************************************************************ 
+2024-04-12 11:12:31 INFO  TestBase:59 - Chrome browser launched. 
+2024-04-12 11:12:34 INFO  TestBase:62 - Hit Oilman URL.  
+2024-04-12 11:12:36 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 11:12:36 INFO  LoginPage:54 - Enter Email id. 
+2024-04-12 11:12:36 INFO  LoginPage:68 - Enter Password. 
+2024-04-12 11:12:37 INFO  LoginPage:77 - Cliked on Submit button. 
+2024-04-12 11:12:52 INFO  LoginPage:89 - Logged successfully navigated on Dashboard 
+2024-04-12 11:12:52 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 11:12:52 INFO  DashBoardPage:65 - Waiting until Assets manu is clickable. 
+2024-04-12 11:12:52 INFO  DashBoardPage:68 - Click on Assets menu. 
+2024-04-12 11:12:58 INFO  DashBoardPage:115 - Click on Tank manu item. 
+2024-04-12 11:13:00 INFO  TankAssetsPage:74 - Wait until loading tank list. 
+2024-04-12 11:13:01 INFO  commonLocatorsRepo:119 - Click on Add button. 
+2024-04-12 11:13:01 INFO  commonLocatorsRepo:122 - Add screen presented. 
+2024-04-12 11:13:04 INFO  TankAssetsPage:95 - Enter tank name. 
+2024-04-12 11:13:06 INFO  TankAssetsPage:100 - Select tank status 
+2024-04-12 11:13:09 INFO  TankAssetsPage:105 - Select associated tank battery. 
+2024-04-12 11:13:09 INFO  TankAssetsPage:110 - Enter max capacity. 
+2024-04-12 11:13:09 INFO  TankAssetsPage:115 - Enter conversion rate. 
+2024-04-12 11:13:09 INFO  TankAssetsPage:120 - Enter sequence order. 
+2024-04-12 11:13:09 INFO  TankAssetsPage:125 - Enter height. 
+2024-04-12 11:13:10 INFO  TankAssetsPage:130 - Enter bottom. 
+2024-04-12 11:13:10 INFO  TankAssetsPage:135 - Enter latitude. 
+2024-04-12 11:13:10 INFO  TankAssetsPage:140 - Enter longtitude. 
+2024-04-12 11:13:11 INFO  TankAssetsPage:146 - Clicked submit button. 
+2024-04-12 11:13:21 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 11:13:21 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 11:13:24 INFO  TankAssetsPage:196 - Record searched successfully. 
+2024-04-12 11:13:24 INFO  TankAssetsPage:154 - 'WWRI' tank created successfully. 
+2024-04-12 11:13:24 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 11:13:24 INFO  commonLocatorsRepo:57 - Waiting until action button is clickable. 
+2024-04-12 11:13:24 INFO  commonLocatorsRepo:60 - Click action button. 
+2024-04-12 11:13:24 INFO  TankAssetsPage:168 - Clicked on action button. 
+2024-04-12 11:13:24 INFO  commonLocatorsRepo:65 - Waiting until edit button is clickable. 
+2024-04-12 11:13:24 INFO  commonLocatorsRepo:68 - Action menu presented, Cliked Edit action. 
+2024-04-12 11:13:24 INFO  TankAssetsPage:171 - Clicked on edit action menu. 
+2024-04-12 11:13:25 INFO  TankAssetsPage:173 - Edit tank screen present. 
+2024-04-12 11:13:27 INFO  TankAssetsPage:95 - Enter tank name. 
+2024-04-12 11:13:30 INFO  TankAssetsPage:213 - Clicked submit button. 
+2024-04-12 11:13:34 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 11:13:35 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 11:13:37 INFO  TankAssetsPage:196 - Record searched successfully. 
+2024-04-12 11:13:37 INFO  TankAssetsPage:221 - 'WWRI' tank is updated successfully with 'WWRIEdited'. 
+2024-04-12 11:13:37 INFO  TestBase:90 - ------------------------------------------------------------------------ 
+2024-04-12 11:13:37 INFO  commonLocatorsRepo:57 - Waiting until action button is clickable. 
+2024-04-12 11:13:37 INFO  commonLocatorsRepo:60 - Click action button. 
+2024-04-12 11:13:37 INFO  TankAssetsPage:236 - Clicked on action button. 
+2024-04-12 11:13:38 INFO  commonLocatorsRepo:73 - Waiting until delete button is clickable. 
+2024-04-12 11:13:38 INFO  commonLocatorsRepo:76 - Action menu presented, Cliked delete action. 
+2024-04-12 11:13:38 INFO  TankAssetsPage:240 - Delete confirmation popup is present. 
+2024-04-12 11:13:38 INFO  TankAssetsPage:255 - Cliked on Yes button to confirm delete record. 
+2024-04-12 11:13:46 INFO  commonLocatorsRepo:82 - Clear searchbox. 
+2024-04-12 11:13:47 INFO  commonLocatorsRepo:85 - Entered value in searchbox. 
+2024-04-12 11:13:49 INFO  TankAssetsPage:265 - 'WWRIEdited' tank has been deleted successfully. 
+2024-04-12 11:13:53 INFO  TankAssetsPage:279 - Clear searchbox. 
+2024-04-12 11:13:53 INFO  TankAssetsPage:283 - Retrive all records 
