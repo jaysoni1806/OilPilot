@@ -7,32 +7,17 @@
   </listeners>
   <test thread-count="5" name="OilPilot(failed)">
     <classes>
-      <class name="testPackage.WellAssetsTest">
+      <class name="testPackage.LoginTest">
         <methods>
+          <include name="waitAfterTest"/>
           <include name="seperateCase"/>
+          <include name="validLoginTest" invocation-numbers="0"/>
           <include name="initializeExtentReport"/>
           <include name="assignObjectForClass"/>
-          <include name="closeBrowser"/>
-          <include name="deleteWell"/>
-          <include name="editWell"/>
           <include name="prerequisite"/>
           <include name="flush"/>
-          <include name="createWell"/>
         </methods>
-      </class> <!-- testPackage.WellAssetsTest -->
-      <class name="testPackage.TankAssetsTest">
-        <methods>
-          <include name="seperateCase"/>
-          <include name="initializeExtentReport"/>
-          <include name="assignObjectForClass"/>
-          <include name="deleteTank"/>
-          <include name="closeBrowser"/>
-          <include name="prerequisite"/>
-          <include name="flush"/>
-          <include name="createTank"/>
-          <include name="editTank"/>
-        </methods>
-      </class> <!-- testPackage.TankAssetsTest -->
+      </class> <!-- testPackage.LoginTest -->
     </classes>
   </test> <!-- OilPilot(failed) -->
 </suite> <!-- Failed suite [Suite] -->

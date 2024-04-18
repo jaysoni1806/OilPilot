@@ -2,13 +2,29 @@
 "validLoginTest":[
 	{
         "username": "jay.soni+manager@openxcell.com",
-	    "password": "QA@12345"
+	    "password": "QA@12345",
+	    "flag": "validLoginTest"
       }
      ],
-"loginWithInvalidCredentials":[
+"loginWithUnRegisteredUser":[
 	{
          "username": "doe@abc.com",
-	     "password": "pwd4"
+	     "password": "pwd421",
+	     "flag": "loginWithInvalidCredentials"
+      }
+     ],
+"loginWithUnformattedEmail":[
+	{
+         "username": "doe @ab",
+         "password": "pwd421",
+	     "flag": "loginWithUnformattedEmail"
+      }
+     ],
+"loginWithLessThenFiveCharPassword":[
+	{
+         "username": "doe@abc.com",
+         "password": "pwd4",
+	     "flag": "loginWithLessThenFiveCharPassword"
       }
      ]
  }

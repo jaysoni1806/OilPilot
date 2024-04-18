@@ -8,15 +8,16 @@
     </listeners>
   <test thread-count="5" name="OilPilot">
     <classes>
-      <class name="testPackage.LoginTest"/>
-	  <class name="testPackage.CompanyAssetsTest"/>
+	  <class name="testPackage.LoginTest"/>
+	  <!-- <class name="testPackage.CompanyAssetsTest"/>
       <class name="testPackage.FieldAssetsTest"/>
       <class name="testPackage.LeaseGroupAssetsTest"/>
       <class name="testPackage.LeaseAssetsTest"/>
       <class name="testPackage.TankBatteryAssetsTest"/>
       <class name="testPackage.TankAssetsTest"/>
       <class name="testPackage.OperatorAssetsTest"/>
-      <class name="testPackage.WellAssetsTest"/> <!---->
+      <class name="testPackage.WellAssetsTest"/> 
+      <class name="testPackage.RoleManagementTest"/>-->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

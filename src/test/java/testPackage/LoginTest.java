@@ -13,6 +13,7 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.Status;
 import com.commonUtil.ApplicationException;
 import com.commonUtil.ExtentReportManager;
+import com.commonUtil.Utility;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.JsonMappingException;
@@ -38,7 +39,55 @@ public class LoginTest extends TestBase {
 		return maps.stream().map(object -> new Map[] { object }).toArray(Map[][]::new);
 	}
 
-	@Test(dataProvider = "LoginTestData", description = "Test Valid Login")
+	@Test(priority = 1, dataProvider = "LoginTestData", description = "Test login with unformatted email.")
+	public void loginWithUnformattedEmail(Map<String, String> value) throws ApplicationException {
+		ExtentReportManager.test.log(Status.PASS, "Entered unformatted email id.");
+		login.enterEmail(value.get("username"));
+
+		ExtentReportManager.test.log(Status.PASS, "Enter password.");
+		login.enterPAssword(value.get("password"));
+
+		ExtentReportManager.test.log(Status.PASS, "Cliked on Submit button.");
+		login.clickSubmitButton();
+
+		login.validateLogin(value.get("flag"));
+		ExtentReportManager.test.log(Status.PASS, "Email must be a valid email.");
+		waitAfterTest();
+	}
+
+	@Test(priority = 2, dataProvider = "LoginTestData", description = "Test login with less then 5 character password")
+	public void loginWithLessThenFiveCharPassword(Map<String, String> value) throws ApplicationException {
+		ExtentReportManager.test.log(Status.PASS, "Entered email id.");
+		login.enterEmail(value.get("username"));
+
+		ExtentReportManager.test.log(Status.PASS, "Enter less then 5 character password.");
+		login.enterPAssword(value.get("password"));
+
+		ExtentReportManager.test.log(Status.PASS, "Cliked on Submit button.");
+		login.clickSubmitButton();
+
+		login.validateLogin(value.get("flag"));
+		ExtentReportManager.test.log(Status.PASS, "Password must be at least 5 characters.");
+		waitAfterTest();
+	}
+
+	@Test(priority = 3, dataProvider = "LoginTestData", description = "Test login with unregistered user.")
+	public void loginWithUnRegisteredUser(Map<String, String> value) throws ApplicationException {
+		ExtentReportManager.test.log(Status.PASS, "Entered unregistered email id.");
+		login.enterEmail(value.get("username"));
+
+		ExtentReportManager.test.log(Status.PASS, "Enter password.");
+		login.enterPAssword(value.get("password"));
+
+		ExtentReportManager.test.log(Status.PASS, "Cliked on Submit button.");
+		login.clickSubmitButton();
+
+		login.validateLogin(value.get("flag"));
+		ExtentReportManager.test.log(Status.PASS, "User with this username does not exist.");
+		waitAfterTest();
+	}
+
+	@Test(priority = 4, dataProvider = "LoginTestData", description = "Test valid login")
 	public void validLoginTest(Map<String, String> value) throws ApplicationException {
 		ExtentReportManager.test.log(Status.PASS, "Enter Email id.");
 		login.enterEmail(value.get("username"));
@@ -49,7 +98,14 @@ public class LoginTest extends TestBase {
 		ExtentReportManager.test.log(Status.PASS, "Cliked on Submit button.");
 		login.clickSubmitButton();
 
-		login.validateLoginSuccesfull();
+		login.validateLogin(value.get("flag"));
 		ExtentReportManager.test.log(Status.PASS, "Logged successfully and navigated on Dashboard");
+		waitAfterTest();
 	}
+
+	public void waitAfterTest() {
+		Utility utility = new Utility(driver);
+		utility.WaitFor2Second();
+	}
+
 }

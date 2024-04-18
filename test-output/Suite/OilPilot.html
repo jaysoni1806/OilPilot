@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>OilPilot</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Apr 12 12:32:48 IST 2024</td>
+<td>Started on:</td><td>Thu Apr 18 14:32:06 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>18 seconds (18648 ms)</td>
+<tr><td>Total time:</td><td>35 seconds (35018 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,10 +75,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testPackage.LoginTest.validLoginTest()'><b>validLoginTest</b><br>Test class: testPackage.LoginTest<br>Test method: Test Valid Login<br>Parameters: {username=jay.soni+manager@openxcell.com, password=QA@12345}</td>
+<td title='testPackage.LoginTest.loginWithLessThenFiveCharPassword()'><b>loginWithLessThenFiveCharPassword</b><br>Test class: testPackage.LoginTest<br>Test method: Test login with less then 5 character password<br>Parameters: {username=doe@abc.com, password=pwd4, flag=loginWithLessThenFiveCharPassword}</td>
 <td></td>
-<td>15</td>
-<td>testPackage.LoginTest@71ba6d4e</td></tr>
+<td>2</td>
+<td>testPackage.LoginTest@368247b9</td></tr>
+<tr>
+<td title='testPackage.LoginTest.loginWithUnformattedEmail()'><b>loginWithUnformattedEmail</b><br>Test class: testPackage.LoginTest<br>Test method: Test login with unformatted email.<br>Parameters: {username=doe @ab, password=pwd421, flag=loginWithUnformattedEmail}</td>
+<td></td>
+<td>3</td>
+<td>testPackage.LoginTest@368247b9</td></tr>
+<tr>
+<td title='testPackage.LoginTest.loginWithUnRegisteredUser()'><b>loginWithUnRegisteredUser</b><br>Test class: testPackage.LoginTest<br>Test method: Test login with unregistered user.<br>Parameters: {username=doe@abc.com, password=pwd421, flag=loginWithInvalidCredentials}</td>
+<td></td>
+<td>4</td>
+<td>testPackage.LoginTest@368247b9</td></tr>
+<tr>
+<td title='testPackage.LoginTest.validLoginTest()'><b>validLoginTest</b><br>Test class: testPackage.LoginTest<br>Test method: Test valid login<br>Parameters: {username=jay.soni+manager@openxcell.com, password=QA@12345, flag=validLoginTest}</td>
+<td></td>
+<td>22</td>
+<td>testPackage.LoginTest@368247b9</td></tr>
 </table><p>
 </body>
 </html>

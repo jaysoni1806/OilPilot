@@ -1,0 +1,3 @@
+//input[@name='rolePermissions.0.module.access']/ancestor::td/following-sibling::td-> For action tds
+//input[@name='rolePermissions.0.module.access']/ancestor::td -> For access tds
+//tbody[@class='MuiTableBody-root css-1knzktt']/tr[@class='MuiTableRow-root css-5rr9wj'] :-> For TR List
