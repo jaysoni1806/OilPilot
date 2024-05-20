@@ -24,12 +24,12 @@ public class LeaseGroupAssetsPage {
 	public String LeaseGroupName;
 	public String updatedLeaseGroup;
 
-	public LeaseGroupAssetsPage(WebDriver driver) {
-		this.driver = driver;
+	public LeaseGroupAssetsPage() {
+		driver = TestBase.driver;
 		PageFactory.initElements(this.driver, this);
-		utility = new Utility(driver);
-		dashboard = new DashBoardPage(driver);
-		commLocators = new commonLocatorsRepo(driver);
+		utility = Utility.utility();
+		dashboard = DashBoardPage.dashBoardPage();
+		commLocators = commonLocatorsRepo.LocatorsRepo();
 	}
 
 	@FindBy(xpath = "//div[contains(@class,'paperAnchorRight')][not(contains(@style,'visibility: hidden'))]//form//div[text()='Select company']")
@@ -53,9 +53,9 @@ public class LeaseGroupAssetsPage {
 
 	public void clickAddButtonAndVerifyCreateLeaseGroupHalfCardIsPresentOrNot() throws ApplicationException {
 		try {
-			utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
+			utility.WaitUntilListOfElementIsVisible(searchRecords, 30);
 		} catch (org.openqa.selenium.StaleElementReferenceException ex) {
-			utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
+			utility.WaitUntilListOfElementIsVisible(searchRecords, 30);
 		}
 		log.info("Wait until loading lease list.");
 		commLocators.clickAddButton();
@@ -126,7 +126,7 @@ public class LeaseGroupAssetsPage {
 	public void verifyTheLeaseGroupListAfterClearSearchBox() throws ApplicationException, InterruptedException {
 		if (commLocators.inputSearch.isDisplayed()) {
 			utility.clearSearchBox(commLocators.inputSearch);
-			utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
+			utility.WaitUntilListOfElementIsVisible(searchRecords, 30);
 
 			if (searchRecords.size() >= 1) {
 				log.info("Retrive all records");
@@ -249,6 +249,10 @@ public class LeaseGroupAssetsPage {
 			throw new ApplicationException("Exception Occured", "Still record is not present.");
 		}
 
+	}
+
+	public static LeaseGroupAssetsPage leaseGroupAssetsPage() {
+		return new LeaseGroupAssetsPage();
 	}
 
 }

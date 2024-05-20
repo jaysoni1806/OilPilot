@@ -29,12 +29,12 @@ public class WellAssetsPage {
 	private static final String Lat = "32.61161640069667";
 	private static final String Long = "-103.57233640836601";
 
-	public WellAssetsPage(WebDriver driver) {
-		this.driver = driver;
+	public WellAssetsPage() {
+		driver = TestBase.driver;
 		PageFactory.initElements(this.driver, this);
-		utility = new Utility(driver);
-		dashboard = new DashBoardPage(driver);
-		commLocators = new commonLocatorsRepo(driver);
+		utility = Utility.utility();
+		dashboard = DashBoardPage.dashBoardPage();
+		commLocators = commonLocatorsRepo.LocatorsRepo();
 	}
 
 	@FindBy(xpath = "//div[contains(@class,'MuiDataGrid-row')]")
@@ -62,9 +62,9 @@ public class WellAssetsPage {
 
 	public void clickAddButtonAndVerifyCreateWellSceenIsPresentOrNot() throws ApplicationException {
 		try {
-			utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
+			utility.WaitUntilListOfElementIsVisible(searchRecords, 30);
 		} catch (org.openqa.selenium.StaleElementReferenceException ex) {
-			utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
+			utility.WaitUntilListOfElementIsVisible(searchRecords, 30);
 		}
 		log.info("Wait until loading well list.");
 		commLocators.clickAddButton(addWellkbtn, addWellScreen);
@@ -281,6 +281,10 @@ public class WellAssetsPage {
 		} else {
 			throw new ApplicationException("Exception Occured", "Search box is not present.");
 		}
+	}
+
+	public static WellAssetsPage wellAssetsPage() {
+		return new WellAssetsPage();
 	}
 
 }

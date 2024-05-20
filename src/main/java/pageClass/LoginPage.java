@@ -3,7 +3,6 @@ package pageClass;
 import java.util.List;
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -12,14 +11,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.commonUtil.ApplicationException;
 import com.commonUtil.Utility;
 
+import DriverManager.WebDriverManager;
 import testBase.TestBase;
 
 public class LoginPage {
-	WebDriver driver;
-	Utility utility;
 	public WebDriverWait wait;
 	String currentUrl;
-	public DashBoardPage dashBoard;
+	Utility utility;
+	commonLocatorsRepo commLocators;
+	DashBoardPage dashboard;
 	public static Logger log = Logger.getLogger(LoginPage.class);
 
 	@FindBy(xpath = "//label[text()='Email']/following-sibling::div/input")
@@ -37,14 +37,15 @@ public class LoginPage {
 	@FindBy(xpath = "//span[@role='progressbar']")
 	public WebElement progressbar;
 
-	public LoginPage(WebDriver driver) {
-		this.driver = driver;
-		PageFactory.initElements(this.driver, this);
-		utility = new Utility(driver);
-		dashBoard = new DashBoardPage(driver);
+	public LoginPage() {
+		PageFactory.initElements(WebDriverManager.getDriver(), this);
+		utility = Utility.utility();
+		commLocators = commonLocatorsRepo.LocatorsRepo();
+		dashboard = DashBoardPage.dashBoardPage();
 	}
 
 	public void enterEmail(String username) throws ApplicationException {
+		// Utility utility = Utility.utility();
 		if (email.isDisplayed()) {
 			email.click();
 			utility.ClearTextBox(email);
@@ -58,8 +59,8 @@ public class LoginPage {
 	}
 
 	public void enterPAssword(String password) throws ApplicationException {
+		// Utility utility = Utility.utility();
 		if (pass.isDisplayed()) {
-
 			pass.click();
 			utility.ClearTextBox(pass);
 			utility.SendValues(pass, password);
@@ -70,6 +71,7 @@ public class LoginPage {
 	}
 
 	public void clickSubmitButton() throws ApplicationException {
+		// Utility utility = Utility.utility();
 		if (sbtBtn.isEnabled()) {
 			utility.Submit(sbtBtn);
 			log.info("Cliked on Submit button.");
@@ -79,12 +81,13 @@ public class LoginPage {
 	}
 
 	public void validateLogin(String flag) throws ApplicationException {
-
+		// Utility utility = Utility.utility();
+		// DashBoardPage dashBoard = DashBoardPage.dashBoardPage();
 		if (flag.equals("loginWithInvalidCredentials")) {
 
-			utility.waitForSometime(dashBoard.toastMessage);
-			if (dashBoard.toastMessage.isDisplayed()) {
-				TestBase.softAssert.assertEquals(dashBoard.toastMessage.getText(),
+			utility.waitForSometime(dashboard.toastMessage);
+			if (dashboard.toastMessage.isDisplayed()) {
+				TestBase.softAssert.assertEquals(dashboard.toastMessage.getText(),
 						TestBase.props.getProperty("INVALID_CRED_TOAST"));
 				log.info("User with this username does not exist.");
 			} else {
@@ -92,9 +95,10 @@ public class LoginPage {
 			}
 		} else if (flag.equals("validLoginTest")) {
 
-			utility.waitForSometime(dashBoard.dashboard);
-			if (dashBoard.dashboard.isDisplayed()) {
-				TestBase.softAssert.assertEquals(driver.getCurrentUrl(), TestBase.props.getProperty("DASHBOARD_URL"));
+			utility.waitForSometime(dashboard.dashboard);
+			if (dashboard.dashboard.isDisplayed()) {
+				TestBase.softAssert.assertEquals(WebDriverManager.getDriver().getCurrentUrl(),
+						TestBase.props.getProperty("DASHBOARD_URL"));
 				log.info("Logged successfully navigated on Dashboard");
 			} else {
 				throw new ApplicationException("Exception Occured", "Dashboard URL is not present.");
@@ -119,6 +123,10 @@ public class LoginPage {
 			}
 		}
 
+	}
+
+	public static LoginPage loginpage() {
+		return new LoginPage();
 	}
 
 }

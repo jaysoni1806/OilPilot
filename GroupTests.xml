@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" thread-count="2" name="Suite">
+     <listeners>
+        <listener class-name="com.Listeners.ExtentReportListener"/>
+        <listener class-name="com.Listeners.IRetryAnalyzerListener"/>
+        <listener class-name="com.Listeners.EmailableListener"/>
+    </listeners>
+  <test name="group 1">
+    <classes>
+      <class name="testPackage.LoginTest"/>
+      <class name="testPackage.CompanyAssetsTest"/>
+      <class name="testPackage.FieldAssetsTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="group 2">
+    <classes>
+      <class name="testPackage.LeaseGroupAssetsTest"/>
+      <class name="testPackage.LeaseAssetsTest"/>
+      <class name="testPackage.TankBatteryAssetsTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="group 3">
+    <parameter name="username" value="jay.soni+manager2@openxcell.com" />
+	<parameter name="password" value="QA@12345" />
+    <classes>
+      <class name="testPackage.TankAssetsTest"/>
+      <class name="testPackage.OperatorAssetsTest"/>
+      <class name="testPackage.WellAssetsTest"/> 
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

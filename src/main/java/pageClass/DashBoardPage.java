@@ -11,13 +11,14 @@ import org.openqa.selenium.support.PageFactory;
 import com.commonUtil.ApplicationException;
 import com.commonUtil.Utility;
 
+import DriverManager.WebDriverManager;
+
 //import utils.UtilityMethods;
 
 public class DashBoardPage {
 
 	WebDriver driver;
-	Utility utility;
-	commonLocatorsRepo commLocators;
+	// commonLocatorsRepo commLocators;
 	public static Logger log = Logger.getLogger(DashBoardPage.class);
 
 	@FindBy(xpath = "//div[contains(@class,'MuiAvatar-circular')]")
@@ -49,15 +50,13 @@ public class DashBoardPage {
 	@FindBy(xpath = "//p[text()='Assets']/parent::div/parent::div/following-sibling::ul[contains(@class,'MuiCollapse-hidden')]")
 	public List<WebElement> assets_CollapseHidden1;
 
-	public DashBoardPage(WebDriver driver) {
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
-		utility = new Utility(driver);
-		commLocators = new commonLocatorsRepo(driver);
+	public DashBoardPage() {
+		// driver = WebDriverManager.getDriver();
+		PageFactory.initElements(WebDriverManager.getDriver(), this);
 	}
 
 	public void clickOnAssets() throws ApplicationException {
-
+		Utility utility = Utility.utility();
 		if (assets_CollapseHidden1.size() > 0) {
 
 			if (asset.isDisplayed()) {
@@ -77,7 +76,7 @@ public class DashBoardPage {
 	}
 
 	public void clickOnMenuItem(String menuNAme) throws ApplicationException, InterruptedException {
-
+		Utility utility = Utility.utility();
 		try {
 			if (assets_CollapseHidden1.size() == 0) {
 				if (menuNAme.equals("Company")) {
@@ -108,7 +107,8 @@ public class DashBoardPage {
 	}
 
 	public void selectMenu(WebElement MenuElement, String menuNAme) throws ApplicationException, InterruptedException {
-
+		commonLocatorsRepo commLocators = new commonLocatorsRepo();
+		Utility utility = Utility.utility();
 		if (MenuElement.isDisplayed()) {
 
 			utility.Submit(MenuElement);
@@ -124,6 +124,10 @@ public class DashBoardPage {
 			throw new ApplicationException("Exception Occured",
 					commLocators.screenHeader.getText() + "Assets is not display.");
 		}
+	}
+
+	public static DashBoardPage dashBoardPage() {
+		return new DashBoardPage();
 	}
 
 }

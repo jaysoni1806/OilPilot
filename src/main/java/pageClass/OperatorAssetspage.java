@@ -25,12 +25,12 @@ public class OperatorAssetspage {
 	public String OperatorName;
 	public String updatedOperatorName;
 
-	public OperatorAssetspage(WebDriver driver) {
-		this.driver = driver;
+	public OperatorAssetspage() {
+		driver = TestBase.driver;
 		PageFactory.initElements(this.driver, this);
-		utility = new Utility(driver);
-		dashboard = new DashBoardPage(driver);
-		commLocators = new commonLocatorsRepo(driver);
+		utility = Utility.utility();
+		dashboard = DashBoardPage.dashBoardPage();
+		commLocators = commonLocatorsRepo.LocatorsRepo();
 	}
 
 	@FindBy(xpath = "//div[contains(@class,'MuiDataGrid-row')]")
@@ -56,9 +56,9 @@ public class OperatorAssetspage {
 
 	public void clickAddButtonAndVerifyCreateOperatorHalfCardIsPresentOrNot() throws ApplicationException {
 		try {
-			utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
+			utility.WaitUntilListOfElementIsVisible(searchRecords, 30);
 		} catch (org.openqa.selenium.StaleElementReferenceException ex) {
-			utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
+			utility.WaitUntilListOfElementIsVisible(searchRecords, 30);
 		}
 		log.info("Wait until loading operator list.");
 		commLocators.clickAddButton();
@@ -291,4 +291,7 @@ public class OperatorAssetspage {
 
 	}
 
+	public static OperatorAssetspage operatorAssetsPage() {
+		return new OperatorAssetspage();
+	}
 }

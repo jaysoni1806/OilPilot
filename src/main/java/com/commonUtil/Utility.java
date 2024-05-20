@@ -15,15 +15,17 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import DriverManager.WebDriverManager;
+
 public class Utility {
 
-	WebDriver driver;
+	// WebDriver driver;
 	public WebDriverWait wait;
 	public Wait<WebDriver> fluentWait;
 
-	public Utility(WebDriver driver) {
-		this.driver = driver;
-		fluentWait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(30))
+	public Utility() {
+		// driver = WebDriverManager.getDriver();
+		fluentWait = new FluentWait<WebDriver>(WebDriverManager.getDriver()).withTimeout(Duration.ofMinutes(2))
 				.pollingEvery(Duration.ofSeconds(5)).ignoring(NoSuchElementException.class);
 	}
 
@@ -37,7 +39,7 @@ public class Utility {
 	}
 
 	public void WaitForASecond(WebElement element, int second) {
-		wait = new WebDriverWait(driver, Duration.ofSeconds(second));
+		wait = new WebDriverWait(WebDriverManager.getDriver(), Duration.ofSeconds(second));
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 
@@ -82,12 +84,12 @@ public class Utility {
 
 	public void ClearTextBox(WebElement element) {
 
-		JavascriptExecutor js = (JavascriptExecutor) driver;
+		JavascriptExecutor js = (JavascriptExecutor) WebDriverManager.getDriver();
 		js.executeScript("arguments[0].value ='';", element);
 	}
 
 	public void pageRefresh() {
-		driver.navigate().refresh();
+		WebDriverManager.getDriver().navigate().refresh();
 	}
 
 	public void waitForSometime(WebElement element) {
@@ -99,7 +101,7 @@ public class Utility {
 	}
 
 	public void waitUntilToastPresent(WebElement element, int second) {
-		wait = new WebDriverWait(driver, Duration.ofSeconds(second));
+		wait = new WebDriverWait(WebDriverManager.getDriver(), Duration.ofSeconds(second));
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 
@@ -108,22 +110,22 @@ public class Utility {
 	}
 
 	public void WaitUntilElementIsNotClickable(WebElement element, int second) {
-		wait = new WebDriverWait(driver, Duration.ofSeconds(second));
+		wait = new WebDriverWait(WebDriverManager.getDriver(), Duration.ofSeconds(second));
 		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 
 	public boolean WaitUntilListOfElementIsVisible(List<WebElement> element, int second) {
-		wait = new WebDriverWait(driver, Duration.ofSeconds(second));
+		wait = new WebDriverWait(WebDriverManager.getDriver(), Duration.ofSeconds(second));
 		return wait.until(ExpectedConditions.visibilityOfAllElements(element)) != null;
 	}
 
 	public boolean WaitUntilListOfElementIsNotVisible(List<WebElement> element, int second) {
-		wait = new WebDriverWait(driver, Duration.ofSeconds(second));
+		wait = new WebDriverWait(WebDriverManager.getDriver(), Duration.ofSeconds(second));
 		return wait.until(ExpectedConditions.invisibilityOfAllElements(element));
 	}
 
 	public boolean WaitUntilElementVisibiltyGone(WebElement element, int second) {
-		wait = new WebDriverWait(driver, Duration.ofSeconds(second));
+		wait = new WebDriverWait(WebDriverManager.getDriver(), Duration.ofSeconds(second));
 		return wait.until(ExpectedConditions.invisibilityOf(element));
 	}
 
@@ -145,7 +147,8 @@ public class Utility {
 		ExpectedCondition<Boolean> javascriptDone = new ExpectedCondition<Boolean>() {
 			public Boolean apply(WebDriver d) {
 				try {
-					return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
+					return ((JavascriptExecutor) WebDriverManager.getDriver())
+							.executeScript("return document.readyState").equals("complete");
 				} catch (Exception e) {
 					return Boolean.FALSE;
 				}
@@ -164,5 +167,8 @@ public class Utility {
 	 * (NoSuchElementException e) { return false; } finally {
 	 * driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); } }
 	 */
+	public static Utility utility() {
+		return new Utility();
+	}
 
 }

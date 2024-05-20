@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="10" parallel="tests" name="Failed suite [OilPilot]" guice-stage="DEVELOPMENT" verbose="10">
+  <listeners>
+    <listener class-name="com.Listeners.ExtentReportListener"/>
+    <listener class-name="com.Listeners.EmailableListener"/>
+  </listeners>
+  <test thread-count="10" parallel="tests" name="Test Class2(failed)" verbose="10">
+    <classes>
+      <class name="testPackage.FieldAssetsTest">
+        <methods>
+          <include name="seperateCase"/>
+          <include name="initializeExtentReport"/>
+          <include name="closeAssertion"/>
+          <include name="deleteField"/>
+          <include name="editField"/>
+          <include name="createField"/>
+          <include name="closeBrowser"/>
+          <include name="assignObjects"/>
+          <include name="prerequisite"/>
+          <include name="flush"/>
+          <include name="searchFleld"/>
+          <include name="validLoginTest"/>
+        </methods>
+      </class> <!-- testPackage.FieldAssetsTest -->
+    </classes>
+  </test> <!-- Test Class2(failed) -->
+  <test thread-count="10" parallel="tests" name="Test Class8(failed)" verbose="10">
+    <parameter name="password" value="QA@12345"/>
+    <parameter name="username" value="jay.soni+manager2@openxcell.com"/>
+    <classes>
+      <class name="testPackage.OperatorAssetsTest">
+        <methods>
+          <include name="seperateCase"/>
+          <include name="initializeExtentReport"/>
+          <include name="closeAssertion"/>
+          <include name="editOperator"/>
+          <include name="searchOperator"/>
+          <include name="validLoginTest"/>
+          <include name="closeBrowser"/>
+          <include name="assignObjects"/>
+          <include name="deleteOperator"/>
+          <include name="flush"/>
+          <include name="prerequisite"/>
+          <include name="createOperator"/>
+        </methods>
+      </class> <!-- testPackage.OperatorAssetsTest -->
+    </classes>
+  </test> <!-- Test Class8(failed) -->
+  <test thread-count="10" parallel="tests" name="Test Class6(failed)" verbose="10">
+    <classes>
+      <class name="testPackage.TankBatteryAssetsTest">
+        <methods>
+          <include name="seperateCase"/>
+          <include name="initializeExtentReport"/>
+          <include name="closeAssertion"/>
+          <include name="createTankBattery"/>
+          <include name="deleteSublease"/>
+          <include name="validLoginTest"/>
+          <include name="EditTankBattery"/>
+          <include name="closeBrowser"/>
+          <include name="assignObjects"/>
+          <include name="flush"/>
+          <include name="prerequisite"/>
+          <include name="searchTankBattery"/>
+        </methods>
+      </class> <!-- testPackage.TankBatteryAssetsTest -->
+    </classes>
+  </test> <!-- Test Class6(failed) -->
+  <test thread-count="10" parallel="tests" name="Test Class4(failed)" verbose="10">
+    <classes>
+      <class name="testPackage.LeaseGroupAssetsTest">
+        <methods>
+          <include name="deleteLeaseGroup"/>
+          <include name="seperateCase"/>
+          <include name="initializeExtentReport"/>
+          <include name="validLoginTest"/>
+          <include name="closeAssertion"/>
+          <include name="EditLeaseGroup"/>
+          <include name="searchLeaseGroup"/>
+          <include name="closeBrowser"/>
+          <include name="assignObjects"/>
+          <include name="flush"/>
+          <include name="createLeaseGroup"/>
+          <include name="prerequisite"/>
+        </methods>
+      </class> <!-- testPackage.LeaseGroupAssetsTest -->
+    </classes>
+  </test> <!-- Test Class4(failed) -->
+  <test thread-count="10" parallel="tests" name="Test Class7(failed)" verbose="10">
+    <parameter name="password" value="QA@12345"/>
+    <parameter name="username" value="jay.soni+manager2@openxcell.com"/>
+    <classes>
+      <class name="testPackage.TankAssetsTest">
+        <methods>
+          <include name="seperateCase"/>
+          <include name="initializeExtentReport"/>
+          <include name="closeAssertion"/>
+          <include name="deleteTank"/>
+          <include name="closeBrowser"/>
+          <include name="assignObjects"/>
+          <include name="flush"/>
+          <include name="prerequisite"/>
+          <include name="createTank"/>
+          <include name="validLoginTest"/>
+          <include name="editTank"/>
+        </methods>
+      </class> <!-- testPackage.TankAssetsTest -->
+    </classes>
+  </test> <!-- Test Class7(failed) -->
+  <test thread-count="10" parallel="tests" name="Test Class5(failed)" verbose="10">
+    <classes>
+      <class name="testPackage.LeaseAssetsTest">
+        <methods>
+          <include name="seperateCase"/>
+          <include name="EditLease"/>
+          <include name="initializeExtentReport"/>
+          <include name="closeAssertion"/>
+          <include name="deleteLease"/>
+          <include name="createLease"/>
+          <include name="closeBrowser"/>
+          <include name="assignObjects"/>
+          <include name="flush"/>
+          <include name="searchLease"/>
+          <include name="prerequisite"/>
+          <include name="validLoginTest"/>
+        </methods>
+      </class> <!-- testPackage.LeaseAssetsTest -->
+    </classes>
+  </test> <!-- Test Class5(failed) -->
+  <test thread-count="10" parallel="tests" name="Test Class1(failed)" verbose="10">
+    <classes>
+      <class name="testPackage.CompanyAssetsTest">
+        <methods>
+          <include name="seperateCase"/>
+          <include name="initializeExtentReport"/>
+          <include name="editCompany"/>
+          <include name="closeAssertion"/>
+          <include name="deleteCompany"/>
+          <include name="closeBrowser"/>
+          <include name="assignObjects"/>
+          <include name="createCompany"/>
+          <include name="prerequisite"/>
+          <include name="flush"/>
+          <include name="validLoginTest"/>
+          <include name="searchCompany"/>
+        </methods>
+      </class> <!-- testPackage.CompanyAssetsTest -->
+    </classes>
+  </test> <!-- Test Class1(failed) -->
+  <test thread-count="10" parallel="tests" name="Test Class3(failed)" verbose="10">
+    <classes>
+      <class name="testPackage.LoginTest">
+        <methods>
+          <include name="seperateCase"/>
+          <include name="initializeExtentReport"/>
+          <include name="validLoginTest" invocation-numbers="0"/>
+          <include name="closeAssertion"/>
+          <include name="loginWithUnRegisteredUser" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+          <include name="assignObjects"/>
+          <include name="flush"/>
+          <include name="prerequisite"/>
+        </methods>
+      </class> <!-- testPackage.LoginTest -->
+    </classes>
+  </test> <!-- Test Class3(failed) -->
+  <test thread-count="10" parallel="tests" name="Test Class9(failed)" verbose="10">
+    <parameter name="password" value="QA@12345"/>
+    <parameter name="username" value="jay.soni+manager2@openxcell.com"/>
+    <classes>
+      <class name="testPackage.WellAssetsTest">
+        <methods>
+          <include name="validLoginTest"/>
+          <include name="seperateCase"/>
+          <include name="initializeExtentReport"/>
+          <include name="closeAssertion"/>
+          <include name="closeBrowser"/>
+          <include name="deleteWell"/>
+          <include name="assignObjects"/>
+          <include name="editWell"/>
+          <include name="flush"/>
+          <include name="prerequisite"/>
+          <include name="createWell"/>
+        </methods>
+      </class> <!-- testPackage.WellAssetsTest -->
+    </classes>
+  </test> <!-- Test Class9(failed) -->
+</suite> <!-- Failed suite [OilPilot] -->

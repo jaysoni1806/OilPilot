@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
+<suite name="Suite" thread-count="3" parallel="tests" verbose="10">
     <listeners>
         <listener class-name="com.Listeners.ExtentReportListener"/>
         <!--<listener class-name="com.Listeners.IRetryAnalyzerListener"/>-->
         <listener class-name="com.Listeners.EmailableListener"/>
     </listeners>
-  <test thread-count="5" name="OilPilot">
+  <test name="Test Class1" preserve-order="true">
+    <!--  <parameter name="username" value="viren@openxcell.com" />
+	<parameter name="password" value="admin@1234" />-->
     <classes>
-	  <class name="testPackage.LoginTest"/>
-	  <!-- --><class name="testPackage.CompanyAssetsTest"/>
-      <class name="testPackage.FieldAssetsTest"/>
-      <class name="testPackage.LeaseGroupAssetsTest"/>
-      <class name="testPackage.LeaseAssetsTest"/>
-      <class name="testPackage.TankBatteryAssetsTest"/>
-      <class name="testPackage.TankAssetsTest"/>
-      <class name="testPackage.OperatorAssetsTest"/>
-      <class name="testPackage.WellAssetsTest"/> 
-      <class name="testPackage.RoleManagementTest"/>
+        <class name="testPackage.CompanyAssetsTest"/>
     </classes>
   </test> <!-- Test -->
+   <test name="Test Class2" preserve-order="true">
+    <!--  <parameter name="username" value="viren@openxcell.com" />
+	<parameter name="password" value="admin@1234" />-->
+    <classes>
+	  <class name="testPackage.FieldAssetsTest"/>
+    </classes>
+  </test>
+    <test name="Test Class3" preserve-order="true">
+    <classes>
+	  <class name="testPackage.LoginTest"/>
+    </classes>
+  </test>
 </suite> <!-- Suite -->

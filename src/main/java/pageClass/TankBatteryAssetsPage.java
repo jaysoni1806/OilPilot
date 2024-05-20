@@ -48,19 +48,19 @@ public class TankBatteryAssetsPage {
 	@FindBy(xpath = "//div[@aria-describedby='alert-dialog-description-Delete confirmation for Tank Battery']//button[text()='Yes']")
 	private WebElement deleteConfirmYesButton;
 
-	public TankBatteryAssetsPage(WebDriver driver) {
-		this.driver = driver;
+	public TankBatteryAssetsPage() {
+		driver = TestBase.driver;
 		PageFactory.initElements(this.driver, this);
-		utility = new Utility(driver);
-		dashboard = new DashBoardPage(driver);
-		commLocators = new commonLocatorsRepo(driver);
+		utility = Utility.utility();
+		dashboard = DashBoardPage.dashBoardPage();
+		commLocators = commonLocatorsRepo.LocatorsRepo();
 	}
 
 	public void clickAddButtonAndVerifyCreateTankBatteryHalfCardIsPresentOrNot() throws ApplicationException {
 		try {
-			utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
+			utility.WaitUntilListOfElementIsVisible(searchRecords, 30);
 		} catch (org.openqa.selenium.StaleElementReferenceException ex) {
-			utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
+			utility.WaitUntilListOfElementIsVisible(searchRecords, 30);
 		}
 		log.info("Wait until loading Sublease list.");
 		commLocators.clickAddButton();
@@ -283,5 +283,9 @@ public class TankBatteryAssetsPage {
 			throw new ApplicationException("Exception Occured", "Still record is not present.");
 		}
 
+	}
+
+	public static TankBatteryAssetsPage tankBatteryAssetsPage() {
+		return new TankBatteryAssetsPage();
 	}
 }

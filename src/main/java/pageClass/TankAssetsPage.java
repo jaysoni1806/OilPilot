@@ -28,12 +28,12 @@ public class TankAssetsPage {
 	private static final String Lat = "32.61161640069667";
 	private static final String Long = "-103.57233640836601";
 
-	public TankAssetsPage(WebDriver driver) {
-		this.driver = driver;
+	public TankAssetsPage() {
+		driver = TestBase.driver;
 		PageFactory.initElements(this.driver, this);
-		utility = new Utility(driver);
-		dashboard = new DashBoardPage(driver);
-		commLocators = new commonLocatorsRepo(driver);
+		utility = Utility.utility();
+		dashboard = DashBoardPage.dashBoardPage();
+		commLocators = commonLocatorsRepo.LocatorsRepo();
 	}
 
 	@FindBy(xpath = "//div[contains(@class,'MuiDataGrid-row')]")
@@ -67,9 +67,9 @@ public class TankAssetsPage {
 
 	public void clickAddButtonAndVerifyCreateTankSceenIsPresentOrNot() throws ApplicationException {
 		try {
-			utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
+			utility.WaitUntilListOfElementIsVisible(searchRecords, 30);
 		} catch (org.openqa.selenium.StaleElementReferenceException ex) {
-			utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
+			utility.WaitUntilListOfElementIsVisible(searchRecords, 30);
 		}
 		log.info("Wait until loading tank list.");
 		commLocators.clickAddButton(addTankbtn, addTankScreen);
@@ -287,6 +287,10 @@ public class TankAssetsPage {
 		} else {
 			throw new ApplicationException("Exception Occured", "Search box is not present.");
 		}
+	}
+
+	public static TankAssetsPage tankAssetsPage() {
+		return new TankAssetsPage();
 	}
 
 }

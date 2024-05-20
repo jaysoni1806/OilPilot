@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -13,25 +12,24 @@ import org.testng.Assert;
 import com.commonUtil.ApplicationException;
 import com.commonUtil.Utility;
 
+import DriverManager.WebDriverManager;
 import testBase.TestBase;
 
 public class CompanyAssetsPage {
 
-	WebDriver driver;
-	Utility utility;
-	DashBoardPage dashboard;
 	public static String updatedComp;
 	public static String Company_name;
 	public String expactedToastMessage;
+	Utility utility;
 	commonLocatorsRepo commLocators;
+	DashBoardPage dashboard;
 	public static Logger log = Logger.getLogger(CompanyAssetsPage.class);
 
-	public CompanyAssetsPage(WebDriver driver) {
-		this.driver = driver;
-		PageFactory.initElements(this.driver, this);
-		utility = new Utility(driver);
-		dashboard = new DashBoardPage(driver);
-		commLocators = new commonLocatorsRepo(driver);
+	public CompanyAssetsPage() {
+		PageFactory.initElements(WebDriverManager.getDriver(), this);
+		utility = Utility.utility();
+		commLocators = commonLocatorsRepo.LocatorsRepo();
+		dashboard = DashBoardPage.dashBoardPage();
 	}
 
 	@FindBy(xpath = "//input[@placeholder='Company name']")
@@ -53,6 +51,8 @@ public class CompanyAssetsPage {
 	private List<WebElement> searchRecords;
 
 	public void clickAddButtonAndVerifyCreateCompnayHalfCardIsPresentOrNot() throws ApplicationException {
+		// Utility utility = Utility.utility();
+		// commonLocatorsRepo commLocators = new commonLocatorsRepo();
 		// searchRecords =
 		// driver.findElements(By.xpath("//div[contains(@class,'MuiDataGrid-row')]"));
 		utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
@@ -61,6 +61,7 @@ public class CompanyAssetsPage {
 	}
 
 	public void enterCompanyName(String CmpName) throws ApplicationException {
+		// Utility utility = Utility.utility();
 		Company_name = CmpName;
 
 		if (inputCompanyName.isDisplayed()) {
@@ -76,6 +77,7 @@ public class CompanyAssetsPage {
 	}
 
 	public void clickAddButtonForCreateNewCompany() throws ApplicationException {
+		// Utility utility = Utility.utility();
 
 		if (addCompny_SubmitButton.isDisplayed()) {
 			utility.Submit(addCompny_SubmitButton);
@@ -87,7 +89,8 @@ public class CompanyAssetsPage {
 	}
 
 	public void verifyTheCompanyIsCreatedOrnot() throws ApplicationException, InterruptedException {
-
+		// Utility utility = Utility.utility();
+		// DashBoardPage dashboard = DashBoardPage.dashBoardPage();
 		utility.WaitUntilElementVisibiltyGone(dashboard.toastMessage, 5);
 		enterCompanyNameinSearchBox(Company_name);
 		verifySearchedCompanyIsExistsOrNot(Company_name);
@@ -95,6 +98,7 @@ public class CompanyAssetsPage {
 	}
 
 	public void enterCompanyNameinSearchBox(String CmpName) throws ApplicationException, InterruptedException {
+		// commonLocatorsRepo commLocators = new commonLocatorsRepo();
 		commLocators.Search(CmpName);
 	}
 
@@ -115,6 +119,8 @@ public class CompanyAssetsPage {
 	}
 
 	public void verifyTheCompanyListAfterClearSearchBox() throws ApplicationException, InterruptedException {
+		// Utility utility = Utility.utility();
+		// commonLocatorsRepo commLocators = new commonLocatorsRepo();
 		if (commLocators.inputSearch.isDisplayed()) {
 			utility.clearSearchBox(commLocators.inputSearch);
 			Thread.sleep(3000);
@@ -138,6 +144,7 @@ public class CompanyAssetsPage {
 	}
 
 	public void clickEdit_actionUnderThePerent_actionandVerifyEditHalfCardIsPresentOrNot() throws ApplicationException {
+		// commonLocatorsRepo commLocators = new commonLocatorsRepo();
 		if (commLocators.actionBtton.isDisplayed()) {
 			commLocators.clickOnActionButton();
 			if (commLocators.editAction.isDisplayed()) {
@@ -157,6 +164,7 @@ public class CompanyAssetsPage {
 	}
 
 	public void enterNewCompanyName() throws ApplicationException {
+		// Utility utility = Utility.utility();
 		updatedComp = Company_name.concat("Edited");
 
 		if (inputEditCompanyName.isDisplayed()) {
@@ -177,6 +185,8 @@ public class CompanyAssetsPage {
 	}
 
 	public void clickOnsubmitAndVerifyThatTheCompanyIsUpdateOrNot() throws ApplicationException {
+		// Utility utility = Utility.utility();
+		// DashBoardPage dashboard = DashBoardPage.dashBoardPage();
 		if (editCompny_SubmitButton.isDisplayed()) {
 			utility.Submit(editCompny_SubmitButton);
 			log.info("Click on Submit button.");
@@ -200,6 +210,7 @@ public class CompanyAssetsPage {
 
 	public void clickDelete_actionUnderThePerent_actionandVerifyDeleteConfirmationpopupIsPresentOrNot()
 			throws ApplicationException {
+		// commonLocatorsRepo commLocators = new commonLocatorsRepo();
 		if (commLocators.actionBtton.isDisplayed()) {
 			commLocators.clickOnActionButton();
 			if (commLocators.deleteAction.isDisplayed()) {
@@ -219,7 +230,9 @@ public class CompanyAssetsPage {
 	}
 
 	public void verifyTheCompanyIsDeletedorNotAfterConfirm() throws ApplicationException, InterruptedException {
-
+		// Utility utility = Utility.utility();
+		// DashBoardPage dashboard = DashBoardPage.dashBoardPage();
+		// commonLocatorsRepo commLocators = new commonLocatorsRepo();
 		utility.Submit(deleteConfirmYesButton);
 		log.info("Cliked on Yes button to confirm delete record.");
 		utility.waitUntilToastPresent(dashboard.toastMessage);
@@ -242,6 +255,10 @@ public class CompanyAssetsPage {
 			throw new ApplicationException("Exception Occured", "Still record is not present.");
 		}
 
+	}
+
+	public static CompanyAssetsPage companyAssetsPage() {
+		return new CompanyAssetsPage();
 	}
 
 }

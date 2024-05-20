@@ -49,19 +49,19 @@ public class LeaseAssetsPage {
 	@FindBy(xpath = "//div[@aria-describedby='alert-dialog-description-Delete confirmation for Lease']//button[text()='Yes']")
 	private WebElement deleteConfirmYesButton;
 
-	public LeaseAssetsPage(WebDriver driver) {
-		this.driver = driver;
+	public LeaseAssetsPage() {
+		driver = TestBase.driver;
 		PageFactory.initElements(this.driver, this);
-		utility = new Utility(driver);
-		dashboard = new DashBoardPage(driver);
-		commLocators = new commonLocatorsRepo(driver);
+		utility = Utility.utility();
+		dashboard = DashBoardPage.dashBoardPage();
+		commLocators = commonLocatorsRepo.LocatorsRepo();
 	}
 
 	public void clickAddButtonAndVerifyCreateLeaseHalfCardIsPresentOrNot() throws ApplicationException {
 		try {
-			utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
+			utility.WaitUntilListOfElementIsVisible(searchRecords, 30);
 		} catch (org.openqa.selenium.StaleElementReferenceException ex) {
-			utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
+			utility.WaitUntilListOfElementIsVisible(searchRecords, 30);
 		}
 		log.info("Wait until loading LeaseName list.");
 		commLocators.clickAddButton();
@@ -280,5 +280,9 @@ public class LeaseAssetsPage {
 			throw new ApplicationException("Exception Occured", "Still record is not present.");
 		}
 
+	}
+
+	public static LeaseAssetsPage leaseAssetsPage() {
+		return new LeaseAssetsPage();
 	}
 }

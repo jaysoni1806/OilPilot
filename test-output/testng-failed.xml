@@ -1,23 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="com.Listeners.ExtentReportListener"/>
+    <listener class-name="com.Listeners.IRetryAnalyzerListener"/>
     <listener class-name="com.Listeners.EmailableListener"/>
   </listeners>
-  <test thread-count="5" name="OilPilot(failed)">
+  <test thread-count="2" parallel="tests" name="group 1(failed)">
     <classes>
       <class name="testPackage.LoginTest">
         <methods>
-          <include name="waitAfterTest"/>
           <include name="seperateCase"/>
           <include name="validLoginTest" invocation-numbers="0"/>
           <include name="initializeExtentReport"/>
-          <include name="assignObjectForClass"/>
+          <include name="closeAssertion"/>
+          <include name="loginWithUnRegisteredUser" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+          <include name="assignObjects"/>
           <include name="prerequisite"/>
           <include name="flush"/>
         </methods>
       </class> <!-- testPackage.LoginTest -->
+      <class name="testPackage.CompanyAssetsTest">
+        <methods>
+          <include name="seperateCase"/>
+          <include name="initializeExtentReport"/>
+          <include name="editCompany"/>
+          <include name="closeAssertion"/>
+          <include name="deleteCompany"/>
+          <include name="closeBrowser"/>
+          <include name="assignObjects"/>
+          <include name="prerequisite"/>
+          <include name="validLoginTest"/>
+          <include name="flush"/>
+        </methods>
+      </class> <!-- testPackage.CompanyAssetsTest -->
+      <class name="testPackage.FieldAssetsTest">
+        <methods>
+          <include name="seperateCase"/>
+          <include name="initializeExtentReport"/>
+          <include name="deleteField"/>
+          <include name="closeAssertion"/>
+          <include name="editField"/>
+          <include name="closeBrowser"/>
+          <include name="assignObjects"/>
+          <include name="prerequisite"/>
+          <include name="flush"/>
+          <include name="validLoginTest"/>
+        </methods>
+      </class> <!-- testPackage.FieldAssetsTest -->
     </classes>
-  </test> <!-- OilPilot(failed) -->
+  </test> <!-- group 1(failed) -->
+  <test thread-count="2" parallel="tests" name="group 2(failed)">
+    <classes>
+      <class name="testPackage.TankBatteryAssetsTest">
+        <methods>
+          <include name="seperateCase"/>
+          <include name="initializeExtentReport"/>
+          <include name="closeAssertion"/>
+          <include name="deleteSublease"/>
+          <include name="validLoginTest"/>
+          <include name="closeBrowser"/>
+          <include name="assignObjects"/>
+          <include name="prerequisite"/>
+          <include name="flush"/>
+        </methods>
+      </class> <!-- testPackage.TankBatteryAssetsTest -->
+      <class name="testPackage.LeaseAssetsTest">
+        <methods>
+          <include name="seperateCase"/>
+          <include name="EditLease"/>
+          <include name="initializeExtentReport"/>
+          <include name="closeAssertion"/>
+          <include name="deleteLease"/>
+          <include name="closeBrowser"/>
+          <include name="assignObjects"/>
+          <include name="flush"/>
+          <include name="prerequisite"/>
+          <include name="validLoginTest"/>
+        </methods>
+      </class> <!-- testPackage.LeaseAssetsTest -->
+      <class name="testPackage.LeaseGroupAssetsTest">
+        <methods>
+          <include name="seperateCase"/>
+          <include name="deleteLeaseGroup"/>
+          <include name="initializeExtentReport"/>
+          <include name="EditLeaseGroup"/>
+          <include name="validLoginTest"/>
+          <include name="closeAssertion"/>
+          <include name="closeBrowser"/>
+          <include name="assignObjects"/>
+          <include name="prerequisite"/>
+          <include name="flush"/>
+        </methods>
+      </class> <!-- testPackage.LeaseGroupAssetsTest -->
+    </classes>
+  </test> <!-- group 2(failed) -->
 </suite> <!-- Failed suite [Suite] -->

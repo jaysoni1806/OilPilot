@@ -7,10 +7,10 @@
         <methods>
           <include name="seperateCase"/>
           <include name="initializeExtentReport"/>
-          <include name="assignObjectForClass"/>
-          <include name="loginWithInvalidCredentials" invocation-numbers="0"/>
-          <include name="prerequisite"/>
+          <include name="assignObjects"/>
+          <include name="loginWithUnformattedEmail" invocation-numbers="0"/>
           <include name="flush"/>
+          <include name="prerequisite"/>
         </methods>
       </class> <!-- testPackage.LoginTest -->
     </classes>

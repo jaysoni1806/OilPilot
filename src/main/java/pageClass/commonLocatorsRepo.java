@@ -12,15 +12,17 @@ import org.openqa.selenium.support.PageFactory;
 import com.commonUtil.ApplicationException;
 import com.commonUtil.Utility;
 
+import DriverManager.WebDriverManager;
+
 public class commonLocatorsRepo {
 	WebDriver driver;
 	Utility utility;
 	public static Logger log = Logger.getLogger(commonLocatorsRepo.class);
 
-	public commonLocatorsRepo(WebDriver driver) {
-		this.driver = driver;
+	public commonLocatorsRepo() {
+		driver = WebDriverManager.getDriver();
 		PageFactory.initElements(driver, this);
-		utility = new Utility(driver);
+		utility = Utility.utility();
 	}
 
 	@FindBy(xpath = "//div[contains(@class,'MuiGrid-root ')]//h5[contains(@class,'MuiTypography-h5')]")
@@ -213,6 +215,12 @@ public class commonLocatorsRepo {
 			throw new ApplicationException("Exception Occured", dropdownName + " dropdown is not present.");
 		}
 
+	}
+
+	public static commonLocatorsRepo LocatorsRepo()
+
+	{
+		return new commonLocatorsRepo();
 	}
 
 }

@@ -10,6 +10,7 @@ public class ExtentReportManager {
 	public static ExtentSparkReporter extentSparkReporter;
 	public static ExtentReports extentReport;
 	public static ExtentTest test;
+	public static ThreadLocal<ExtentTest> extentTest = new ThreadLocal<ExtentTest>();
 
 	public static void initializeExtentReport() {
 		// extentSparkReporter = new

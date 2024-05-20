@@ -4,7 +4,6 @@ import java.util.List;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -12,25 +11,25 @@ import org.openqa.selenium.support.PageFactory;
 import com.commonUtil.ApplicationException;
 import com.commonUtil.Utility;
 
+import DriverManager.WebDriverManager;
 import testBase.TestBase;
 
 public class FiledAssetsPage {
-	WebDriver driver;
-	Utility utility;
-	DashBoardPage dashboard;
-	commonLocatorsRepo commLocators;
+
 	public String field_name;
 	public String sonris_id;
 	public String updatedField;
 	public String updatedSonris_id;
+	Utility utility;
+	commonLocatorsRepo commLocators;
+	DashBoardPage dashboard;
 	public static Logger log = Logger.getLogger(FiledAssetsPage.class);
 
-	public FiledAssetsPage(WebDriver driver) {
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
-		utility = new Utility(driver);
-		dashboard = new DashBoardPage(driver);
-		commLocators = new commonLocatorsRepo(driver);
+	public FiledAssetsPage() {
+		PageFactory.initElements(WebDriverManager.getDriver(), this);
+		utility = Utility.utility();
+		commLocators = commonLocatorsRepo.LocatorsRepo();
+		dashboard = DashBoardPage.dashBoardPage();
 	}
 
 	@FindBy(xpath = "//h5[text()='Add Field']/parent::div/following-sibling::div//button[@type='submit']")
@@ -47,6 +46,8 @@ public class FiledAssetsPage {
 	private List<WebElement> searchRecords;
 
 	public void verifyTheScreen() throws ApplicationException, InterruptedException {
+		// DashBoardPage dashboard = DashBoardPage.dashBoardPage();
+		// commonLocatorsRepo commLocators = new commonLocatorsRepo();
 		String headerText = commLocators.screenHeader.getText();
 
 		if (!headerText.equals("Field")) {
@@ -55,6 +56,8 @@ public class FiledAssetsPage {
 	}
 
 	public void clickAddButtonAndVerifyAddFieldHalfCardIsPresentOrNot() throws ApplicationException {
+		// Utility utility = Utility.utility();
+		// commonLocatorsRepo commLocators = new commonLocatorsRepo();
 		try {
 			utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
 		} catch (org.openqa.selenium.StaleElementReferenceException ex) {
@@ -66,16 +69,20 @@ public class FiledAssetsPage {
 	}
 
 	public void EnterFiledDetails(String field_name, String sonris_id) {
+		// commonLocatorsRepo commLocators = new commonLocatorsRepo();
+
 		this.field_name = field_name;
 		this.sonris_id = sonris_id;
 		commLocators.input("Field Name", this.field_name);
 		log.info("Enter Filed name.");
-		commLocators.input("Enter ISONRIS Field ID", this.sonris_id); // First arg is Placeholder value,Second is
-																		// input-data
+		commLocators.input("Enter ISONRIS Field ID", this.sonris_id); // First arg is Placeholder value,Second
+																		// is
+		// input-data
 		log.info("Enter SONRIS Field ID");
 	}
 
 	public void clickAddButtonForCreateNewCompany() throws ApplicationException {
+		// Utility utility = Utility.utility();
 
 		if (addField_SubmitButton.isDisplayed()) {
 			utility.Submit(addField_SubmitButton);
@@ -87,7 +94,8 @@ public class FiledAssetsPage {
 	}
 
 	public void verifyTheFleldIsCreatedOrnot() throws ApplicationException, InterruptedException {
-
+		// Utility utility = Utility.utility();
+		// DashBoardPage dashboard = DashBoardPage.dashBoardPage();
 		utility.WaitUntilElementVisibiltyGone(dashboard.toastMessage, 5);
 		enterFieldNameinSearchBox(field_name);
 		verifySearchedFieldIsExistsOrNot(field_name);
@@ -95,6 +103,7 @@ public class FiledAssetsPage {
 	}
 
 	public void enterFieldNameinSearchBox(String field_name) throws ApplicationException, InterruptedException {
+		// commonLocatorsRepo commLocators = new commonLocatorsRepo();
 		commLocators.Search(field_name);
 	}
 
@@ -112,6 +121,8 @@ public class FiledAssetsPage {
 	}
 
 	public void verifyTheFieldListAfterClearSearchBox() throws ApplicationException, InterruptedException {
+		// Utility utility = Utility.utility();
+		// commonLocatorsRepo commLocators = new commonLocatorsRepo();
 		if (commLocators.inputSearch.isDisplayed()) {
 			utility.clearSearchBox(commLocators.inputSearch);
 			// utility.WaitUntilListOfElementIsVisible(searchRecords, 5);
@@ -136,6 +147,7 @@ public class FiledAssetsPage {
 	}
 
 	public void clickEdit_actionUnderThePerent_actionandVerifyEditHalfCardIsPresentOrNot() throws ApplicationException {
+		// commonLocatorsRepo commLocators = new commonLocatorsRepo();
 		if (commLocators.actionBtton.isDisplayed()) {
 			commLocators.clickOnActionButton();
 			if (commLocators.editAction.isDisplayed()) {
@@ -155,6 +167,7 @@ public class FiledAssetsPage {
 	}
 
 	public void enterNewFieldName() throws ApplicationException {
+		// Utility utility = Utility.utility();
 		updatedField = field_name.concat("Edited");
 		updatedSonris_id = sonris_id.replace(sonris_id, "1234");
 
@@ -176,6 +189,8 @@ public class FiledAssetsPage {
 	}
 
 	public void clickOnsubmitAndVerifyThatTheFieldIsUpdateOrNot() throws ApplicationException {
+		// Utility utility = Utility.utility();
+		// DashBoardPage dashboard = DashBoardPage.dashBoardPage();
 		if (editField_SubmitButton.isDisplayed()) {
 			utility.Submit(editField_SubmitButton);
 			log.info("Click on Submit button.");
@@ -195,6 +210,7 @@ public class FiledAssetsPage {
 
 	public void clickDelete_actionUnderThePerent_actionandVerifyDeleteConfirmationpopupIsPresentOrNot()
 			throws ApplicationException {
+		// commonLocatorsRepo commLocators = new commonLocatorsRepo();
 		if (commLocators.actionBtton.isDisplayed()) {
 			commLocators.clickOnActionButton();
 			if (commLocators.deleteAction.isDisplayed()) {
@@ -214,7 +230,9 @@ public class FiledAssetsPage {
 	}
 
 	public void verifyTheFieldIsDeletedorNotAfterConfirm() throws ApplicationException, InterruptedException {
-
+		// Utility utility = Utility.utility();
+		// DashBoardPage dashboard = DashBoardPage.dashBoardPage();
+		// commonLocatorsRepo commLocators = new commonLocatorsRepo();
 		utility.Submit(deleteConfirmYesButton);
 		log.info("Cliked on Yes button to confirm delete record.");
 		utility.waitUntilToastPresent(dashboard.toastMessage);
@@ -237,4 +255,7 @@ public class FiledAssetsPage {
 
 	}
 
+	public static FiledAssetsPage fieldAssetsPage() {
+		return new FiledAssetsPage();
+	}
 }

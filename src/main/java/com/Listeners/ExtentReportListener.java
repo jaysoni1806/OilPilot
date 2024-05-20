@@ -16,28 +16,30 @@ public class ExtentReportListener extends ExtentReportManager implements ITestLi
 
 	public void onTestStart(ITestResult result) {
 		test = extentReport.createTest(result.getMethod().getMethodName(), result.getMethod().getDescription());
+		extentTest.set(test);
 	}
 
 	public void onTestSuccess(ITestResult result) {
 		if (result.getStatus() == ITestResult.SUCCESS) {
-			test.log(Status.PASS, result.getName() + " Test case is Pass");
+			extentTest.get().log(Status.PASS, result.getName() + " Test case is Pass");
 		}
 	}
 
 	public void onTestFailure(ITestResult result) {
 		if (result.getStatus() == ITestResult.FAILURE) {
-			test.log(Status.FAIL, MarkupHelper.createLabel(result.getName() + " - Test Case Failed", ExtentColor.RED));
-			test.log(Status.FAIL,
+			extentTest.get().log(Status.FAIL,
+					MarkupHelper.createLabel(result.getName() + " - Test Case Failed", ExtentColor.RED));
+			extentTest.get().log(Status.FAIL,
 					MarkupHelper.createLabel(result.getThrowable() + " - Test Case Failed", ExtentColor.RED));
 
 			String pathString = commonUtil.screenShot(TestBase.driver, result.getName());
-			test.addScreenCaptureFromPath(pathString);
+			extentTest.get().addScreenCaptureFromPath(pathString);
 		}
 	}
 
 	public void onTestSkipped(ITestResult result) {
 		if (result.getStatus() == ITestResult.SKIP) {
-			test.log(Status.SKIP, "Skipped Test case is: " + result.getName());
+			extentTest.get().log(Status.SKIP, "Skipped Test case is: " + result.getName());
 		}
 	}
 
